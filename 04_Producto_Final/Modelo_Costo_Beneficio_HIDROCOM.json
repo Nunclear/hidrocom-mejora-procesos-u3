@@ -1,0 +1,106 @@
+{
+  "titulo": "Modelo económico de retrabajo del proyecto HIDROCOM KALLPA",
+  "horizonte_anios": 1,
+  "moneda": "PEN",
+  "responsable_archivo_excel": "Claude (rol C). El diseño y la lectura en el informe corresponden a Codex (rol B).",
+  "referencias": {
+    "contrato_github": "https://github.com/Nunclear/hidrocom-mejora-procesos-u3/issues/1#issuecomment-7146867353",
+    "definiciones": "https://github.com/Nunclear/hidrocom-mejora-procesos-u3/issues/1#issuecomment-7146745531",
+    "formato": "I2 y C2 del formato DMAIC U3",
+    "guia": "Guía de análisis costo-beneficio para proyectos de mejora, Unidad 3"
+  },
+  "observados": {
+    "notas": 73,
+    "renglones": 262,
+    "revisar": 38,
+    "disponible": 206,
+    "excluir": 18,
+    "pedido_y_revisar": 13,
+    "incidencia_numerica_y_revisar": 21,
+    "interseccion": 9,
+    "casos_alcanzables": 25
+  },
+  "supuestos_modelo": {
+    "minutos_por_revision": 10,
+    "pen_por_hora": 7.5,
+    "horas_implementacion": 16,
+    "costo_recurrente_anual_pen": 0,
+    "lotes_por_mes_base": 1,
+    "eficacia_base": 1,
+    "proporcion_aprovechada_base": 1,
+    "meses_por_lote_volumen_bajo": 13.3,
+    "tasa_descuento_ilustrativa": 0.09
+  },
+  "formulas": {
+    "revisar_esperado_por_lote": "max(0, revisar - casos_alcanzables * eficacia)",
+    "tasa_revisar_esperada": "revisar_esperado_por_lote / renglones",
+    "horas_antes": "revisar * minutos_por_revision / 60",
+    "horas_despues": "revisar_esperado_por_lote * minutos_por_revision / 60",
+    "pen_antes_por_lote": "horas_antes * pen_por_hora",
+    "pen_despues_por_lote": "horas_despues * pen_por_hora",
+    "costo_inicial_pen": "horas_implementacion * pen_por_hora",
+    "beneficio_bruto_anual_pen": "(pen_antes_por_lote - pen_despues_por_lote) * lotes_por_mes * 12 * proporcion_aprovechada",
+    "beneficio_neto_anual_pen": "beneficio_bruto_anual_pen - costo_inicial_pen - costo_recurrente_anual_pen",
+    "van_horizonte_un_anio_pen": "-costo_inicial_pen + (beneficio_bruto_anual_pen - costo_recurrente_anual_pen) / (1 + tasa_descuento_ilustrativa)",
+    "revisar_evitados_equilibrio_por_mes": "(costo_inicial_pen + costo_recurrente_anual_pen) / (12 * (minutos_por_revision / 60) * pen_por_hora * proporcion_aprovechada)",
+    "revisar_inicial_equilibrio_por_mes": "revisar_evitados_equilibrio_por_mes / (min(revisar, casos_alcanzables * eficacia) / revisar)"
+  },
+  "pruebas": [
+    {
+      "nombre": "Base de máxima resolución",
+      "lotes_por_mes": 1,
+      "eficacia": 1,
+      "revisar_esperado": 13,
+      "tasa_revisar_porcentaje": 4.96,
+      "neto_anual_pen": 255
+    },
+    {
+      "nombre": "Eficacia del 75 %",
+      "lotes_por_mes": 1,
+      "eficacia": 0.75,
+      "revisar_esperado": 19.25,
+      "tasa_revisar_porcentaje": 7.35,
+      "neto_anual_pen": 161.25
+    },
+    {
+      "nombre": "Eficacia del 50 %",
+      "lotes_por_mes": 1,
+      "eficacia": 0.5,
+      "revisar_esperado": 25.5,
+      "tasa_revisar_porcentaje": 9.73,
+      "neto_anual_pen": 67.5
+    },
+    {
+      "nombre": "Eficacia del 25 %",
+      "lotes_por_mes": 1,
+      "eficacia": 0.25,
+      "revisar_esperado": 31.75,
+      "tasa_revisar_porcentaje": 12.12,
+      "neto_anual_pen": -26.25
+    },
+    {
+      "nombre": "Volumen bajo",
+      "lotes_por_mes": "1 / 13.3",
+      "eficacia": 1,
+      "revisar_esperado": 13,
+      "tasa_revisar_porcentaje": 4.96,
+      "neto_anual_pen": -91.8
+    },
+    {
+      "nombre": "Eficacia cero",
+      "lotes_por_mes": 1,
+      "eficacia": 0,
+      "revisar_esperado": 38,
+      "tasa_revisar_porcentaje": 14.5,
+      "neto_anual_pen": -120
+    },
+    {
+      "nombre": "Equilibrio máximo",
+      "revisar_evitados_por_mes": 8,
+      "revisar_iniciales_por_mes": 12.16,
+      "lotes_por_mes": 0.32,
+      "neto_anual_pen": 0
+    }
+  ],
+  "criterio_operativo": "La estimación valoriza capacidad de trabajo liberada. El volumen bajo es una prueba de sensibilidad y no la frecuencia real del proceso. Los valores iniciales son supuestos y se reemplazan por mediciones del piloto. Los ingresos de las notas quedan fuera del beneficio."
+}
