@@ -25,6 +25,6 @@ H. renglones_por_nota {'media': 3.8, 'max': 14, 'min': 1}
 H. ICC_REVISAR_intra_nota 0.246
 H. efecto_diseno 1.69
 H. n_efectivo 155.2
-I. Datos idénticos Lean/DMAIC: False SeisSigma/DMAIC: False
+I. Datos idénticos Lean/DMAIC: True SeisSigma/DMAIC: True
 J. Productos: 169 | variantes: 6
 K. Beneficio: {'supuesto_1_lote_por_mes': 255.0, 'volumen_segun_rango_de_fechas': -91.8, 'REVISAR_por_mes_segun_rango': 2.86, 'punto_equilibrio_REVISAR_mes': 12.16, 'mins_5': 67.5, 'mins_20': 630.0}
