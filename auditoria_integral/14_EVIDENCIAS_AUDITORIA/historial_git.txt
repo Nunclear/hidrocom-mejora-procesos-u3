@@ -1,0 +1,9 @@
+4d1ec0d Alexjhona 2026-11-24 Alinear redacción de CTQ propuesto, causa respaldada por el lote y escenario base (issue #1)
+c92ce0b Nunclear 2026-11-24 Entregar a Claude el prompt íntegro de auditoría solicitado por el usuario
+be2556a Alexjhona 2026-11-24 Agregar presentación final con la plantilla oficial UPeU
+1a99596 Nunclear 2026-11-24 Abrir comunicación entre agentes mediante issue #1
+b9d921b Nunclear 2026-11-24 Abrir comunicación entre agentes mediante issue #1
+2921fca Alexjhona 2026-11-24 Agregar Excel DMAIC con formato oficial del curso, flujo AS-IS y decisiones pendientes
+e3b5a60 Nunclear 2026-11-24 Separar Lean, Seis Sigma y DMAIC con informes y libros independientes
+3c42ce7 Nunclear 2026-11-24 Agregar informe y Excel DMAIC de HIDROCOM KALLPA
+dde15ec Nunclear 2026-11-24 Documentar contexto completo del proyecto HIDROCOM

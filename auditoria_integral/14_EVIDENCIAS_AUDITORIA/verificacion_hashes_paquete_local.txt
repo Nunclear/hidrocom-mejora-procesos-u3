@@ -1,0 +1,24 @@
+# Verificación de huellas SHA-256 (24-11-2026) — copia local del paquete del usuario
+# Declarado en auditoria.json: Comprobantes_Revisados.xlsx = ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682
+b83e030d27e8d34991093850af50d2a14370fe3aab0d8134722d10c8befb627c *<paquete_local>/Fuente/Clasificaciones_Activas.json
+ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682 *<paquete_local>/Fuente/Comprobantes_Revisados.xlsx
+ccbf25ac59e92955841eb4c7d05533d79cfae0abfb6eb22d4c30dc6fae249738 *<paquete_local>/Fuente/Estado_Revision_Fotos.json
+e29a8d6ad54f6436a92163a86fd109719b1e30bdac1e3b983d77479a452f6833 *<paquete_local>/Fuente/Original_Comprobantes.xlsx
+53855dd4c6b1ddca4fd24350237e73d74cd39607528b5a61e18e91476c4b082a *<paquete_local>/Fuente/Revision_Comprobantes.sqlite
+2718c66f70fcdaeb1f351d97d60c03dde6db9b8ad10a1a608dd1852783ed4ae6 *<paquete_local>/DataMart/Publicado/PowerBI/Calendario.csv
+06d4ceef941332a38e044df9268322920f202aefe21acd5ae6f4fcfa18c372aa *<paquete_local>/DataMart/Publicado/PowerBI/Comprobantes.csv
+407d0765c8fa22a69b88bf267665aa3926183e98bb43111ed848660f18185e16 *<paquete_local>/DataMart/Publicado/PowerBI/ControlETL.csv
+d9388eabd92b6a8cea8f38ffde5351bfa004a0487cc77c412f6d1370838e8796 *<paquete_local>/DataMart/Publicado/PowerBI/Detalle.csv
+24fbe3320336468b9f61a168f05dd8ad22ea2f6e36c19dc92cee5046303c65f1 *<paquete_local>/DataMart/Publicado/PowerBI/Diccionario.csv
+802e1c88d1a3c1484dd9f71b428ea8048ff8b2b69262ebec2284bfeb97b24154 *<paquete_local>/DataMart/Publicado/PowerBI/Imagenes.csv
+6eb47b29a03e84c619625658b79b1201960dfdd32f128a8cde8c272f7d1fbd37 *<paquete_local>/DataMart/Publicado/PowerBI/Productos.csv
+e0209edefbb0a44b33f9a99b6c17995a5d41880efd721fe3d8e83331ef473bac *<paquete_local>/DataMart/Publicado/PowerBI/Rangos.csv
+5c468827572ab4357a8733fa3fb844008f858c93fc254131b353f3788927e6ae *<paquete_local>/DataMart/Publicado/PowerBI/Zonas.csv
+
+# grep 'herramietas' en los CSV publicados:
+sin coincidencias
+
+# NP-025089-02 en Detalle.csv:
+NP-025089-02,NP-025089,02,c4be656bdd261a4fe742598b,Tarrajas,3.0,,19,,57,57,0,REGISTRADA,DISPONIBLE,true,0.07307692307692308,1,03_Imagenes_Originales/Imagenes_libro_6.zip/IMG_20260827_121531_206.jpg,Confirmada por usuario,Confirmada,,Pendiente,Tarrajas,herramientas,,5700
+
+# Comparación celda a celda Detalle_Productos (fuente) vs 03_DMAIC/Datos: 0 celdas distintas (262 x 24)
