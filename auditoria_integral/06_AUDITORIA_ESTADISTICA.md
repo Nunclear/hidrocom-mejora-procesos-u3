@@ -6,7 +6,7 @@ Todos se reproducen con `14_EVIDENCIAS_AUDITORIA/recalculo_independiente.py`:
 
 | Cálculo | Publicado | Recalculado | Dictamen |
 |---|---|---|---|
-| p REVISAR | 14,50 % | 14,50 %; IC 95 % Wilson 10,75–19,28 % | ✔ (falta comunicar el intervalo) |
+| p REVISAR | 14,50 % | 14,50 %; IC 95 % Wilson **nominal** 10,75–19,28 %, que supone renglones independientes; con agrupamiento por nota (deff 1,69) es más ancho. El IC no resuelve la representatividad del lote (AUD-001). | ✔ (falta comunicar el intervalo y su supuesto) |
 | DPMO / sigma (D = 30) | 38 167,94 / 3,2724 | idénticos | ✔ |
 | DPMO / sigma (D = 35) | 44 529 / 3,20 | 44 529,26 / 3,2004 | ✔ (criterio distinto, AUD-002) |
 | DPMO / sigma (D = 34, sin el artefacto millar) | — | 43 257,0 / 3,2141 | Propuesta |

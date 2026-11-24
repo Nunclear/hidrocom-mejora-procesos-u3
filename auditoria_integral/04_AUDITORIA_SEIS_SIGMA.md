@@ -15,7 +15,7 @@ Objeto: `02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf` (7 págs.) y `U3_Seis_Sigma_H
 | Unidad de análisis | ✔ | Renglón (`id_detalle`), declarado. |
 | Número de oportunidades | ◐ | O = 3 es homogéneo, pero son **campos inspeccionados**, no oportunidades de defecto validadas con el cliente. |
 | DPU / DPO / DPMO | ✔ Cálculo correcto | 30/262 = 0,1145; 30/786 = 0,03817; 38 167,94 (recalculado). DPU y yield no se reportan; se recomienda añadirlos (yield por unidad 93,5 %). |
-| Yield / RTY | ✘ No reportados | Con una sola etapa, el RTY no aplica. El FPY documental (206/262 = 78,6 %) sería un indicador alternativo útil. |
+| Yield / RTY | ✘ No reportados | Con una sola etapa, el RTY no aplica. La proporción de renglones DISPONIBLE al corte (206/262 = 78,63 %) es descriptiva. El FPY real exige registrar el resultado de la primera pasada y queda por medir. |
 | Nivel sigma | ✔ Correcto y bien rotulado | 3,2724 con desplazamiento de 1,5 **declarado** («equivalente exploratorio»). |
 | Estabilidad | ✔ Correctamente **excluida** | No hay orden temporal fiable. |
 | Capacidad | ✔ Correctamente excluida | No hay variable continua con especificación. |
@@ -34,6 +34,6 @@ Objeto: `02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf` (7 págs.) y `U3_Seis_Sigma_H
 
 ## Alternativas válidas si no se puede calcular un sigma empresarial
 
-1. **Proporción de renglones listos para publicar (FPY documental)**: 206/262 = 78,6 %. Es un indicador por unidad, sin supuestos sobre oportunidades.
+1. **Proporción de renglones DISPONIBLE al corte**: 206/262 = 78,63 %. Es un indicador por unidad, sin supuestos sobre oportunidades. No equivale al rendimiento de primera pasada, que se mide en el piloto.
 2. **p de REVISAR** con intervalo de confianza que considere la agrupación por nota (efecto de diseño 1,69).
 3. Un DPMO formal **solo** después de aprobar el CTQ con el dueño del proceso y medir un lote nuevo con orden temporal. En ese momento sí aplicaría una gráfica p por lote.

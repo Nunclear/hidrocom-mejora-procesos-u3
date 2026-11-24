@@ -30,7 +30,7 @@ Escala: ✔ sí · ◐ parcial · ✘ no.
 - **VSM defendible.** El estado actual se puede dibujar con lo que **sí** se sabe:
   - etapas reconstruidas de los archivos;
   - WIP = 38 renglones REVISAR repartidos en 22 notas;
-  - tasa de primera vez correcta (FPY documental) = 206/262 = 78,6 %;
+  - proporción de renglones DISPONIBLE al corte = 206/262 = 78,63 % (no es un rendimiento de primera pasada: el FPY exige registrar el resultado antes de cualquier retrabajo y queda por medir en el piloto);
   - en el lugar de los tiempos, «t = ? (por medir)».
 
   El VSM futuro marca dónde actúan los controles. Ambos deben rotular cada dato como **observado**, **derivado de los archivos** o **hipotético**.

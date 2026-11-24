@@ -25,7 +25,7 @@ Respuesta al comentario 7146568385 del issue #1. Las propuestas (PM-xx) **se der
 - **Hallazgo:** AUD-002 (P1).
 - **Prioridad:** P1. Es la pregunta más probable del jurado («¿cuál es su sigma?») y desbloquea PM-02, PM-03 y el informe Word.
 - **Cambio:**
-  - Adoptar un criterio oficial. Propongo D = 34 [C]: DPMO 43 257,0 y σ 3,2141. Alternativa: D = 30, solo vacíos.
+  - El equipo adopta un criterio oficial (Q4). Hasta entonces se mantienen separados: D = 30 en Seis Sigma (completitud) y D = 35 en DMAIC (regla publicada). D = 34 [C], con DPMO 43 257,0 y σ 3,2141, se presenta como escenario analítico. Esto se ajustó tras la revisión de Codex en `1dda964`.
   - Publicar la tabla de sensibilidad de 4 filas en Seis Sigma, M2, lámina 5 e informe.
   - Documentar la regla de las bases kg y millar.
 - **Archivos:** `02_Seis_Sigma/*.pdf|xlsx`; `04_Producto_Final/U3_Formato_DMAIC_HIDROCOM.xlsx` (M2), `.pptx` (lámina 5), `scripts/llenar.py` y `deck.py`; informe Word (Codex).
@@ -65,7 +65,7 @@ Respuesta al comentario 7146568385 del issue #1. Las propuestas (PM-xx) **se der
 - **Comprobación:** script, sección K.
 
 ### PM-05 · Línea base con incertidumbre y dependencia intra-nota
-- **Evidencia:** [C] IC Wilson 10,75–19,28 %; ICC 0,246; efecto de diseño 1,69; n efectivo ≈ 155.
+- **Evidencia:** [C] IC Wilson nominal 10,75–19,28 % (supone independencia; no resuelve la representatividad); ICC 0,246; efecto de diseño 1,69; n efectivo ≈ 155.
 - **Hallazgo:** AUD-007 (P2).
 - **Cambio:** reportar el IC y una nota de que el piloto debe compararse por nota.
 - **Archivos:** DMAIC Medir, M2, Seis Sigma.
@@ -110,7 +110,7 @@ Respuesta al comentario 7146568385 del issue #1. Las propuestas (PM-xx) **se der
 ### PM-09 · Lean: VSM actual derivado y VSM futuro de diseño
 - **Evidencia:** [H] Lean pág. 3 y `VSM!E6:G11` vacíos; no hay estado futuro.
 - **Hallazgo:** AUD-010 (P1 para Lean).
-- **Cambio:** dos figuras con iconografía VSM. El actual lleva WIP 38 en 22 notas, FPY 78,6 % y «t = por medir». El futuro muestra los Poka-Yoke en Registrar y Validar. Leyenda: observado / derivado / hipotético.
+- **Cambio:** dos figuras con iconografía VSM. El actual lleva WIP 38 en 22 notas, 78,63 % de renglones DISPONIBLE al corte (no es FPY) y «t = por medir». El futuro muestra los Poka-Yoke en Registrar y Validar. Leyenda: observado / derivado / hipotético.
 - **Archivos:** Lean PDF y xlsx.
 - **Aceptación:** dos figuras rotuladas.
 - **Comprobación:** inspección visual.
@@ -168,7 +168,7 @@ Codex aún **no publicó** `propuestas_mejora/PROPUESTAS_MEJORA_CODEX.md` (su ra
 |---|---|---|---|
 | Línea base: 262, 38, 14,50 %, 35 defectos en 22 renglones, 44 529 / 3,20 σ, unión de 25 | Verificado | Verificado [C] | **Coinciden** |
 | CTQ «propuesto» y desplazamiento de 1,5 declarado | Sí | Sí | **Coinciden** |
-| Valor de D | 35 | 34 recomendado (artefacto millar) o 30 | **Discutir** (PM-01) |
+| Valor de D | 30 (Seis Sigma) y 35 (DMAIC) separados; 34 como escenario | Ídem tras `1dda964` | **Coinciden**; el criterio oficial lo decide el equipo (Q4) |
 | Causa | «La evidencia respalda priorizar… se asocian con 25 de 38» | Asociación **por construcción**: no respalda causa, solo prioriza condiciones | **Discutir** (PM-02). Su formulación de «priorizar» es aceptable; la mía elimina «respaldada» como veredicto. |
 | Simulación | 4,96 % como valor único | Rango 4,96–12,12 % | **Discutir** (PM-03) |
 | Beneficio | S/ 255 «escenario base», con sensibilidad anunciada | Escenario base + −S/ 91,80 con el volumen del rango | **Coinciden en la sensibilidad**; discutir cuál es el escenario base (PM-04) |

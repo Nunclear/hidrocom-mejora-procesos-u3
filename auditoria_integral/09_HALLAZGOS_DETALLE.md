@@ -44,7 +44,7 @@ Generado por `14_EVIDENCIAS_AUDITORIA/generar_hallazgos.py`; la matriz tabular e
 - **Impacto estadístico:** La línea base cambia 0,07 σ según el criterio
 - **Impacto empresarial:** Ninguno directo
 - **Causa probable:** Trabajo en paralelo de dos agentes
-- **Corrección propuesta:** Adoptar un criterio oficial (recomendado: D = 34, sin el artefacto millar, o D = 30 con nota) y publicar la tabla de sensibilidad de 4 filas en los tres trabajos; documentar la regla para kg y millar
+- **Corrección propuesta:** Decisión del equipo sobre el criterio oficial; mientras tanto, D = 30 (Seis Sigma) y D = 35 (DMAIC) separados, y D = 34 (sin el artefacto millar) como escenario y publicar la tabla de sensibilidad de 4 filas en los tres trabajos; documentar la regla para kg y millar
 - **Datos adicionales necesarios:** Aprobación del CTQ por el equipo
 - **Dependencias:** AUD-013
 - **Criterio de aceptación:** La misma cifra de sigma en Seis Sigma, Formato, PPTX e informe; existe la tabla de sensibilidad
@@ -228,7 +228,7 @@ Generado por `14_EVIDENCIAS_AUDITORIA/generar_hallazgos.py`; la matriz tabular e
 - **Impacto estadístico:** —
 - **Impacto empresarial:** No se ven esperas ni retrabajo
 - **Causa probable:** Sin acceso a la operación
-- **Corrección propuesta:** Dibujar el VSM actual con los datos derivados (WIP 38, FPY 78,6 %, t = por medir) y el VSM futuro como diseño; anexar la hoja de cronometraje
+- **Corrección propuesta:** Dibujar el VSM actual con los datos derivados (WIP 38, 78,63 % DISPONIBLE al corte —no es FPY—, t = por medir) y el VSM futuro como diseño; anexar la hoja de cronometraje
 - **Datos adicionales necesarios:** Tiempos medidos (12_DATOS_PENDIENTES)
 - **Dependencias:** AUD-001
 - **Criterio de aceptación:** Dos figuras VSM rotuladas como observado, derivado o hipotético
