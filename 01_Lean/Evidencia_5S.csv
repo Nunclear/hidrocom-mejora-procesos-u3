@@ -1,0 +1,6 @@
+﻿S,Criterio propio,Antes,Despues,Evidencia o limite
+Seiri,No mantener PDF/XLSX activos en la raíz.,0,1,Antes: dos binarios integrados en raíz. Después: activos agrupados; originales conservados localmente e historial Git.
+Seiton,Disponer de tres carpetas numeradas por trabajo.,0,1,"01_Lean, 02_Seis_Sigma y 03_DMAIC."
+Seiso,Archivos sin vacíos ni temporales de edición.,1,1,Comprobación del árbol local de publicación; no evalúa suciedad física ni exactitud del contenido.
+Seiketsu,Cada trabajo tiene README propio y enlaces desde índice.,0,1,"Guías independientes, límites y pendientes; contexto general en README raíz."
+Shitsuke,Dueño nominal y calendario aprobados con evidencia.,0,0,No se aportó aprobación de responsable y calendario. Sostener sigue pendiente.

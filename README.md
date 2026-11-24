@@ -6,11 +6,25 @@ Proyecto académico de Lean Seis Sigma para el curso Mejora de Procesos y Calida
 
 Fecha de revisión: 24 de noviembre de 2026.
 
-## Entregables
+## Tres trabajos independientes
 
-- [Informe del proyecto en PDF](U3_Informe_HIDROCOM.pdf): 15 páginas con contexto, alcance, charter, 5W2H, SIPOC, medición, Pareto descriptivo, verificación documental, propuestas de mejora, plan PDCA, control y anexo de pendientes.
-- [Excel DMAIC](U3_Formato_DMAIC_HIDROCOM.xlsx): 13 hojas con datos fuente preservados, cálculos, seguimiento de 38 renglones pendientes y un prototipo de validación de nuevos registros.
-- [Presentación editable](https://chatgpt.com/space/page_ca61c7120d948191aaa3a90517d367db): 15 diapositivas. El enlace conserva los permisos propios del documento en ChatGPT y permite exportarlo desde su visor.
+| Trabajo | Informe | Excel | Contenido principal |
+|---|---|---|---|
+| [01 Lean](01_Lean/README.md) | [PDF](01_Lean/U3_Lean_HIDROCOM.pdf) | [Excel](01_Lean/U3_Lean_HIDROCOM.xlsx) | VSM, desperdicios, 5S digital, Kaizen y Poka-Yoke |
+| [02 Seis Sigma](02_Seis_Sigma/README.md) | [PDF](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf) | [Excel](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx) | Selección, roles, RACI, CTQ y métricas |
+| [03 DMAIC](03_DMAIC/README.md) | [PDF](03_DMAIC/U3_DMAIC_HIDROCOM.pdf) | [Excel](03_DMAIC/U3_DMAIC_HIDROCOM.xlsx) | Cinco fases y seguimiento de 38 pendientes |
+
+Los tres enfoques se presentan por separado y usan el mismo corte documental. Seis Sigma es el enfoque de mejora; DMAIC organiza sus cinco fases. Cada carpeta tiene guía propia y un libro independiente. El informe DMAIC conserva 15 páginas y el libro 13 hojas.
+
+[Presentación editable DMAIC](https://chatgpt.com/space/page_ca61c7120d948191aaa3a90517d367db): 15 diapositivas, sujeta a los permisos de ChatGPT.
+
+### Distinciones necesarias
+
+- **Lean:** la reorganización 5S efectuada corresponde únicamente al espacio académico de publicación. No se midieron tiempos ni se ejecutó una intervención en el almacén. El VSM es una propuesta por contrastar.
+- **Seis Sigma:** el ejercicio exploratorio de completitud cuenta vacíos en cantidad, precio e importe; usa tres oportunidades por renglón como regla analítica. DPMO y sigma equivalentes no son desempeño operativo validado. La definición formal de CTQ sigue pendiente.
+- **DMAIC:** diagnóstico y diseño desarrollados; piloto, efecto, metas aprobadas y beneficios económicos siguen pendientes de evidencia.
+
+La versión anterior integrada se conserva en el historial Git. Los archivos activos están ahora dentro de cada carpeta.
 
 ## Diagnóstico del corte documental
 
@@ -18,7 +32,7 @@ La muestra contiene 73 notas y 262 renglones. La fuente clasifica 206 renglones 
 
 REVISAR expresa un estado documental y no equivale a un defecto confirmado. Los registros excluidos se conservan y no se reclasifican automáticamente como errores.
 
-## Uso del Excel
+## Uso del Excel DMAIC
 
 1. Consultar Resumen y Medir para entender los conteos y sus denominadores.
 2. Mantener las hojas fuente Datos, Comprobantes y Fechas como copia del corte examinado.
@@ -246,3 +260,15 @@ Estas comprobaciones validan el desarrollo documental y las fórmulas probadas. 
 6. Actualizar informe, Excel y presentación con los resultados efectivamente medidos.
 
 El proyecto conserva exclusivamente el alcance de HIDROCOM KALLPA y los datos sustentados en su material suministrado.
+
+## Fuentes de los desarrollos separados
+
+- [PMI: cinco principios Lean](https://www.pmi.org/disciplined-agile/lean/principles).
+- [Lean Enterprise Institute: 5S](https://www.lean.org/lexicon-terms/five-s/).
+- [Lean Enterprise Institute: prevención de errores](https://www.lean.org/lexicon-terms/error-proofing/).
+- [ASQ: Seis Sigma](https://asq.org/quality-resources/six-sigma).
+- [ASQ: roles y cinturones](https://asq.org/quality-resources/sixsigma/belts-executives-champions).
+- [ASQ: DMAIC](https://asq.org/quality-resources/dmaic).
+- [Anbari y Kwak (2004), PMI: factores de éxito](https://www.pmi.org/learning/library/success-factors-managing-six-sigma-projects-8293). Caso Motorola, externo al proyecto HIDROCOM.
+
+Consulta bibliográfica: 24/11/2026. Las aplicaciones y matrices de los informes son elaboraciones propuestas para este caso, no observaciones adicionales de la empresa. Las lecturas aquí citadas no sustituyen un capítulo específico del aula que no esté disponible.
