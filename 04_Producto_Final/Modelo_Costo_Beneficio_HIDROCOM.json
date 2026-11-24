@@ -2,12 +2,13 @@
   "titulo": "Modelo económico de retrabajo del proyecto HIDROCOM KALLPA",
   "horizonte_anios": 1,
   "moneda": "PEN",
-  "responsable_archivo_excel": "Claude (rol C). El diseño y la lectura en el informe corresponden a Codex (rol B).",
+  "responsable_archivo_excel": "Codex (rol B) es responsable del libro 05_Costo_Beneficio. Claude (rol C) realiza la revisión cruzada.",
   "referencias": {
     "contrato_github": "https://github.com/Nunclear/hidrocom-mejora-procesos-u3/issues/1#issuecomment-7146867353",
     "definiciones": "https://github.com/Nunclear/hidrocom-mejora-procesos-u3/issues/1#issuecomment-7146745531",
     "formato": "I2 y C2 del formato DMAIC U3",
-    "guia": "Guía de análisis costo-beneficio para proyectos de mejora, Unidad 3"
+    "guia": "Guía de análisis costo-beneficio para proyectos de mejora, Unidad 3",
+    "tasa_descuento_ilustrativa": "Guía U3 de análisis costo-beneficio, hoja 1. Supuestos, celda C8, caso didáctico ISO 9001."
   },
   "observados": {
     "notas": 73,
@@ -24,7 +25,7 @@
     "minutos_por_revision": 10,
     "pen_por_hora": 7.5,
     "horas_implementacion": 16,
-    "costo_recurrente_anual_pen": 0,
+    "costo_recurrente_anual_pen": null,
     "lotes_por_mes_base": 1,
     "eficacia_base": 1,
     "proporcion_aprovechada_base": 1,
@@ -40,10 +41,11 @@
     "pen_despues_por_lote": "horas_despues * pen_por_hora",
     "costo_inicial_pen": "horas_implementacion * pen_por_hora",
     "beneficio_bruto_anual_pen": "(pen_antes_por_lote - pen_despues_por_lote) * lotes_por_mes * 12 * proporcion_aprovechada",
-    "beneficio_neto_anual_pen": "beneficio_bruto_anual_pen - costo_inicial_pen - costo_recurrente_anual_pen",
-    "van_horizonte_un_anio_pen": "-costo_inicial_pen + (beneficio_bruto_anual_pen - costo_recurrente_anual_pen) / (1 + tasa_descuento_ilustrativa)",
-    "revisar_evitados_equilibrio_por_mes": "(costo_inicial_pen + costo_recurrente_anual_pen) / (12 * (minutos_por_revision / 60) * pen_por_hora * proporcion_aprovechada)",
-    "revisar_inicial_equilibrio_por_mes": "revisar_evitados_equilibrio_por_mes / (min(revisar, casos_alcanzables * eficacia) / revisar)"
+    "beneficio_neto_anual_pen": "beneficio_bruto_anual_pen - costo_inicial_pen - (costo_recurrente_anual_pen si está informado)",
+    "van_horizonte_un_anio_pen": "-costo_inicial_pen + (beneficio_bruto_anual_pen - costo_recurrente_informado) / (1 + tasa_descuento_ilustrativa)",
+    "revisar_evitados_equilibrio_por_mes": "(costo_inicial_pen + costo_recurrente_informado) / (12 * (minutos_por_revision / 60) * pen_por_hora * proporcion_aprovechada)",
+    "revisar_inicial_equilibrio_por_mes": "revisar_evitados_equilibrio_por_mes / (min(revisar, casos_alcanzables * eficacia) / revisar)",
+    "costo_recurrente_informado": "importe de costo recurrente cuando es numérico. Si no existe estimación, se excluye del escenario calculado."
   },
   "pruebas": [
     {
@@ -100,7 +102,17 @@
       "revisar_iniciales_por_mes": 12.16,
       "lotes_por_mes": 0.32,
       "neto_anual_pen": 0
+    },
+    {
+      "nombre": "Base con costo recurrente de prueba",
+      "lotes_por_mes": 1,
+      "eficacia": 1,
+      "costo_recurrente_anual_pen": 60,
+      "revisar_esperado": 13,
+      "tasa_revisar_porcentaje": 4.96,
+      "neto_anual_pen": 195
     }
   ],
-  "criterio_operativo": "La estimación valoriza capacidad de trabajo liberada. El volumen bajo es una prueba de sensibilidad y no la frecuencia real del proceso. Los valores iniciales son supuestos y se reemplazan por mediciones del piloto. Los ingresos de las notas quedan fuera del beneficio."
+  "criterio_operativo": "La estimación valoriza capacidad de trabajo liberada. El volumen bajo es una prueba de sensibilidad y no la frecuencia real del proceso. Los valores iniciales son supuestos y se reemplazan por mediciones del piloto. Los ingresos de las notas quedan fuera del beneficio.",
+  "regla_costo_recurrente": "No estimado. Los escenarios con valor vacío excluyen este componente y no suponen que su valor operativo sea cero. Un importe ingresado se descuenta de los resultados del año."
 }
