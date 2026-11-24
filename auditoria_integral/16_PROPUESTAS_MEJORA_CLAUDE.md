@@ -105,7 +105,7 @@ Respuesta al comentario 7146568385 del issue #1. Las propuestas (PM-xx) **se der
 - **Dependencias:** autorización del usuario para usar esos archivos (Q3).
 - **Aceptación:** tabla «original → revisado» por tipo de campo.
 - **Comprobación:** recuento reproducible.
-- **Nota:** **no se ejecutó** en esta auditoría. Es una propuesta.
+- **Estado: EJECUTADA** (autorizada en Q3). Resultados en `14_EVIDENCIAS_AUDITORIA/pm08_resultados.md`: los 30 vacíos ya estaban en la captura original; 37 de los 38 REVISAR ya eran REVISAR al transcribir; 471 correcciones del 17 al 18-11-2026; 23 renglones retirados. Describe la transcripción; no prueba una causa operativa.
 
 ### PM-09 · Lean: VSM actual derivado y VSM futuro de diseño
 - **Evidencia:** [H] Lean pág. 3 y `VSM!E6:G11` vacíos; no hay estado futuro.

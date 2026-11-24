@@ -1,0 +1,86 @@
+{
+ "sha256": {
+  "Original_Comprobantes.xlsx": "e29a8d6ad54f6436a92163a86fd109719b1e30bdac1e3b983d77479a452f6833",
+  "Comprobantes_Revisados.xlsx": "ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682"
+ },
+ "columnas_original_no_en_revisado": [],
+ "columnas_revisado_no_en_original": [],
+ "renglones": {
+  "original": 285,
+  "revisado": 262,
+  "comunes": 262,
+  "solo_original": 23,
+  "solo_revisado": 0
+ },
+ "notas": {
+  "original": 73,
+  "revisado": 73
+ },
+ "transiciones_campos_numericos": {
+  "cantidad": {
+   "igual": 256,
+   "vacío → vacío": 5,
+   "vacío → completado": 1
+  },
+  "precio_unitario": {
+   "igual": 232,
+   "vacío → vacío": 16,
+   "vacío → completado": 11,
+   "valor cambiado": 3
+  },
+  "subtotal_producto": {
+   "igual": 252,
+   "vacío → vacío": 9,
+   "vacío → completado": 1
+  }
+ },
+ "vacios_revisado": {
+  "total": 30,
+  "origen": {
+   "vacío también en original": 30
+  }
+ },
+ "pedido": {
+  "en_original": 13,
+  "en_revisado": 13,
+  "uso_importe_en_original": true
+ },
+ "REVISAR_revisado": {
+  "total": 38,
+  "presentes_en_original": 38,
+  "uso_importe_original_de_esos": {
+   "REVISAR": 37,
+   "DISPONIBLE": 1
+  }
+ },
+ "historial": {
+  "registros": 471,
+  "rango_fechas": [
+   "2026-11-17T19:43:44-05:00",
+   "2026-11-18T19:51:15-05:00"
+  ],
+  "por_hoja": {
+   "Detalle_Productos": 401,
+   "Revisión": 49,
+   "Comprobantes": 21
+  },
+  "por_campo_top": {
+   "Detalle_Productos.Clasificación": 158,
+   "Detalle_Productos.Categoría completada": 105,
+   "Revisión.Estado": 41,
+   "Detalle_Productos.producto_original": 32,
+   "Detalle_Productos.producto_normalizado": 32,
+   "Detalle_Productos.Registro": 23,
+   "Detalle_Productos.precio_unitario": 15,
+   "Detalle_Productos.importe_calculado": 15,
+   "Detalle_Productos.diferencia_importe": 14,
+   "Comprobantes.suma_importes_legibles": 11,
+   "Comprobantes.diferencia_total": 10,
+   "Revisión.Datos corregidos": 8,
+   "Detalle_Productos.subtotal_producto": 3,
+   "Detalle_Productos.cantidad": 2,
+   "Detalle_Productos.renglon_imagen": 1
+  },
+  "cambios_en_campos_numericos_detalle": 20
+ }
+}
