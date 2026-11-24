@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "celda": "Dashboard!B7",
+      "valor": 73
+    },
+    {
+      "celda": "Dashboard!B8",
+      "valor": 262
+    },
+    {
+      "celda": "Dashboard!B9",
+      "valor": 206
+    },
+    {
+      "celda": "Dashboard!B10",
+      "valor": 38
+    },
+    {
+      "celda": "Dashboard!B11",
+      "valor": 18
+    },
+    {
+      "celda": "Dashboard!B14",
+      "valor": 30
+    },
+    {
+      "celda": "Dashboard!B15",
+      "valor": 3.2723536065008707
+    },
+    {
+      "celda": "Dashboard!B20",
+      "valor": 13
+    },
+    {
+      "celda": "Dashboard!B21",
+      "valor": 7
+    },
+    {
+      "celda": "Dashboard!B22",
+      "valor": 7
+    },
+    {
+      "celda": "Dashboard!B23",
+      "valor": 6
+    },
+    {
+      "celda": "Dashboard!B24",
+      "valor": 5
+    },
+    {
+      "celda": "Escenarios!B7",
+      "valor": 34
+    },
+    {
+      "celda": "Escenarios!B8",
+      "valor": 35
+    },
+    {
+      "celda": "Escenarios!C13",
+      "valor": 13
+    },
+    {
+      "celda": "Escenarios!C16",
+      "valor": 31.75
+    },
+    {
+      "celda": "Dashboard!B14",
+      "valor": 31
+    },
+    {
+      "celda": "Dashboard!B14",
+      "valor": 30
+    }
+  ],
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "celdas_temporales_restauradas": true,
+  "tipo": "Recálculo Artifact Tool y prueba de cambio; no piloto empresarial"
+}
