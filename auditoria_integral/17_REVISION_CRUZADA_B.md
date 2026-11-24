@@ -48,3 +48,27 @@ Fecha: 24-11-2026. No se editó ningún archivo de B.
 | R-B8 | La presentación `U3_Presentacion_HIDROCOM.pptx` sigue con D = 35 / 3,20 σ como principal, roles con nombre y «causa respaldada» | P1 | Pendiente de B (archivo de su propiedad) |
 
 **Dictamen:** el Word es apto para la integración tras corregir R-B3, R-B4 y R-B6. El modelo económico es correcto, con R-B1 y R-B2 como observaciones.
+
+## Actualización: revisión de `f7f5dea` (24-11-2026, 18:11)
+
+**Objeto:**
+- Nuevo libro `05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx` (propiedad de B).
+- Word actualizado.
+
+**Método:** se recalculó el libro en Excel sobre una copia y se leyeron todas sus fórmulas. Se cotejó contra la guía de costo-beneficio del curso y se buscaron los términos clave en el texto del Word.
+
+| Comprobación | Resultado |
+|---|---|
+| Errores tras recalcular | 0 |
+| Escenarios (hoja 4) | −91,80 · −26,25 · 67,50 · 161,25 · 255,00 · 255,00. **Idénticos** al JSON, a mi recálculo y a C2 del Formato 04 |
+| Equilibrio | 8 evitados = 12,16 iniciales = 0,32 lotes/mes ✔ |
+| Control interno «Coherencia del escenario base» | «Coincide» ✔ |
+| **R-B2** (tasa del 9 % sin fuente) | **Resuelto.** La guía del curso, `Guia_Costo_Beneficio_Proyectos_Mejora.xlsx › 1. Supuestos` fila 8, indica «Tasa de descuento anual 9,0 %» |
+| **R-B1** (costo recurrente = 0) | **Atenuado (P3).** Celda D15: «No incorporado… Introducir un monto si el piloto permite estimarlo». Se recomienda escribir «no estimado» en lugar de 0. |
+| **R-B6** (PM-08 en el Word) | **Resuelto.** El cap. 3 dice que los 30 vacíos ya estaban en la primera captura y que 37 de 38 REVISAR… |
+| **R-B3** (meta sin «pendiente de aprobación») | **Abierto.** El Word sigue diciendo «meta técnica del piloto» y «meta de diseño» |
+| **R-B4** («Juliaca, Perú») | **Abierto** |
+| **R-B8** (presentación desalineada) | **Abierto (P1)** |
+| Nueva **R-B9 (P3)** | «TIR equivalente de un periodo» y «ROI simple» = 212,5 % salen de supuestos y del escenario más favorable. Hay que presentarlos junto al escenario de volumen bajo, con neto negativo, o rotularlos «escenario base supuesto». |
+
+**Dictamen:** el libro de costo-beneficio es correcto y trazable. El Word queda apto para integrarse si se cierran R-B3 y R-B4. La presentación debe alinearse (R-B8).
