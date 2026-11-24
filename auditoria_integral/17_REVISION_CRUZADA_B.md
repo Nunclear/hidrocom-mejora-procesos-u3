@@ -76,3 +76,7 @@ Fecha: 24-11-2026. No se editó ningún archivo de B.
 ## Actualización: `8187187`
 
 Word: «Juliaca» retirado (R-B4 ✔), meta con «pendiente de aprobación» (R-B3 ✔) y mención al IC de Wilson (R-B5 ✔). Libro de costo-beneficio: costo recurrente vacío y rotulado «No estimado» (R-B1 ✔); escenarios sin cambios y control «Coincide», 0 errores tras recalcular. **Sigue abierta: R-B8 (P1, presentación).** R-B9 no se verificó.
+
+## Actualización: `e2287cb`
+
+R-B9 ✔. La hoja Evaluación compara el escenario base (S/ 255; ROI/TIR 212,50 %) con el de volumen bajo (−S/ 91,80; ROI/TIR −76,50 %). Comprobación aritmética: 255/120 = 2,125 y −91,80/120 = −0,765. **Solo queda abierta R-B8 (presentación).**
