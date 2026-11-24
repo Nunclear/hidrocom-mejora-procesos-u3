@@ -130,13 +130,13 @@ write(shp(s, 11), [[L("PROBLEMA Y COSTO")],
                    "38 de 262 renglones del lote no pueden publicarse sin volver al original: ≈ 6,3 h de retrabajo por lote (≈ S/ 47,50/mes)."])
 write(shp(s, 13), [[L("META Y LÍNEA BASE")],
                    [("14,50 % → ≤ 5 %", {"bold": True, "color": NAVY, "size": 22})],
-                   "en 8 semanas desde que se aprueben las reglas. Línea base del CTQ: DPMO 44 529 ≈ 3,20 σ."])
-write(shp(s, 15), [[L("CAUSA RAÍZ CONFIRMADA", RED)],
+                   "en 8 semanas desde que se aprueben las reglas. Línea base con el CTQ propuesto: DPMO 44 529 ≈ 3,20 σ."])
+write(shp(s, 15), [[L("CAUSA RAÍZ · EVIDENCIA DEL LOTE", RED)],
                    [("El registro no tiene reglas fijas de captura y clasificación.", {"bold": True, "size": 11.5})],
                    "Datos: 13 de 13 renglones PEDIDO y 21 de 22 renglones con datos vacíos o importe incoherente terminan en REVISAR (25 de 38)."])
 write(shp(s, 17), [[L("MEJORAS Y RESULTADO")],
                    "Regla escrita del estado PEDIDO · Poka-Yoke de validación en la captura · motivo obligatorio.",
-                   [("Simulación: 14,50 % → 4,96 %", {"bold": True, "color": NAVY, "size": 12}), ("  ·  beneficio ≈ S/ 255/año", {"bold": True, "size": 12})]])
+                   [("Simulación: 14,50 % → 4,96 %", {"bold": True, "color": NAVY, "size": 12}), ("  ·  escenario base ≈ S/ 255/año", {"bold": True, "size": 12})]])
 key(s, 18, 19, "el problema no es la gente sino la ausencia de reglas; con 3 controles simples la cola de revisión baja dos tercios.")
 s.notes_slide.notes_text_frame.text = "Champion (2 min): problema, meta, causa, mejora y beneficio. Decir el 14,50 % y el 4,96 % sin leer."
 
@@ -183,16 +183,16 @@ remove(shp(s, 11))
 card(shp(s, 10), fill="FFFFFF")
 picture(s, os.path.join(folder, "M1_Flujo_AS-IS_HIDROCOM.png"), 0.76, 1.26, 5.48, 3.18)
 card(shp(s, 12)); card(shp(s, 14), fill="EAF0F8", line=NAVY)
-write(shp(s, 13), [[L("LÍNEA BASE (CTQ)")],
+write(shp(s, 13), [[L("LÍNEA BASE (CTQ PROPUESTO)")],
                    [B("U = 262 ", bold=True), B("renglones")],
                    [B("O = 3 ", bold=True), B("cantidad, precio, importe")],
                    [B("D = 35 ", bold=True), B("defectos en 22 renglones")],
                    [B("Fuente: Comprobantes_Revisados.xlsx, lote 01-2025 a 03-2026", size=9, color=MUTED, italic=True)]], size=10.5)
 write(shp(s, 15), [[L("EL NÚMERO GRANDE")],
                    [("DPMO 44 529", {"bold": True, "color": NAVY, "size": 20})],
-                   [("≈ 3,20 σ", {"bold": True, "color": RED, "size": 20})],
+                   [("≈ 3,20 σ", {"bold": True, "color": RED, "size": 20}), (" bajo la regla propuesta", {"size": 10, "color": MUTED})],
                    [B("De cada 1 000 datos críticos digitados, ~45 no sirven para el reporte.", size=10)]], size=10)
-key(s, 16, 17, "datos de la hoja Detalle_Productos (262 renglones). Sin gráfica de control: el 62 % de las fechas son estimadas.")
+key(s, 16, 17, "datos de la hoja Detalle_Productos (262 renglones). Sin gráfica de control: el 62 % de los renglones (162 de 262) tiene fecha estimada.")
 s.notes_slide.notes_text_frame.text = ("Analista GB (2 min): flujo como es; en rojo dónde nace el defecto. DPMO = 35 / (262 × 3) × 10^6 = 44 529 → 3,20 sigma. "
                                        "Si preguntan por la gráfica de control: no hay serie temporal confiable.")
 
@@ -262,12 +262,12 @@ card(shp(s, 12)); card(shp(s, 14), fill="FDECEC", line=RED)
 write(shp(s, 13), [[L("VERIFICACIÓN CON DATOS")],
                    [B("✔ Regla PEDIDO: ", bold=True, color=RED, size=9.5), B("13/13 van a REVISAR", size=9.5)],
                    [B("✔ Captura sin validación: ", bold=True, color=RED, size=9.5), B("21/22 con defecto van a REVISAR", size=9.5)],
-                   [B("✘ Fechas estimadas: ", bold=True, color=MUTED, size=9.5), B("16,0 % vs 12,0 % con fecha real", size=9.5)],
+                   [B("✘ Fechas estimadas: ", bold=True, color=MUTED, size=9.5), B("16,0 % vs 12,0 % (descriptivo)", size=9.5)],
                    [B("◐ Base de precio: ", bold=True, color="9C7A00", size=9.5), B("explica 1 de 5 diferencias", size=9.5)]], size=9.5)
 write(shp(s, 15), [[L("CONCLUSIÓN", RED)],
-                   [B("La causa raíz confirmada es la falta de reglas estandarizadas de captura y clasificación, ", bold=True, size=10.5),
-                    B("porque 25 de los 38 renglones en REVISAR provienen de PEDIDO sin regla o de datos que la hoja dejó guardar incompletos.", size=10.5)]], size=10.5)
-key(s, 16, 17, "no saltamos a la solución: verificamos 4 causas y descartamos una que parecía obvia (las fechas).")
+                   [B("La evidencia del lote respalda como causa raíz la falta de reglas estandarizadas de captura y clasificación: ", bold=True, size=10.5),
+                    B("PEDIDO y las incidencias numéricas se asocian con 25 de los 38 REVISAR. La verificación operativa queda para el piloto.", size=10.5)]], size=10.5)
+key(s, 16, 17, "no saltamos a la solución: contrastamos 4 causas con datos; una que parecía obvia (las fechas) no quedó respaldada.")
 s.notes_slide.notes_text_frame.text = "Analista GB (2 min): Ishikawa 6M; explicar las 4 verificaciones. Leer la conclusión en voz alta."
 
 # ---------- 8. Mejorar ----------
@@ -340,7 +340,7 @@ s.notes_slide.notes_text_frame.text = "Analista GB (1,5 min): quién mira cada K
 # ---------- 11. Beneficio ----------
 s = S[10]
 card(shp(s, 10), fill="EAF0F8", line=NAVY); card(shp(s, 12))
-write(shp(s, 11), [[L("BENEFICIO ANUALIZADO ESTIMADO")],
+write(shp(s, 11), [[L("BENEFICIO ANUAL NETO · ESCENARIO BASE")],
                    [("S/ 255", {"bold": True, "color": NAVY, "size": 48})],
                    [B("= (47,50 − 16,25) × 12 − 120", bold=True, size=14)],
                    [B("Antes: 38 renglones × 10 min × S/ 7,50/h = S/ 47,50/mes", size=12)],
@@ -359,7 +359,7 @@ s = S[11]
 card(shp(s, 10)); card(shp(s, 12))
 write(shp(s, 11), [[L("LECCIONES TÉCNICAS")],
                    [B("1. Definir el CTQ antes de contar. ", bold=True, size=12.5), B("Las 151 «incidencias» no eran 151 defectos; contar sin definir nos habría dado un DPMO falso.", size=12.5)],
-                   [B("2. Verificar con datos cambia la historia. ", bold=True, size=12.5), B("Las fechas estimadas parecían la causa y los datos la descartaron.", size=12.5)],
+                   [B("2. Verificar con datos cambia la historia. ", bold=True, size=12.5), B("Las fechas estimadas parecían la causa y los datos no la respaldaron.", size=12.5)],
                    [B("3. Regla exclusiva en el Pareto. ", bold=True, size=12.5), B("Cada renglón cuenta una vez; así el 100 % suma 38.", size=12.5)]], size=12.5)
 write(shp(s, 13), [[L("LECCIONES DE EQUIPO")],
                    [B("Separar hallazgos de supuestos ", bold=True, size=12.5), B("y dejar cada decisión con dueño evitó discusiones sin datos.", size=12.5)],

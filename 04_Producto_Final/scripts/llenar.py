@@ -121,11 +121,11 @@ put(ws, "A40", "Nota: flujo reconstruido a partir de los archivos del lote (Comp
 
 # ---------- M2 Línea base ----------
 ws = wb["M2_LineaBase_Sigma"]
-put(ws, "B5", "CTQ: renglón completo y coherente (cantidad presente, precio presente, importe presente y = cantidad × precio / base). Y secundario: % renglones REVISAR = 14,50 %.")
+put(ws, "B5", "CTQ propuesto para el análisis del lote (pendiente de aprobación): renglón completo y coherente (cantidad presente, precio presente, importe presente y = cantidad × precio / base). Y secundario: % renglones REVISAR = 14,50 %.")
 put(ws, "B6", "Comprobantes_Revisados.xlsx (hoja Detalle_Productos) + Data Mart CSV; copia en 03_DMAIC/U3_DMAIC_HIDROCOM.xlsx, hoja Datos.")
 put(ws, "B7", "Lote documental 27-01-2025 a 09-03-2026, corte de revisión 24-11-2026")
 put(ws, "B8", U); put(ws, "B9", D); put(ws, "B10", 3)
-put(ws, "A15", f"Nuestro proceso opera a ≈ 3,2 σ (DPMO ≈ 44 529): en {U} renglones × 3 oportunidades hubo {D} defectos (16 precios vacíos, 9 importes vacíos, "
+put(ws, "A15", f"Bajo la regla CTQ propuesta, la línea base del lote es ≈ 3,20 σ (DPMO ≈ 44 529): en {U} renglones × 3 oportunidades hubo {D} defectos (16 precios vacíos, 9 importes vacíos, "
     f"5 cantidades vacías, 5 importes incoherentes) en {len(num)} renglones. Cae entre 3σ (66 807) y 3,5σ (22 750) de la Tabla_Sigma: de cada 1 000 datos "
     "críticos digitados, ~45 no sirven para el reporte. Para el cliente interno (gerencia) significa que 1 de cada 12 renglones no es confiable.")
 
@@ -175,14 +175,14 @@ for r, (a, b) in ish.items():
 ver = [
     ("1. No existe regla escrita para el estado PEDIDO (Método)",
      "Hoja Datos: renglones con estado PEDIDO en nota o renglón vs. uso_importe",
-     f"{ped_rev} de {len(ped)} renglones PEDIDO (100 %) terminan en REVISAR; son el 34,2 % de todos los REVISAR. Sin regla, todo PEDIDO se va a la cola.", "SÍ"),
+     f"{ped_rev} de {len(ped)} renglones PEDIDO (100 %) terminan en REVISAR; son el 34,2 % de todos los REVISAR. Sin regla, todo PEDIDO se va a la cola.", "RESPALDADA por la evidencia documental del lote"),
     ("2. Captura sin validación de campos numéricos (Máquina/Sistema)",
      "Hoja Datos: vacíos en cantidad/precio/importe y diferencia_importe ≠ 0",
-     f"{len(num)} renglones con ≥1 defecto numérico ({D} defectos); {num_rev} de ellos ({num_rev / len(num) * 100:.0f} %) están en REVISAR. La hoja permitió guardarlos.", "SÍ"),
+     f"{len(num)} renglones con ≥1 defecto numérico ({D} defectos); {num_rev} de ellos ({num_rev / len(num) * 100:.0f} %) están en REVISAR. La hoja permitió guardarlos.", "RESPALDADA por la evidencia documental del lote"),
     ("3. Las fechas estimadas generan renglones REVISAR (Medición)",
      "Hoja Datos: tasa REVISAR según tipo_fecha",
      f"REVISAR con fecha estimada: {r_est}/{len(est)} = {r_est / len(est) * 100:.1f} %; con fecha real: {r_real}/{len(real)} = {r_real / len(real) * 100:.1f} %. "
-     "Diferencia pequeña: la fecha no explica el problema.", "NO"),
+     "Comparación descriptiva: diferencia pequeña; no respalda priorizar la fecha. Verificación operativa pendiente.", "NO RESPALDADA (descriptivo)"),
     ("4. Base de precio no indicada (Material)",
      "Hoja Datos: unidad_del_precio declarada; diferencias de importe",
      f"Solo {base_decl} de {U} renglones declaran base; explica 1 de las 5 diferencias (NP-025138-01, millar). Causa contribuyente, no principal.", "PARCIAL"),
@@ -192,9 +192,9 @@ for i, row in enumerate(ver):
         put(ws, f"{'ABCD'[j]}{15 + i}", v)
 put(ws, "A20", "5 porqués (vital PEDIDO): ¿Por qué hay REVISAR? → hay renglones PEDIDO → ¿por qué van a REVISAR? → nadie sabe si se publican → "
     "¿por qué? → no hay regla escrita → ¿por qué? → el proceso de registro nunca se estandarizó → ¿por qué? → no hay dueño del proceso que apruebe criterios.", fill=False)
-put(ws, "A22", "CAUSA RAÍZ CONFIRMADA: el registro no tiene reglas estandarizadas de captura y clasificación (sin regla para PEDIDO y sin campos obligatorios "
-    f"validados), porque los datos muestran que el 100 % de los PEDIDO y {num_rev} de {len(num)} renglones con defecto numérico terminan en REVISAR "
-    "(25 de 38 = 65,8 % de la cola).", fill=False, bold=True)
+put(ws, "A22", "CAUSA RAÍZ (confirmada con la evidencia documental del lote; verificación operativa pendiente del piloto): el registro no tiene reglas estandarizadas de captura y clasificación (sin regla para PEDIDO y sin campos obligatorios "
+    f"validados), porque los datos del lote muestran que el estado PEDIDO y las incidencias numéricas se asocian con 25 de los 38 renglones REVISAR (65,8 %): "
+    f"el 100 % de los PEDIDO y {num_rev} de {len(num)} renglones con defecto numérico están en REVISAR.", fill=False, bold=True)
 ws.column_dimensions["B"].width = 48; ws.column_dimensions["C"].width = 48
 
 # ---------- I1 Ideas + matriz ----------
@@ -252,9 +252,9 @@ put(ws, "B5", antes); put(ws, "B6", despues); put(ws, "B7", 120)
 put(ws, "A11", f"Supuestos (todos por validar con el dueño del proceso): 1 lote de ~{U} renglones por mes; 10 min para resolver cada renglón REVISAR contra el original; "
     "costo hora del asistente S/ 7,50 (≈ remuneración mínima mensual / 150 h). ANTES = 38 × 10/60 × 7,50 = S/ 47,50/mes; DESPUÉS = 13 × 10/60 × 7,50 = S/ 16,25/mes "
     "(resultado de la simulación). Costo de implementar = 16 h del equipo × S/ 7,50 = S/ 120 (configurar validación, instructivo, capacitación). "
-    "Beneficio modesto y defendible (horas liberadas, no caja directa); el beneficio mayor —no cuantificado— es evitar publicar importes errados sobre S/ 26 509,70 del lote.")
+    "Beneficio anual neto estimado en el ESCENARIO BASE: S/ 255. Beneficio modesto y defendible (horas liberadas, no caja directa); el beneficio mayor —no cuantificado— es evitar publicar importes errados sobre S/ 26 509,70 del lote.")
 lec = ["Técnica: definir el CTQ y la unidad ANTES de contar; 151 'incidencias' no eran 151 defectos y casi nos llevan a un DPMO falso.",
-       "Técnica: el Pareto con regla de clasificación exclusiva evita doble conteo; verificar con datos descartó una causa que parecía obvia (fechas estimadas).",
+       "Técnica: el Pareto con regla de clasificación exclusiva evita doble conteo; comparar con datos mostró que una causa que parecía obvia (fechas estimadas) no estaba respaldada.",
        "Equipo: separar hallazgos de supuestos y dejar decisiones con dueño (DECISIONES.md); si empezáramos de nuevo, iríamos antes al Gemba a cronometrar el registro."]
 for i, t in enumerate(lec):
     put(ws, f"B{16 + i}", t)
