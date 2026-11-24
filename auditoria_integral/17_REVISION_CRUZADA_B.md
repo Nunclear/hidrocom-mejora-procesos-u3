@@ -72,3 +72,7 @@ Fecha: 24-11-2026. No se editó ningún archivo de B.
 | Nueva **R-B9 (P3)** | «TIR equivalente de un periodo» y «ROI simple» = 212,5 % salen de supuestos y del escenario más favorable. Hay que presentarlos junto al escenario de volumen bajo, con neto negativo, o rotularlos «escenario base supuesto». |
 
 **Dictamen:** el libro de costo-beneficio es correcto y trazable. El Word queda apto para integrarse si se cierran R-B3 y R-B4. La presentación debe alinearse (R-B8).
+
+## Actualización: `8187187`
+
+Word: «Juliaca» retirado (R-B4 ✔), meta con «pendiente de aprobación» (R-B3 ✔) y mención al IC de Wilson (R-B5 ✔). Libro de costo-beneficio: costo recurrente vacío y rotulado «No estimado» (R-B1 ✔); escenarios sin cambios y control «Coincide», 0 errores tras recalcular. **Sigue abierta: R-B8 (P1, presentación).** R-B9 no se verificó.
