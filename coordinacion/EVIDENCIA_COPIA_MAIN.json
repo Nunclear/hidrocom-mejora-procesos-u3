@@ -1,0 +1,93 @@
+{
+  "fecha_revision": "2026-11-24",
+  "zip_exterior": "Grupo_Hidrocom_Kallpa_Recopilacion.zip",
+  "sha256_zip_exterior": "59d136725d93485ad38d7ab380102e80eb78e717ad1f5551383e081dcb73cadd",
+  "zip_anidado": "02_PowerBI_y_datos/PowerBI_y_Data_Corregida_20261121_v3.zip",
+  "sha256_zip_anidado": "64349b65de5a77542e9bcf601ff09e9fc1851d3bb476debb1c2743f09d6a4e99",
+  "archivos": [
+    {
+      "ruta_relativa": "Fuente/Comprobantes_Revisados.xlsx",
+      "sha256_en_zip": "ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682",
+      "sha256_extraido_local": "ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682",
+      "iguales": true
+    },
+    {
+      "ruta_relativa": "DataMart/Publicado/auditoria.json",
+      "sha256_en_zip": "598f0ac1e8caed5c110f433d9a01e86bb55592e43e268b71827bdae19053e703",
+      "sha256_extraido_local": "598f0ac1e8caed5c110f433d9a01e86bb55592e43e268b71827bdae19053e703",
+      "iguales": true
+    },
+    {
+      "ruta_relativa": "DataMart/Publicado/PowerBI/Productos.csv",
+      "sha256_en_zip": "7a362e0e60cf7b0b5014146c42388c6897ac58e455ef682709f0bfaf41914c07",
+      "sha256_extraido_local": "7a362e0e60cf7b0b5014146c42388c6897ac58e455ef682709f0bfaf41914c07",
+      "iguales": true
+    },
+    {
+      "ruta_relativa": "DataMart/Publicado/PowerBI/Detalle.csv",
+      "sha256_en_zip": "8abc81acccb4f870a815a8081af3853aa819d273af3405302255d44261397233",
+      "sha256_extraido_local": "8abc81acccb4f870a815a8081af3853aa819d273af3405302255d44261397233",
+      "iguales": true
+    }
+  ],
+  "sha256_fuente_declarado_en_auditoria": "4bd79c0b72b1cdea09f4c4eef9e2b33299a3b8fa02b6751b09601901004238ad",
+  "sha256_fuente_real": "ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682",
+  "fuente_coincide_declarado": false,
+  "csv_checks": [
+    {
+      "archivo": "Calendario.csv",
+      "sha256": "2718c66f70fcdaeb1f351d97d60c03dde6db9b8ad10a1a608dd1852783ed4ae6",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Comprobantes.csv",
+      "sha256": "06d4ceef941332a38e044df9268322920f202aefe21acd5ae6f4fcfa18c372aa",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "ControlETL.csv",
+      "sha256": "407d0765c8fa22a69b88bf267665aa3926183e98bb43111ed848660f18185e16",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Detalle.csv",
+      "sha256": "8abc81acccb4f870a815a8081af3853aa819d273af3405302255d44261397233",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Diccionario.csv",
+      "sha256": "2dd11353fc886ada9fb8d4a3c98e17feef9a545797cab28ad493cd48cc38a0b5",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Imagenes.csv",
+      "sha256": "869d7f3c2a3ac4fd5b67260b7226daa0e7945331eccc3edfd62aa7976eb5e53c",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Productos.csv",
+      "sha256": "7a362e0e60cf7b0b5014146c42388c6897ac58e455ef682709f0bfaf41914c07",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Rangos.csv",
+      "sha256": "e0209edefbb0a44b33f9a99b6c17995a5d41880efd721fe3d8e83331ef473bac",
+      "coincide_declarado": true
+    },
+    {
+      "archivo": "Zonas.csv",
+      "sha256": "5c468827572ab4357a8733fa3fb844008f858c93fc254131b353f3788927e6ae",
+      "coincide_declarado": true
+    }
+  ],
+  "ejemplo": {
+    "id": "NP-025089-02",
+    "id_producto_csv": "f488e328a40d19b7",
+    "categoria_excel": "herramientas",
+    "categoria_original_csv": "herramietas",
+    "herramietas_en_productos_csv": 1
+  },
+  "otros_archivos_disponibles": [
+    "Fuente/Clasificaciones_Activas.json"
+  ]
+}

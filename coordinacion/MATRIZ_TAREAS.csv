@@ -1,0 +1,29 @@
+﻿ID,Propuesta_origen,Prioridad,Responsable,Revisor,Estado,Archivos,Criterio_aceptacion,Evidencia,Dependencias,Commit,Bloqueos
+I01,PM01;Codex01,P1,A,C,En revisión,coordinacion/CONTRATO_DE_DATOS.md;contrato_datos.json,Definiciones y escenarios coinciden con el prompt,Contrato v1 publicado para revisión,,,
+I02,PM17;Codex02;AUD012,P1,A,C,En ejecución,coordinacion/TRAZABILIDAD_FUENTES.csv;EVIDENCIA_COPIA_MAIN.json,Ambas versiones identificadas y alcance de hallazgo delimitado,Relectura binaria del ZIP v3,I01,,
+I03,PM01;Codex01,P1,C,A,Pendiente,01_Lean/*.xlsx;02_Seis_Sigma/*.xlsx;03_DMAIC/*.xlsx;04_Producto_Final/*.xlsx,S30 principal; S34/S35 separados; datos fuente intactos,,I01,,
+I04,PM02;Codex03,P1,C,B,Pendiente,04_Producto_Final;Excel,Ninguna asociación clasificatoria se presenta como causa verificada,,I01,,
+I05,PM03;Codex03,P1,C,A,Pendiente,Excel;validacion,Cuatro eficacias y expectativas reproducibles sin piloto ficticio,,I01,,
+I06,PM04;Codex05,P1,B+C,A,Pendiente,modelo económico;Excel;Word;PPTX,Entradas parametrizables; escenario negativo; equilibrio y límites,,I01,,
+I07,PM05;Codex07,P2,C,A,Pendiente,Excel;análisis estadístico,Wilson/ICC revisados; independencia y límites explícitos,,I01,,
+I08,PM06;Codex02,P1,C,A,Pendiente,conciliación de notas y totales,Cuatro notas sin detalle y diferencias trazables sin imputación,,I01,,
+I09,PM07;Codex02,P2,C,A,Pendiente,catálogo y faltantes,Variantes e identidades verificadas por versión,,I02,,
+I10,PM08,P1,C,A,Pendiente,prueba retrospectiva y scripts,Hashes; correspondencias; cambios y límites; sin datos privados nuevos,,I01,,
+I11,PM09;Codex06,P1,B,C,Pendiente,VSM actual y futuro;Word;PDF;PPTX,Diagramas separados con tiempos pendientes,,I01,,
+I12,PM10;Codex04,P2,B+C,A,Pendiente,Lean;PokaYoke;pruebas,5S académica; prevención/detección probadas; ocho desperdicios justificados,,I01,,
+I13,PM11,P1,B,C,Pendiente,01_Lean/*.docx;*.pdf,Informe independiente editable; PDF legible y verificado,,I01;I11;I12,,
+I14,PM11,P1,B,C,Pendiente,02_Seis_Sigma/*.docx;*.pdf,Indicadores y límites según contrato; render revisado,,I01;I03;I07,,
+I15,PM11;Codex05,P1,B,C,Pendiente,03_DMAIC/*.docx;*.pdf;04_Producto_Final,Formato oficial y cinco fases; economía como escenario,,I01;I04;I05;I06,,
+I16,PM11,P2,B,C,Pendiente,presentaciones independientes,Tres trabajos comprensibles por separado; láminas revisadas,,I13;I14;I15,,
+I17,PM01;PM10;Codex04,P1,C,A,Pendiente,Excel y dashboard,Fórmulas parametrizables; gráficos vinculados; pruebas y apertura,,I03;I05;I06;I07;I08,,
+I18,PM12-16;Codex07,P2,A,C,En ejecución,instrumentos;protocolos;DECISIONES.md,Instrumentos en blanco; ninguna aprobación inventada,,I01,,
+I19,PM17;Codex02,P2,A,C,En ejecución,herramientas;validacion,Scripts reproducibles con rutas relativas; hashes versionados,,I01;I02,,
+I20,PM11,P1,A,B+C,Pendiente,documentos;PDF;PPTX,Cotejo independiente de cifras y revisión visual de todas las páginas,,I13;I14;I15;I16;I17,,
+I21,PM01-17;Codex01-07,P1,A,B+C,Pendiente,rama codex/integracion-calidad;PR,Integración sin conflictos; pruebas; aprobación pendiente antes de main,,I20,,
+I22,evaluación final,P2,A,B+C,Pendiente,coordinacion/INFORME_INTEGRACION.md,Rúbrica 100/20 con evidencias y límites; sin nota aspiracional automática,,I20;I21,,
+H01,PM12;AUD001,P0,Usuario/empresa,A,Pendiente de aprobación humana,procedencia del lote,Custodio confirma pertenencia y significado del inicio reportado,,,,Decisión/evidencia empresarial
+H02,PM13,P1,Usuario/empresa,C,Bloqueado por evidencia,entrevista VOC,Entrevista real con destinatario y requisitos documentados,,,,Decisión/evidencia empresarial
+H03,PM14,P1,Usuario/empresa,B,Bloqueado por evidencia,medición de tiempos,Observación real con inicio/fin por etapa,,,,Decisión/evidencia empresarial
+H04,PM15,P1,Usuario/empresa,C,Bloqueado por evidencia,MSA/kappa,Revisores reales y originales cotejados,,,,Decisión/evidencia empresarial
+H05,PM16;Codex07,P1,Usuario/equipo,A,Pendiente de aprobación humana,roles;metas;plazos;puntajes;tolerancia,Valores aprobados y fuente identificada; sin Belt supuesto,,,,Decisión/evidencia empresarial
+H06,PM18;Codex06-07,P1,Usuario/empresa,A,Bloqueado por evidencia,piloto empresarial,Medición posterior comparable y evidencia de implementación,,H01;H02;H03;H04;H05,,Decisión/evidencia empresarial

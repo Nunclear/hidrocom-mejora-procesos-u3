@@ -1,0 +1,491 @@
+{
+ "A_poblacion": {
+  "renglones": 262,
+  "id_detalle_unicos": 262,
+  "id_detalle_duplicados": [],
+  "notas_comprobantes": 73,
+  "notas_unicas": 73,
+  "notas_con_detalle": 69,
+  "notas_sin_detalle": [
+   "NP-025111",
+   "NP-025127",
+   "NP-025137",
+   "NP-025140"
+  ],
+  "renglones_sin_nota": [],
+  "id_detalle_no_coincide_con_nota": [],
+  "fechas_hoja_Fechas": 73
+ },
+ "A_notas_sin_detalle_estado": {
+  "NP-025111": [
+   "SIN_MARCA",
+   null,
+   "Descripción de la única línea de lectura dudosa."
+  ],
+  "NP-025127": [
+   "PEDIDO",
+   null,
+   "Lampa, Ferretería Hori."
+  ],
+  "NP-025137": [
+   "PEDIDO",
+   null,
+   "Pedido para Crucero."
+  ],
+  "NP-025140": [
+   "PEDIDO",
+   null,
+   "Ferretería J y E. Pedido."
+  ]
+ },
+ "B_estados": {
+  "DISPONIBLE": {
+   "n": 206,
+   "pct": 78.63,
+   "IC95_Wilson": [
+    0.7327,
+    0.8316
+   ]
+  },
+  "REVISAR": {
+   "n": 38,
+   "pct": 14.5,
+   "IC95_Wilson": [
+    0.1075,
+    0.1928
+   ]
+  },
+  "EXCLUIR": {
+   "n": 18,
+   "pct": 6.87,
+   "IC95_Wilson": [
+    0.0439,
+    0.106
+   ]
+  },
+  "importe_DISPONIBLE": 26509.7
+ },
+ "C_dpmo": {
+  "criterio_30_solo_vacios_todo": {
+   "U": 262,
+   "O": 3,
+   "UxO": 786,
+   "vacios_cant": 5,
+   "vacios_precio": 16,
+   "vacios_importe": 9,
+   "dif_importe_no_vacio": 5,
+   "D": 30,
+   "DPU": 0.1145,
+   "DPO": 0.038168,
+   "DPMO": 38167.94,
+   "sigma_1_5": 3.2724,
+   "unidades_defectuosas": 17,
+   "yield_unidad": 0.9351,
+   "yield_oportunidad": 0.9618
+  },
+  "criterio_30_solo_vacios_sin_EXCLUIR": {
+   "U": 244,
+   "O": 3,
+   "UxO": 732,
+   "vacios_cant": 4,
+   "vacios_precio": 15,
+   "vacios_importe": 8,
+   "dif_importe_no_vacio": 5,
+   "D": 27,
+   "DPU": 0.1107,
+   "DPO": 0.036885,
+   "DPMO": 36885.25,
+   "sigma_1_5": 3.288,
+   "unidades_defectuosas": 16,
+   "yield_unidad": 0.9344,
+   "yield_oportunidad": 0.9631
+  },
+  "criterio_35_vacios_mas_diferencia_todo": {
+   "U": 262,
+   "O": 3,
+   "UxO": 786,
+   "vacios_cant": 5,
+   "vacios_precio": 16,
+   "vacios_importe": 9,
+   "dif_importe_no_vacio": 5,
+   "D": 35,
+   "DPU": 0.1336,
+   "DPO": 0.044529,
+   "DPMO": 44529.26,
+   "sigma_1_5": 3.2004,
+   "unidades_defectuosas": 22,
+   "yield_unidad": 0.916,
+   "yield_oportunidad": 0.9555
+  },
+  "criterio_35_sin_EXCLUIR": {
+   "U": 244,
+   "O": 3,
+   "UxO": 732,
+   "vacios_cant": 4,
+   "vacios_precio": 15,
+   "vacios_importe": 8,
+   "dif_importe_no_vacio": 5,
+   "D": 32,
+   "DPU": 0.1311,
+   "DPO": 0.043716,
+   "DPMO": 43715.85,
+   "sigma_1_5": 3.2091,
+   "unidades_defectuosas": 21,
+   "yield_unidad": 0.9139,
+   "yield_oportunidad": 0.9563
+  }
+ },
+ "D_aritmetica": {
+  "incoherentes_recalculo": [
+   {
+    "id": "NP-025066-04",
+    "cant": 1,
+    "precio": 7.5,
+    "base": "kg",
+    "subtotal": 375,
+    "calc": 7.5,
+    "diferencia_importe_fuente": 0,
+    "importe_calculado_fuente": 375,
+    "uso": "EXCLUIR"
+   },
+   {
+    "id": "NP-025066-06",
+    "cant": 1,
+    "precio": 7.5,
+    "base": "kg",
+    "subtotal": 375,
+    "calc": 7.5,
+    "diferencia_importe_fuente": 0,
+    "importe_calculado_fuente": 375,
+    "uso": "EXCLUIR"
+   },
+   {
+    "id": "NP-025072-04",
+    "cant": 2,
+    "precio": 5,
+    "base": null,
+    "subtotal": 100,
+    "calc": 10.0,
+    "diferencia_importe_fuente": 90,
+    "importe_calculado_fuente": 10,
+    "uso": "REVISAR"
+   },
+   {
+    "id": "NP-025110-02",
+    "cant": 100,
+    "precio": 0.65,
+    "base": null,
+    "subtotal": 66,
+    "calc": 65.0,
+    "diferencia_importe_fuente": 1,
+    "importe_calculado_fuente": 65,
+    "uso": "REVISAR"
+   },
+   {
+    "id": "NP-025118-01",
+    "cant": 120,
+    "precio": 1.2,
+    "base": null,
+    "subtotal": 108,
+    "calc": 144.0,
+    "diferencia_importe_fuente": -36,
+    "importe_calculado_fuente": 144,
+    "uso": "REVISAR"
+   },
+   {
+    "id": "NP-025119-01",
+    "cant": 50,
+    "precio": 1.48,
+    "base": null,
+    "subtotal": 148,
+    "calc": 74.0,
+    "diferencia_importe_fuente": 74,
+    "importe_calculado_fuente": 74,
+    "uso": "REVISAR"
+   },
+   {
+    "id": "NP-025138-01",
+    "cant": 2000,
+    "precio": 0.24,
+    "base": "millar",
+    "subtotal": 480,
+    "calc": 0.48,
+    "diferencia_importe_fuente": 479.52,
+    "importe_calculado_fuente": 0.48,
+    "uso": "REVISAR"
+   }
+  ],
+  "n_incoherentes_recalculo": 7,
+  "marcados_fuente_diferencia": [
+   "NP-025072-04",
+   "NP-025110-02",
+   "NP-025118-01",
+   "NP-025119-01",
+   "NP-025138-01"
+  ],
+  "recalculo_no_marcados_en_fuente": [
+   "NP-025066-04",
+   "NP-025066-06"
+  ]
+ },
+ "E_notas_total_vs_renglones": {
+  "n": 10,
+  "detalle": [
+   {
+    "nota": "NP-025059",
+    "total": 462.5,
+    "suma_renglones": 464.5,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025066",
+    "total": 3144,
+    "suma_renglones": 3164.0,
+    "renglones_sin_importe": 0,
+    "estado": "TACHADO"
+   },
+   {
+    "nota": "NP-025069",
+    "total": 385,
+    "suma_renglones": 425.0,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025072",
+    "total": 619.4,
+    "suma_renglones": 519.4,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025078",
+    "total": 426,
+    "suma_renglones": 412.0,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025084",
+    "total": 1571,
+    "suma_renglones": 1629.0,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025112",
+    "total": 491.6,
+    "suma_renglones": 457.6,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025126",
+    "total": 430,
+    "suma_renglones": 1130.0,
+    "renglones_sin_importe": 0,
+    "estado": "CANCELADO_ANOTADO"
+   },
+   {
+    "nota": "NP-025129",
+    "total": 1380,
+    "suma_renglones": 900.0,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   },
+   {
+    "nota": "NP-025142",
+    "total": 563,
+    "suma_renglones": 540.0,
+    "renglones_sin_importe": 0,
+    "estado": "SIN_MARCA"
+   }
+  ]
+ },
+ "F_fechas": {
+  "estado_notas_hoja_Fechas": {
+   "Año discordante": 6,
+   "Estimada": 39,
+   "Real": 28
+  },
+  "tipo_fecha_notas_Comprobantes": {
+   "ESTIMADA": 39,
+   "REAL": 34
+  },
+  "tipo_fecha_renglones": {
+   "ESTIMADA": 162,
+   "REAL": 100
+  },
+  "rango": [
+   "2025-01-27",
+   "2026-03-09"
+  ],
+  "notas_anteriores_al_inicio_09_03_2026": 70,
+  "meses_rango": 13.3
+ },
+ "G_pareto": {
+  "recalculado": {
+   "Campos numéricos incompletos": 7,
+   "Estado PEDIDO": 13,
+   "Observación o lectura dudosa": 7,
+   "Motivo no explicitado": 6,
+   "Diferencia de importe": 5
+  },
+  "hoja_Pendientes": {
+   "Campos numéricos incompletos": 7,
+   "Estado PEDIDO en nota o renglón": 13,
+   "Observación o lectura dudosa documentada": 7,
+   "Motivo no explicitado en el detalle": 6,
+   "Diferencia de importe consignada en fuente": 5
+  },
+  "ids_con_clasificacion_distinta": [],
+  "ids_REVISAR_igual_Pendientes": true
+ },
+ "G_solapamiento": {
+  "pedido": 13,
+  "pedido_en_REVISAR": 13,
+  "numericas": 22,
+  "numericas_en_REVISAR": 21,
+  "ambas_en_REVISAR": 9,
+  "union_en_REVISAR": 25,
+  "numericas_fuera_de_REVISAR": [
+   "NP-025128-06"
+  ]
+ },
+ "H_asociaciones": {
+  "fecha_estimada": {
+   "tabla": [
+    [
+     26,
+     136
+    ],
+    [
+     12,
+     88
+    ]
+   ],
+   "tasa_si": 0.1605,
+   "tasa_no": 0.12,
+   "fisher_p": 0.4705,
+   "chi2_yates_p": 0.4693,
+   "esperados_min": 14.5
+  },
+  "pedido": {
+   "tabla": [
+    [
+     13,
+     0
+    ],
+    [
+     25,
+     224
+    ]
+   ],
+   "tasa_si": 1.0,
+   "tasa_no": 0.1004,
+   "fisher_p": 0.0,
+   "chi2_yates_p": 0.0,
+   "esperados_min": 1.89
+  },
+  "numerica": {
+   "tabla": [
+    [
+     21,
+     1
+    ],
+    [
+     17,
+     223
+    ]
+   ],
+   "tasa_si": 0.9545,
+   "tasa_no": 0.0708,
+   "fisher_p": 0.0,
+   "chi2_yates_p": 0.0,
+   "esperados_min": 3.19
+  },
+  "REVISAR_por_nota": {
+   "notas_con_REVISAR": 22,
+   "max_en_una_nota": 5,
+   "top": [
+    [
+     "NP-025131",
+     5
+    ],
+    [
+     "NP-025069",
+     4
+    ],
+    [
+     "NP-025063",
+     3
+    ],
+    [
+     "NP-025084",
+     3
+    ],
+    [
+     "NP-025144",
+     3
+    ],
+    [
+     "NP-025125",
+     2
+    ]
+   ]
+  },
+  "renglones_por_nota": {
+   "media": 3.8,
+   "max": 14,
+   "min": 1
+  },
+  "ICC_REVISAR_intra_nota": 0.246,
+  "efecto_diseno": 1.69,
+  "n_efectivo": 155.2
+ },
+ "I_libros": {
+  "Lean_igual_DMAIC": false,
+  "SeisSigma_igual_DMAIC": false,
+  "filas": 263
+ },
+ "J_productos": {
+  "productos_distintos": 169,
+  "grupos_con_variantes_ortograficas": {
+   "imprimante": [
+    "Imprimante",
+    "Imprimantes"
+   ],
+   "manguera": [
+    "Manguera",
+    "Mangueras"
+   ],
+   "cola sintetica": [
+    "Cola Sintetica",
+    "Cola sintetica",
+    "Cola sintética"
+   ],
+   "pintura": [
+    "Pintura",
+    "Pinturas"
+   ],
+   "tubos 1/2 ip": [
+    "Tubos 1/2 IPS",
+    "Tubos 1/2 ips"
+   ],
+   "foco": [
+    "Foco",
+    "Focos"
+   ]
+  },
+  "producto_original_distinto_normalizado": 76
+ },
+ "K_beneficio": {
+  "supuesto_1_lote_por_mes": 255.0,
+  "volumen_segun_rango_de_fechas": -91.8,
+  "REVISAR_por_mes_segun_rango": 2.86,
+  "punto_equilibrio_REVISAR_mes": 12.16,
+  "mins_5": 67.5,
+  "mins_20": 630.0
+ }
+}

@@ -1,0 +1,274 @@
+
+===== PÁGINA 1 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+1
+01 Lean: flujo y calidad del registro
+GRUPO HIDROCOM KALLPA E.I.R.L.
+Mejora de Procesos y Calidad Total · UPeU · Ingeniería de Sistemas · 2026-2
+Docente: Mg. Esteban Tocto Cano
+Corte documental: 24 de noviembre de 2026.
+Equipo registrado en el manual: Gutierrez Morales Jhon Alex, Mullisaca Condori Carlos Augusto y Mamani Mamani Ciro Wagner.
+No hay asignación nominal aprobada de roles.
+Propósito del trabajo independiente
+Aplicar el pensamiento Lean al registro y validación de notas de pedido antes de publicar información
+comercial. El valor propuesto es que el destinatario pueda interpretar y rastrear los datos del reporte. Esa
+necesidad debe contrastarse con el usuario real.
+La evidencia contiene 73 notas y 262 renglones: 206 DISPONIBLE, 38 REVISAR y 18 EXCLUIR. La
+cola de revisión representa 14,50 % del lote; no es una tasa de errores. También se confirmó una
+diferencia de categoría entre Excel y CSV y una desalineación del hash de la fuente.
+Qué se desarrolla
+Cinco principios aplicados, mapa de seis etapas propuesto, análisis de ocho categorías de desperdicio,
+ejercicio 5S digital en el espacio académico, ocho ideas Kaizen y dos controles de captura en un prototipo
+Excel.
+La organización de esta entrega sí se realizó en el espacio local de publicación. El flujo de la empresa,
+sus tiempos y la eficacia operativa de los controles todavía requieren observación y prueba. No se
+presenta una intervención física en el almacén ni un resultado económico logrado.
+Fuente del caso: manual completado, Antecedentes_y_alcance.md, Comprobantes_Revisados.xlsx y publicación del Data Mart
+del paquete suministrado. Las propuestas se identifican como tales.
+
+===== PÁGINA 2 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+2
+02 Principios Lean aplicados
+Principio
+Aplicación al caso
+Siguiente comprobación
+Valor
+El usuario de un reporte necesita registros
+interpretables y trazables. Es una propuesta de valor
+por validar con ese usuario.
+Confirmar campos y criterios de
+aceptación mediante entrevista.
+Cadena de
+valor
+Seguir nota, registro, revisión y publicación. El paquete
+prueba capas documentales; no prueba el flujo
+completo en campo.
+Levantar VSM con observación y tiempos
+por registro.
+Flujo
+Evitar que un registro avance sin motivo, evidencia y
+estado claros.
+Probar el formulario y registrar
+interrupciones reales.
+Sistema pull
+Publicar versiones cuando exista solicitud y aprobación
+del destinatario. Es un diseño propuesto.
+Definir quién solicita, quién aprueba y
+cuándo se publica.
+Perfección
+Revisar los pendientes y las diferencias entre
+versiones para ajustar el estándar.
+Comparar lotes bajo el mismo protocolo;
+no fijar meta sin línea base aprobada.
+Fuente teórica: PMI, cinco principios Lean. Consulta: 24/11/2026.
+Las aplicaciones de esta tabla son elaboración del proyecto. No atribuyen entrevistas u observaciones adicionales. Las lecturas
+citadas sirven de apoyo bibliográfico; no se afirma haber revisado un capítulo específico del aula que no esté disponible.
+
+===== PÁGINA 3 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+3
+03 VSM documental propuesto
+Ruta propuesta: recibir → registrar → validar → resolver → aprobar versión → publicar y conciliar.
+Los archivos muestran capas del flujo; no permiten asegurar todos los pasos ni su orden real en la
+empresa.
+Etapa
+Control propuesto
+Evidencia / límite
+Recibir e identificar
+ID, origen y legibilidad
+Originales no incluidos en el ZIP.
+Registrar
+Conservar literal y base del precio
+262 renglones disponibles como corte
+documental.
+Validar
+Reglas y comparación con evidencia
+38 REVISAR; no equivalen a errores.
+Resolver observación
+Decisión trazable o exclusión justificada
+Sin originales no puede cerrarse el cotejo.
+Aprobar versión
+Revisor, fecha y huella de archivo
+Hash de Excel distinto al declarado en
+auditoria.json.
+Publicar y conciliar
+Misma categoría y versión en reportes
+NP-025089-02 difiere entre Excel y CSV.
+Protocolo para completar el mapa
+Observar un mismo recorrido por renglón, anotar inicio y fin de cada actividad, separar proceso de espera
+e identificar retrabajo. Clasificar el tiempo de valor añadido con el destinatario del reporte. Mantener los
+casos excepcionales identificados y no mezclar unidades de tiempo o recorridos.
+Lead time = suma de proceso + suma de espera.
+PCE = tiempo de valor añadido / lead time. El Excel deja estas entradas vacías y calcula únicamente al
+completarlas. No existe una PCE base medida.
+
+===== PÁGINA 4 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+4
+04 Desperdicios: evidencia e hipótesis
+Categoría
+Condición para investigar
+Estado y prueba
+Defectos
+Campos vacíos y diferencias de versión
+confirmados en documentos.
+No se conoce el número de errores
+operativos. Cotejar con original y regla CTQ.
+Sobreproducción
+Hipótesis: copias o reportes sin solicitud.
+No observada. Inventariar versiones y
+destinatarios.
+Espera
+Hipótesis: registros detenidos por evidencia
+faltante.
+Hay pendientes; su tiempo de espera no está
+medido. Medir recepción, inicio y cierre.
+Talento no
+utilizado
+Hipótesis: conocimiento del capturista no
+incorporado al estándar.
+No observado. Entrevistar sin atribuir
+responsabilidades.
+Transporte
+Hipótesis: transferencias innecesarias de
+documentos.
+No observado. Contar transferencias en el
+flujo real.
+Inventario
+38 renglones en cola documental REVISAR.
+Cantidad confirmada; antigüedad y
+acumulación temporal desconocidas. Medir
+WIP de lotes comparables.
+Movimiento
+Hipótesis: búsqueda de originales o archivos.
+No observado ni cronometrado. Observar
+búsquedas y registrar duración.
+Sobreprocesamien
+to
+Hipótesis: recaptura o validación repetida por
+versiones distintas.
+La diferencia de versiones no prueba
+recaptura. Trazar cambios y revisiones antes
+de eliminar pasos.
+Las ocho categorías se usan como guía de observación. Los archivos no permiten afirmar que ocho desperdicios estén presentes
+ni cuantificar su costo. La cola REVISAR no equivale a inventario físico.
+
+===== PÁGINA 5 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+5
+05 5S digital: intervención acotada
+Área intervenida: carpeta local de publicación académica. Antes contenía README y dos archivos
+integrados en la raíz. Después separa Lean, Seis Sigma y DMAIC en carpetas numeradas, cada una con
+guía, informe y Excel. Se conservaron los originales de trabajo y el historial Git.
+S
+Criterio propio
+Antes
+Después
+Seiri
+No mantener PDF/XLSX activos en la raíz.
+0
+1
+Seiton
+Disponer de tres carpetas numeradas por trabajo.
+0
+1
+Seiso
+Archivos sin vacíos ni temporales de edición.
+1
+1
+Seiketsu
+Cada trabajo tiene README propio y enlaces desde índice.
+0
+1
+Shitsuke
+Dueño nominal y calendario aprobados con evidencia.
+0
+0
+Lista propia de cinco criterios binarios: 1/5 antes y 4/5 después. Se verifican rutas y archivos locales; el
+criterio de sostener permanece incumplido por falta de aprobación nominal y calendario. Esta lista no
+reemplaza una rúbrica oficial ni demuestra mejora comercial.
+Evidencia reproducible: Evidencia_5S.csv junto a este informe; manifiesto inicial guardado en la revisión
+local. No se midió el tiempo de reorganización. No se aporta fotografía de un área física ni se inventa una.
+Fuente teórica: Lean Enterprise Institute, 5S. Consulta: 24/11/2026.
+
+===== PÁGINA 6 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+6
+06 Kaizen y Poka-Yoke
+ID
+Idea de mejora
+Selección / estado
+K01
+Campos requeridos según tipo de documento
+Seleccionada para prototipo, por evidencia de vacíos.
+K02
+Base de precio explícita
+Propuesta por validar.
+K03
+Catálogo único de productos y categorías
+Propuesta por validar.
+K04
+Motivo obligatorio al pasar a REVISAR
+Propuesta por validar.
+K05
+Cierre con evidencia, revisor y fecha
+Propuesta por validar.
+K06
+Conciliación de versión antes de publicar
+Seleccionada para prueba, por diferencia de hash y
+categoría.
+K07
+5S digital para entregables
+Aplicada al espacio académico de publicación; no al
+almacén.
+K08
+Revisión Kaizen de pendientes
+Propuesta por validar.
+Control preventivo propuesto: alertar por identificador, producto, cantidades, precio, base o importe
+incompletos, inválidos o duplicados. Control de detección: comparar importe con cantidad × precio /
+base, usando tolerancia aprobada y exigiendo evidencia y revisor para marcar VALIDADO.
+El libro contiene un prototipo probado con entradas temporales de QA que se retiraron antes de exportar.
+Advierte condiciones; no impide editar el archivo y no acredita verdad documental. No existe aún
+despliegue operativo. Impacto y esfuerzo quedan sin puntuar; la selección K01/K06 responde a los vacíos
+y diferencias de versión observados.
+Fuente teórica: Lean Enterprise Institute, prevención de errores. Consulta: 24/11/2026.
+
+===== PÁGINA 7 =====
+HIDROCOM KALLPA · Unidad 3 · Lean
+7
+07 Plan de prueba y cierre pendiente
+Paso propuesto
+Criterio de salida
+Estado
+Planificar
+Origen confirmado, CTQ, unidad, tolerancia y evidencia
+aprobados.
+Pendiente
+Probar
+Captura de lote autorizado con tiempos y decisiones trazables.
+Prototipo preparado; piloto no
+ejecutado.
+Verificar
+Contrastar misma población y reglas antes/después.
+Sin medición posterior.
+Estandarizar
+Aprobar procedimiento, dueño y calendario si la prueba lo
+respalda.
+Pendiente
+Dato por consultar
+Por qué es necesario
+Pertenencia y cronología del lote
+El antecedente indica inicio el 09/03/2026; hay fechas anteriores.
+Originales o imágenes autorizadas
+No se incluyeron las fotografías referidas en el paquete.
+CTQ, excepciones y meta
+No convertir estados documentales en defectos.
+Roles, plazo y recursos
+No se atribuyen funciones ni disponibilidad sin confirmación.
+Tiempos, costos y medición
+posterior
+Sin ellos no se demuestra reducción, ahorro ni resultado del piloto.
+Conclusión: los documentos sustentan controles de registro y versión. No identifican causas humanas ni
+ahorros. El siguiente paso es validar reglas y originales con el dueño del proceso y ejecutar el piloto antes
+de declarar eficacia.

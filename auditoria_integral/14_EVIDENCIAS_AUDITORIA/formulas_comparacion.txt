@@ -1,0 +1,4 @@
+U3_DMAIC_HIDROCOM.xlsx: fórmulas=94 | caché≠recalculado=0 | caché vacía=0 | refs externas=0 | volátiles=0
+U3_Formato_DMAIC_HIDROCOM.xlsx: fórmulas=28 | caché≠recalculado=0 | caché vacía=6 | refs externas=0 | volátiles=0
+U3_Lean_HIDROCOM.xlsx: fórmulas=25 | caché≠recalculado=0 | caché vacía=0 | refs externas=0 | volátiles=0
+U3_Seis_Sigma_HIDROCOM.xlsx: fórmulas=1328 | caché≠recalculado=0 | caché vacía=0 | refs externas=0 | volátiles=0
