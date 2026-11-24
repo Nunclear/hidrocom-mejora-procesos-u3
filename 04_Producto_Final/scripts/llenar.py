@@ -260,5 +260,160 @@ for i, t in enumerate(lec):
     put(ws, f"B{16 + i}", t)
 ws.column_dimensions["B"].width = 90
 
+# =====================================================================================
+# v2 · Contrato de datos del issue #1 (comentarios 7146745531 y 7146867353)
+#   Q4: principal D = 30 (completitud sintáctica exploratoria; no CTQ aprobado);
+#       D = 34 / 35 = sensibilidad separada; NP-025138-01 conserva su incidencia.
+#   Q5: roles por función, nombres pendientes; meta y puntajes NO aprobados.
+#   PM-02/03/04: causa candidata; simulación en rango; beneficio en escenarios.
+#   C5: hoja Datos + fórmulas vivas (U, D, Pareto).
+# =====================================================================================
+from openpyxl.utils import get_column_letter
+NA = " [PROPUESTA NO APROBADA — ver DECISIONES.md]"
+PEND = "Pendiente de designación nominal"
+
+# ---------- Hoja Datos (copia literal de 03_DMAIC › Datos) + columna derivada ----------
+wd = wb.create_sheet("Datos")
+wd.append(H + ["condicion_principal (derivada)"])
+for r in rows:
+    wd.append(list(r))
+n = len(rows); last = n + 1
+for i in range(2, last + 1):
+    wd[f"Y{i}"] = (f'=IF(T{i}<>"REVISAR","",IF(OR(R{i}="PEDIDO",S{i}="PEDIDO"),"Estado PEDIDO sin regla de inclusión",'
+                   f'IF(OR(I{i}="",K{i}="",L{i}=""),"Campos numéricos incompletos (cantidad/precio/importe)",'
+                   f'IF(AND(V{i}<>"",V{i}<>0),"Diferencia de importe consignada en la fuente",'
+                   f'IF(OR(W{i}<>"",S{i}="DUDOSA"),"Observación o lectura dudosa documentada","Motivo no explicitado en el detalle")))))')
+for c in wd[1]:
+    c.font = Font(bold=True, color="FFFFFFFF"); c.fill = PatternFill("solid", fgColor="FF003264")
+wd.freeze_panes = "A2"
+for i in range(2, last + 1):
+    wd[f"C{i}"].number_format = "dd/mm/yyyy"
+R_ = lambda col: f"Datos!${col}$2:${col}${last}"
+
+# ---------- 0 y D1: roles por función (Q5) ----------
+ws = wb["0_Datos_y_Checklist"]
+put(ws, "B9", PEND + " (función: patrocina, aprueba alcance y recursos)")
+put(ws, "B10", PEND + " (función: lidera medición, análisis y pruebas)")
+put(ws, "B11", PEND + " (función: reproduce conteos y documenta contrastes)")
+put(ws, "B12", PEND + " (función: aprueba CTQ, excepciones y estándar; persona de HIDROCOM)")
+put(ws, "E24", "No aplica: sin orden temporal confiable (45/73 notas = 61,64 % con fecha estimada o año discordante)", fill=False)
+ws = wb["D1_Project_Charter"]
+put(ws, "A13", "Meta candidata: reducir el % de renglones REVISAR de 14,50 % a ≤ 5,00 % en el primer lote con controles (8 semanas)." + NA)
+put(ws, "A19", "Integrantes del equipo (manual): " + TEAM + ". Champion, líder, analista y dueño del proceso: " + PEND +
+    ". El manual no acredita esa asignación ni certificaciones de cinturón.")
+put(ws, "A25", "Supuestos: los originales siguen disponibles para resolver observaciones. Riesgos: procedencia del lote sin confirmar (70 de 73 notas tienen "
+    "fecha anterior al inicio de actividades reportado, 09/03/2026); 45/73 notas = 61,64 % con fecha estimada o año discordante (no hay serie temporal); "
+    "tiempos, costos y volumen no medidos. Alcance: diagnóstico de un lote documental, no desempeño empresarial actual.")
+ws = wb["D2_5W2H"]
+put(ws, "C8", "Lote de notas fechadas del 27-01-2025 al 09-03-2026 (45/73 notas = 61,64 % con fecha estimada o año discordante); procedencia por confirmar.")
+put(ws, "C11", "No medido. Escenario con supuestos (hoja C2): 38 renglones × 10 min × S/ 7,50/h ≈ S/ 47,50 por lote. El importe DISPONIBLE del lote "
+    "(S/ 26 509,70) es documental, no ventas ni costo de mala calidad.")
+
+# ---------- M2: principal D = 30 con fórmulas vivas + sensibilidad ----------
+ws = wb["M2_LineaBase_Sigma"]
+put(ws, "B5", "Completitud sintáctica exploratoria: celdas nulas en cantidad, precio e importe (3 campos por renglón). NO es un CTQ aprobado ni un nivel "
+    "sigma empresarial. Indicador descriptivo aparte: % renglones REVISAR = 14,50 % (estado documental, no defecto).")
+put(ws, "B6", "03_DMAIC/U3_DMAIC_HIDROCOM.xlsx › Datos (= Comprobantes_Revisados.xlsx › Detalle_Productos, 0 celdas distintas, SHA-256 ac6ab323…). Copia en la hoja Datos de este libro.")
+ws["B8"] = f'=COUNTA({R_("A")})'
+ws["B9"] = f'=COUNTBLANK({R_("I")})+COUNTBLANK({R_("K")})+COUNTBLANK({R_("L")})'
+ws["B10"] = 3
+for c in ("B8", "B9", "B10"):
+    ws[c].fill = AM; ws[c].font = NEG
+put(ws, "A15", "Bajo la regla de completitud sintáctica, el lote tiene 30 celdas nulas en 786 campos: 38 167,94 por millón y sigma equivalente ≈ 3,27 "
+    "(convención +1,5). Es un descriptor de la tabla, no del desempeño de HIDROCOM: 17 de 262 renglones tienen al menos un campo vacío; un campo lleno "
+    "no significa dato correcto y un vacío puede ser una excepción legítima.")
+put(ws, "A19", "Sensibilidad (análisis separados; ningún criterio es CTQ aprobado)", fill=False, bold=True)
+hdr = ["Criterio", "U", "D", "U × O", "DPMO", "σ equivalente (+1,5)"]
+for j, h_ in enumerate(hdr):
+    c = ws.cell(row=20, column=1 + j, value=h_); c.font = Font(bold=True, color="FFFFFFFF"); c.fill = PatternFill("solid", fgColor="FF003264")
+L_, V_, M_, T_ = R_("L"), R_("V"), R_("M"), R_("T")
+dif = f'SUMPRODUCT(({L_}<>"")*({V_}<>"")*({V_}<>0))'
+dif_millar = f'SUMPRODUCT(({L_}<>"")*({V_}<>"")*({V_}<>0)*({M_}="millar"))'
+blank_sin_ex = (f'SUMPRODUCT(({T_}<>"EXCLUIR")*({R_("I")}=""))+SUMPRODUCT(({T_}<>"EXCLUIR")*({R_("K")}=""))'
+                f'+SUMPRODUCT(({T_}<>"EXCLUIR")*({L_}=""))')
+sens = [("D = 30 · solo vacíos, todo el lote (PRINCIPAL)", "=B8", "=B9"),
+        ("D = 27 · solo vacíos, sin EXCLUIR", f'=COUNTIFS({T_},"<>EXCLUIR")', "=" + blank_sin_ex),
+        ("D = 35 · vacíos + 5 diferencias de importe (regla de coherencia)", "=B8", "=B9+" + dif),
+        ("D = 34 · como D = 35 sin NP-025138-01 (base «millar» ambigua: escenario, la incidencia se conserva)", "=B8", "=B9+" + dif + "-" + dif_millar)]
+for k, (lab, u, d) in enumerate(sens):
+    r = 21 + k
+    put(ws, f"A{r}", lab, fill=False)
+    ws[f"B{r}"] = u; ws[f"C{r}"] = d; ws[f"D{r}"] = f"=B{r}*3"
+    ws[f"E{r}"] = f"=C{r}/D{r}*1000000"; ws[f"F{r}"] = f"=NORMSINV(1-E{r}/1000000)+1.5"
+    ws[f"E{r}"].number_format = "#,##0.00"; ws[f"F{r}"].number_format = "0.0000"
+put(ws, "A26", "Notas de medición: 73 notas en Comprobantes, 69 con renglones (4 sin detalle: NP-025111, -127, -137, -140). % REVISAR = 38/262 = 14,50 %; "
+    "IC 95 % de Wilson NOMINAL 10,75–19,28 % (supone renglones independientes; ICC intra-nota 0,246, efecto de diseño 1,69). El censo del lote no "
+    "acredita representatividad empresarial.", fill=False)
+ws.column_dimensions["A"].width = 62
+
+# ---------- A1: Pareto vivo desde Datos ----------
+ws = wb["A1_Pareto"]
+for i in range(5, 10):
+    ws[f"B{i}"] = f'=COUNTIF({R_("Y")},A{i})'
+    ws[f"B{i}"].fill = AM; ws[f"B{i}"].font = NEG
+put(ws, "B15", "Regla exclusiva por prioridad (PEDIDO > vacíos > diferencia > observación > resto; columna Datos!Y). Las tres primeras categorías "
+    "suman 27 de 38 (71,05 %). Son CONDICIONES DOCUMENTALES de la clasificación del lote, no causas: el orden de prioridad cambia sus tamaños.")
+
+# ---------- A2: condición documental, asociación y causa candidata (PM-02) ----------
+ws = wb["A2_Ishikawa_Verificacion"]
+put(ws, "C7", "Versiones distintas del Data Mart circulan sin identificar (AUD-012)")
+put(ws, "C9", "45/73 notas (61,64 %) con fecha estimada o año discordante impiden medir por periodo")
+put(ws, "D14", "Tipo de evidencia", fill=False)
+veredictos = ["Condición documental confirmada [H]; asociación POR CONSTRUCCIÓN (el estado REVISAR se asignó por esta condición): NO prueba causa",
+              "Condición documental confirmada [H]; asociación POR CONSTRUCCIÓN: NO prueba causa",
+              "Comparación descriptiva (Fisher p = 0,47, n efectivo ≈ 155): sin evidencia para priorizarla; no se descarta",
+              "Ambigüedad documentada (1 de 5 diferencias depende de la base); por resolver con el original"]
+for i, v in enumerate(veredictos):
+    put(ws, f"D{15 + i}", v)
+put(ws, "A20", "5 porqués (HIPÓTESIS por verificar en el registro real): ¿Por qué hay REVISAR? → hay renglones PEDIDO y con datos vacíos → ¿por qué? → "
+    "no hay regla escrita para PEDIDO ni campos obligatorios en la captura (causa candidata) → ¿por qué? → el registro no se ha estandarizado (por verificar).", fill=False)
+put(ws, "A22", "CONCLUSIÓN: los datos del lote NO permiten verificar una causa raíz operativa. El estado PEDIDO y las incidencias numéricas son condiciones "
+    "documentales que la clasificación asocia por construcción a 25 de los 38 REVISAR (13 PEDIDO, 21 numéricos, 9 con ambas). CAUSA CANDIDATA: ausencia de "
+    "reglas de captura y clasificación; se verificará observando el registro real y comparando la captura original con la revisada (PM-08).", fill=False, bold=True)
+
+# ---------- I1 / I2: puntajes no aprobados, responsables por función, simulación en rango ----------
+ws = wb["I1_Ideas_Matriz"]
+put(ws, "D14", "Selección candidata: 1 (prioridad 25), 2 y 3 (20 c/u). La idea 2 es un Poka-Yoke de PREVENCIÓN; la 3, de DETECCIÓN; se sostienen con "
+    "5S digital (7) y Kaizen (8). Los puntajes son una propuesta de trabajo" + NA)
+ws = wb["I2_Plan_Accion"]
+for r_, resp in zip(range(5, 10), ["Líder del proyecto + dueño del proceso (pendientes)", "Analista (pendiente)", "Equipo",
+                                   "Dueño del proceso + líder (pendientes)", "Champion (pendiente)"]):
+    put(ws, f"B{r_}", resp)
+put(ws, "E7", "14,50 % → 4,96–12,12 % (escenarios)")
+put(ws, "A13", "SIMULACIÓN RETROSPECTIVA DECLARADA (no es piloto): si las reglas resolvieran los 25 REVISAR asociados a PEDIDO o a incidencias numéricas "
+    "con una eficacia e, quedarían 38 − 25·e renglones. Tabla de escenarios abajo (la eficacia es un supuesto, no una observación). El máximo teórico "
+    "(e = 100 %) da 4,96 %. Límites: supone que el registrador corrige con el original; la clasificación es la del lote; falta el piloto.")
+put(ws, "A17", "Eficacia supuesta (e)", fill=False, bold=True); put(ws, "B17", "REVISAR restantes", fill=False, bold=True); put(ws, "C17", "% REVISAR", fill=False, bold=True)
+for k, e in enumerate([1, 0.75, 0.5, 0.25]):
+    r = 18 + k
+    ws[f"A{r}"] = e; ws[f"A{r}"].number_format = "0%"
+    ws[f"B{r}"] = f"=38-25*A{r}"; ws[f"C{r}"] = f"=B{r}/262"; ws[f"C{r}"].number_format = "0.00%"
+
+# ---------- C2: beneficio en escenarios (PM-04) ----------
+ws = wb["C2_Beneficios_Lecciones"]
+put(ws, "A11", "Escenario BASE de la plantilla (B5:B8): 1 lote de ~262 renglones por mes (38 REVISAR/mes), 10 min por renglón y S/ 7,50/h → S/ 47,50 antes y "
+    "S/ 16,25 después; costo de implementar S/ 120 (16 h) → S/ 255/año. TODO es supuesto, no medición: el volumen derivado del rango de fechas (13,3 meses) "
+    "tampoco mide la cadencia real. Ver la tabla de escenarios (filas 20–25): con volumen bajo el resultado es negativo y se conserva.")
+put(ws, "A20", "Escenarios (S/; supuestos editables)", fill=False, bold=True)
+hdr = ["Escenario", "REVISAR/mes", "Eficacia e", "Min/renglón", "S/ por hora", "Costo inicial", "Beneficio anual neto"]
+for j, h_ in enumerate(hdr):
+    c = ws.cell(row=21, column=1 + j, value=h_); c.font = Font(bold=True, color="FFFFFFFF"); c.fill = PatternFill("solid", fgColor="FF003264")
+esc = [("Base (1 lote/mes)", 38, 1), ("Volumen según rango de fechas (38 / 13,3 meses)", "=38/13.3", 1),
+       ("Base con eficacia 50 %", 38, 0.5), ("Punto de equilibrio (REVISAR/mes)", "=F25/((25/38)*D25/60*E25*12)", 1)]
+for k, (lab, rv, e) in enumerate(esc):
+    r = 22 + k
+    put(ws, f"A{r}", lab, fill=False)
+    ws[f"B{r}"] = rv; ws[f"C{r}"] = e; ws[f"D{r}"] = 10; ws[f"E{r}"] = 7.5; ws[f"F{r}"] = 120
+    ws[f"G{r}"] = f"=B{r}*(25/38)*C{r}*D{r}/60*E{r}*12-F{r}"
+    for col in "BCDEF":
+        ws[f"{col}{r}"].fill = AM
+    ws[f"B{r}"].number_format = "0.00"; ws[f"G{r}"].number_format = "#,##0.00"; ws[f"C{r}"].number_format = "0%"
+put(ws, "B16", "Técnica: definir el criterio de defecto y la unidad ANTES de contar; 151 «incidencias» no eran 151 defectos, y 30, 34 o 35 «defectos» "
+    "dependen de la regla elegida.")
+put(ws, "B17", "Técnica: una asociación creada por la propia clasificación (13/13, 21/22) no verifica causas; las fechas estimadas no mostraron diferencia "
+    "relevante con los datos disponibles (descriptivo).")
+for nm in ("C2_Beneficios_Lecciones",):
+    wb[nm].column_dimensions["A"].width = 46
+
 wb.save(out)
 print("ok", out, "U", U, "D", D, "antes", antes, "despues", despues)
