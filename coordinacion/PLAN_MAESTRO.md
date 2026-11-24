@@ -10,7 +10,7 @@ La instrucción íntegra del usuario está en PROMPT_MEJORA_COLABORATIVA.md. Est
 | B, Codex Alexjhona | codex/informe-y-costo-beneficio | Word, PDF, PPTX, diagramas; código del modelo económico | C; A coteja resultados |
 | C, Claude | claude/excel-dmaic-oficial | XLSX de 01/02/03/04, dashboard; estadística, PM-08 | A; B revisa claridad |
 
-B define el modelo económico; C produce su libro coordinadamente. No editar el mismo binario en paralelo. Cada agente anuncia archivos y commits en Issue #1. Todos leen el contrato antes de propagar cifras. A integra archivos compatibles y preserva historia; nadie hace force push ni fusiona main sin la aprobación correspondiente.
+B tiene propiedad del nuevo libro de 05_Costo_Beneficio y C lo audita. C conserva propiedad de los XLSX de 01/02/03/04 y del dashboard. No editar el mismo binario en paralelo. Cada agente anuncia archivos y commits en Issue #1. Todos leen el contrato antes de propagar cifras. A integra archivos compatibles y preserva historia; nadie hace force push ni fusiona main sin la aprobación correspondiente.
 
 ## Secuencia
 

@@ -1,0 +1,15 @@
+{
+  "ejecutadas": 7,
+  "fallas": 0,
+  "errores": 0,
+  "omitidas": 0,
+  "resultado": "PASA",
+  "tipo": "Pruebas funcionales con casos sintéticos; no piloto empresarial",
+  "sha256_codigo": {
+    "ejecutar_pruebas.py": "266d367700b53f226e8687335eeac3347de4514f45dd284a7e3b3299cda34c6e",
+    "inspeccionar_documentos.py": "a20d35f26f7649ae0f8c58f8380a40077fe0f0577d7f506620b6bd39a8f683e2",
+    "modelos.py": "629e923b598d4bce2c9b60dc6409990de84df9cbe67f07a8ce8cdab0e1e3b113",
+    "test_modelos.py": "c9181b70e77b9efa05fca41ee880c35cc5e50f2bcb20bc91a3ffdbe39f181421",
+    "validar_integracion.py": "d4ad6b60e3fe70ff3dc120a22e0141b311195eeffe7d1af0c56f63bf0d47edcc"
+  }
+}

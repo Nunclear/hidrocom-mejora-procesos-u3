@@ -1,0 +1,380 @@
+
+UNIVERSIDAD PERUANA UNIÓN
+Facultad de Ingeniería y Arquitectura · EP Ingeniería de Sistemas
+Mejora de Procesos y Calidad Total · 2026-2 · Mg. Esteban Tocto Cano
+Mejora del registro y validación de notas de pedido
+Proyecto Lean Seis Sigma con metodología DMAIC
+Título del proyecto
+Mejora del registro y validación de notas de pedido
+Organización / proceso intervenido
+GRUPO HIDROCOM KALLPA E.I.R.L. · Registro, validación y publicación de información comercial
+Equipo (apellidos y nombres)
+Gutierrez Morales Jhon AlexMullisaca Condori Carlos AugustoMamani Mamani Ciro Wagner
+Roles Seis Sigma (Champion, BB, GB, dueño del proceso)
+Equipo del curso: análisis y diseño. Administración: función patrocinadora. Responsable del proceso: función de registro y validación. Las designaciones organizacionales corresponden a la empresa.
+Fecha de presentación
+26 de noviembre de 2026
+Juliaca, Perú · 2026
+Resumen ejecutivo
+El análisis del lote documental de HIDROCOM KALLPA identificó 38 renglones que requieren revisión antes de usarse en el reporte comercial. Representan el 14,50 % de 262 renglones procedentes de 73 notas. La revisión consume el equivalente a S/ 47,50 por lote si cada caso requiere 10 minutos y la hora se valora a S/ 7,50.
+Se diseñaron tres controles para el piloto: una regla de clasificación de PEDIDO, validaciones de cantidad, precio e importe, y un motivo obligatorio para los renglones en revisión. Los casos PEDIDO y las incidencias numéricas reúnen 25 de los 38 pendientes. El dato orienta la intervención porque esas condiciones participan en la clasificación de REVISAR. El mecanismo operativo se contrastará mediante la revisión de originales y un lote nuevo.
+La meta técnica del piloto es bajar a un máximo de 5 % de renglones en REVISAR en ocho semanas desde el inicio del piloto. La simulación cubre del 25 % al 100 % de resolución de los 25 casos alcanzables. Proyecta entre 12,12 % y 4,96 % de REVISAR. La meta se alcanza solo cerca de la resolución total de esos casos.
+Con un lote al mes, 10 minutos de revisión por caso y S/ 120 de implementación, el ahorro de tiempo valorado genera un beneficio neto anual de S/ 255 en el escenario de máxima resolución. Con un lote distribuido en 13,3 meses, el resultado estimado baja a −S/ 91,80. El punto de equilibrio se sitúa en 12,16 renglones REVISAR al mes con la eficacia máxima planteada.
+Lectura de los resultados
+Indicador
+Resultado
+Lectura
+Renglones REVISAR
+38 de 262 · 14,50 %
+Situación observada en el lote documental.
+Completitud de tres campos
+30 de 786 campos vacíos
+38 167,94 por millón y 3,2724 σ equivalentes bajo la convención +1,5.
+REVISAR con los controles
+4,96 % a 12,12 %
+Simulación según proporción de casos que se resuelve.
+Beneficio anual
+−S/ 91,80 a S/ 255,00
+Comparación de volumen bajo con un lote mensual, a eficacia máxima.
+
+El proyecto entrega un diagnóstico documental, un diseño de controles y una evaluación económica por escenarios. La decisión de puesta en marcha corresponde al responsable del proceso a partir del piloto.
+Capítulo 1  Definir
+Contexto y selección del proceso
+La gerencia utiliza la información comercial de las notas de pedido para decisiones de compra y reposición. Antes de consolidarla, los renglones con estados ambiguos, campos vacíos o diferencias de importe necesitan una decisión trazable. Se seleccionó el registro y validación porque el lote permite localizar la observación por renglón y diseñar controles concretos desde la captura hasta la publicación.
+Acta del proyecto
+Elemento
+Definición
+Problema
+38 de 262 renglones (14,50 %) permanecieron en REVISAR al corte documental. Requieren comprobación antes de incorporarlos al reporte.
+Objetivo del piloto
+Reducir REVISAR de 14,50 % a ≤ 5,00 % en el primer lote comparable posterior a la activación, con evaluación a las ocho semanas. Es una meta de diseño.
+Alcance
+Desde la recepción de la nota hasta la conciliación de la versión publicada. La unidad de intervención es el renglón, vinculado a su nota.
+Entradas y salidas
+Notas capturadas, estados, cantidades, precios e importes. La salida es un registro disponible, en revisión o excluido, con evidencia de la decisión.
+Responsabilidad
+Administración patrocina por función. Registro valida y escala. Un revisor verifica cierres y concilia la publicación. El equipo académico documenta la evaluación.
+Entregables
+Reglas de captura y clasificación, hoja de validación, plan de control, protocolo de piloto y costo-beneficio.
+
+El periodo consignado abarca del 27 de enero de 2025 al 9 de marzo de 2026. Setenta notas tienen fecha anterior al inicio reportado del 9 de marzo de 2026. Por ello, el diagnóstico corresponde a las notas del lote digitalizado. La confirmación de procedencia a cargo del custodio delimita cualquier uso empresarial posterior.
+El enfoque conserva las fases de DMAIC descritas por ASQ. Cada fase produce una salida que puede verificarse en la siguiente, desde la línea base hasta las reglas de control (ASQ, s. f.).
+Capítulo 1  Alcance del proceso
+Caracterización 5W2H
+Pregunta
+Respuesta para el caso
+Qué
+Renglones que quedan en REVISAR y requieren verificación documental.
+Por qué importa
+Una cifra sin confirmar puede trasladarse al reporte o detener la conciliación del lote.
+Dónde
+Captura, validación y liberación de notas de pedido.
+Cuándo
+En el lote digitalizado examinado, con corte de revisión del 24 de noviembre de 2026.
+Quién
+Quien registra documenta el estado, el revisor verifica el cierre y el responsable del proceso autoriza su publicación.
+Cómo
+Contrastar nota y registro, validar campos y base de precio, registrar motivos y conciliar la versión de salida.
+Cuánto
+38 renglones en REVISAR, equivalentes al 14,50 % del lote.
+
+SIPOC del registro y validación
+Proveedor
+Entrada
+Proceso
+Salida
+Cliente
+Custodio
+Nota identificada
+Recibir e identificar
+Nota con código
+Registro
+Registro
+Datos de la nota
+Capturar renglones
+Registro por renglón
+Validación
+Registro
+Documento y reglas
+Validar campos y estado
+Clasificación inicial
+Revisión
+Revisión
+Renglón observado
+Cotejar y resolver
+Decisión y evidencia
+Responsable del proceso
+Responsable del proceso
+Versión revisada
+Autorizar publicación
+Versión aprobada
+Gerencia y compras
+
+Criterio de cierre documental: cada renglón observado conserva el motivo, la evidencia consultada, la decisión, el revisor y la fecha de cierre. La nota y el identificador del renglón vinculan el registro con su evidencia.
+Capítulo 2  Medir
+Flujo documental actual
+El flujo se reconstruyó a partir de los estados, reglas y evidencias disponibles en el libro de trabajo. La observación se introduce en la validación, cuando un estado o campo exige comprobación adicional antes de consolidar el reporte.
+
+Figura 1. Flujo documental reconstruido. Fuente: hoja M1 del producto final U3.
+Plan de recolección
+Elemento
+Definición operativa
+Población analizada
+73 notas, de las cuales 69 contienen detalle, con 262 renglones identificados.
+Fuente
+Hojas Datos y Comprobantes del libro DMAIC. Verificación de reglas y categorías en el Excel oficial U3.
+Estado de revisión
+REVISAR, DISPONIBLE y EXCLUIR, según la etiqueta documental de cada renglón.
+Completitud
+Presencia de cantidad, precio unitario e importe, con una oportunidad por campo.
+Coherencia
+Contraste del importe con cantidad, precio y base documentada. Las diferencias se conservan para revisión.
+
+Las fechas se manejan por nivel. Se reportan 39 notas con fecha estimada y seis con año discordante. Por renglón, 162 de 262 tienen fecha estimada. Se conserva la fecha consignada en la fuente.
+Capítulo 2  Línea base y métricas
+Estado documental
+Renglones
+Participación
+DISPONIBLE
+206
+78,63 %
+REVISAR
+38
+14,50 %
+EXCLUIR
+18
+6,87 %
+Total
+262
+100,00 %
+
+El 78,63 % es la proporción de renglones disponibles al corte. Un rendimiento de primera pasada requiere observar el resultado antes de cualquier corrección. El lote carece de esa secuencia.
+Completitud y sensibilidad de la definición
+Se inspeccionaron 262 renglones × 3 campos = 786 oportunidades. El recuento primario contiene 5 cantidades, 16 precios unitarios y 9 importes vacíos. En total son 30 campos vacíos. El cálculo divide los defectos documentales entre 786, multiplica por un millón y convierte la proporción mediante Φ⁻¹(1 − D/786) + 1,5.
+Regla documental
+Conteo
+Por millón
+σ equivalente
+Vacíos en cantidad, precio e importe
+30
+38 167,94
+3,2724
+Vacíos más cuatro discrepancias, si se descarta una por la base de precio
+34
+43 257,00
+3,2141
+Vacíos más las cinco discrepancias consignadas
+35
+44 529,26
+3,2004
+
+La primera regla mide completitud sintáctica. Las otras dos muestran cuánto cambia el resultado al incluir coherencia. La regla de 34 depende de confirmar la base «millar» de la nota observada. Los 38 REVISAR miden carga de revisión por renglón, con una unidad y un denominador distintos.
+Elección de la técnica de estabilidad
+El material de Minitab de la Unidad 2 ilustró la selección de cartas para variables y atributos con datos de taller. Aquí el análogo sería una carta p por lotes cronológicos de registro con numeradores y denominadores comparables. El lote reconstruido se resume mediante proporciones y el Pareto. Una serie prospectiva será la base del análisis de estabilidad (NIST/SEMATECH, s. f.).
+Capítulo 3  Analizar
+Pareto de los 38 renglones REVISAR
+Se asignó una sola categoría a cada renglón, con prioridad para PEDIDO, campos incompletos, discrepancia de importe y observación documentada. Cuando falta un motivo explícito se registra como categoría propia. Esta regla excluyente permite sumar frecuencias sin duplicar renglones.
+
+Figura 2. Pareto del lote. Fuente: hoja A1 del formato U3 y regla de clasificación de la hoja Verificar.
+Categoría
+Frecuencia
+Acumulado
+Estado PEDIDO
+13
+34,21 %
+Campos incompletos
+7
+52,63 %
+Observación dudosa
+7
+71,05 %
+Motivo sin explicitar
+6
+86,84 %
+Diferencia de importe
+5
+100,00 %
+
+Las primeras tres categorías reúnen 27 casos. Incorporar la cuarta cubre 33 de los 38 renglones (86,84 %). Este corte orienta la lectura del Pareto. El diseño de mejoras combina la definición de PEDIDO, la validación numérica y un motivo obligatorio, que también fortalece la trazabilidad de las categorías residuales.
+Capítulo 3  Verificación de condiciones
+Causas candidatas y evidencia del lote
+El Ishikawa organiza hipótesis sobre método, personas, herramienta, material, medición y entorno. Se contrastaron el estado PEDIDO, las incidencias numéricas, la condición de fecha y la base de precio con las hojas Datos y Verificar.
+
+Figura 3. Ishikawa de la cola documental. Fuente: figura del producto final U3, revisión 4d1ec0d.
+Condición
+Comprobación
+Lectura
+PEDIDO
+13 de 13 PEDIDO están en REVISAR.
+Condición de clasificación identificada.
+Incidencia numérica
+21 de 22 renglones con incidencia están en REVISAR.
+Condición de validación identificada.
+Fecha estimada
+26/162 (16,05 %) frente a 12/100 (12,00 %).
+Comparación descriptiva, sin veredicto causal.
+Base de precio
+Una discrepancia cambia si se interpreta el precio por unidad.
+Requiere confirmación documental de la base.
+
+Nueve renglones presentan las dos primeras condiciones. Su unión es 13 + 21 − 9 = 25, el 65,79 % de REVISAR. La estandarización de captura y clasificación es la causa candidata priorizada para el piloto. Verificarla exige cotejar registros originales y revisados y observar cómo opera el control en un lote nuevo.
+El contraste retrospectivo de las transcripciones encontró que los 30 campos que siguen vacíos ya estaban vacíos en la primera captura. De los 38 REVISAR de la versión revisada, 37 ya tenían ese estado. Estos resultados aclaran cuándo se registró la observación documental. La revisión de las imágenes originales permitirá distinguir una omisión de captura, una nota ilegible y un campo ausente en el documento físico.
+Capítulo 4  Mejorar
+Selección de controles
+Se consideraron la regla PEDIDO, la validación numérica, el motivo obligatorio, la base de precio explícita, el cierre con evidencia, la unificación de catálogo, la 5S digital y una revisión Kaizen periódica. La selección combina cobertura de incidencias con la posibilidad de comprobar los controles en el primer lote piloto. Los niveles de impacto y esfuerzo son una evaluación técnica cualitativa.
+Control elegido
+Impacto esperado y esfuerzo
+Aplicación
+Regla PEDIDO
+Cobertura alta y esfuerzo bajo.
+Clasificar el estado antes de liberar el importe y registrar el motivo aplicado.
+Poka-Yoke de captura
+Cobertura alta y esfuerzo medio.
+Alertar por cantidades, precios o importes ausentes. Verificar base positiva y diferencia documental.
+Motivo y evidencia de cierre
+Trazabilidad alta y esfuerzo bajo.
+Registrar motivo, evidencia, fecha y rol revisor antes de liberar el renglón.
+
+Plan PDCA
+Fase
+Acción y responsable funcional
+Verificación
+Planear
+Registro y responsable del proceso definen la regla PEDIDO, campos aplicables y tolerancia.
+Instructivo y cinco casos de aceptación antes del piloto.
+Hacer
+Registro prueba el formulario. El equipo reproduce el escenario retrospectivo.
+Pruebas de vacío, base inválida, diferencia, PEDIDO y renglón válido.
+Verificar
+Revisión aplica el checklist al primer lote comparable y registra los tiempos.
+Medir REVISAR, cierres trazables y minutos por caso con las mismas reglas.
+Actuar
+Responsable del proceso compara la evidencia con el objetivo y ajusta el estándar.
+Autorizar versión, corregir desvío o ampliar el piloto.
+
+El prototipo Poka-Yoke funciona como detección y guía de revisión. En el piloto, un caso con discrepancia permanece en cola hasta que el documento sustente la decisión. La validez de un cálculo no sustituye la comparación con la nota.
+Capítulo 4  Simulación del impacto
+La simulación aplica una proporción de resolución a los 25 renglones de REVISAR que presentan PEDIDO o una incidencia numérica. Los 13 restantes conservan su estado a efectos del escenario. La fórmula es REVISAR esperado = 38 − 25 × eficacia. Se mantiene constante el denominador de 262 renglones para comparar sobre el mismo lote.
+Eficacia supuesta
+REVISAR esperados
+Tasa esperada
+Reducción respecto de 14,50 %
+25 %
+31,75
+12,12 %
+2,39 p. p.
+50 %
+25,50
+9,73 %
+4,77 p. p.
+75 %
+19,25
+7,35 %
+7,16 p. p.
+100 %
+13,00
+4,96 %
+9,54 p. p.
+
+Las fracciones son valores esperados del modelo. Un lote observado se reporta con conteos enteros. Para cumplir 5 % en un lote de 262, pueden quedar como máximo 13 renglones en revisión. En este escenario eso exige resolver prácticamente los 25 casos abordados por los controles.
+Protocolo del piloto de campo
+Etapa
+Registro mínimo
+Antes
+Cerrar la regla de inclusión, confirmar base de precio y tolerancia, marcar fecha de inicio y fijar el grupo de notas que se observará.
+Durante
+Registrar por nota el total de renglones, revisiones, motivos, decisiones y minutos de retrabajo. Conservar el orden de captura y la primera clasificación.
+Después
+Comparar proporciones por lote y por nota, tiempos por caso y cierres con evidencia. Contrastar la apertura de revisión con el documento original.
+Decisión
+Si se cumple la meta y la conciliación del lote, mantener los controles. Si falla un control, revisar la regla y volver a observar un lote comparable.
+
+La fase de mejora concluye con el escenario calculado, el formulario de control y el protocolo de evaluación. El primer lote observado aportará el resultado del piloto.
+Capítulo 5  Controlar
+Plan de control propuesto
+Indicador y cálculo
+Fuente y frecuencia
+Rol responsable
+Umbral y reacción
+REVISAR / renglones del lote
+Registro de estados · por lote
+Registro y revisión
+Meta de diseño ≤ 5 %. Si se supera, separar causas y revisar las reglas aplicadas.
+Cierres con evidencia / cierres declarados
+Bitácora de revisión · por lote
+Revisor
+100 %. Reabrir cualquier cierre sin evidencia, fecha o revisor.
+Publicaciones conciliadas / publicadas
+Manifiesto y controles por clave · por publicación
+Responsable de publicación
+100 %. Detener la liberación si falla un hash esperado, una llave o un total de control.
+Vacíos en tres campos / campos aplicables
+Hoja de validación · por lote
+Registro
+Verificar todo campo obligatorio vacío antes de publicar. Escalar excepciones al responsable.
+
+Estandarización y automatización
+El instructivo de una página define cuándo se usa PEDIDO, qué campos son obligatorios, cómo se documenta la base de precio y cuándo un renglón queda listo para el reporte. El checklist de cierre verifica identificador, motivo, evidencia, fecha y responsable funcional. El responsable del proceso revisa la vigencia de estas reglas antes de cada nueva versión.
+La automatización propuesta valida tipo y presencia de campos, consistencia de la base y trazabilidad del motivo. Para publicar, cada archivo se contrasta con su propia huella esperada. Después se concilian identificadores, categorías y totales entre Excel y Data Mart. Distintos formatos generan huellas distintas aun cuando representen datos equivalentes.
+La auditoría registró dos publicaciones del Data Mart asociadas al mismo Excel de origen. La versión de cada archivo, su SHA-256 y el método de conciliación permiten reproducir los resultados sin mezclar las capas. El tablero de control mostrará revisión, cierre trazable y conciliación por lote.
+Capítulo 6  Beneficios
+Supuestos y cálculo anualizado
+Se valoró el retrabajo en 10 minutos por renglón REVISAR y S/ 7,50 por hora. La implementación se estima en 16 horas con la misma tarifa, equivalentes a S/ 120 al inicio. El modelo estima valor del tiempo liberado. El flujo no incluye ingresos adicionales ni valoriza los importes de las notas.
+Concepto
+Antes
+Después con eficacia máxima
+Renglones a revisar por lote
+38
+13
+Horas estimadas por lote
+6,33 h
+2,17 h
+Costo estimado por lote
+S/ 47,50
+S/ 16,25
+Valor de tiempo liberado por lote
+—
+S/ 31,25
+
+Para un lote mensual, neto anual = (S/ 47,50 − S/ 16,25) × 12 − S/ 120 = S/ 255,00. El flujo económico es favorable solo cuando el tiempo liberado se aprovecha. Con esa frecuencia y una eficacia de 25 %, el neto se reduce a −S/ 26,25.
+Escenario
+Lotes por mes
+Eficacia
+Neto anual
+Volumen bajo
+1 / 13,3
+100 %
+−S/ 91,80
+Eficacia parcial
+1
+50 %
+S/ 67,50
+Base de máxima resolución
+1
+100 %
+S/ 255,00
+
+La frecuencia baja distribuye un lote sobre 13,3 meses como prueba de sensibilidad. La secuencia de fechas del lote tampoco mide la cadencia operativa. En condiciones de máxima resolución, el equilibrio se obtiene con 8 renglones evitados por mes, equivalentes a 12,16 renglones REVISAR mensuales antes de intervenir.
+Criterio económico de decisión
+Si el piloto registra menos de 12,16 renglones REVISAR por mes o una eficacia inferior a la del escenario de referencia, recalcular el neto con el volumen y tiempo observados. La trazabilidad del reporte y la disminución del riesgo de publicar importes inconsistentes se evalúan por separado.
+Capítulo 6  Lecciones y cierre
+Lecciones del proyecto
+Lección
+Qué cambia en la forma de trabajar
+Definir la unidad antes de contar
+El estado del renglón, los campos vacíos y la incoherencia son medidas distintas. Se fija una definición y su denominador antes de reproducir la cifra.
+Cerrar el análisis con supuestos trazables
+Cuando todavía no hay tiempos observados, se calcula un rango y se comprueba qué supuestos cambian la decisión. Los datos de taller sirven para elegir el método.
+Validar el dato antes de explicar la causa
+Una asociación que surge de la regla de clasificación ayuda a priorizar, pero requiere contraste independiente para establecer el mecanismo operativo.
+Coordinar las versiones del equipo
+Un identificador de versión, una tabla de definiciones y una revisión cruzada mantienen alineados el informe, la presentación y las hojas de cálculo.
+
+Qué haríamos desde el inicio
+Acordar primero el alcance con el custodio de las notas, conservar versiones de fuente y derivaciones con sus huellas, fijar la definición de cada estado y diseñar un registro prospectivo de tiempos. Esto permite estimar el efecto con menor incertidumbre y detectar diferencias entre copias antes de redactar el informe.
+El resultado académico es un diseño completo de mejora para el registro documental, con línea base propia, controles verificables, simulación y sensibilidad económica. Para adoptar el control en operación, la decisión se apoya en el piloto y en la evidencia de procedencia del lote.
+Referencias
+American Society for Quality. (s. f.). DMAIC. https://asq.org/quality-resources/dmaic
+NIST/SEMATECH. (s. f.). Univariate and multivariate control charts. e-Handbook of Statistical Methods. https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc3.htm
+Universidad Peruana Unión. (2026). Unidad 3. Plantilla del informe técnico, formato DMAIC y guía de análisis costo-beneficio [Material de curso].
+Equipo HIDROCOM KALLPA. (2026). Libro DMAIC, producto final U3 y auditoría integral [Repositorio de trabajo]. https://github.com/Nunclear/hidrocom-mejora-procesos-u3

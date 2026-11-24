@@ -105,7 +105,7 @@ Respuesta al comentario 7146568385 del issue #1. Las propuestas (PM-xx) **se der
 - **Dependencias:** autorización del usuario para usar esos archivos (Q3).
 - **Aceptación:** tabla «original → revisado» por tipo de campo.
 - **Comprobación:** recuento reproducible.
-- **Nota:** **no se ejecutó** en esta auditoría. Es una propuesta.
+- **Estado: EJECUTADA** (autorizada en Q3). Resultados en `14_EVIDENCIAS_AUDITORIA/pm08_resultados.md`: los 30 vacíos ya estaban en la captura original; 37 de los 38 REVISAR ya eran REVISAR al transcribir; 471 correcciones del 17 al 18-11-2026; 23 renglones retirados. Describe la transcripción; no prueba una causa operativa.
 
 ### PM-09 · Lean: VSM actual derivado y VSM futuro de diseño
 - **Evidencia:** [H] Lean pág. 3 y `VSM!E6:G11` vacíos; no hay estado futuro.
@@ -142,7 +142,7 @@ Respuesta al comentario 7146568385 del issue #1. Las propuestas (PM-xx) **se der
 | PM-14 | Tiempos del registro (hoja de cronometraje, 30 notas) para VSM, PCE, beneficio e I-MR | AUD-010, AUD-005 | No hay tiempos; no se inventan | Datos medidos |
 | PM-15 | MSA por atributos (kappa, 40 renglones, 2 revisores) | AUD-023 | Requiere originales y un segundo revisor | Kappa ≥ 0,70 |
 | PM-16 | Aprobar roles, meta, puntajes y tolerancia, y propagarlos | AUD-006, AUD-024 | Son decisiones humanas | DECISIONES.md marcado |
-| PM-17 | Reproducir o retirar las evidencias de hash y «herramietas» | AUD-012 | Requiere la copia del paquete del autor de `main` | Hash publicado o evidencias retiradas |
+| PM-17 | Documentar las dos versiones del Data Mart (v3 de `main` y la posterior) y citar la que corresponda; **resuelto en la conciliación 7146745531** | AUD-012 | Requiere la copia del paquete del autor de `main` | Hash publicado o evidencias retiradas |
 
 ## C. Requieren implementación o piloto real
 

@@ -1,0 +1,280 @@
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+1
+01 Seis Sigma: proyecto y medición
+GRUPO HIDROCOM KALLPA E.I.R.L.
+Mejora de Procesos y Calidad Total · UPeU · Ingeniería de Sistemas · 2026-2
+Docente: Mg. Esteban Tocto Cano
+Corte documental: 24 de noviembre de 2026.
+Equipo registrado en el manual: Gutierrez Morales Jhon Alex, Mullisaca Condori Carlos Augusto y Mamani Mamani Ciro Wagner.
+No hay asignación nominal aprobada de roles.
+Seis Sigma orienta el trabajo a reducir variación e incumplimientos mediante criterios y datos. En este
+caso, la primera necesidad es distinguir un pendiente documental de un defecto operativo y acordar qué
+se debe medir.
+Proyecto seleccionado
+Registro y validación de notas de pedido para información comercial. Se selecciona cualitativamente
+porque hay evidencia documental reproducible. No se inventan puntuaciones de impacto, ahorro o
+factibilidad para justificarlo.
+La entrega desarrolla selección, roles, RACI, árbol CTQ propuesto, diagnóstico de completitud,
+calculadora formal y lectura de un caso externo. DMAIC se desarrolla en una carpeta independiente; la
+separación académica no cambia su relación con Seis Sigma.
+Resultado actual: diagnóstico documental; no se conoce el nivel sigma operativo de HIDROCOM. Los
+equivalentes exploratorios de completitud se muestran con una regla explícita y un alcance limitado.
+Fuente teórica: ASQ, Seis Sigma. Consulta: 24/11/2026.
+
+
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+2
+02 Selección y charter preliminar
+ Alternativa
+Evidencia
+Decisión y límite
+Registro y validación de
+notas
+73 notas, 262 renglones; diferencias
+verificables entre versiones.
+Seleccionado por disponibilidad de evidencia
+documental. Falta: Origen, CTQ, metas,
+tiempos y costos.
+Exactitud del inventario
+físico
+El manual describe almacén.
+Pendiente de evidencia para evaluación. Falta:
+Conteos físicos, diferencias y periodo
+comparable.
+Conformidad de
+preparación y entrega
+El manual describe distribución.
+Pendiente de evidencia para evaluación. Falta:
+Pedidos preparados, entregas y reclamos
+cotejados.
+Elemento
+Propuesta / estado
+Problema
+38 de 262 renglones figuran REVISAR y hay diferencias entre fuente y publicación. No se
+conoce su frecuencia operativa.
+Objetivo
+Diseñar y probar controles de captura, revisión y publicación sin imputar datos.
+Alcance
+Desde recepción de evidencia hasta versión aprobada y conciliada.
+Meta SMART
+Pendiente de CTQ, población comparable, valor numérico y plazo.
+Caso económico
+Pendiente de tiempos, volumen y costos verificados.
+Aprobación
+Pendiente de dueño del proceso, sponsor y equipo nominal.
+
+
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+3
+03 Roles y responsabilidades
+Se propone una estructura funcional ajustable al proyecto. Los títulos de cinturón describen competencias
+y formación; no se atribuyen certificaciones a los integrantes. La lista de nombres del manual no aprueba
+por sí misma quién autoriza o revisa.
+Rol
+Función propuesta
+Estado
+Sponsor / Champion
+Autoriza alcance, facilita acceso y resuelve bloqueos.
+Pendiente de designación.
+Líder del proyecto
+Coordina medición, análisis y pruebas.
+Pendiente; no se atribuye
+certificación Black Belt.
+Analista / equipo
+Conserva fuente, reproduce conteos y documenta contrastes.
+Pendiente de asignación
+nominal.
+Dueño del proceso
+Aprueba CTQ, tratamiento de excepciones y estándar.
+Pendiente de designación.
+Revisor documental
+Contrasta con original y registra decisión.
+Pendiente de designación.
+Relación con los cinturones
+Como referencia de formación, Master Black Belt apoya y orienta; Black Belt lidera proyectos; Green Belt
+participa en medición y análisis y puede liderar proyectos de su alcance; Yellow Belt apoya como
+integrante. El equipo debe confirmar capacidades y apoyo requerido, sin convertir estos nombres en
+cargos otorgados.
+Fuente teórica: ASQ, roles y cinturones. Consulta: 24/11/2026.
+Actividad
+Ch.
+Líd.
+Ana.
+Due.
+Rev.
+Aprobar alcance y recursos
+A
+R
+C
+C
+I
+Aprobar CTQ y excepciones
+C
+R
+C
+A
+C
+Medir el corte documental
+I
+A
+R
+C
+C
+Cotejar y resolver registros
+I
+C
+C
+A
+R
+Diseñar y evaluar piloto
+C
+A
+R
+C
+C
+Aprobar estándar de operación
+C
+R
+C
+A
+C
+RACI propuesta: A aprueba / responde por la decisión; R ejecuta; C es consultado; I es informado. Una A por actividad.
+Asignación nominal y aprobación pendientes.
+
+
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+4
+04 Árbol CTQ y protocolo de conteo
+ Nivel
+Definición propuesta
+Validación pendiente
+Necesidad por
+validar
+Información comercial interpretable y trazable.
+Entrevista al destinatario del reporte.
+Unidad propuesta
+Un renglón identificado por id_detalle.
+Confirmar homogeneidad y casos
+especiales.
+CTQ propuesto:
+completitud
+Campos requeridos según tipo de documento, sin
+imputación.
+Aprobar obligatoriedad y tratamiento
+de PEDIDO / EXCLUIR.
+CTQ propuesto:
+coherencia
+Importe compatible con cantidad, precio y base
+documentada.
+Aprobar tolerancia, base y
+excepciones.
+CTQ propuesto:
+trazabilidad
+Evidencia original, decisión y versión vinculadas al
+registro.
+Acordar evidencia admisible y criterio
+de aprobación.
+Defecto operativo
+Incumplimiento de regla CTQ aplicable y aprobada,
+con evidencia.
+Todavía no definido ni contado.
+Cómo construir una medición válida
+1. Entrevistar al destinatario y aprobar una necesidad verificable. 2. Definir la unidad y los campos
+aplicables por tipo de nota. 3. Establecer oportunidades homogéneas y excepciones. 4. Cotejar con
+original autorizado. 5. Registrar cada incumplimiento y resolver discrepancias entre revisores antes de
+fijar la línea base.
+Los 38 REVISAR son un estado de cola. Las 151 incidencias mezclan observaciones y unidades; ninguna
+cifra se utiliza como D sin una regla aprobada. DISPONIBLE tampoco acredita conformidad total.
+
+
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+5
+05 Diagnóstico exploratorio de
+completitud
+Regla analítica explícita: para cada renglón se inspeccionan tres campos —cantidad, precio unitario e
+importe escrito— y se cuenta cada celda nula. Hay tres oportunidades sintácticas por renglón. Un renglón
+puede tener varios vacíos. Esta regla sirve para describir la tabla; no ha sido aprobada como CTQ
+operativo.
+Población
+U
+Vacíos cantidad / precio / importe
+D
+U × O
+Todo el lote
+262
+5 / 16 / 9
+30
+786
+Sin EXCLUIR
+244
+4 / 15 / 8
+27
+732
+Población
+DPMO equivalente
+Sigma equivalente (+1,5)
+Todo el lote
+38,167.94
+3.2724
+Sin EXCLUIR
+36,885.25
+3.2880
+Cálculo: DPMO equivalente = vacíos / (renglones × 3) × 1 000 000. Sigma equivalente = inversa normal
+estándar de (1 − DPMO / 1 000 000) + 1,5. La segunda población es una sensibilidad que omite
+EXCLUIR; no es medición posterior ni demuestra mejora.
+Interpretación: 17 de 262 renglones tienen al menos uno de estos campos vacío; sin EXCLUIR, 16 de
+244. Campo lleno no significa dato correcto. Campo vacío puede corresponder a una excepción legítima.
+El equivalente sigma no demuestra capacidad, estabilidad, satisfacción del cliente ni un nivel sigma real
+de la empresa.
+Fuente: Comprobantes_Revisados.xlsx, hoja Detalle_Productos. El Excel independiente conserva los 262 registros y calcula los
+vacíos mediante fórmulas. No se alteraron las fuentes.
+
+
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+6
+06 Calculadora formal y caso externo
+Cálculo formal pendiente
+El libro reserva CTQ aprobado, U, D y O. Exige enteros, U y O positivos y 0 ≤ D ≤ U × O. Calcula DPMO
+solo con entradas válidas. El sigma usa la convención de desplazamiento 1,5; para extremos 0 o 1 000
+000 muestra no aplicable en lugar de un valor finito inventado.
+Las entradas están vacías. No deben copiarse los 30 vacíos del ejercicio exploratorio a D operativo sin
+aprobar primero la aplicabilidad de la regla. La tolerancia y las excepciones documentales también deben
+acordarse.
+Lectura de caso: Motorola
+Anbari y Kwak (2004), en un trabajo publicado por PMI, presentan experiencias de proyectos Seis Sigma.
+Su cuadro de resultados reporta para Motorola, en 1992, una reducción por factor de 150 de los niveles
+de defectos en proceso. Es un resultado histórico externo citado por los autores, no una medición
+reproducida aquí.
+Aplicación crítica al proyecto: seleccionar un problema sustentado, definir responsabilidades y validar la
+medición antes de atribuir resultados. No es válido trasladar aquel factor a HIDROCOM, prometer el
+mismo efecto ni convertir los importes comerciales del lote en ahorros.
+Fuente teórica: Anbari y Kwak (2004), Success factors in managing six sigma projects. Consulta: 24/11/2026.
+Esta lectura bibliográfica no sustituye un material específico de la plataforma académica que no esté disponible.
+
+
+HIDROCOM KALLPA · Unidad 3 · Seis Sigma
+7
+07 Conclusiones y datos por consultar
+La selección del proceso se sostiene en la disponibilidad de notas y versiones comparables. El
+diagnóstico señala pendientes y vacíos sintácticos que justifican investigar reglas de captura y liberación.
+No demuestra defectos de despacho, responsabilidad individual ni reducción lograda.
+Dato por consultar
+Por qué es necesario
+Pertenencia y cronología del lote
+El antecedente indica inicio el 09/03/2026; hay fechas anteriores.
+Originales o imágenes autorizadas
+No se incluyeron las fotografías referidas en el paquete.
+CTQ, excepciones y meta
+No convertir estados documentales en defectos.
+Roles, plazo y recursos
+No se atribuyen funciones ni disponibilidad sin confirmación.
+Tiempos, costos y medición
+posterior
+Sin ellos no se demuestra reducción, ahorro ni resultado del piloto.
+Criterios para pasar a ejecución
+Aprobar origen y población; nombrar responsables; entrevistar al destinatario; fijar CTQ y oportunidades;
+cotejar originales; aprobar meta y plazo; ejecutar una prueba con medición posterior comparable. Solo
+entonces corresponde interpretar desempeño y beneficios operativos.
+Entregable asociado: U3_Seis_Sigma_HIDROCOM.xlsx. Contiene selección, roles y RACI, CTQ propuesto, conteos exploratorios
+reproducibles y calculadora formal pendiente. El contexto completo y las fuentes del caso están en el README raíz del
+repositorio.

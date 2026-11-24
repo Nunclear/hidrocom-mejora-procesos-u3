@@ -445,8 +445,8 @@
   "n_efectivo": 155.2
  },
  "I_libros": {
-  "Lean_igual_DMAIC": false,
-  "SeisSigma_igual_DMAIC": false,
+  "Lean_igual_DMAIC": true,
+  "SeisSigma_igual_DMAIC": true,
   "filas": 263
  },
  "J_productos": {

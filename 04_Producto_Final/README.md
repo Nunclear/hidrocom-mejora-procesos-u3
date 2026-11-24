@@ -11,19 +11,20 @@ Entrega del 26-11-2026: **informe Word + Excel formato DMAIC + presentación PPT
 | `A2_Ishikawa_HIDROCOM.png`, `I1_Matriz_HIDROCOM.png` | Figuras usadas en la presentación (y disponibles para el informe) | Claude |
 | `scripts/` | `llenar.py` y `flujo.py` regeneran el Excel y el diagrama; `figuras.py` el Ishikawa y la matriz; `deck.py` la presentación desde la plantilla oficial | — |
 
-## Cifras clave (fuente única: este Excel)
+## Cifras clave (contrato de datos del issue #1, comentarios 7146745531 y 7146867353)
 
-| Indicador | Valor |
-|---|---|
-| Renglones del lote (U) | 262 |
-| REVISAR (Y del proyecto) | 38 = 14,50 % |
-| CTQ | renglón completo y coherente: 3 oportunidades (cantidad, precio, importe) |
-| Defectos (D) | 35, en 22 renglones |
-| DPMO / sigma | 44 529 / ≈ 3,20 σ |
-| Pareto | PEDIDO 13 · incompletos 7 · dudosa 7 · sin motivo 6 · diferencia 5 |
-| Causa raíz confirmada | sin reglas estandarizadas de captura y clasificación: 13/13 PEDIDO y 21/22 renglones con defecto numérico van a REVISAR (25 de 38 = 65,8 %) |
-| Causa descartada | fechas estimadas: 16,0 % vs. 12,0 % REVISAR (real) |
-| Simulación de los controles | REVISAR 14,50 % → 4,96 % (13/262) |
-| Beneficio anualizado estimado | (47,50 − 16,25) × 12 − 120 = **S/ 255** (horas liberadas, con supuestos) |
+| Indicador | Valor | Naturaleza |
+|---|---|---|
+| Población | 73 notas (69 con renglones), 262 renglones; 206 / 38 / 18 | Hecho |
+| % REVISAR | 38/262 = 14,50 % (IC Wilson nominal 10,75–19,28 %, supone independencia) | Estado documental, no defecto |
+| **Principal**: completitud sintáctica exploratoria | D = 30 de 786 campos → 38 167,94 por millón → σ equivalente 3,2724 (+1,5) | Calculado; **no es CTQ aprobado ni sigma empresarial** |
+| Sensibilidad | D = 27 (sin EXCLUIR) 3,288 · D = 35 (con 5 diferencias) 3,2004 · D = 34 (sin NP-025138-01) 3,2141 | Análisis separados |
+| Pareto de los 38 REVISAR | 13 / 7 / 7 / 6 / 5 (regla exclusiva; Datos!Y) | Condiciones documentales, no causas |
+| Causa | Candidata: ausencia de reglas de captura y clasificación; **sin verificar** | Hipótesis |
+| Simulación retrospectiva | 4,96 % (e = 100 %) · 7,35 % · 9,73 % · 12,12 % (e = 25 %) | Escenario |
+| Beneficio anual neto | S/ 255 (base) · −S/ 91,80 (volumen según el rango de fechas) · S/ 67,50 (e = 50 %) · equilibrio 12,16 REVISAR/mes | Escenarios con supuestos |
+| Roles, meta, puntajes | Pendientes de aprobación humana (Q5) | — |
 
-La simulación es una **prueba de escritorio retrospectiva**, no un piloto en campo. Los textos con `[PROPUESTA — confirmar en DECISIONES.md]` deben aprobarse por el equipo antes de la entrega.
+El Excel calcula U, D, el Pareto, la sensibilidad, la simulación y los escenarios **con fórmulas** sobre la hoja `Datos`. Se puede verificar recalculando el libro.
+
+**Pendiente de alinear por el responsable B** (no editado por Claude): `U3_Presentacion_HIDROCOM.pptx`, que aún muestra D = 35 / 3,20 σ como principal, roles con nombre y la causa como «respaldada».

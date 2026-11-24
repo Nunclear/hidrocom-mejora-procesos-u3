@@ -2,7 +2,7 @@
 
 Generado por `14_EVIDENCIAS_AUDITORIA/generar_hallazgos.py`; la matriz tabular está en `09_MATRIZ_HALLAZGOS.csv`.
 
-**Total: 24** · P0 = 1 · P1 = 9 · P2 = 9 · P3 = 5
+**Total: 24** · P0 = 1 · P1 = 8 · P2 = 10 · P3 = 5
 
 
 ### Hallazgo AUD-001
@@ -260,26 +260,26 @@ Generado por `14_EVIDENCIAS_AUDITORIA/generar_hallazgos.py`; la matriz tabular e
 
 ### Hallazgo AUD-012
 
-- **Título:** Las 'evidencias verificadas' de hash distinto y categoría 'herramietas' no se reproducen con la copia local del paquete
-- **Prioridad:** P1
+- **Título:** Dos versiones del Data Mart circulan con el mismo Excel fuente; los informes no identifican cuál citan
+- **Prioridad:** P2
 - **Trabajo afectado:** Lean, Seis Sigma, DMAIC, README
 - **Archivo:** README; DMAIC pág. 8; Lean pág. 3; Verificar!B8:B9
 - **Ruta:** raíz, 01, 03
-- **Página/hoja/celda/línea:** DMAIC pág. 8 filas 3-4
-- **Evidencia encontrada:** SHA-256 local del Excel fuente = ac6ab323… = auditoria.json; los 9 CSV coinciden; 'herramietas' no aparece; NP-025089-02 = herramientas
-- **Resultado esperado:** Evidencias reproducibles por terceros
-- **Resultado observado:** Evidencias no reproducibles
-- **Explicación técnica:** Probablemente otra copia del paquete o una edición local del compañero
-- **Impacto académico:** Las evidencias 'verificadas' pierden credibilidad
+- **Página/hoja/celda/línea:** DMAIC pág. 8, filas 3-4
+- **Evidencia encontrada:** Excel fuente idéntico (ac6ab323…). v3 de main: auditoria.json 598f0ac1… declara sha256_fuente 4bd79c0b… (distinto) y Productos.csv 7a362e0e… contiene 'herramietas'. Copia posterior del usuario: auditoria.json a858d11b… coincide y Productos.csv 6eb47b29… no contiene 'herramietas'
+- **Resultado esperado:** Cada evidencia cita su versión
+- **Resultado observado:** Se citan sin versión
+- **Explicación técnica:** Las evidencias son válidas para la v3 y no aplican a la versión corregida
+- **Impacto académico:** Un lector con otra copia no las reproduce
 - **Impacto estadístico:** —
 - **Impacto empresarial:** —
-- **Causa probable:** Versiones distintas del paquete entre los integrantes
-- **Corrección propuesta:** Que el autor publique el hash y la ruta de su copia; si no se reproduce, retirar o recalificar como 'observado en la copia X'
-- **Datos adicionales necesarios:** Copia del paquete usada por el compañero
+- **Causa probable:** Republicación del Data Mart sin control de versiones
+- **Corrección propuesta:** Añadir a cada mención el identificador de versión y su hash; registrar ambas en un manifiesto
+- **Datos adicionales necesarios:** —
 - **Dependencias:** AUD-019
-- **Criterio de aceptación:** Ambas evidencias se reproducen con un paquete versionado o se retiran
-- **Método para verificar:** sha256sum y grep (14_EVIDENCIAS/verificacion_hashes_paquete_local.txt)
-- **Tipo de corrección:** Requiere información adicional (del equipo)
+- **Criterio de aceptación:** Las menciones incluyen la versión y el hash
+- **Método para verificar:** Comparación de hashes (comentario 7146745531 + verificacion_hashes_paquete_local.txt)
+- **Tipo de corrección:** Ejecutable inmediatamente
 
 ### Hallazgo AUD-013
 

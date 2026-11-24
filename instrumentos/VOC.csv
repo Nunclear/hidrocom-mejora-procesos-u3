@@ -1,0 +1,7 @@
+﻿ID_pregunta,Pregunta,Entrevistado_real,Funcion,Fecha_real,Respuesta_literal,CTQ_propuesto,Evidencia,Validacion_destinatario
+VOC-01,¿Qué decisión toma con el reporte y qué información necesita?,,,,,,,
+VOC-02,¿Qué campos son obligatorios por tipo de nota y qué excepciones son válidas?,,,,,,,
+VOC-03,"¿Cómo se interpreta PEDIDO, REVISAR y EXCLUIR?",,,,,,,
+VOC-04,"¿Qué evidencia y tolerancia permiten aceptar cantidad, precio e importe?",,,,,,,
+VOC-05,¿Quién resuelve observaciones y quién aprueba la publicación?,,,,,,,
+VOC-06,¿Qué problema afecta el uso del reporte y cómo podría medirse?,,,,,,,

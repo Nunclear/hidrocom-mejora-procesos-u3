@@ -65,3 +65,10 @@ VSM actual = flujo documental derivado; futuro = diseño. TC, LT, espera, retrab
 AUD-012 es **específico de versión**. El ZIP v3 de main conserva una huella declarada distinta y «herramietas»; la copia reportada por Claude presenta otros CSV. Ver EVIDENCIA_COPIA_MAIN.json y TRAZABILIDAD_FUENTES.csv. Cada archivo se compara con su propia huella esperada; no se exige igualdad entre formatos diferentes. No atribuir autor o fecha de transformación sin evidencia.
 
 El esquema legible por máquina está en contrato_datos.json. Los resultados independientes y los controles están en ../validacion/; cada revisión debe citar el commit y las pruebas efectivamente ejecutadas.
+
+## Referencias para la revisión estadística
+
+- [NIST, intervalos para proporciones](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm): referencia de la fórmula binomial nominal, no evidencia de que este lote cumpla un diseño muestral.
+- [CDC/NCHS, estimación de varianzas](https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx/SampleDesign.aspx): el agrupamiento y el diseño afectan la varianza. En este proyecto se informa una aproximación exploratoria, sin equipararla a una encuesta con diseño conocido.
+
+Consulta: 24/11/2026. Las fórmulas del lote se recalculan con código propio; las referencias no validan el origen de los datos ni sus decisiones empresariales.

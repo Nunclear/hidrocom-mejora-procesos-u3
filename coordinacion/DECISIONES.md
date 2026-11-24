@@ -22,3 +22,5 @@
 | H06 | Efecto y beneficios empresariales | Piloto y medición comparable |
 
 El antecedente del 09/03/2026 es una fecha reportada en una síntesis histórica, no constancia oficial verificada. No aprobar firmas ni completar el documento histórico 04/DECISIONES.md por inferencia.
+
+Actualización expresa del usuario durante la integración: no puede confirmar proveedor, procedencia original ni autenticidad empresarial de las notas; tampoco la exactitud del 09/03/2026 ni constancia SUNAT. Ordena mantener esos puntos pendientes y continuar con las mejoras del lote documental. Esta confirmación del estado pendiente no acredita la procedencia.

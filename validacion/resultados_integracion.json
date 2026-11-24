@@ -1,0 +1,870 @@
+{
+  "revision_declarada": "A: Word Lean/Sigma; B e2287cb; C 36d23a8",
+  "python": "3.12.14",
+  "openpyxl": "3.1.5",
+  "tipo": "Cálculo Python y revisión estructural/cachés; no recálculo Excel ni render visual",
+  "modo_final": false,
+  "metricas": {
+    "notas": 73,
+    "renglones": 262,
+    "estados": {
+      "DISPONIBLE": 206,
+      "REVISAR": 38,
+      "EXCLUIR": 18
+    },
+    "nulos_por_campo": {
+      "cantidad": 5,
+      "precio_unitario": 16,
+      "subtotal_producto": 9
+    },
+    "campos_nulos": 30,
+    "campos_inspeccionados": 786,
+    "renglones_con_nulos": 17,
+    "diferencias_fuente": [
+      "NP-025072-04",
+      "NP-025110-02",
+      "NP-025118-01",
+      "NP-025119-01",
+      "NP-025138-01"
+    ],
+    "escenarios_D": [
+      {
+        "D": 30,
+        "denominador_convencional": 786,
+        "por_millon": 38167.938931297715,
+        "sigma_equivalente": 3.27235360650087,
+        "interpretacion": "Completitud sintáctica"
+      },
+      {
+        "D": 34,
+        "denominador_convencional": 786,
+        "por_millon": 43256.99745547074,
+        "sigma_equivalente": 3.2140802148975647,
+        "interpretacion": "Regla combinada hipotética; no CTQ aprobado"
+      },
+      {
+        "D": 35,
+        "denominador_convencional": 786,
+        "por_millon": 44529.262086514,
+        "sigma_equivalente": 3.2003850385679784,
+        "interpretacion": "Regla combinada hipotética; no CTQ aprobado"
+      }
+    ],
+    "fechas_estado": {
+      "Año discordante": 6,
+      "Estimada": 39,
+      "Real": 28
+    },
+    "pareto_excluyente": {
+      "Campos numéricos incompletos": 7,
+      "Estado PEDIDO en nota o renglón": 13,
+      "Observación o lectura dudosa documentada": 7,
+      "Motivo no explicitado en el detalle": 6,
+      "Diferencia de importe consignada en fuente": 5
+    },
+    "conjuntos": {
+      "PEDIDO": 13,
+      "numericos": 21,
+      "interseccion": 9,
+      "union": 25
+    },
+    "caso_NP02513801": {
+      "id_detalle": "NP-025138-01",
+      "id_comprobante": "NP-025138",
+      "fecha_emision": "2026-03-07",
+      "serie": "025",
+      "numero": "025138",
+      "renglon_imagen": "01",
+      "producto_original": "Curvas de luz",
+      "producto_normalizado": "Curvas de luz",
+      "cantidad": 2000,
+      "unidad": null,
+      "precio_unitario": 0.24,
+      "subtotal_producto": 480,
+      "unidad_del_precio": "millar",
+      "codigo_producto": null,
+      "descuento": null,
+      "igv": null,
+      "tipo_fecha": "ESTIMADA",
+      "estado_comprobante": "SIN_MARCA",
+      "estado_linea": "REGISTRADA",
+      "uso_importe": "REVISAR",
+      "importe_calculado": 0.48,
+      "diferencia_importe": 479.52,
+      "observacion": "La letra M aparece junto al precio/importe. Control por millar.",
+      "archivo_origen": "03_Imagenes_Originales/Imagenes_libro_5.zip/IMG_20260827_111400_411.jpg"
+    },
+    "notas_sin_detalle": [
+      "NP-025111",
+      "NP-025127",
+      "NP-025137",
+      "NP-025140"
+    ],
+    "totales_discrepantes": [
+      {
+        "id": "NP-025059",
+        "total_fuente": 462.5,
+        "suma_importes_presentes": 464.5,
+        "diferencia": 2.0,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025066",
+        "total_fuente": 3144,
+        "suma_importes_presentes": 3164.0,
+        "diferencia": 20.0,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025069",
+        "total_fuente": 385,
+        "suma_importes_presentes": 425,
+        "diferencia": 40,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025072",
+        "total_fuente": 619.4,
+        "suma_importes_presentes": 519.4,
+        "diferencia": -100.0,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025078",
+        "total_fuente": 426,
+        "suma_importes_presentes": 412,
+        "diferencia": -14,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025084",
+        "total_fuente": 1571,
+        "suma_importes_presentes": 1629,
+        "diferencia": 58,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025112",
+        "total_fuente": 491.6,
+        "suma_importes_presentes": 457.6,
+        "diferencia": -34.0,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025126",
+        "total_fuente": 430,
+        "suma_importes_presentes": 1130,
+        "diferencia": 700,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025129",
+        "total_fuente": 1380,
+        "suma_importes_presentes": 900,
+        "diferencia": -480,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      },
+      {
+        "id": "NP-025142",
+        "total_fuente": 563,
+        "suma_importes_presentes": 540,
+        "diferencia": -23,
+        "nulos_en_suma": 0,
+        "estado": "Discrepancia sin resolver; suma parcial si hay nulos"
+      }
+    ],
+    "wilson_nominal": {
+      "intervalo": [
+        0.10752751171111362,
+        0.19280735394483334
+      ],
+      "supuesto": "Renglones independientes; no justifica representatividad del lote"
+    },
+    "agrupamiento_exploratorio": {
+      "notas_con_detalle": 69,
+      "icc_anova_binario": 0.2461588137181796,
+      "efecto_diseno_aproximado": 1.6885311746030243,
+      "limite": "Modelo ANOVA sobre indicador binario; DEFF aproximado con tamaño medio, no diseño de muestreo confirmado"
+    },
+    "simulaciones": [
+      {
+        "eficacia_supuesta": 1,
+        "revisar_esperados": 13,
+        "proporcion_esperada": 0.04961832061068702,
+        "naturaleza": "Escenario; no observaciones de piloto"
+      },
+      {
+        "eficacia_supuesta": 0.75,
+        "revisar_esperados": 19.25,
+        "proporcion_esperada": 0.07347328244274809,
+        "naturaleza": "Escenario; no observaciones de piloto"
+      },
+      {
+        "eficacia_supuesta": 0.5,
+        "revisar_esperados": 25.5,
+        "proporcion_esperada": 0.09732824427480916,
+        "naturaleza": "Escenario; no observaciones de piloto"
+      },
+      {
+        "eficacia_supuesta": 0.25,
+        "revisar_esperados": 31.75,
+        "proporcion_esperada": 0.12118320610687022,
+        "naturaleza": "Escenario; no observaciones de piloto"
+      }
+    ],
+    "economia_escenarios": {
+      "lote_mensual_supuesto": {
+        "horas_liberadas_mes": 4.166666666666667,
+        "valor_anual_realizable": 375.00000000000006,
+        "neto_anual_estimado": 255.00000000000006,
+        "equilibrio_revisar_mes": 12.16,
+        "naturaleza": "Modelo con parámetros supuestos; no costo observado ni flujo de caja garantizado"
+      },
+      "volumen_bajo_supuesto_13_3_meses": {
+        "horas_liberadas_mes": 0.31328320802005016,
+        "valor_anual_realizable": 28.195488721804516,
+        "neto_anual_estimado": -91.80451127819549,
+        "equilibrio_revisar_mes": 12.16,
+        "naturaleza": "Modelo con parámetros supuestos; no costo observado ni flujo de caja garantizado"
+      }
+    }
+  },
+  "pruebas": [
+    {
+      "prueba": "Huella del corte congelado",
+      "resultado": "PASA",
+      "evidencia": "e575d3a81ffc1ff894b8d6b0cd5b47bf7c01d28db6978458500c206e0844f56c"
+    },
+    {
+      "prueba": "Población 73/262",
+      "resultado": "PASA",
+      "evidencia": {
+        "notas": 73,
+        "renglones": 262
+      }
+    },
+    {
+      "prueba": "Estados 206/38/18",
+      "resultado": "PASA",
+      "evidencia": {
+        "DISPONIBLE": 206,
+        "REVISAR": 38,
+        "EXCLUIR": 18
+      }
+    },
+    {
+      "prueba": "Identificadores de renglón únicos",
+      "resultado": "PASA",
+      "evidencia": "262 IDs inspeccionados"
+    },
+    {
+      "prueba": "Identificadores de nota únicos",
+      "resultado": "PASA",
+      "evidencia": "73 IDs inspeccionados"
+    },
+    {
+      "prueba": "Claves de detalle pertenecen al padrón de notas",
+      "resultado": "PASA",
+      "evidencia": "Incluye notas sin detalle; no se eliminan"
+    },
+    {
+      "prueba": "Completitud 5/16/9 y 786 campos",
+      "resultado": "PASA",
+      "evidencia": {
+        "cantidad": 5,
+        "precio_unitario": 16,
+        "subtotal_producto": 9
+      }
+    },
+    {
+      "prueba": "Cinco diferencias consignadas preservadas",
+      "resultado": "PASA",
+      "evidencia": [
+        "NP-025072-04",
+        "NP-025110-02",
+        "NP-025118-01",
+        "NP-025119-01",
+        "NP-025138-01"
+      ]
+    },
+    {
+      "prueba": "Incidencia millar preservada",
+      "resultado": "PASA",
+      "evidencia": {
+        "id_detalle": "NP-025138-01",
+        "id_comprobante": "NP-025138",
+        "fecha_emision": "2026-03-07",
+        "serie": "025",
+        "numero": "025138",
+        "renglon_imagen": "01",
+        "producto_original": "Curvas de luz",
+        "producto_normalizado": "Curvas de luz",
+        "cantidad": 2000,
+        "unidad": null,
+        "precio_unitario": 0.24,
+        "subtotal_producto": 480,
+        "unidad_del_precio": "millar",
+        "codigo_producto": null,
+        "descuento": null,
+        "igv": null,
+        "tipo_fecha": "ESTIMADA",
+        "estado_comprobante": "SIN_MARCA",
+        "estado_linea": "REGISTRADA",
+        "uso_importe": "REVISAR",
+        "importe_calculado": 0.48,
+        "diferencia_importe": 479.52,
+        "observacion": "La letra M aparece junto al precio/importe. Control por millar.",
+        "archivo_origen": "03_Imagenes_Originales/Imagenes_libro_5.zip/IMG_20260827_111400_411.jpg"
+      }
+    },
+    {
+      "prueba": "Pareto excluyente suma 38",
+      "resultado": "PASA",
+      "evidencia": {
+        "Campos numéricos incompletos": 7,
+        "Estado PEDIDO en nota o renglón": 13,
+        "Observación o lectura dudosa documentada": 7,
+        "Motivo no explicitado en el detalle": 6,
+        "Diferencia de importe consignada en fuente": 5
+      }
+    },
+    {
+      "prueba": "Unión documental reproducida",
+      "resultado": "PASA",
+      "evidencia": {
+        "PEDIDO": 13,
+        "numericos": 21,
+        "interseccion": 9,
+        "union": 25
+      }
+    },
+    {
+      "prueba": "Cuatro notas sin detalle visibles",
+      "resultado": "PASA",
+      "evidencia": [
+        "NP-025111",
+        "NP-025127",
+        "NP-025137",
+        "NP-025140"
+      ]
+    },
+    {
+      "prueba": "Diez diferencias de total identificadas",
+      "resultado": "PASA",
+      "evidencia": {
+        "cantidad": 10,
+        "no_se_corrigen": true
+      }
+    },
+    {
+      "prueba": "D30 conversión independiente",
+      "resultado": "PASA",
+      "evidencia": {
+        "D": 30,
+        "denominador_convencional": 786,
+        "por_millon": 38167.938931297715,
+        "sigma_equivalente": 3.27235360650087,
+        "interpretacion": "Completitud sintáctica"
+      }
+    },
+    {
+      "prueba": "Extremos de simulación",
+      "resultado": "PASA",
+      "evidencia": [
+        {
+          "eficacia_supuesta": 1,
+          "revisar_esperados": 13,
+          "proporcion_esperada": 0.04961832061068702,
+          "naturaleza": "Escenario; no observaciones de piloto"
+        },
+        {
+          "eficacia_supuesta": 0.75,
+          "revisar_esperados": 19.25,
+          "proporcion_esperada": 0.07347328244274809,
+          "naturaleza": "Escenario; no observaciones de piloto"
+        },
+        {
+          "eficacia_supuesta": 0.5,
+          "revisar_esperados": 25.5,
+          "proporcion_esperada": 0.09732824427480916,
+          "naturaleza": "Escenario; no observaciones de piloto"
+        },
+        {
+          "eficacia_supuesta": 0.25,
+          "revisar_esperados": 31.75,
+          "proporcion_esperada": 0.12118320610687022,
+          "naturaleza": "Escenario; no observaciones de piloto"
+        }
+      ]
+    },
+    {
+      "prueba": "Modelo económico 255 / negativo / equilibrio",
+      "resultado": "PASA",
+      "evidencia": {
+        "lote_mensual_supuesto": {
+          "horas_liberadas_mes": 4.166666666666667,
+          "valor_anual_realizable": 375.00000000000006,
+          "neto_anual_estimado": 255.00000000000006,
+          "equilibrio_revisar_mes": 12.16,
+          "naturaleza": "Modelo con parámetros supuestos; no costo observado ni flujo de caja garantizado"
+        },
+        "volumen_bajo_supuesto_13_3_meses": {
+          "horas_liberadas_mes": 0.31328320802005016,
+          "valor_anual_realizable": 28.195488721804516,
+          "neto_anual_estimado": -91.80451127819549,
+          "equilibrio_revisar_mes": 12.16,
+          "naturaleza": "Modelo con parámetros supuestos; no costo observado ni flujo de caja garantizado"
+        }
+      }
+    },
+    {
+      "prueba": "Integridad OOXML: 01_Lean/U3_Lean_HIDROCOM.docx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 14,
+        "slides": 0,
+        "limite": "No es revisión visual"
+      }
+    },
+    {
+      "prueba": "PDF abre y tiene texto: 01_Lean/U3_Lean_HIDROCOM.pdf",
+      "resultado": "PASA",
+      "evidencia": {
+        "paginas": 7,
+        "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Caché sin errores Excel: 01_Lean/U3_Lean_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Fuente Datos preservada: 01_Lean/U3_Lean_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 262,
+        "celdas_comparadas": 6288,
+        "diferencias": []
+      }
+    },
+    {
+      "prueba": "Sin dependencia de otro libro: 01_Lean/U3_Lean_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Integridad OOXML: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 14,
+        "slides": 0,
+        "limite": "No es revisión visual"
+      }
+    },
+    {
+      "prueba": "PDF abre y tiene texto: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
+      "resultado": "PASA",
+      "evidencia": {
+        "paginas": 7,
+        "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Caché sin errores Excel: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Fuente Datos preservada: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 262,
+        "celdas_comparadas": 6288,
+        "diferencias": []
+      }
+    },
+    {
+      "prueba": "Sin dependencia de otro libro: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Integridad OOXML: 03_DMAIC/U3_DMAIC_HIDROCOM.docx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 13,
+        "slides": 0,
+        "limite": "No es revisión visual"
+      }
+    },
+    {
+      "prueba": "PDF abre y tiene texto: 03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
+      "resultado": "PASA",
+      "evidencia": {
+        "paginas": 15,
+        "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Caché sin errores Excel: 03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Fuente Datos preservada: 03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 262,
+        "celdas_comparadas": 6288,
+        "diferencias": []
+      }
+    },
+    {
+      "prueba": "Fuente Comprobantes preservada: 03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 73
+      }
+    },
+    {
+      "prueba": "Fuente Fechas preservada: 03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 73
+      }
+    },
+    {
+      "prueba": "Sin dependencia de otro libro: 03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Caché sin errores Excel: 04_Producto_Final/U3_Formato_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Fuente Datos preservada: 04_Producto_Final/U3_Formato_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 262,
+        "celdas_comparadas": 6288,
+        "diferencias": []
+      }
+    },
+    {
+      "prueba": "Sin dependencia de otro libro: 04_Producto_Final/U3_Formato_DMAIC_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Integridad OOXML: 04_Producto_Final/U3_Informe_HIDROCOM.docx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 13,
+        "slides": 0,
+        "limite": "No es revisión visual"
+      }
+    },
+    {
+      "prueba": "Integridad OOXML: 04_Producto_Final/U3_Presentacion_HIDROCOM.pptx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 39,
+        "slides": 13,
+        "limite": "No es revisión visual"
+      }
+    },
+    {
+      "prueba": "Caché sin errores Excel: 05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Sin dependencia de otro libro: 05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "PDF abre y tiene texto: documentacion/diagramas/VSM_actual_documental.pdf",
+      "resultado": "PASA",
+      "evidencia": {
+        "paginas": 1,
+        "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "PDF abre y tiene texto: documentacion/diagramas/VSM_futuro_propuesto.pdf",
+      "resultado": "PASA",
+      "evidencia": {
+        "paginas": 1,
+        "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Enlaces Markdown locales resolubles",
+      "resultado": "PASA",
+      "evidencia": []
+    }
+  ],
+  "avisos": [
+    {
+      "archivo": "01_Lean",
+      "tipo": "Entregable aún pendiente",
+      "extension": "pptx"
+    },
+    {
+      "archivo": "02_Seis_Sigma",
+      "tipo": "Entregable aún pendiente",
+      "extension": "pptx"
+    },
+    {
+      "archivo": "03_DMAIC",
+      "tipo": "Entregable aún pendiente",
+      "extension": "pptx"
+    }
+  ],
+  "libros": [
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.xlsx",
+      "hojas": [
+        "Lean",
+        "VSM",
+        "Desperdicios",
+        "5S",
+        "Kaizen",
+        "PokaYoke",
+        "Datos"
+      ],
+      "formulas_inspeccionadas": 25,
+      "formulas_sin_cache": 0,
+      "validaciones_de_datos": 2,
+      "errores_cache": 0,
+      "motor_ejecutado_por_este_script": false
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx",
+      "hojas": [
+        "SeisSigma",
+        "Seleccion",
+        "Roles",
+        "CTQ",
+        "Metricas",
+        "Datos"
+      ],
+      "formulas_inspeccionadas": 1328,
+      "formulas_sin_cache": 0,
+      "validaciones_de_datos": 0,
+      "errores_cache": 0,
+      "motor_ejecutado_por_este_script": false
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "hojas": [
+        "Resumen",
+        "Definir",
+        "Medir",
+        "Analizar",
+        "Verificar",
+        "Mejorar",
+        "Control",
+        "Beneficios",
+        "Pendientes",
+        "Validar",
+        "Datos",
+        "Comprobantes",
+        "Fechas",
+        "Conciliacion"
+      ],
+      "formulas_inspeccionadas": 794,
+      "formulas_sin_cache": 0,
+      "validaciones_de_datos": 3,
+      "errores_cache": 0,
+      "motor_ejecutado_por_este_script": false
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Formato_DMAIC_HIDROCOM.xlsx",
+      "hojas": [
+        "0_Datos_y_Checklist",
+        "D1_Project_Charter",
+        "D2_5W2H",
+        "D3_SIPOC",
+        "M1_Flujo_SwimLane",
+        "M2_LineaBase_Sigma",
+        "A1_Pareto",
+        "A2_Ishikawa_Verificacion",
+        "I1_Ideas_Matriz",
+        "I2_Plan_Accion",
+        "C1_Plan_Control",
+        "C2_Beneficios_Lecciones",
+        "Datos"
+      ],
+      "formulas_inspeccionadas": 334,
+      "formulas_sin_cache": 0,
+      "validaciones_de_datos": 0,
+      "errores_cache": 0,
+      "motor_ejecutado_por_este_script": false
+    },
+    {
+      "archivo": "05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx",
+      "hojas": [
+        "1. Supuestos",
+        "2. Proceso y costos",
+        "3. Evaluación",
+        "4. Sensibilidad"
+      ],
+      "formulas_inspeccionadas": 59,
+      "formulas_sin_cache": 0,
+      "validaciones_de_datos": 0,
+      "errores_cache": 0,
+      "motor_ejecutado_por_este_script": false
+    }
+  ],
+  "pdfs": [
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.pdf",
+      "paginas": 7
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
+      "paginas": 7
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
+      "paginas": 15
+    },
+    {
+      "archivo": "documentacion/diagramas/VSM_actual_documental.pdf",
+      "paginas": 1
+    },
+    {
+      "archivo": "documentacion/diagramas/VSM_futuro_propuesto.pdf",
+      "paginas": 1
+    }
+  ],
+  "ooxml": [
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.docx",
+      "xml": 14,
+      "diapositivas": 0,
+      "revision_visual_pendiente": true
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx",
+      "xml": 14,
+      "diapositivas": 0,
+      "revision_visual_pendiente": true
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.docx",
+      "xml": 13,
+      "diapositivas": 0,
+      "revision_visual_pendiente": true
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Informe_HIDROCOM.docx",
+      "xml": 13,
+      "diapositivas": 0,
+      "revision_visual_pendiente": true
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Presentacion_HIDROCOM.pptx",
+      "xml": 39,
+      "diapositivas": 13,
+      "revision_visual_pendiente": true
+    }
+  ],
+  "artefactos": [
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.docx",
+      "sha256": "5002a7971deed86fc6b7cc6d79b028f587635e24b33643dc23df255edc7ebc23",
+      "bytes": 105092
+    },
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.pdf",
+      "sha256": "1ba5b9fb7041d7813da09a7ec04dca157d3998f61ab9f9ed46b7e2000025cece",
+      "bytes": 90087
+    },
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.xlsx",
+      "sha256": "1b66f2f28bfdbcf95eb5d510e2cf87e5191cfb7f665b7d19a70fe55e763e0e1b",
+      "bytes": 52683
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx",
+      "sha256": "833bf9a3d47bd06005dabe3ccf423dff4d20e02d09a3ac32d512ab90f76dfe7d",
+      "bytes": 43498
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
+      "sha256": "1e9fd43584e2586dc819ebf44bd3369cd5c9c683b6e5416b068c9840b838eebc",
+      "bytes": 90377
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx",
+      "sha256": "4b094278e692ed8d6be7af1df14724ee9a754bbb0d385a0856d3749944c86a64",
+      "bytes": 62748
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.docx",
+      "sha256": "4aa4e39943a66cfb2113620813172e235c0873e65287b628b6d71cb1152a1e25",
+      "bytes": 344488
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
+      "sha256": "ef97322414c38ea51e1be2a83f2efbca912aa9a7e7d25a85a3943fdd9e9a69c4",
+      "bytes": 109103
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
+      "sha256": "2ef4229ceb5a2813f7e2d71057842efbff96a442ad21e01ca5ff0e543d2a028f",
+      "bytes": 94961
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Formato_DMAIC_HIDROCOM.xlsx",
+      "sha256": "f3fcb55429fcb500be640e3a05813c5d9c925acb8e27ed1d1daffef880148e86",
+      "bytes": 188068
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Informe_HIDROCOM.docx",
+      "sha256": "4aa4e39943a66cfb2113620813172e235c0873e65287b628b6d71cb1152a1e25",
+      "bytes": 344488
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Presentacion_HIDROCOM.pptx",
+      "sha256": "7ae463491e938155d4ab91e2292f393da949161f12bd449f4ebc9f726e22b4c2",
+      "bytes": 1105613
+    },
+    {
+      "archivo": "05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx",
+      "sha256": "e036038c8df4c5416144af0a48d3cf141da5ff8baf5e2c370a6cfc54f7ce1db1",
+      "bytes": 12069
+    },
+    {
+      "archivo": "documentacion/diagramas/VSM_actual_documental.pdf",
+      "sha256": "e02cde2b6099a8f66cfad95abd5c91d38595f856bd2de7bb1af1ca34d126a86d",
+      "bytes": 2099
+    },
+    {
+      "archivo": "documentacion/diagramas/VSM_futuro_propuesto.pdf",
+      "sha256": "a622679de13608fb3f76d8b206551c11b2717da5667a51c506c39b75ee7ef718",
+      "bytes": 2115
+    }
+  ],
+  "resumen": {
+    "pasan": 43,
+    "fallan": 0,
+    "avisos": 3,
+    "formulas_inspeccionadas": 2540
+  }
+}

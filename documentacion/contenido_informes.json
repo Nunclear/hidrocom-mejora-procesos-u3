@@ -1,0 +1,862 @@
+{
+  "Lean": [
+    [
+      "Contexto, problema y alcance",
+      [
+        {
+          "tipo": "p",
+          "texto": "HIDROCOM KALLPA se describe en el material suministrado como una organización de comercialización y distribución de productos ferreteros para agua, desagüe, almacenamiento y riego en la región de Puno. Esa descripción contextual no sustituye la verificación de la procedencia del lote."
+        },
+        {
+          "tipo": "p",
+          "texto": "El usuario confirmó que no puede acreditar el origen original, el proveedor ni la autenticidad empresarial de las notas. El 09/03/2026 es una fecha reportada en la recopilación histórica y carece aquí de constancia oficial. Por ello, el estudio describe este lote documental y no representa automáticamente el desempeño actual de toda la empresa."
+        },
+        {
+          "tipo": "p",
+          "texto": "El problema documental consiste en registros que requieren revisión y en publicaciones que deben conciliarse con su fuente. El objetivo de Lean es diseñar un flujo trazable de captura, revisión y liberación, y preparar su validación. El alcance termina en la información publicada; no se evalúan inventario físico, entregas ni desempeño individual."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Estado",
+            "Renglones",
+            "Proporción del lote"
+          ],
+          "filas": [
+            [
+              "DISPONIBLE",
+              206,
+              "78,63 %"
+            ],
+            [
+              "REVISAR",
+              38,
+              "14,50 %"
+            ],
+            [
+              "EXCLUIR",
+              18,
+              "6,87 %"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "REVISAR expresa una cola documental, no un error confirmado. DISPONIBLE no es rendimiento de primera pasada: se desconoce la secuencia previa a las correcciones. El beneficio esperado es mejorar interpretabilidad y trazabilidad; no existe un ahorro operativo medido."
+        }
+      ]
+    ],
+    [
+      "Cinco principios y valor para el destinatario",
+      [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Principio",
+            "Aplicación propuesta",
+            "Verificación"
+          ],
+          "filas": [
+            [
+              "Valor",
+              "Datos interpretables para la decisión del reporte.",
+              "VOC con el destinatario real."
+            ],
+            [
+              "Cadena de valor",
+              "Rastrear nota, registro, revisión y publicación.",
+              "Observación del recorrido real."
+            ],
+            [
+              "Flujo",
+              "Avanzar con estado y evidencia explícitos.",
+              "Medir esperas y excepciones."
+            ],
+            [
+              "Pull",
+              "Liberar según solicitud y aprobación.",
+              "Acordar demanda y responsables."
+            ],
+            [
+              "Perfección",
+              "Revisar condiciones repetidas y ajustar reglas.",
+              "Comparar lotes compatibles."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "La voz del cliente todavía no se ha recogido. Se propone entrevistar al destinatario sobre decisiones, campos requeridos, tolerancias y excepciones. Los requisitos derivados deben ser validados antes de llamar CTQ aprobado a una regla de análisis."
+        },
+        {
+          "tipo": "p",
+          "texto": "Muda organiza preguntas sobre actividad sin valor. Mura y Muri solo se investigarán si una observación real muestra variabilidad del flujo o sobrecarga. El tamaño desigual de las notas no basta para afirmar una de esas condiciones."
+        },
+        {
+          "tipo": "p",
+          "texto": "Aplicación conceptual: un control de identificación puede evitar búsquedas y una regla de versión puede evitar liberar archivos incompatibles. Esto describe mecanismos propuestos, no reducciones de movimiento o retrabajo ya demostradas."
+        }
+      ]
+    ],
+    [
+      "Desperdicios: evidencias y preguntas",
+      [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Categoría",
+            "Qué se sabe o se propone investigar"
+          ],
+          "filas": [
+            [
+              "Defectos",
+              "Hay campos vacíos y diferencias documentales; la no conformidad operativa exige reglas y cotejo."
+            ],
+            [
+              "Sobreproducción",
+              "Investigar reportes o copias sin solicitud; no observados."
+            ],
+            [
+              "Espera",
+              "Hay pendientes, pero no se conoce su tiempo en cola."
+            ],
+            [
+              "Talento no utilizado",
+              "Entrevistar al equipo antes de afirmar falta de participación."
+            ],
+            [
+              "Transporte",
+              "Observar transferencias de notas y archivos; no se han contado."
+            ],
+            [
+              "Inventario",
+              "38 renglones REVISAR al corte; no es inventario físico ni una serie de WIP."
+            ],
+            [
+              "Movimiento",
+              "Cronometrar búsquedas de originales; no medidas."
+            ],
+            [
+              "Sobreprocesamiento",
+              "Trazar recaptura y revisiones repetidas; la diferencia de versiones no prueba repetición."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Cada categoría se mantendrá como observación, hipótesis o propuesta según su evidencia. El Pareto del lote describe condiciones de revisión y no ocho causas de desperdicio. No se atribuye ningún hallazgo a un trabajador."
+        },
+        {
+          "tipo": "p",
+          "texto": "La toma de datos propuesta registra unidad, etapa, instante de entrada, inicio, fin, interrupción y evidencia. Separar tiempo necesario sin valor de pasos que puedan eliminarse solo después de revisar su finalidad."
+        }
+      ]
+    ],
+    [
+      "VSM actual documental",
+      [
+        {
+          "tipo": "imagen",
+          "ruta": "documentacion/diagramas/VSM_actual_documental.png",
+          "pie": "Figura 1. Flujo derivado del material disponible; sin observación completa en campo."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Etapa",
+            "Entrada/control documental",
+            "Estado de evidencia"
+          ],
+          "filas": [
+            [
+              "Recibir",
+              "Original o imagen e identificador.",
+              "Originales físicos por cotejar."
+            ],
+            [
+              "Registrar",
+              "Campos literales y base de precio.",
+              "262 renglones digitalizados."
+            ],
+            [
+              "Validar",
+              "Reglas de presencia y coherencia.",
+              "38 REVISAR; reglas empresariales pendientes."
+            ],
+            [
+              "Resolver",
+              "Decisión sustentada en evidencia.",
+              "Sin cierres de piloto acreditados."
+            ],
+            [
+              "Aprobar",
+              "Revisor y versión de la fuente.",
+              "Se propone formalizar."
+            ],
+            [
+              "Publicar",
+              "Huella, claves, categorías y agregados.",
+              "Dos versiones del Data Mart documentadas."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "TC, LT, espera, retrabajo y VA permanecen pendientes. No se inventa un cuello de botella a partir del número de pendientes. La cola documentada puede priorizar observación, pero no identifica por sí sola el punto de mayor demora."
+        }
+      ]
+    ],
+    [
+      "VSM futuro y plan de medición",
+      [
+        {
+          "tipo": "imagen",
+          "ruta": "documentacion/diagramas/VSM_futuro_propuesto.png",
+          "pie": "Figura 2. Diseño futuro sujeto a reglas, responsables y piloto."
+        },
+        {
+          "tipo": "p",
+          "texto": "El diseño incorpora alertas al capturar, una ruta explícita para excepciones, cotejo con originales y conciliación antes de liberar. Los casos ambiguos permanecen pendientes: reducir una etiqueta sin evidencia no significa resolver el registro."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Variable",
+            "Definición propuesta y condición"
+          ],
+          "filas": [
+            [
+              "Espera",
+              "Inicio de actividad menos entrada a cola, con reloj común."
+            ],
+            [
+              "Proceso/TC por etapa",
+              "Duración de una actividad por unidad, con criterio acordado."
+            ],
+            [
+              "LT del recorrido",
+              "Salida final menos entrada inicial de la misma unidad."
+            ],
+            [
+              "Retrabajo",
+              "Tiempo adicional identificado, sin duplicar intervalos."
+            ],
+            [
+              "VA",
+              "Tiempo clasificado con el destinatario; debe ser compatible con el proceso."
+            ],
+            [
+              "PCE",
+              "VA / LT, solo con LT positivo y observaciones comparables."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "La cadencia entre salidas se registra separadamente del tiempo de procesamiento. El instrumento TIEMPOS.csv está en blanco y el protocolo exige conservar excepciones, unidades, zona horaria y períodos no observados. No existe todavía una PCE base o futura medida."
+        }
+      ]
+    ],
+    [
+      "5S digital y propuestas Kaizen",
+      [
+        {
+          "tipo": "p",
+          "texto": "La 5S realizada corresponde únicamente al taller académico de publicación. Se organizaron tres carpetas de entregables y guías independientes. La lista propia de cinco criterios pasó de 1/5 a 4/5 en ese espacio; la disciplina sostenida sigue pendiente de dueño y calendario. No es una medición del almacén ni de productividad empresarial."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Idea",
+            "Finalidad y estado"
+          ],
+          "filas": [
+            [
+              "Campos aplicables",
+              "Alertar omisiones según tipo de nota; prototipo."
+            ],
+            [
+              "Base de precio",
+              "Registrar unidad o millar con evidencia; propuesta."
+            ],
+            [
+              "Catálogo",
+              "Conciliar identidades sin borrar la escritura original."
+            ],
+            [
+              "Motivo de revisión",
+              "Conservar explicación de REVISAR/EXCLUIR."
+            ],
+            [
+              "Cierre trazable",
+              "Exigir decisión, revisor, fecha y evidencia."
+            ],
+            [
+              "Versiones",
+              "Identificar fuente y publicación por huellas."
+            ],
+            [
+              "5S digital",
+              "Orden académico realizado; sostenimiento pendiente."
+            ],
+            [
+              "Revisión Kaizen",
+              "Aprender de condiciones repetidas; práctica propuesta."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Los puntajes de impacto/esfuerzo y los responsables nominales no están aprobados. La selección inicial de captura y versión se justifica cualitativamente por vacíos y diferencias observables; no es una priorización numérica acordada con la empresa."
+        }
+      ]
+    ],
+    [
+      "Poka-Yoke y estandarización",
+      [
+        {
+          "tipo": "p",
+          "texto": "El prototipo distingue prevención de captura incompleta y detección de diferencias. Requiere identificador, producto, números válidos, base de precio, evidencia y revisor. La comparación propuesta es importe − cantidad × precio / base, con tolerancia aprobada."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Prueba funcional sintética",
+            "Respuesta esperada"
+          ],
+          "filas": [
+            [
+              "Registro vacío",
+              "SIN REGISTRO"
+            ],
+            [
+              "Campo obligatorio ausente",
+              "INCOMPLETO"
+            ],
+            [
+              "Base de precio igual a cero",
+              "NUMEROS INVALIDOS"
+            ],
+            [
+              "ID repetido",
+              "ID DUPLICADO"
+            ],
+            [
+              "Importe fuera de tolerancia",
+              "REVISAR IMPORTE"
+            ],
+            [
+              "Falta de evidencia o aprobación",
+              "FALTA EVIDENCIA O APROBACION"
+            ],
+            [
+              "Datos completos bajo reglas acordadas",
+              "VALIDADO solo por las reglas del prototipo"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Los casos sintéticos verifican comportamiento del control, no representan transacciones de la empresa. El Excel puede editarse y una coherencia aritmética no acredita verdad documental. Debe verificarse la base contra evidencia, especialmente NP-025138-01."
+        },
+        {
+          "tipo": "p",
+          "texto": "El estándar propuesto registra versión, campos aplicables, regla, excepción, decisión y liberación. El plan de control identifica frecuencia por aprobar y reacción; no se presenta como sistema ya operativo."
+        }
+      ]
+    ],
+    [
+      "Validación, conclusiones y referencias",
+      [
+        {
+          "tipo": "p",
+          "texto": "El flujo documental y los controles pueden diseñarse con los archivos actuales. La eficacia, el tiempo ahorrado y la sostenibilidad requieren observación y piloto. Las mejoras demostradas en esta entrega son del producto académico: trazabilidad, claridad de diagramas y comprobaciones reproducibles."
+        },
+        {
+          "tipo": "p",
+          "texto": "La comparación retrospectiva comunicada por Claude sobre la primera captura puede describir transformaciones; su alcance no incluye causalidad operativa ni autenticidad del documento físico. Se conserva el límite de procedencia confirmado como pendiente por el usuario."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Siguiente paso",
+            "Salida necesaria"
+          ],
+          "filas": [
+            [
+              "Confirmar origen y VOC",
+              "Custodio identificado y requisitos aceptados."
+            ],
+            [
+              "Medir y revisar concordancia",
+              "Tiempos reales y lecturas independientes."
+            ],
+            [
+              "Ejecutar piloto",
+              "Uso del control y lotes comparables."
+            ],
+            [
+              "Evaluar y sostener",
+              "Resultados completos, incluidos negativos, y aprobación de estándar."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Instrumentos asociados: VOC, TIEMPOS, MSA, COTEJO_PENDIENTES y APROBACIONES. Ninguno se presenta como diligenciado."
+        },
+        {
+          "tipo": "p",
+          "texto": "Referencias: PMI, cinco principios Lean (https://www.pmi.org/disciplined-agile/lean/principles); Lean Enterprise Institute, 5S (https://www.lean.org/lexicon-terms/five-s/) y prevención de errores (https://www.lean.org/lexicon-terms/error-proofing/). Consulta 24/11/2026. Fuentes del caso y resultados: Fuente del caso: corte documental de Comprobantes_Revisados.xlsx, SHA-256 ac6ab323…; contrato común de datos v1.0; resultados independientes en validacion/resultados_integracion.json."
+        }
+      ]
+    ]
+  ],
+  "SeisSigma": [
+    [
+      "Problema, selección y alcance",
+      [
+        {
+          "tipo": "p",
+          "texto": "Seis Sigma requiere definir qué incumplimiento se mide y con qué evidencia. El proyecto selecciona el registro y validación documental porque existen notas, renglones y publicaciones que permiten reproducir contrastes. No se dispone de mediciones suficientes para seleccionar exactitud física del inventario o conformidad de entregas."
+        },
+        {
+          "tipo": "p",
+          "texto": "El usuario confirmó que no puede acreditar el origen original, el proveedor ni la autenticidad empresarial de las notas. El 09/03/2026 es una fecha reportada en la recopilación histórica y carece aquí de constancia oficial. Por ello, el estudio describe este lote documental y no representa automáticamente el desempeño actual de toda la empresa."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Elemento",
+            "Definición del estudio"
+          ],
+          "filas": [
+            [
+              "Unidad documental",
+              "73 notas; 69 tienen detalle en la tabla."
+            ],
+            [
+              "Unidad de análisis",
+              "262 renglones y tres campos seleccionados por renglón."
+            ],
+            [
+              "Estado de revisión",
+              "38 REVISAR, una carga documental al corte."
+            ],
+            [
+              "Objetivo",
+              "Diseñar y comprobar controles trazables sin imputar datos."
+            ],
+            [
+              "Meta y plazo empresarial",
+              "Pendientes; cualquier ejemplo permanece como propuesta."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "El caso económico se estudia mediante parámetros supuestos, sin utilizar los importes comerciales como ahorro. La prioridad del proceso es una selección cualitativa por disponibilidad de evidencia, no un ranking con puntajes inventados."
+        }
+      ]
+    ],
+    [
+      "Equipo funcional y responsabilidades",
+      [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Función propuesta",
+            "Responsabilidad",
+            "Asignación"
+          ],
+          "filas": [
+            [
+              "Champion/sponsor",
+              "Facilitar alcance y recursos.",
+              "Pendiente."
+            ],
+            [
+              "Líder",
+              "Coordinar medición, análisis y prueba.",
+              "Pendiente; sin certificación atribuida."
+            ],
+            [
+              "Analista",
+              "Conservar fuente y reproducir resultados.",
+              "Pendiente."
+            ],
+            [
+              "Dueño del proceso",
+              "Aprobar CTQ, excepciones y estándar.",
+              "Pendiente."
+            ],
+            [
+              "Revisor",
+              "Cotejar y sustentar decisiones.",
+              "Pendiente."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Los integrantes del manual se identifican como equipo académico, no como Black Belt o Green Belt certificados. Los roles de agentes de IA son un reparto técnico de elaboración y revisión, no cargos empresariales."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Actividad",
+            "Ejecuta",
+            "Aprueba",
+            "Consulta"
+          ],
+          "filas": [
+            [
+              "Definir alcance",
+              "Líder",
+              "Sponsor",
+              "Dueño/analista"
+            ],
+            [
+              "Aprobar CTQ",
+              "Líder",
+              "Dueño",
+              "Revisor/destinatario"
+            ],
+            [
+              "Medir lote",
+              "Analista",
+              "Líder",
+              "Revisor"
+            ],
+            [
+              "Resolver registros",
+              "Revisor",
+              "Dueño",
+              "Analista"
+            ],
+            [
+              "Probar controles",
+              "Equipo",
+              "Líder",
+              "Dueño"
+            ],
+            [
+              "Liberar estándar",
+              "Líder",
+              "Dueño",
+              "Sponsor"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "La RACI propuesta debe validarse nominalmente. No se completan firmas, metas o plazos por la mera presencia de nombres en un documento previo."
+        }
+      ]
+    ],
+    [
+      "VOC y árbol CTQ propuesto",
+      [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nivel del árbol",
+            "Contenido",
+            "Evidencia necesaria"
+          ],
+          "filas": [
+            [
+              "Necesidad",
+              "Información interpretable para la decisión comercial.",
+              "VOC real, todavía no entrevistada."
+            ],
+            [
+              "Completitud",
+              "Campos requeridos según tipo y excepción.",
+              "Aprobación de obligatoriedad."
+            ],
+            [
+              "Coherencia",
+              "Importe consistente con cantidad, precio y base.",
+              "Original y tolerancia acordada."
+            ],
+            [
+              "Trazabilidad",
+              "Vincular fuente, revisión, aprobación y publicación.",
+              "Reglas de evidencia y versión."
+            ],
+            [
+              "Defecto operativo",
+              "Incumplimiento de una regla aplicable y aprobada.",
+              "Definición y cotejo pendientes."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Los 30 vacíos pueden describirse bajo una regla de inspección sintáctica. Todavía no se sabe si cada campo era obligatorio en cada transacción. Un campo lleno tampoco prueba un valor correcto. Por tanto, se distingue el ejercicio académico de un CTQ corporativo aprobado."
+        },
+        {
+          "tipo": "p",
+          "texto": "El protocolo VOC propone registrar necesidad literal, traducción a una regla, excepción y validación del destinatario. Una inferencia del equipo no se transforma en entrevista. Los estados PEDIDO y EXCLUIR requieren aclarar su tratamiento comercial."
+        }
+      ]
+    ],
+    [
+      "Medición de estados y completitud",
+      [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Estado",
+            "Renglones",
+            "Proporción"
+          ],
+          "filas": [
+            [
+              "DISPONIBLE",
+              206,
+              "78,63 %"
+            ],
+            [
+              "REVISAR",
+              38,
+              "14,50 %"
+            ],
+            [
+              "EXCLUIR",
+              18,
+              "6,87 %"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Campo",
+            "Nulos",
+            "Campos inspeccionados"
+          ],
+          "filas": [
+            [
+              "Cantidad",
+              5,
+              262
+            ],
+            [
+              "Precio unitario",
+              16,
+              262
+            ],
+            [
+              "Importe escrito",
+              9,
+              262
+            ],
+            [
+              "Total de campos",
+              30,
+              786
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Hay 17 renglones con al menos uno de esos tres campos nulo. Los 30 son campos, no renglones; el denominador de la fracción de vacíos es 786. La completitud por campo es 756/786 (96,18 %) y los renglones sin esos vacíos son 245/262 (93,51 %). Ambas medidas son distintas de FPY."
+        },
+        {
+          "tipo": "p",
+          "texto": "La proporción DISPONIBLE describe un estado al corte, no conformidad en primera pasada. No se calcula RTY sin resultados secuenciales por etapa. Las 151 entradas mixtas de incidencias no se utilizan automáticamente como defectos."
+        }
+      ]
+    ],
+    [
+      "Indicador principal y sensibilidad",
+      [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Escenario",
+            "D",
+            "Denominador",
+            "Por millón",
+            "Sigma +1,5"
+          ],
+          "filas": [
+            [
+              "S30 · campos nulos",
+              30,
+              786,
+              "38 167,94",
+              "3,2724"
+            ],
+            [
+              "S34 · combinado alternativo",
+              34,
+              786,
+              "43 257,00",
+              "3,2141"
+            ],
+            [
+              "S35 · combinado publicado",
+              35,
+              786,
+              "44 529,26",
+              "3,2004"
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "S30 es el indicador académico provisional principal: completitud sintáctica exploratoria. DPU sintáctico = 30/262 = 0,1145; DPO equivalente = 30/786 = 0,038168; DPMO equivalente = DPO × 1 000 000. El sigma equivalente aplica Φ⁻¹(1−DPO)+1,5."
+        },
+        {
+          "tipo": "p",
+          "texto": "S34 y S35 agregan comprobaciones de coherencia a los vacíos, bajo la regla publicada. El uso de 786 en esos escenarios es una convención por validar, no una prueba de oportunidades empresariales homogéneas. No representan exactamente el mismo indicador que S30."
+        },
+        {
+          "tipo": "p",
+          "texto": "NP-025138-01 registra cantidad 2 000, precio 0,24 e importe 480, además de una base de precio y diferencia consignadas. Que 2 000 × 0,24 coincida con 480 no verifica por sí solo la interpretación de la base. Se conserva la incidencia original; su exclusión es sensibilidad, no corrección confirmada."
+        },
+        {
+          "tipo": "p",
+          "texto": "En extremos D=0 o D=U×O, la inversa normal no produce un sigma finito; el calculador debe mostrar no aplicable. La conversión no demuestra normalidad, estabilidad, capacidad ni satisfacción del destinatario."
+        }
+      ]
+    ],
+    [
+      "Incertidumbre y dependencia",
+      [
+        {
+          "tipo": "p",
+          "texto": "El lote completo permite describir exactamente sus estados. Se desconoce una población objetivo muestreada y la probabilidad de selección; por ello no se generaliza el 14,50 % a toda la empresa."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Cálculo exploratorio",
+            "Valor aproximado",
+            "Límite"
+          ],
+          "filas": [
+            [
+              "Wilson nominal 95 % para 38/262",
+              "10,75 % a 19,28 %",
+              "Supone ensayos independientes; no acredita representatividad."
+            ],
+            [
+              "ICC ANOVA del indicador REVISAR",
+              "0,246",
+              "Modelo exploratorio sobre variable binaria agrupada por nota."
+            ],
+            [
+              "DEFF aproximado con tamaño medio",
+              "1,69",
+              "No es un diseño muestral empresarial confirmado."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Los renglones de una misma nota pueden compartir condiciones. El análisis independiente reproduce la aproximación declarada; no convierte un tamaño efectivo aproximado en nuevas observaciones. La varianza de un diseño complejo requiere información de selección y agrupamiento que aquí falta."
+        },
+        {
+          "tipo": "p",
+          "texto": "No se usan gráficos de control con un orden temporal inventado. Cp/Cpk/Pp/Ppk se excluyen sin una variable y especificaciones válidas y sin condiciones de estabilidad justificadas. Una comparación de fechas estimadas y reales se mantiene descriptiva y no descarta causas."
+        },
+        {
+          "tipo": "p",
+          "texto": "Referencias de método: NIST, intervalos para proporciones (prc241.htm); CDC/NCHS, estimación de varianza de encuestas. El cálculo binomial nominal y el efecto de agrupamiento no resuelven el origen del lote."
+        }
+      ]
+    ],
+    [
+      "Conciliación y sistema de medición",
+      [
+        {
+          "tipo": "p",
+          "texto": "La comprobación independiente identifica cuatro notas sin renglones y diez notas con diferencia entre el total registrado y la suma de importes presentes. Estas dos listas describen condiciones distintas. No se completan importes ausentes ni se corrigen totales por suposición."
+        },
+        {
+          "tipo": "p",
+          "texto": "AUD-012 se concilió como específico de versión: el Excel original coincide entre los agentes, mientras que auditoria.json y algunos CSV del Data Mart difieren. En el ZIP v3 se reproduce una huella declarada antigua y CategoriaOriginal «herramietas»; la otra publicación reporta esas diferencias corregidas. No se atribuye autor ni fecha de cambio sin evidencia."
+        },
+        {
+          "tipo": "p",
+          "texto": "PM-08 contrasta la primera captura con la revisión y el historial, sobre copias autorizadas. Según el agregado publicado por Claude, los 30 vacíos ya estaban en la captura inicial y 37 de los 38 REVISAR ya tenían ese estado. Es evidencia de transformación documental, no prueba de que el documento físico contenga el mismo vacío ni de la causa operativa."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "MSA propuesto",
+            "Regla"
+          ],
+          "filas": [
+            [
+              "Lectura independiente",
+              "Dos revisores reales sobre casos y reglas aprobadas."
+            ],
+            [
+              "Acuerdo",
+              "Matriz de contingencia y proporción coincidente."
+            ],
+            [
+              "Kappa",
+              "(Po−Pe)/(1−Pe); no definido si Pe=1."
+            ],
+            [
+              "Cierre",
+              "Conservar desacuerdos y evidencia; no usar REVISAR como patrón oro."
+            ]
+          ]
+        }
+      ]
+    ],
+    [
+      "Aplicación, conclusiones y fuentes",
+      [
+        {
+          "tipo": "p",
+          "texto": "El trabajo establece una medición académica reproducible y un protocolo para convertirla en medición operativa válida. El siguiente paso requiere origen, VOC, excepciones y MSA; no es declarar un nivel sigma empresarial por aplicar una fórmula."
+        },
+        {
+          "tipo": "p",
+          "texto": "Se mantiene un proyecto de mejora con charter preliminar, objetivos de diseño y funciones por confirmar. DMAIC organiza su ejecución en una entrega independiente. Los controles y escenarios pueden probarse técnicamente mientras se conserva la evidencia pendiente."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Resultado disponible",
+            "Lo que aún falta"
+          ],
+          "filas": [
+            [
+              "Conteos y conversiones reproducibles",
+              "Defecto operativo aplicable y aprobado."
+            ],
+            [
+              "Simulaciones transparentes",
+              "Piloto real y efecto comparable."
+            ],
+            [
+              "Validación funcional del prototipo",
+              "Originales y uso efectivo del control."
+            ],
+            [
+              "Trazabilidad de versiones",
+              "Confirmación empresarial de origen y cronología."
+            ]
+          ]
+        },
+        {
+          "tipo": "p",
+          "texto": "Fuentes: ASQ, Seis Sigma (https://asq.org/quality-resources/six-sigma), roles (https://asq.org/quality-resources/sixsigma/belts-executives-champions), DMAIC (https://asq.org/quality-resources/dmaic); NIST, intervalos (https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm); CDC/NCHS, varianza (https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx/SampleDesign.aspx). Consulta 24/11/2026."
+        },
+        {
+          "tipo": "p",
+          "texto": "Fuente del caso: corte documental de Comprobantes_Revisados.xlsx, SHA-256 ac6ab323…; contrato común de datos v1.0; resultados independientes en validacion/resultados_integracion.json."
+        }
+      ]
+    ]
+  ]
+}
