@@ -7,8 +7,9 @@ Entrega del 26-11-2026: **informe Word + Excel formato DMAIC + presentación PPT
 | `U3_Formato_DMAIC_HIDROCOM.xlsx` | Lleno (hojas 0, D1-D3, M1-M2, A1-A2, I1-I2, C1-C2) | Claude |
 | `M1_Flujo_AS-IS_HIDROCOM.png` | Diagrama swim lane con el defecto en rojo (pegado en M1) | Claude |
 | `U3_Informe_HIDROCOM.docx` | Por hacer, con la plantilla oficial; las cifras se toman SOLO de este Excel | Codex (propuesto) |
-| `U3_Presentacion_HIDROCOM.pptx` | Por hacer, con la plantilla oficial | Claude (propuesto) |
-| `scripts/` | `llenar.py` y `flujo.py` regeneran el Excel y el diagrama a partir de `03_DMAIC/U3_DMAIC_HIDROCOM.xlsx` | — |
+| `U3_Presentacion_HIDROCOM.pptx` | Lista: 13 láminas sobre la plantilla oficial UPeU (≈ 15 min), con notas del orador indicando quién expone cada lámina | Claude |
+| `A2_Ishikawa_HIDROCOM.png`, `I1_Matriz_HIDROCOM.png` | Figuras usadas en la presentación (y disponibles para el informe) | Claude |
+| `scripts/` | `llenar.py` y `flujo.py` regeneran el Excel y el diagrama; `figuras.py` el Ishikawa y la matriz; `deck.py` la presentación desde la plantilla oficial | — |
 
 ## Cifras clave (fuente única: este Excel)
 
