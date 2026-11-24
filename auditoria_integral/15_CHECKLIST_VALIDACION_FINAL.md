@@ -6,11 +6,11 @@ Marquen ✔ cuando se cumpla, o «PD» si queda como pendiente declarado (solo p
 |---|---|---|---|---|
 | 1 | Los resúmenes de los tres informes y de la lámina 2 declaran el origen confirmado del lote **o** la limitación | AUD-001 / T01 | Lectura | ☐ |
 | 2 | La población del estudio está decidida y justificada en DECISIONES.md | AUD-018 / T02 | Lectura | ☐ |
-| 3 | Las evidencias de hash y «herramietas» se reproducen con un paquete identificado **o** se retiraron | AUD-012 / T03 | `sha256sum`, `grep` | ☐ |
+| 3 | Las evidencias de hash y «herramietas» citan la versión del Data Mart (v3 `598f0ac1…` o posterior `a858d11b…`) | AUD-012 / T03 | `sha256sum`, `grep` | ☐ |
 | 4 | Hay tabla de conciliación de totales de nota (13 notas) | AUD-008 / T04 | Anexo | ☐ |
 | 5 | Medir declara «73 notas; 69 con detalle» | AUD-009 / T05 | `grep "69"` | ☐ |
 | 6 | Las fechas de Lean y Seis Sigma son de tipo fecha | AUD-015 / T06 | `ISNUMBER` | ☐ |
-| 7 | **Un único** sigma oficial en Seis Sigma, M2, lámina 5 e informe, con la tabla de sensibilidad de 4 filas | AUD-002 / T07 | `grep "3,2"` en todos | ☐ |
+| 7 | Principal según el contrato Q4: D = 30, 38 167,94 y 3,2724 σ («completitud sintáctica exploratoria»), igual en Seis Sigma, M2, lámina 5 e informe; D = 34 y D = 35 como sensibilidad separada | AUD-002 / T07 | `grep "3,2"` en todos | ☐ |
 | 8 | Ningún documento afirma una causa raíz «confirmada» o «respaldada» basada solo en las asociaciones PEDIDO→REVISAR o numérica→REVISAR | AUD-003 / T08 | Lectura de A2, lámina 7, cap. 3 | ☐ |
 | 9 | La simulación aparece como rango 4,96–12,12 % y rotulada «retrospectiva declarada» | AUD-004 / T09 | I2, lámina 9 | ☐ |
 | 10 | El beneficio muestra 3 escenarios, incluido el negativo (−S/ 91,80) | AUD-005 / T10 | C2, lámina 11, costo-beneficio | ☐ |

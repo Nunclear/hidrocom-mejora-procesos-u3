@@ -9,10 +9,10 @@
 
 | Trabajo | Nota actual | Potencial sin datos nuevos | Potencial con datos de la empresa + piloto |
 |---|---:|---:|---:|
-| Lean | **12,0 / 20** | 15,0 | 18,5 |
-| Seis Sigma | **13,0 / 20** | 16,0 | 18,5 |
-| DMAIC (03 + producto final 04) | **13,0 / 20** | 16,5 | 19,0 |
-| **Global** | **12,7 / 20** | ≈ 15,8 | ≈ 18,7 |
+| Lean | **12,5 / 20** | 15,0 | 18,5 |
+| Seis Sigma | **13,5 / 20** | 16,0 | 18,5 |
+| DMAIC (03 + producto final 04) | **13,5 / 20** | 16,5 | 19,0 |
+| **Global** | **13,2 / 20** | ≈ 15,8 | ≈ 18,7 |
 
 La evaluación previa de 16,5 no se tomó como referencia. La diferencia se explica sobre todo por la procedencia del lote, las evidencias no reproducibles, las afirmaciones causales y económicas del producto final y la falta del informe Word oficial.
 
@@ -23,7 +23,7 @@ La evaluación previa de 16,5 no se tomó como referencia. La diferencia se expl
   - 19 del ZIP del curso (requisitos y plantillas);
   - 12 del paquete local del usuario (hashes; 1 comparado celda por celda).
 - **Fórmulas verificadas:** **1 475**, todas recalculadas en Excel. 0 diferencias entre caché y recálculo, 0 errores. Además, todos los indicadores publicados se recalcularon de forma independiente en Python.
-- **Hallazgos:** **24**. **P0 = 1 · P1 = 9 · P2 = 9 · P3 = 5** (`09_MATRIZ_HALLAZGOS.csv`).
+- **Hallazgos:** **24**. **P0 = 1 · P1 = 8 · P2 = 10 · P3 = 5** (AUD-012 bajó de P1 a P2 tras la conciliación) (`09_MATRIZ_HALLAZGOS.csv`).
 
 ## Resultados recalculados (todos coinciden con lo publicado)
 
@@ -37,7 +37,7 @@ La evaluación previa de 16,5 no se tomó como referencia. La diferencia se expl
 ## Principales problemas
 
 1. **P0 · AUD-001:** **70 de 73 notas** son anteriores al inicio de actividades declarado (09/03/2026). Los datos describen la calidad documental de un lote digitalizado retrospectivamente, **no el proceso actual de la empresa**, hasta que el dueño confirme su origen.
-2. **P1 · AUD-012:** las dos «evidencias verificadas» que repiten los tres trabajos («hash del Excel distinto» y «herramietas» en el CSV) **no se reproducen**. Con la copia del paquete del usuario, el hash coincide con `auditoria.json`, los 9 CSV también, y «herramietas» no aparece.
+2. **P2 · AUD-012 (corregido tras la conciliación del issue #1):** circulan **dos versiones del Data Mart** con el mismo Excel fuente. En la v3 usada en `main` se reproducen el hash declarado distinto y «herramietas»; en la copia posterior del usuario, ambos están corregidos. Los informes deben identificar qué versión citan. La recomendación inicial de «retirarlas» queda **anulada**.
 3. **P1 · AUD-003, -004, -005 (producto final 04):**
    - la «causa raíz respaldada» se apoya en asociaciones **por construcción** (13/13 y 21/22);
    - la simulación 14,50 → 4,96 % es el máximo teórico (el rango real es 4,96–12,12 %);

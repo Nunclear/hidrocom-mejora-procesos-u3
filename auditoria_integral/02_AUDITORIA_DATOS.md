@@ -8,7 +8,9 @@ Recálculo independiente con `14_EVIDENCIAS_AUDITORIA/recalculo_independiente.py
 - La huella SHA-256 local del Excel fuente (`ac6ab323…`) **coincide** con la declarada en `auditoria.json`. **También coinciden los 9 CSV y las 5 fuentes.**
 - «herramietas» **no aparece** en ningún CSV publicado. NP-025089-02 figura con la categoría «herramientas».
 
-Las dos «evidencias verificadas» que repiten los tres informes y el README («hash del Excel distinto del declarado» y «categoría herramietas en el CSV») **no se reproducen con la copia del paquete del usuario**. Ver **AUD-012 (P1)** y `14_EVIDENCIAS_AUDITORIA/verificacion_hashes_paquete_local.txt`.
+Las dos «evidencias verificadas» que repiten los tres informes y el README («hash del Excel distinto del declarado» y «categoría herramietas en el CSV») **no se reproducen con la copia del paquete del usuario**. Ver `14_EVIDENCIAS_AUDITORIA/verificacion_hashes_paquete_local.txt`.
+
+**Conciliación posterior (comentario 7146745531 del issue #1):** el Excel fuente es idéntico en ambas copias (`ac6ab323…`). Lo que difiere es la **publicación del Data Mart**. En el paquete usado en `main` (`Grupo_Hidrocom_Kallpa_Recopilacion.zip` → `PowerBI_y_Data_Corregida_20261121_v3.zip`), `auditoria.json` (`598f0ac1…`) declara `sha256_fuente = 4bd79c0b…`, distinto del Excel, y Productos.csv (`7a362e0e…`) contiene «herramietas» para NP-025089-02. En la copia del usuario (entrega Power BI del 22-11-2026, `auditoria.json` `a858d11b…`, Productos.csv `6eb47b29…`), ambas cosas están corregidas. **Las dos evidencias son válidas para la versión v3 y no aplican a la versión posterior.** AUD-012 queda como «dos versiones del Data Mart sin identificar en los informes» (P2).
 
 Las imágenes originales (74 fotos referidas) no se revisaron.
 
