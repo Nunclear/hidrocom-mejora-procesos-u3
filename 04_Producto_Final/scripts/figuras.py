@@ -32,7 +32,7 @@ for (x, up), (m, causes) in bones.items():
         cx = x - 9 * t; cy = 30 + (y1 - 30) * t
         col, pre, w = STY[v]
         ax.text(cx - 0.8, cy, pre + c, ha="right", va="center", fontsize=11, color=col, weight=w)
-ax.text(3, -3, "✔ respaldada por datos del lote     ◐ contribuye en parte     ✘ no respaldada (descriptivo)     (sin marca: hipótesis no verificada)",
+ax.text(3, -3, "✔ condición documental asociada a REVISAR por construcción (no prueba causa)     ◐ ambigüedad documentada     ✘ sin diferencia relevante (descriptivo)     (sin marca: hipótesis no verificada)",
         fontsize=10.5, color="#333")
 plt.savefig(os.path.join(out, "A2_Ishikawa_HIDROCOM.png"), bbox_inches="tight", facecolor="white"); plt.close()
 

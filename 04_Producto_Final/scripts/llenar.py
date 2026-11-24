@@ -393,13 +393,14 @@ for k, e in enumerate([1, 0.75, 0.5, 0.25]):
 ws = wb["C2_Beneficios_Lecciones"]
 put(ws, "A11", "Escenario BASE de la plantilla (B5:B8): 1 lote de ~262 renglones por mes (38 REVISAR/mes), 10 min por renglón y S/ 7,50/h → S/ 47,50 antes y "
     "S/ 16,25 después; costo de implementar S/ 120 (16 h) → S/ 255/año. TODO es supuesto, no medición: el volumen derivado del rango de fechas (13,3 meses) "
-    "tampoco mide la cadencia real. Ver la tabla de escenarios (filas 20–25): con volumen bajo el resultado es negativo y se conserva.")
+    "tampoco mide la cadencia real. Ver la tabla de escenarios (filas 20–28; igual al modelo de B, Modelo_Costo_Beneficio_HIDROCOM.json, 3b3da11): con volumen bajo el resultado es negativo y se conserva.")
 put(ws, "A20", "Escenarios (S/; supuestos editables)", fill=False, bold=True)
-hdr = ["Escenario", "REVISAR/mes", "Eficacia e", "Min/renglón", "S/ por hora", "Costo inicial", "Beneficio anual neto"]
+hdr = ["Escenario", "REVISAR/mes", "Eficacia e", "Min/renglón", "S/ por hora", "Costo inicial (costo recurrente: no estimado)", "Beneficio anual neto"]
 for j, h_ in enumerate(hdr):
     c = ws.cell(row=21, column=1 + j, value=h_); c.font = Font(bold=True, color="FFFFFFFF"); c.fill = PatternFill("solid", fgColor="FF003264")
-esc = [("Base (1 lote/mes)", 38, 1), ("Volumen según rango de fechas (38 / 13,3 meses)", "=38/13.3", 1),
-       ("Base con eficacia 50 %", 38, 0.5), ("Punto de equilibrio (REVISAR/mes)", "=F25/((25/38)*D25/60*E25*12)", 1)]
+esc = [("Base: 1 lote/mes, eficacia máxima", 38, 1), ("Eficacia 75 %", 38, 0.75), ("Eficacia 50 %", 38, 0.5), ("Eficacia 25 %", 38, 0.25),
+       ("Eficacia 0 %", 38, 0), ("Volumen bajo: 1 lote en 13,3 meses", "=38/13.3", 1),
+       ("Punto de equilibrio (REVISAR iniciales/mes)", "=F28/((25/38)*D28/60*E28*12)", 1)]
 for k, (lab, rv, e) in enumerate(esc):
     r = 22 + k
     put(ws, f"A{r}", lab, fill=False)
