@@ -1,0 +1,190 @@
+[
+  {
+    "docx": "01_Lean/U3_Lean_HIDROCOM.docx",
+    "pdf": "01_Lean/U3_Lean_HIDROCOM.pdf",
+    "pdf_origen": "Exportación en Microsoft Word por interfaz local",
+    "sha256_docx": "95ac36aa18db29f42ed42a3e6699eafb2388bdab435e3ecceebb42a0521ab826",
+    "sha256_pdf": "080d117258173fdc5d62dcd295c3abfb13f7c740c363f4d5b569c193b909d6c5",
+    "paginas": [
+      {
+        "pagina": 1,
+        "caracteres": 771,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 2,
+        "caracteres": 1493,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 3,
+        "caracteres": 1274,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 4,
+        "caracteres": 1217,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 5,
+        "caracteres": 900,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 6,
+        "caracteres": 1118,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 7,
+        "caracteres": 1198,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 8,
+        "caracteres": 1165,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 9,
+        "caracteres": 1567,
+        "texto_no_vacio": true
+      }
+    ],
+    "tokens_largos_ausentes": [],
+    "revision_visual": "A inspeccionó todas las páginas renderizadas con PDFium; sin recortes ni superposición observados."
+  },
+  {
+    "docx": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx",
+    "pdf": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
+    "pdf_origen": "Exportación en Microsoft Word por interfaz local",
+    "sha256_docx": "dc12fd97b306d7a3818d8af9e3a30cd16ff5eb00980d069eb2f2cef1f0b3b066",
+    "sha256_pdf": "0b50bd594fa57f78143c376a5d5c76f4899b718a5fb2c368cdfd1c8b2be1fd31",
+    "paginas": [
+      {
+        "pagina": 1,
+        "caracteres": 758,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 2,
+        "caracteres": 1437,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 3,
+        "caracteres": 1077,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 4,
+        "caracteres": 1101,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 5,
+        "caracteres": 787,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 6,
+        "caracteres": 1278,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 7,
+        "caracteres": 1378,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 8,
+        "caracteres": 1339,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 9,
+        "caracteres": 1502,
+        "texto_no_vacio": true
+      }
+    ],
+    "tokens_largos_ausentes": [],
+    "revision_visual": "A inspeccionó todas las páginas renderizadas con PDFium; sin recortes ni superposición observados."
+  },
+  {
+    "docx": "03_DMAIC/U3_DMAIC_HIDROCOM.docx",
+    "pdf": "03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
+    "pdf_origen": "Exportación en Microsoft Word por interfaz local",
+    "sha256_docx": "4aa4e39943a66cfb2113620813172e235c0873e65287b628b6d71cb1152a1e25",
+    "sha256_pdf": "1e2a3b631e40c306bafe7a46d0bf76c885969d97b72c718b59a64af4d67c3299",
+    "paginas": [
+      {
+        "pagina": 1,
+        "caracteres": 913,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 2,
+        "caracteres": 2213,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 3,
+        "caracteres": 2135,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 4,
+        "caracteres": 1472,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 5,
+        "caracteres": 1142,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 6,
+        "caracteres": 1966,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 7,
+        "caracteres": 964,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 8,
+        "caracteres": 1621,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 9,
+        "caracteres": 1865,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 10,
+        "caracteres": 1715,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 11,
+        "caracteres": 1932,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 12,
+        "caracteres": 1677,
+        "texto_no_vacio": true
+      },
+      {
+        "pagina": 13,
+        "caracteres": 2110,
+        "texto_no_vacio": true
+      }
+    ],
+    "tokens_largos_ausentes": [],
+    "revision_visual": "A inspeccionó todas las páginas renderizadas con PDFium; sin recortes ni superposición observados."
+  }
+]

@@ -8,3 +8,5 @@ Los bloqueos H01–H06 de la matriz requieren evidencia humana. Se preparan inst
 - **Revisión cruzada:** publicar una tarea no demuestra que fue recibida. Registrar confirmaciones y revisiones efectivas del Issue #1.
 
 Las tareas no ejecutables se mantienen Bloqueado por evidencia o Pendiente de aprobación humana; no se marcan Verificado.
+
+Actualización de capacidad: C anunció pausa por cuota y retorno a partir de 8:30; B informó cuota limitada. A completó Word Lean/Sigma, exportaciones PDF, presentaciones y dashboard sin esperar. Los dictámenes finales independientes y las calificaciones de B/C siguen pendientes; no se sustituyen con la revisión de A. La aprobación y fusión del PR son posteriores a estas revisiones.

@@ -1,9 +1,9 @@
 {
-  "revision_declarada": "A: Word Lean/Sigma; B e2287cb; C 36d23a8",
+  "revision_declarada": "Integración A; B e2287cb; C 36d23a8; sin temporales",
   "python": "3.12.14",
   "openpyxl": "3.1.5",
   "tipo": "Cálculo Python y revisión estructural/cachés; no recálculo Excel ni render visual",
-  "modo_final": false,
+  "modo_final": true,
   "metricas": {
     "notas": 73,
     "renglones": 262,
@@ -439,8 +439,17 @@
       "prueba": "PDF abre y tiene texto: 01_Lean/U3_Lean_HIDROCOM.pdf",
       "resultado": "PASA",
       "evidencia": {
-        "paginas": 7,
+        "paginas": 9,
         "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Integridad OOXML: 01_Lean/U3_Lean_HIDROCOM.pptx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 33,
+        "slides": 10,
+        "limite": "No es revisión visual"
       }
     },
     {
@@ -475,8 +484,17 @@
       "prueba": "PDF abre y tiene texto: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
       "resultado": "PASA",
       "evidencia": {
-        "paginas": 7,
+        "paginas": 9,
         "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Integridad OOXML: 02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pptx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 38,
+        "slides": 12,
+        "limite": "No es revisión visual"
       }
     },
     {
@@ -511,8 +529,17 @@
       "prueba": "PDF abre y tiene texto: 03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
       "resultado": "PASA",
       "evidencia": {
-        "paginas": 15,
+        "paginas": 13,
         "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
+      "prueba": "Integridad OOXML: 03_DMAIC/U3_DMAIC_HIDROCOM.pptx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 40,
+        "slides": 13,
+        "limite": "No es revisión visual"
       }
     },
     {
@@ -577,10 +604,18 @@
       }
     },
     {
+      "prueba": "PDF abre y tiene texto: 04_Producto_Final/U3_Informe_HIDROCOM.pdf",
+      "resultado": "PASA",
+      "evidencia": {
+        "paginas": 13,
+        "revision_visual": "Requiere evidencia adicional; esta prueba solo extrae texto"
+      }
+    },
+    {
       "prueba": "Integridad OOXML: 04_Producto_Final/U3_Presentacion_HIDROCOM.pptx",
       "resultado": "PASA",
       "evidencia": {
-        "xml": 39,
+        "xml": 40,
         "slides": 13,
         "limite": "No es revisión visual"
       }
@@ -592,6 +627,32 @@
     },
     {
       "prueba": "Sin dependencia de otro libro: 05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Caché sin errores Excel: 06_Dashboard/Dashboard_Calidad_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": []
+    },
+    {
+      "prueba": "Fuente Corte preservada: 06_Dashboard/Dashboard_Calidad_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 262,
+        "celdas": 6288
+      }
+    },
+    {
+      "prueba": "Fuente Notas preservada: 06_Dashboard/Dashboard_Calidad_HIDROCOM.xlsx",
+      "resultado": "PASA",
+      "evidencia": {
+        "filas": 73,
+        "celdas": 1752
+      }
+    },
+    {
+      "prueba": "Sin dependencia de otro libro: 06_Dashboard/Dashboard_Calidad_HIDROCOM.xlsx",
       "resultado": "PASA",
       "evidencia": []
     },
@@ -612,28 +673,81 @@
       }
     },
     {
+      "prueba": "Integridad OOXML: documentacion/plantillas/Presentacion_U3_base.pptx",
+      "resultado": "PASA",
+      "evidencia": {
+        "xml": 39,
+        "slides": 13,
+        "limite": "No es revisión visual"
+      }
+    },
+    {
+      "prueba": "Entrega independiente 01_Lean / docx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 01_Lean / pdf",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 01_Lean / xlsx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 01_Lean / pptx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 02_Seis_Sigma / docx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 02_Seis_Sigma / pdf",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 02_Seis_Sigma / xlsx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 02_Seis_Sigma / pptx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 03_DMAIC / docx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 03_DMAIC / pdf",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 03_DMAIC / xlsx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
+      "prueba": "Entrega independiente 03_DMAIC / pptx",
+      "resultado": "PASA",
+      "evidencia": "Exige al menos un archivo"
+    },
+    {
       "prueba": "Enlaces Markdown locales resolubles",
       "resultado": "PASA",
       "evidencia": []
     }
   ],
-  "avisos": [
-    {
-      "archivo": "01_Lean",
-      "tipo": "Entregable aún pendiente",
-      "extension": "pptx"
-    },
-    {
-      "archivo": "02_Seis_Sigma",
-      "tipo": "Entregable aún pendiente",
-      "extension": "pptx"
-    },
-    {
-      "archivo": "03_DMAIC",
-      "tipo": "Entregable aún pendiente",
-      "extension": "pptx"
-    }
-  ],
+  "avisos": [],
   "libros": [
     {
       "archivo": "01_Lean/U3_Lean_HIDROCOM.xlsx",
@@ -728,20 +842,38 @@
       "validaciones_de_datos": 0,
       "errores_cache": 0,
       "motor_ejecutado_por_este_script": false
+    },
+    {
+      "archivo": "06_Dashboard/Dashboard_Calidad_HIDROCOM.xlsx",
+      "hojas": [
+        "Dashboard",
+        "Escenarios",
+        "Corte",
+        "Notas"
+      ],
+      "formulas_inspeccionadas": 309,
+      "formulas_sin_cache": 0,
+      "validaciones_de_datos": 0,
+      "errores_cache": 0,
+      "motor_ejecutado_por_este_script": false
     }
   ],
   "pdfs": [
     {
       "archivo": "01_Lean/U3_Lean_HIDROCOM.pdf",
-      "paginas": 7
+      "paginas": 9
     },
     {
       "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
-      "paginas": 7
+      "paginas": 9
     },
     {
       "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
-      "paginas": 15
+      "paginas": 13
+    },
+    {
+      "archivo": "04_Producto_Final/U3_Informe_HIDROCOM.pdf",
+      "paginas": 13
     },
     {
       "archivo": "documentacion/diagramas/VSM_actual_documental.pdf",
@@ -760,15 +892,33 @@
       "revision_visual_pendiente": true
     },
     {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.pptx",
+      "xml": 33,
+      "diapositivas": 10,
+      "revision_visual_pendiente": true
+    },
+    {
       "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx",
       "xml": 14,
       "diapositivas": 0,
       "revision_visual_pendiente": true
     },
     {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pptx",
+      "xml": 38,
+      "diapositivas": 12,
+      "revision_visual_pendiente": true
+    },
+    {
       "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.docx",
       "xml": 13,
       "diapositivas": 0,
+      "revision_visual_pendiente": true
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.pptx",
+      "xml": 40,
+      "diapositivas": 13,
       "revision_visual_pendiente": true
     },
     {
@@ -779,6 +929,12 @@
     },
     {
       "archivo": "04_Producto_Final/U3_Presentacion_HIDROCOM.pptx",
+      "xml": 40,
+      "diapositivas": 13,
+      "revision_visual_pendiente": true
+    },
+    {
+      "archivo": "documentacion/plantillas/Presentacion_U3_base.pptx",
       "xml": 39,
       "diapositivas": 13,
       "revision_visual_pendiente": true
@@ -787,13 +943,18 @@
   "artefactos": [
     {
       "archivo": "01_Lean/U3_Lean_HIDROCOM.docx",
-      "sha256": "5002a7971deed86fc6b7cc6d79b028f587635e24b33643dc23df255edc7ebc23",
-      "bytes": 105092
+      "sha256": "95ac36aa18db29f42ed42a3e6699eafb2388bdab435e3ecceebb42a0521ab826",
+      "bytes": 105889
     },
     {
       "archivo": "01_Lean/U3_Lean_HIDROCOM.pdf",
-      "sha256": "1ba5b9fb7041d7813da09a7ec04dca157d3998f61ab9f9ed46b7e2000025cece",
-      "bytes": 90087
+      "sha256": "080d117258173fdc5d62dcd295c3abfb13f7c740c363f4d5b569c193b909d6c5",
+      "bytes": 371238
+    },
+    {
+      "archivo": "01_Lean/U3_Lean_HIDROCOM.pptx",
+      "sha256": "1449d4b16975b0ef547f1dbc3ed129efe11d3a03adc06d26b097b784562aea5f",
+      "bytes": 267043
     },
     {
       "archivo": "01_Lean/U3_Lean_HIDROCOM.xlsx",
@@ -802,13 +963,18 @@
     },
     {
       "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx",
-      "sha256": "833bf9a3d47bd06005dabe3ccf423dff4d20e02d09a3ac32d512ab90f76dfe7d",
-      "bytes": 43498
+      "sha256": "dc12fd97b306d7a3818d8af9e3a30cd16ff5eb00980d069eb2f2cef1f0b3b066",
+      "bytes": 44419
     },
     {
       "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf",
-      "sha256": "1e9fd43584e2586dc819ebf44bd3369cd5c9c683b6e5416b068c9840b838eebc",
-      "bytes": 90377
+      "sha256": "0b50bd594fa57f78143c376a5d5c76f4899b718a5fb2c368cdfd1c8b2be1fd31",
+      "bytes": 340527
+    },
+    {
+      "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pptx",
+      "sha256": "b47d70d139578fe2a1eedf40b825d1eff47bd183b7ed25f53b36daed45aad895",
+      "bytes": 276440
     },
     {
       "archivo": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx",
@@ -822,8 +988,13 @@
     },
     {
       "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.pdf",
-      "sha256": "ef97322414c38ea51e1be2a83f2efbca912aa9a7e7d25a85a3943fdd9e9a69c4",
-      "bytes": 109103
+      "sha256": "1e2a3b631e40c306bafe7a46d0bf76c885969d97b72c718b59a64af4d67c3299",
+      "bytes": 592540
+    },
+    {
+      "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.pptx",
+      "sha256": "30a8ac53d3e9dbbb99d549d5a840379a9e4587b44adf98daf1dd4b273d70b03a",
+      "bytes": 280535
     },
     {
       "archivo": "03_DMAIC/U3_DMAIC_HIDROCOM.xlsx",
@@ -841,9 +1012,14 @@
       "bytes": 344488
     },
     {
+      "archivo": "04_Producto_Final/U3_Informe_HIDROCOM.pdf",
+      "sha256": "1e2a3b631e40c306bafe7a46d0bf76c885969d97b72c718b59a64af4d67c3299",
+      "bytes": 592540
+    },
+    {
       "archivo": "04_Producto_Final/U3_Presentacion_HIDROCOM.pptx",
-      "sha256": "7ae463491e938155d4ab91e2292f393da949161f12bd449f4ebc9f726e22b4c2",
-      "bytes": 1105613
+      "sha256": "30a8ac53d3e9dbbb99d549d5a840379a9e4587b44adf98daf1dd4b273d70b03a",
+      "bytes": 280535
     },
     {
       "archivo": "05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx",
@@ -851,20 +1027,30 @@
       "bytes": 12069
     },
     {
+      "archivo": "06_Dashboard/Dashboard_Calidad_HIDROCOM.xlsx",
+      "sha256": "d0408a93b36d16e9e53fb7c418ed9b025f474af15ef345a31741f3b0d2fbbe28",
+      "bytes": 57779
+    },
+    {
       "archivo": "documentacion/diagramas/VSM_actual_documental.pdf",
-      "sha256": "e02cde2b6099a8f66cfad95abd5c91d38595f856bd2de7bb1af1ca34d126a86d",
+      "sha256": "a6f3f5a1e3ab793af8071ce59851dda3daee1582d049ed37e479146bd98f71da",
       "bytes": 2099
     },
     {
       "archivo": "documentacion/diagramas/VSM_futuro_propuesto.pdf",
-      "sha256": "a622679de13608fb3f76d8b206551c11b2717da5667a51c506c39b75ee7ef718",
+      "sha256": "7746dde2082ffdf2010441e353ddf3b1930d3ad9cfada67ac7db5953ae0f069b",
       "bytes": 2115
+    },
+    {
+      "archivo": "documentacion/plantillas/Presentacion_U3_base.pptx",
+      "sha256": "7ae463491e938155d4ab91e2292f393da949161f12bd449f4ebc9f726e22b4c2",
+      "bytes": 1105613
     }
   ],
   "resumen": {
-    "pasan": 43,
+    "pasan": 64,
     "fallan": 0,
-    "avisos": 3,
-    "formulas_inspeccionadas": 2540
+    "avisos": 0,
+    "formulas_inspeccionadas": 2849
   }
 }

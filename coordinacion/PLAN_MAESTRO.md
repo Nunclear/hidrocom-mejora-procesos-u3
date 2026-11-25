@@ -12,6 +12,8 @@ La instrucción íntegra del usuario está en PROMPT_MEJORA_COLABORATIVA.md. Est
 
 B tiene propiedad del nuevo libro de 05_Costo_Beneficio y C lo audita. C conserva propiedad de los XLSX de 01/02/03/04 y del dashboard. No editar el mismo binario en paralelo. Cada agente anuncia archivos y commits en Issue #1. Todos leen el contrato antes de propagar cifras. A integra archivos compatibles y preserva historia; nadie hace force push ni fusiona main sin la aprobación correspondiente.
 
+Reasignación confirmada en Issue #1: A asumió el dashboard 06, Word Lean/Seis Sigma, PDF de los tres trabajos y PPTX independientes/04. B completó el Word oficial DMAIC y el modelo económico 05. C completó los cuatro XLSX, PM08, auditoría y revisión textual de los Word. Las pausas de cuota de C y B no transfieren a A la autoría de sus dictámenes ni permiten inventar una revisión final suya.
+
 ## Secuencia
 
 1. Congelar el corte ya publicado, establecer contrato y conciliar paquetes.

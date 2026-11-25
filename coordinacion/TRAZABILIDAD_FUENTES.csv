@@ -10,3 +10,5 @@ C-copia-reportada,DataMart/Publicado/PowerBI/Productos.csv,6eb47b29a03e84c619625
 C-copia-reportada,DataMart/Publicado/PowerBI/Detalle.csv,d9388eabd92b6a8cea8f38ffde5351bfa004a0487cc77c412f6d1370838e8796,99df911,Hash publicado por C; bytes no disponibles a A,Específica de versión
 C-copia-reportada,Fuente/Original_Comprobantes.xlsx,e29a8d6ad54f6436a92163a86fd109719b1e30bdac1e3b983d77479a452f6833,99df911,Reportado por C; ausente en ZIP v3 de A,Pendiente de evidencia
 Corte-publicado,datos_control/corte_documental_73_262.json,e575d3a81ffc1ff894b8d6b0cd5b47bf7c01d28db6978458500c206e0844f56c,e3b5a60,Extraído por A de las tres hojas públicas,Reproducida
+C-copia-reportada,ZIP posterior de C,e5507f7a8e69787a67e650bf9dbf8c22e4d96634789b50cc69cd4161d32fc1ff,36d23a8,Reportado por C; bytes no disponibles a A,Específica de versión
+C-copia-reportada,DataMart/Publicado/auditoria.json,a858d11b6ec0da3e17f8a79c42c7a45488d44c4f45f9ea46960710947ad0c598,36d23a8,Reportado por C; fecha_carga 2026-11-21T17:10:45Z; declara ac6ab323…,Específica de versión

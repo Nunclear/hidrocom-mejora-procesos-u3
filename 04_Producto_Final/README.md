@@ -6,10 +6,11 @@ Entrega del 26-11-2026: **informe Word + Excel formato DMAIC + presentación PPT
 |---|---|---|
 | `U3_Formato_DMAIC_HIDROCOM.xlsx` | Lleno (hojas 0, D1-D3, M1-M2, A1-A2, I1-I2, C1-C2) | Claude |
 | `M1_Flujo_AS-IS_HIDROCOM.png` | Diagrama swim lane con el defecto en rojo (pegado en M1) | Claude |
-| `U3_Informe_HIDROCOM.docx` | Por hacer, con la plantilla oficial; las cifras se toman SOLO de este Excel | Codex (propuesto) |
-| `U3_Presentacion_HIDROCOM.pptx` | Lista: 13 láminas sobre la plantilla oficial UPeU (≈ 15 min), con notas del orador indicando quién expone cada lámina | Claude |
+| `U3_Informe_HIDROCOM.docx` | Completo: 13 páginas con la plantilla oficial; revisado por C y A | Codex B |
+| `U3_Informe_HIDROCOM.pdf` | Exportado desde Word; 13 páginas revisadas visualmente por A | A |
+| `U3_Presentacion_HIDROCOM.pptx` | Corregida: 13 láminas, S30 principal, escenarios y funciones pendientes; idéntica a 03 | A |
 | `A2_Ishikawa_HIDROCOM.png`, `I1_Matriz_HIDROCOM.png` | Figuras usadas en la presentación (y disponibles para el informe) | Claude |
-| `scripts/` | `llenar.py` y `flujo.py` regeneran el Excel y el diagrama; `figuras.py` el Ishikawa y la matriz; `deck.py` la presentación desde la plantilla oficial | — |
+| `scripts/` | Código histórico de versiones previas; no ejecutar encima de los entregables activos | — |
 
 ## Cifras clave (contrato de datos del issue #1, comentarios 7146745531 y 7146867353)
 
@@ -27,4 +28,4 @@ Entrega del 26-11-2026: **informe Word + Excel formato DMAIC + presentación PPT
 
 El Excel calcula U, D, el Pareto, la sensibilidad, la simulación y los escenarios **con fórmulas** sobre la hoja `Datos`. Se puede verificar recalculando el libro.
 
-**Pendiente de alinear por el responsable B** (no editado por Claude): `U3_Presentacion_HIDROCOM.pptx`, que aún muestra D = 35 / 3,20 σ como principal, roles con nombre y la causa como «respaldada».
+La presentación activa está alineada por A: S30 principal, S34/S35 como sensibilidades, roles nominales pendientes, hipótesis sin causalidad demostrada y economía como escenarios. La revisión independiente final B/C sigue solicitada. El Word/PDF y PPTX de esta carpeta coinciden con las copias DMAIC de 03. Véanse el [contrato](../coordinacion/CONTRATO_DE_DATOS.md), el [informe de integración](../coordinacion/INFORME_INTEGRACION.md) y las [instrucciones de reproducción](../herramientas/README.md).

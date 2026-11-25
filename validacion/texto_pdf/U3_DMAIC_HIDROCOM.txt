@@ -1,670 +1,353 @@
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-1
-01 Registro y validación de notas de pedido
-GRUPO HIDROCOM KALLPA E.I.R.L.
-Proyecto Lean Seis Sigma
-Mejora de Procesos y Calidad Total
-Universidad Peruana Unión
-Ingeniería de Sistemas
-Docente Mg. Esteban Tocto Cano
-24 de noviembre de 2026
-Integrantes registrados en el manual: Gutierrez Morales Jhon Alex, Mullisaca Condori Carlos Augusto
-y Mamani Mamani Ciro Wagner. La asignación de roles del proyecto requiere confirmación.
-Resumen ejecutivo
-El proyecto aborda la calidad del registro y la validación de notas de pedido antes de su uso en reportes
-comerciales. La muestra documental contiene 73 notas y 262 renglones. La fuente clasifica 206
-renglones como DISPONIBLE, 38 como REVISAR y 18 como EXCLUIR. La proporción de renglones por
-revisar es 14,50 % de la muestra completa. Esa proporción mide el estado de revisión, no la tasa de
-errores operativos.
-La revisión detectó siete pendientes con campos numéricos incompletos como condición principal de
-clasificación, cinco con diferencia de importe consignada y una desalineación entre la fuente Excel y el
-Data Mart. Estas evidencias justifican proponer controles de captura, trazabilidad de revisión y
-publicación por versión.
-El desarrollo comprende el diagnóstico documental, el análisis de condiciones observables y el diseño de
-mejoras. La pertenencia de las notas a la empresa y la cronología requieren validación. La meta
-cuantitativa, los roles, los costos y el efecto de un piloto siguen pendientes. No se declara una mejora ya
-lograda ni un ahorro económico.
+1 
+ 
+UNIVERSIDAD PERUANA UNIÓN 
+Facultad de Ingeniería y Arquitectura · EP Ingeniería de Sistemas 
+Mejora de Procesos y Calidad Total · 2026-2 · Mg. Esteban Tocto Cano 
+Mejora del registro y validación de notas de 
+pedido 
+Proyecto Lean Seis Sigma con metodología DMAIC 
+Título del proyecto Mejora del registro y validación de notas de pedido 
+Organización / proceso 
+intervenido 
+GRUPO HIDROCOM KALLPA E.I.R.L. · Registro, validación y publicación de 
+información comercial 
+Equipo (apellidos y nombres) 
+Gutierrez Morales Jhon Alex 
+Mullisaca Condori Carlos Augusto 
+Mamani Mamani Ciro Wagner 
+Roles Seis Sigma (Champion, BB, 
+GB, dueño del proceso) 
+Equipo del curso: análisis y diseño. Administración: función 
+patrocinadora. Responsable del proceso: función de registro y validación. 
+Las designaciones organizacionales corresponden a la empresa. 
+Fecha de presentación 26 de noviembre de 2026 
+Perú · 2026 
 
 
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-2
-02 Contexto y alcance del proyecto
-El manual describe a HIDROCOM KALLPA como una empresa de comercialización, distribución y
-abastecimiento de productos ferreteros para instalaciones de agua, desagüe, almacenamiento y riego.
-Atiende a micro y pequeñas empresas de la región de Puno. El mismo manual presenta el Sistema de
-Gestión de la Calidad como una propuesta académica.
-Problema abordado
-Los reportes requieren información identificable, interpretable y consistente entre la nota, su registro y los
-datos publicados. En el paquete examinado hay renglones por revisar, fechas estimadas o discordantes
-y una clasificación de producto que difiere entre dos capas de datos. Estas condiciones limitan el uso
-confiable de la información comercial.
-Dentro del alcance
-Fuera del alcance
-Registro y validación documental de las 73 notas y sus 262
-renglones.
-Exactitud del inventario físico y errores de entrega.
-Criterios para completar, observar, excluir y liberar un
-registro.
-Evaluación del desempeño de trabajadores o proveedores.
-Consistencia de categorías y trazabilidad Excel a Data
-Mart.
-Resultados reales de mejora sin una medición posterior.
-Diseño de validaciones y seguimiento de pendientes.
-Certificación del SGC o acreditación de ventas auditadas.
-Condición de uso de la muestra
-El antecedente reporta inicio de actividades el 09/03/2026. Las fechas registradas abarcan del
-27/01/2025 al 09/03/2026, con 39 fechas estimadas y seis años discordantes. Por ello, la muestra se
-analiza como un corte documental al 24/11/2026. No se atribuye a un periodo comercial confirmado ni se
-agrupa como serie mensual de ventas.
-Fuente: SEM2_Esquema_Manual_HIDROCOM_COMPLETADO.docx, secciones 1 y 2. Antecedentes_y_alcance.md.
-Comprobantes_Revisados.xlsx, hojas Comprobantes y Fechas_y_Series.
+2 
+Resumen ejecutivo 
+El análisis del lote documental de HIDROCOM KALLPA identificó 38 renglones que requieren revisión antes de 
+usarse en el reporte comercial. Representan el 14,50 % de 262 renglones procedentes de 73 notas. La revisión 
+consume el equivalente a S/ 47,50 por lote si cada caso requiere 10 minutos y la hora se valora a S/ 7,50. 
+Se diseñaron tres controles para el piloto: una regla de clasificación de PEDIDO, validaciones de cantidad, 
+precio e importe, y un motivo obligatorio para los renglones en revisión. Los casos PEDIDO y las incidencias 
+numéricas reúnen 25 de los 38 pendientes. El dato orienta la intervención porque esas condiciones participan 
+en la clasificación de REVISAR. El mecanismo operativo se contrastará mediante la revisión de originales y un 
+lote nuevo. 
+La meta propuesta, pendiente de aprobación por el responsable del proceso, es bajar a un máximo de 5 % de 
+renglones en REVISAR en ocho semanas desde el inicio del piloto. La simulación cubre del 25 % al 100 % de 
+resolución de los 25 casos alcanzables. Proyecta entre 12,12 % y 4,96 % de REVISAR. La meta se alcanza solo 
+cerca de la resolución total de esos casos. 
+Con un lote al mes, 10 minutos de revisión por caso y S/ 120 de implementación, el ahorro de tiempo valorado 
+genera un beneficio neto anual de S/ 255 en el escenario de máxima resolución. Con un lote distribuido en 
+13,3 meses, el resultado estimado baja a −S/ 91,80. El punto de equilibrio se sitúa en 12,16 renglones REVISAR 
+al mes con la eficacia máxima planteada. 
+Lectura de los resultados 
+Indicador Resultado Lectura 
+Renglones REVISAR 38 de 262 · 14,50 % Situación observada en el lote documental. 
+Completitud de tres campos 30 de 786 campos vacíos 38 167,94 por millón y 3,2724 σ equivalentes bajo la convención +1,5. 
+REVISAR con los controles 4,96 % a 12,12 % Simulación según proporción de casos que se resuelve. 
+Beneficio anual −S/ 91,80 a S/ 255,00 Comparación de volumen bajo con un lote mensual, a eficacia máxima. 
+ 
+El proyecto entrega un diagnóstico documental, un diseño de controles y una evaluación económica por 
+escenarios. La decisión de puesta en marcha corresponde al responsable del proceso a partir del piloto. 
+
+3 
+Capítulo 1  Definir 
+Contexto y selección del proceso 
+La gerencia utiliza la información comercial de las notas de pedido para decisiones de compra y reposición. 
+Antes de consolidarla, los renglones con estados ambiguos, campos vacíos o diferencias de importe necesitan 
+una decisión trazable. Se seleccionó el registro y validación porque el lote permite localizar la observación por 
+renglón y diseñar controles concretos desde la captura hasta la publicación. 
+Acta del proyecto 
+Elemento Definición 
+Problema 38 de 262 renglones (14,50 %) permanecieron en REVISAR al corte documental. Requieren comprobación antes de incorporarlos al reporte. 
+Objetivo del piloto 
+Reducir REVISAR de 14,50 % a ≤ 5,00 % en el primer lote comparable posterior a la 
+activación, con evaluación a las ocho semanas. Meta de diseño pendiente de aprobación 
+por el responsable del proceso. 
+Alcance Desde la recepción de la nota hasta la conciliación de la versión publicada. La unidad de intervención es el renglón, vinculado a su nota. 
+Entradas y salidas Notas capturadas, estados, cantidades, precios e importes. La salida es un registro disponible, en revisión o excluido, con evidencia de la decisión. 
+Responsabilidad Administración patrocina por función. Registro valida y escala. Un revisor verifica cierres y concilia la publicación. El equipo académico documenta la evaluación. 
+Entregables Reglas de captura y clasificación, hoja de validación, plan de control, protocolo de piloto y costo-beneficio. 
+ 
+El periodo consignado abarca del 27 de enero de 2025 al 9 de marzo de 2026. Setenta notas tienen fecha 
+anterior al inicio reportado del 9 de marzo de 2026. La evidencia del historial sitúa la transcripción y revisión 
+documental entre el 17 y el 18 de noviembre de 2026. Por ello, el diagnóstico corresponde a las notas del lote 
+digitalizado. La confirmación de procedencia a cargo del custodio delimita cualquier uso empresarial posterior. 
+El enfoque conserva las fases de DMAIC descritas por ASQ. Cada fase produce una salida que puede verificarse 
+en la siguiente, desde la línea base hasta las reglas de control (ASQ, s. f.). 
+
+4 
+Capítulo 1  Alcance del proceso 
+Caracterización 5W2H 
+Pregunta Respuesta para el caso 
+Qué Renglones que quedan en REVISAR y requieren verificación documental. 
+Por qué importa Una cifra sin confirmar puede trasladarse al reporte o detener la conciliación del lote. 
+Dónde Captura, validación y liberación de notas de pedido. 
+Cuándo En el lote digitalizado examinado, con corte de revisión del 24 de noviembre de 2026. 
+Quién Quien registra documenta el estado, el revisor verifica el cierre y el responsable del proceso autoriza su publicación. 
+Cómo Contrastar nota y registro, validar campos y base de precio, registrar motivos y conciliar la versión de salida. 
+Cuánto 38 renglones en REVISAR, equivalentes al 14,50 % del lote. 
+ 
+SIPOC del registro y validación 
+Proveedor Entrada Proceso Salida Cliente 
+Custodio Nota identificada Recibir e identificar Nota con código Registro 
+Registro Datos de la nota Capturar renglones Registro por renglón Validación 
+Registro Documento y reglas Validar campos y estado Clasificación inicial Revisión 
+Revisión Renglón observado Cotejar y resolver Decisión y evidencia Responsable del proceso 
+Responsable del 
+proceso Versión revisada Autorizar publicación Versión aprobada Gerencia y compras 
+ 
+Criterio de cierre documental: cada renglón observado conserva el motivo, la evidencia consultada, la 
+decisión, el revisor y la fecha de cierre. La nota y el identificador del renglón vinculan el registro con su 
+evidencia. 
+
+5 
+Capítulo 2  Medir 
+Flujo documental actual 
+El flujo se reconstruyó a partir de los estados, reglas y evidencias disponibles en el libro de trabajo. La 
+observación se introduce en la validación, cuando un estado o campo exige comprobación adicional antes de 
+consolidar el reporte. 
+ 
+Figura 1. Flujo documental reconstruido. Fuente: hoja M1 del producto final U3. 
+Plan de recolección 
+Elemento Definición operativa 
+Población analizada 73 notas, de las cuales 69 contienen detalle, con 262 renglones identificados. 
+Fuente Hojas Datos y Comprobantes del libro DMAIC. Verificación de reglas y categorías en el Excel oficial U3. 
+Estado de revisión REVISAR, DISPONIBLE y EXCLUIR, según la etiqueta documental de cada renglón. 
+Completitud Presencia de cantidad, precio unitario e importe, con una oportunidad por campo. 
+Coherencia Contraste del importe con cantidad, precio y base documentada. Las diferencias se conservan para revisión. 
+ 
+Las fechas se manejan por nivel. Se reportan 39 notas con fecha estimada y seis con año discordante. Por 
+renglón, 162 de 262 tienen fecha estimada. Se conserva la fecha consignada en la fuente. 
 
 
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-3
-03 Definir el contrato del proyecto
-Elemento
-Definición del proyecto
-Nombre
-Mejora del registro y validación de notas de pedido mediante Lean Seis Sigma.
-Caso de negocio
-Disponer de registros trazables y coherentes para elaborar información comercial. El costo de
-la revisión y de la información incorrecta todavía no está medido.
-Problema
-En el paquete revisado al 24/11/2026, 38 de 262 renglones figuran REVISAR. Existen,
-además, fechas no confirmadas y diferencias entre versiones de fuente y publicación. No se
-ha determinado desde cuándo ocurren en la operación.
-Objetivo
-Diseñar y validar un procedimiento de captura, revisión y publicación que reduzca pendientes
-sin completar datos por suposición.
-Meta SMART
-Pendiente de acordar indicador CTQ, meta numérica, población comparable y fecha de
-cumplimiento. No se utiliza una meta tomada del manual para otro proceso.
-Alcance
-Desde la recepción de la nota o su evidencia hasta la aprobación y publicación de información
-comercial. Se conserva la trazabilidad de los excluidos.
-Equipo y aprobación
-Los tres integrantes constan en el manual. Champion, líder, analistas y dueño del proceso:
-pendientes de asignar y validar.
-Hitos
-Validar origen y reglas; aprobar línea base; verificar causas; probar controles; medir efecto;
-acordar plan de control. Las fechas dependen de la disponibilidad de evidencias.
-Criterio de aprobación
-El dueño del proceso debe confirmar la pertenencia de la muestra, los campos obligatorios y el
-significado de DISPONIBLE, REVISAR y EXCLUIR. La meta se aprobará una vez revisados esos
-criterios y la factibilidad del acceso a originales.
+6 
+Capítulo 2  Línea base y métricas 
+Estado documental Renglones Participación 
+DISPONIBLE 206 78,63 % 
+REVISAR 38 14,50 % 
+EXCLUIR 18 6,87 % 
+Total 262 100,00 % 
+ 
+El 78,63 % es la proporción de renglones disponibles al corte. Un rendimiento de primera pasada requiere 
+observar el resultado antes de cualquier corrección. El lote carece de esa secuencia. 
+Completitud y sensibilidad de la definición 
+Se inspeccionaron 262 renglones × 3 campos = 786 oportunidades. El recuento primario contiene 5 
+cantidades, 16 precios unitarios y 9 importes vacíos. En total son 30 campos vacíos. El cálculo divide los 
+defectos documentales entre 786, multiplica por un millón y convierte la proporción mediante Φ⁻¹(1 − D/786) 
++ 1,5. 
+Regla documental Conteo Por millón σ equivalente 
+Vacíos en cantidad, precio e importe 30 38 167,94 3,2724 
+Vacíos más cuatro discrepancias, si se descarta una por la 
+base de precio 34 43 257,00 3,2141 
+Vacíos más las cinco discrepancias consignadas 35 44 529,26 3,2004 
+ 
+La primera regla mide completitud sintáctica. Las otras dos muestran cuánto cambia el resultado al incluir 
+coherencia. La regla de 34 depende de confirmar la base «millar» de la nota observada. Los 38 REVISAR miden 
+carga de revisión por renglón, con una unidad y un denominador distintos. 
+El IC Wilson nominal para 38 de 262 es 10,75 % a 19,28 %. Supone independencia entre renglones. La auditoría 
+estimó un ICC intra-nota de 0,246, por lo que el intervalo no acredita representatividad empresarial ni 
+sustituye un análisis por nota. 
+Elección de la técnica de estabilidad 
+El material de Minitab de la Unidad 2 ilustró la selección de cartas para variables y atributos con datos de 
+taller. Aquí el análogo sería una carta p por lotes cronológicos de registro con numeradores y denominadores 
+comparables. El lote reconstruido se resume mediante proporciones y el Pareto. Una serie prospectiva será la 
+base del análisis de estabilidad (NIST/SEMATECH, s. f.). 
+
+7 
+Capítulo 3  Analizar 
+Pareto de los 38 renglones REVISAR 
+Se asignó una sola categoría a cada renglón, con prioridad para PEDIDO, campos incompletos, discrepancia de 
+importe y observación documentada. Cuando falta un motivo explícito se registra como categoría propia. Esta 
+regla excluyente permite sumar frecuencias sin duplicar renglones. 
+ 
+Figura 2. Pareto del lote. Fuente: hoja A1 del formato U3 y regla de clasificación de la hoja Verificar. 
+Categoría Frecuencia Acumulado 
+Estado PEDIDO 13 34,21 % 
+Campos incompletos 7 52,63 % 
+Observación dudosa 7 71,05 % 
+Motivo sin explicitar 6 86,84 % 
+Diferencia de importe 5 100,00 % 
+ 
+Las primeras tres categorías reúnen 27 casos. Incorporar la cuarta cubre 33 de los 38 renglones (86,84 %). Este 
+corte orienta la lectura del Pareto. El diseño de mejoras combina la definición de PEDIDO, la validación 
+numérica y un motivo obligatorio, que también fortalece la trazabilidad de las categorías residuales. 
 
 
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-4
-04 Caracterización del proceso
-Análisis 5W2H
-Pregunta
-Respuesta sustentada o pendiente
-Qué
-Hay renglones pendientes de revisión y diferencias de trazabilidad entre capas de datos.
-Por qué importa
-El reporte puede incluir información de interpretación incierta o versiones distintas. El impacto
-económico no está cuantificado.
-Dónde
-En el Excel de comprobantes y en su publicación en archivos del Data Mart. El punto de origen
-operativo requiere observación.
-Cuándo
-Detectado en el corte documental revisado el 24/11/2026. El inicio y frecuencia en operación no
-se conocen.
-Quién
-Participan quienes registran, revisan y publican. Las personas responsables no se han
-confirmado.
-Cómo
-Campos vacíos, observaciones de lectura, estados pendientes y diferencias de categorías o
-huellas de versión.
-Cuánto
-38 renglones REVISAR de 262. No hay costo verificado de retrabajo, demora o error.
-SIPOC propuesto para validar en campo
-Componente
-Contenido
-Proveedores
-Personal que emite las notas, custodio documental y responsable de catálogo. Roles
-propuestos, sin nombres confirmados.
-Entradas
-Nota original o imagen legible, identificador, detalle comercial, catálogo y reglas de validación.
-Proceso
-1 Recibir e identificar. 2 Registrar conservando el original. 3 Validar campos y bases de precio. 4
-Resolver o justificar observaciones. 5 Aprobar versión. 6 Publicar y conciliar.
-Salidas
-Registros aprobados con evidencia, pendientes identificados, exclusiones justificadas y versión
-publicada.
-Clientes
-Responsables de reportes, ventas y decisiones de abastecimiento, por confirmar con la
-organización.
-El SIPOC representa el diseño de trabajo propuesto. Los archivos prueban la existencia de capas de registro y publicación, pero no
-una observación completa del flujo real ni de sus tiempos.
+8 
+Capítulo 3  Verificación de condiciones 
+Causas candidatas y evidencia del lote 
+El Ishikawa organiza hipótesis sobre método, personas, herramienta, material, medición y entorno. Se 
+contrastaron el estado PEDIDO, las incidencias numéricas, la condición de fecha y la base de precio con las 
+hojas Datos y Verificar. 
+ 
+Figura 3. Ishikawa de la cola documental. Fuente: figura del producto final U3, revisión 1d2d2fe. 
+Condición Comprobación Lectura 
+PEDIDO 13 de 13 PEDIDO están en REVISAR. Condición de clasificación identificada. 
+Incidencia numérica 21 de 22 renglones con incidencia están en REVISAR. Condición de validación identificada. 
+Fecha estimada 26/162 (16,05 %) frente a 12/100 (12,00 %). Comparación descriptiva, sin veredicto causal. 
+Base de precio Una discrepancia cambia si se interpreta el precio por unidad. Requiere confirmación documental de la base. 
+ 
+Nueve renglones presentan las dos primeras condiciones. Su unión es 13 + 21 − 9 = 25, el 65,79 % de 
+REVISAR. La estandarización de captura y clasificación es la causa candidata priorizada para el piloto. 
+Verificarla exige cotejar registros originales y revisados y observar cómo opera el control en un lote nuevo. 
+El contraste retrospectivo de las transcripciones encontró que los 30 campos que siguen vacíos ya estaban 
+vacíos en la primera captura. De los 38 REVISAR de la versión revisada, 37 ya tenían ese estado. Estos 
+resultados aclaran cuándo se registró la observación documental. La revisión de las imágenes originales 
+permitirá distinguir una omisión de captura, una nota ilegible y un campo ausente en el documento físico. 
 
 
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-5
-05 Medir el estado documental
-Estado en fuente
-Renglones
-Proporción
-DISPONIBLE
-206
-78,63 %
-REVISAR
-38
-14,50 %
-EXCLUIR
-18
-6,87 %
-Total
-262
-100,00 %
-DISPONIBLE
-206
-REVISAR
-38
-EXCLUIR
-18
-La unidad de análisis de esta tabla es un renglón del detalle, identificado por id_detalle. El denominador
-permanece en 262 para describir la composición total de la muestra. Los 18 excluidos se conservan y no
-se convierten en errores. DISPONIBLE es un estado de la fuente y no prueba que todos los campos del
-renglón hayan sido validados.
-Plan de medición
-Variable
-Definición y tratamiento
-Estado de uso
-Conteo por uso_importe. No se reasigna el estado por inferencia.
-Campo obligatorio
-El dueño del proceso debe definirlo antes de medir conformidad. Unidad, precio y base de
-precio pueden exigir reglas distintas según la transacción.
-Pendiente
-Registro que conserva REVISAR al corte. El motivo de revisión se documenta por
-separado.
-Resolución
-Requiere evidencia, responsable y criterio aplicado. Cambiar una etiqueta no demuestra
-corrección.
-Repetición
-En el piloto se medirá cada lote comparable con el mismo protocolo y denominador.
-Fuente: Comprobantes_Revisados.xlsx, hoja Detalle_Productos. Los conteos coinciden con Detalle.csv y auditoria.json. Revisión
-independiente mediante conteo de registros.
+9 
+Capítulo 4  Mejorar 
+Selección de controles 
+Se consideraron la regla PEDIDO, la validación numérica, el motivo obligatorio, la base de precio explícita, el 
+cierre con evidencia, la unificación de catálogo, la 5S digital y una revisión Kaizen periódica. La selección 
+combina cobertura de incidencias con la posibilidad de comprobar los controles en el primer lote piloto. Los 
+niveles de impacto y esfuerzo son una evaluación técnica cualitativa. 
+Control elegido Impacto esperado y esfuerzo Aplicación 
+Regla PEDIDO Cobertura alta y esfuerzo bajo. Clasificar el estado antes de liberar el importe y registrar el motivo aplicado. 
+Poka-Yoke de captura Cobertura alta y esfuerzo medio. Alertar por cantidades, precios o importes ausentes. Verificar base positiva y diferencia documental. 
+Motivo y evidencia de cierre Trazabilidad alta y esfuerzo bajo. Registrar motivo, evidencia, fecha y rol revisor antes de liberar el renglón. 
+ 
+Plan PDCA 
+Fase Acción y responsable funcional Verificación 
+Planear Registro y responsable del proceso definen la regla PEDIDO, campos aplicables y tolerancia. Instructivo y cinco casos de aceptación antes del piloto. 
+Hacer Registro prueba el formulario. El equipo reproduce el escenario retrospectivo. Pruebas de vacío, base inválida, diferencia, PEDIDO y renglón válido. 
+Verificar Revisión aplica el checklist al primer lote comparable y registra los tiempos. Medir REVISAR, cierres trazables y minutos por caso con las mismas reglas. 
+Actuar Responsable del proceso compara la evidencia con el objetivo y ajusta el estándar. Autorizar versión, corregir desvío o ampliar el piloto. 
+ 
+El prototipo Poka-Yoke funciona como detección y guía de revisión. En el piloto, un caso con discrepancia 
+permanece en cola hasta que el documento sustente la decisión. La validez de un cálculo no sustituye la 
+comparación con la nota. 
 
+10 
+Capítulo 4  Simulación del impacto 
+La simulación aplica una proporción de resolución a los 25 renglones de REVISAR que presentan PEDIDO o una 
+incidencia numérica. Los 13 restantes conservan su estado a efectos del escenario. La fórmula es REVISAR 
+esperado = 38 − 25 × eficacia. Se mantiene constante el denominador de 262 renglones para comparar sobre 
+el mismo lote. 
+Eficacia supuesta REVISAR esperados Tasa esperada Reducción respecto de 14,50 % 
+25 % 31,75 12,12 % 2,39 p. p. 
+50 % 25,50 9,73 % 4,77 p. p. 
+75 % 19,25 7,35 % 7,16 p. p. 
+100 % 13,00 4,96 % 9,54 p. p. 
+ 
+Las fracciones son valores esperados del modelo. Un lote observado se reporta con conteos enteros. Para 
+cumplir 5 % en un lote de 262, pueden quedar como máximo 13 renglones en revisión. En este escenario eso 
+exige resolver prácticamente los 25 casos abordados por los controles. 
+Protocolo del piloto de campo 
+Etapa Registro mínimo 
+Antes Cerrar la regla de inclusión, confirmar base de precio y tolerancia, marcar fecha de inicio y fijar el grupo de notas que se observará. 
+Durante Registrar por nota el total de renglones, revisiones, motivos, decisiones y minutos de retrabajo. Conservar el orden de captura y la primera clasificación. 
+Después Comparar proporciones por lote y por nota, tiempos por caso y cierres con evidencia. Contrastar la apertura de revisión con el documento original. 
+Decisión Si se cumple la meta y la conciliación del lote, mantener los controles. Si falla un control, revisar la regla y volver a observar un lote comparable. 
+ 
+La fase de mejora concluye con el escenario calculado, el formulario de control y el protocolo de evaluación. El 
+primer lote observado aportará el resultado del piloto. 
 
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-6
-06 Fechas y definición de conformidad
-Estado de fecha
-Notas
-Proporción de 73
-Estimada
-39
-53,42 %
-Real sin etiqueta de discordancia
-28
-38,36 %
-Año discordante
-6
-8,22 %
-Una fecha estimada puede ser una decisión documentada de recuperación de información. No se
-sustituye por una fecha cierta. Los seis años discordantes se conservan como aparecen en la fuente
-hasta revisar el documento original o una evidencia autorizada. La presencia de datos anteriores al inicio
-de actividades reportado exige confirmar el origen del lote.
-DPMO y nivel sigma
-No se calcula un nivel sigma operativo con las 151 entradas de Incidencias ni con los 38 estados
-REVISAR. El registro de incidencias mezcla observaciones, estados documentales y distintas unidades
-de análisis. Para calcular DPMO se necesita aprobar un defecto CTQ y sus oportunidades homogéneas
-por unidad.
-Protocolo propuesto: definir una unidad documental, acordar los criterios de aceptación aplicables,
-contar defectos con evidencia y fijar el periodo de observación. El Excel incorpora campos vacíos para U,
-D y O y fórmulas condicionadas a la aprobación de la definición.
-DPMO = D / (U × O) × 1 000 000.
-Si el curso exige la convención de desplazamiento de 1,5: nivel sigma = inversa normal estándar de (1 −
-DPMO / 1 000 000) + 1,5. La fórmula no sustituye la definición de defecto.
-Estabilidad y tiempos
-No se construye una gráfica de control ni se afirma capacidad del proceso. Las fechas no forman una
-secuencia operacional confirmada y no existen subgrupos comparables ni tiempos medidos de captura,
-espera o revisión. Estos datos deben levantarse durante el piloto.
+11 
+Capítulo 5  Controlar 
+Plan de control propuesto 
+Indicador y cálculo Fuente y frecuencia Rol responsable Umbral y reacción 
+REVISAR / renglones del lote Registro de estados · por lote Registro y revisión 
+Meta de diseño ≤ 5 %, 
+pendiente de aprobación. Si se 
+supera, separar causas y revisar 
+las reglas aplicadas. 
+Cierres con evidencia / 
+cierres declarados 
+Bitácora de revisión · por 
+lote Revisor 100 %. Reabrir cualquier cierre sin evidencia, fecha o revisor. 
+Publicaciones conciliadas / 
+publicadas 
+Manifiesto y controles 
+por clave · por 
+publicación 
+Responsable de 
+publicación 
+100 %. Detener la liberación si 
+falla un hash esperado, una llave 
+o un total de control. 
+Vacíos en tres campos / 
+campos aplicables 
+Hoja de validación · por 
+lote Registro 
+Verificar todo campo obligatorio 
+vacío antes de publicar. Escalar 
+excepciones al responsable. 
+ 
+Estandarización y automatización 
+El instructivo de una página define cuándo se usa PEDIDO, qué campos son obligatorios, cómo se documenta 
+la base de precio y cuándo un renglón queda listo para el reporte. El checklist de cierre verifica identificador, 
+motivo, evidencia, fecha y responsable funcional. El responsable del proceso revisa la vigencia de estas reglas 
+antes de cada nueva versión. 
+La automatización propuesta valida tipo y presencia de campos, consistencia de la base y trazabilidad del 
+motivo. Para publicar, cada archivo se contrasta con su propia huella esperada. Después se concilian 
+identificadores, categorías y totales entre Excel y Data Mart. Distintos formatos generan huellas distintas aun 
+cuando representen datos equivalentes. 
+La auditoría registró dos publicaciones del Data Mart asociadas al mismo Excel de origen. La versión de cada 
+archivo, su SHA-256 y el método de conciliación permiten reproducir los resultados sin mezclar las capas. El 
+tablero de control mostrará revisión, cierre trazable y conciliación por lote. 
 
+12 
+Capítulo 6  Beneficios 
+Supuestos y cálculo anualizado 
+Se valoró el retrabajo en 10 minutos por renglón REVISAR y S/ 7,50 por hora. La implementación se estima en 
+16 horas con la misma tarifa, equivalentes a S/ 120 al inicio. El modelo estima valor del tiempo liberado. El 
+flujo excluye ingresos adicionales e importes de las notas. El costo recurrente sigue sin estimación y se excluye 
+de los escenarios. 
+Concepto Antes Después con eficacia máxima 
+Renglones a revisar por lote 38 13 
+Horas estimadas por lote 6,33 h 2,17 h 
+Costo estimado por lote S/ 47,50 S/ 16,25 
+Valor de tiempo liberado por lote — S/ 31,25 
+ 
+Para un lote mensual, neto anual = (S/ 47,50 − S/ 16,25) × 12 − S/ 120 = S/ 255,00. El flujo económico es 
+favorable solo cuando el tiempo liberado se aprovecha. Con esa frecuencia y una eficacia de 25 %, el neto se 
+reduce a −S/ 26,25. 
+Escenario Lotes por mes Eficacia Neto anual 
+Volumen bajo 1 / 13,3 100 % −S/ 91,80 
+Eficacia parcial 1 50 % S/ 67,50 
+Base de máxima resolución 1 100 % S/ 255,00 
+ 
+La frecuencia baja distribuye un lote sobre 13,3 meses como prueba de sensibilidad. La secuencia de fechas 
+del lote tampoco mide la cadencia operativa. En condiciones de máxima resolución, el equilibrio se obtiene 
+con 8 renglones evitados por mes, equivalentes a 12,16 renglones REVISAR mensuales antes de intervenir. 
+Criterio económico de decisión 
+Si el piloto registra menos de 12,16 renglones REVISAR por mes o una eficacia inferior a la del escenario de 
+referencia, recalcular el neto con el volumen y tiempo observados. La trazabilidad del reporte y la disminución 
+del riesgo de publicar importes inconsistentes se evalúan por separado. 
 
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-7
-07 Analizar los pendientes de revisión
-Se clasifican los 38 renglones REVISAR mediante una regla descriptiva exclusiva. Cada renglón entra en
-el primer criterio que cumple: estado PEDIDO en nota o renglón; campos numéricos incompletos;
-diferencia de importe consignada distinta de cero; observación o lectura dudosa; y motivo no explicitado
-en el detalle. La prioridad evita doble conteo, pero no representa severidad ni causa raíz.
-Condición principal
-N
-Porcentaje
-Acumulado
-Estado PEDIDO en nota o renglón
-13
-34,21 %
-34,21 %
-Campos numéricos incompletos
-7
-18,42 %
-52,63 %
-Observación o lectura dudosa documentada
-7
-18,42 %
-71,05 %
-Motivo no explicitado en el detalle
-6
-15,79 %
-86,84 %
-Diferencia de importe consignada en fuente
-5
-13,16 %
-100,00 %
-Las cuatro primeras condiciones reúnen 33 de 38 pendientes, equivalentes al 86,84 %. El grupo más
-frecuente es el estado PEDIDO en nota o renglón: 13 casos. Ese estado puede ser válido y exige aclarar
-la regla de inclusión comercial. No se propone corregirlo automáticamente.
-Lectura del Pareto
-La clasificación permite organizar el trabajo: revisar primero el criterio para los pedidos, recuperar datos
-faltantes y resolver observaciones con evidencia. Los seis casos cuyo motivo no está explicitado en
-Detalle_Productos requieren consultar las otras hojas y, cuando sea necesario, el original. No se afirma
-que carezcan de motivo en todo el expediente.
-Los cinco casos con diferencia de importe incluyen una fila cuya base de precio indica millar. Por ello,
-una diferencia numérica no se declara error aritmético confirmado sin resolver la base de precio y
-verificar el documento.
-Fuente: Clasificación derivada de Detalle_Productos sobre los 38 identificadores REVISAR. El Excel entrega los identificadores y las
-condiciones de cada caso para reproducir los conteos.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-8
-08 Verificación documental de condiciones
-Condición examinada
-Evidencia
-Conclusión
-Información numérica
-incompleta
-NP-025059-03 registra cantidad 100 e importe
-25, pero precio unitario vacío. Otros seis
-pendientes quedan en este grupo por la regla
-exclusiva.
-Confirmada en el archivo. No se infiere el
-precio dividiendo importe entre cantidad.
-Diferencia de importe
-consignada
-NP-025072-04 registra cantidad 2, precio 5,
-subtotal 100 y diferencia 90.
-Confirmada en el registro. El original y la
-base comercial deben determinar qué
-dato corresponde corregir.
-Desalineación de
-categoría
-NP-025089-02, Tarrajas: herramientas en
-Excel y herramietas en CategoriaOriginal del
-CSV.
-Confirmada entre archivos. No se
-identifica al autor ni el momento de la
-diferencia.
-Desalineación de
-versión
-La huella SHA-256 actual del Excel difiere de la
-declarada en auditoria.json. Los nueve CSV sí
-coinciden con sus huellas.
-Confirmada a nivel de archivo. No
-demuestra por sí sola la causa del
-cambio.
-Ishikawa para contrastar en campo
-Categoría
-Hipótesis por verificar
-Personas
-Interpretación distinta de campos. Criterios de revisión no compartidos.
-Método
-Regla ambigua para PEDIDO. Liberación sin conciliar la versión de fuente.
-Sistema
-Validaciones insuficientes en captura. Publicación sin control de versión verificable.
-Material
-Documento poco legible. Falta del original para resolver observaciones.
-Medición
-Defecto CTQ aún no acordado. Mezcla de unidades en el registro de incidencias.
-Entorno
-Interrupciones durante la captura. Disponibilidad limitada de quien conoce la operación.
-Las hipótesis describen preguntas de investigación. No se atribuyen causas humanas ni operativas confirmadas. La revisión prueba
-condiciones del dato y consistencia de archivos, no toda la cadena causal del proceso.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-9
-09 Mejorar mediante controles de registro
-Las siguientes acciones son propuestas de diseño. El equipo y el dueño del proceso deben evaluar
-impacto y esfuerzo antes de seleccionar las mejoras definitivas. No se inventan calificaciones para
-fabricar una prioridad numérica.
-N
-Propuesta
-Función
-1
-Campos obligatorios según tipo de nota
-Prevención de registros incompletos sin exigir campos que no
-apliquen.
-2
-Base de precio explícita
-Distinguir unidad, lote o millar antes de comparar cantidades,
-precios e importes.
-3
-Catálogo de productos y categorías
-Evitar variantes de categoría y usar identificadores estables.
-4
-Motivo obligatorio para REVISAR y
-EXCLUIR
-Hacer visible la regla que impide o justifica el uso del registro.
-5
-Evidencia de resolución y aprobación
-Conservar el dato anterior, el nuevo y su fundamento.
-6
-Verificación de versión al publicar
-Conciliar fuente, huella y fecha de carga antes de liberar el reporte.
-7
-Orden documental con 5S digital
-Separar originales, trabajo, revisiones y publicación con nombres
-consistentes.
-8
-Revisión breve de pendientes mediante
-Kaizen
-Revisar problemas repetidos y documentar cambios al
-procedimiento.
-Poka Yoke propuestos
-Prevención: impedir la liberación de un registro nuevo cuando falten campos obligatorios, base de
-precio o evidencia de aprobación. El formulario del Excel demuestra la lógica de validación, sin modificar
-las notas de la fuente.
-Detección: mostrar diferencias de importe y cambios entre fuente y publicación para revisión. La alerta
-no corrige por sí sola un registro ni supone fraude o error de un trabajador.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-10
-10 Plan PDCA y piloto de validación
-Fase
-Acción propuesta
-Salida y estado
-Planificar
-Confirmar origen del lote, reglas de inclusión, campos
-obligatorios, CTQ, meta y responsables.
-Acta de criterios aprobados. Pendiente.
-Hacer
-Aplicar el formulario a un lote comparable con
-originales accesibles. Registrar tiempos y decisiones
-de revisión.
-Lote revisado, bitácora y evidencias. No
-ejecutado.
-Verificar
-Recontar pendientes y conformidad con las mismas
-reglas. Revisar discrepancias y tiempo por registro.
-Comparación antes y después. Sin
-medición posterior.
-Actuar
-Ajustar el procedimiento y acordar su continuidad si el
-piloto cumple los criterios aprobados.
-Procedimiento y control asignados.
-Pendiente.
-Criterios de evaluación del piloto
-El piloto deberá documentar el número real de registros, su selección y las fechas. Los mismos criterios
-de aceptación se aplicarán a la línea base y a la medición posterior. Se registrará cada resolución con
-evidencia y se conservarán los excluidos con su justificación. Una reducción obtenida solo por cambiar
-etiquetas o retirar casos no demostrará mejora.
-El efecto se evaluará mediante tasa de revisión, conformidad bajo CTQ y tiempo medido por registro. La
-meta y el tamaño del lote deben acordarse antes de la ejecución. El periodo de prueba y los
-responsables nominales quedan pendientes de confirmación.
-Riesgos y respuestas
-Riesgo
-Respuesta prevista
-No obtener las notas originales
-Conservar el estado pendiente y registrar qué evidencia falta.
-Aplicar nuevas reglas solo al lote posterior
-Reevaluar la línea base con el mismo criterio para hacer comparable la
-medición.
-Confundir cambio de archivo con corrección
-validada
-Exigir evidencia por registro y conciliar la versión publicada.
-Convertir un campo vacío en cero
-Distinguir ausencia, valor cero válido y no aplicabilidad.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-11
-11 Controlar la calidad del registro
-Indicador y fórmula
-Línea base
-Control propuesto
-Renglones REVISAR / renglones del lote
-38 / 262 = 14,50 %
-Medir por lote comparable. Meta,
-umbral, frecuencia y dueño nominal
-pendientes.
-Fechas estimadas o discordantes / notas
-45 / 73 = 61,64 %
-Separar 39 estimadas y seis
-discordantes. El indicador mide
-estado documental, no errores
-confirmados.
-Resoluciones con evidencia y responsable /
-resoluciones declaradas
-Sin resoluciones de
-intervención registradas
-No calcular como cero cuando el
-denominador sea cero. Exigir
-evidencia antes de cerrar un caso.
-Publicaciones conciliadas / publicaciones realizadas
-No existe una serie de
-publicaciones
-verificable
-Conciliar fuente, huella y versión en
-cada publicación. Definir registro y
-responsable.
-Estandarización
-El procedimiento propuesto conserva el original, utiliza un identificador estable por nota y renglón,
-registra los estados de uso y sus motivos, y separa las versiones de trabajo de las publicadas. La
-persona revisora debe documentar qué criterio aplicó y dónde se encuentra la evidencia. La aprobación
-debe preceder al uso del registro en reportes.
-Automatización propuesta
-El Excel incorpora cálculos de composición y Pareto, una lista de 38 pendientes con campos editables
-para seguimiento y un formulario de captura con validaciones. Un desarrollo posterior podría conectar
-estos controles al flujo de carga de reportes. Esa integración y la actualización en Power BI no se
-declaran implementadas.
-Las metas y los umbrales deben introducirse en los campos de parámetros del Excel cuando el
-responsable del proceso los apruebe. Hasta entonces, el libro conserva los resultados que dependen de
-ellos como pendientes.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-12
-12 Beneficios y aprendizajes de la revisión
-Evaluación económica pendiente
-No hay tiempos medidos de captura o revisión, costos horarios, costos de corrección ni inversión de la
-mejora. Por lo tanto, no se presenta un ahorro en soles. El importe S/ 26 509,70 corresponde a la suma
-de renglones marcados DISPONIBLE. No representa ventas auditadas, costo de mala calidad ni
-beneficio atribuible a este proyecto.
-Dato necesario
-Cómo obtenerlo
-Volumen mensual comparable
-Contar los registros reales del periodo acordado con reglas estables.
-Tiempo de revisión antes y después
-Medir casos con inicio y fin definidos, separando trabajo y espera.
-Costo horario aplicable
-Obtener un dato validado por administración y documentar su
-composición.
-Costo de implementar y sostener
-Registrar capacitación, configuración, mantenimiento y horas del equipo.
-Beneficio efectivamente realizable
-Determinar si el tiempo liberado evita gasto o se utiliza en otra tarea.
-Cálculo propuesto al disponer de datos: ahorro mensual de trabajo = (minutos antes − minutos después)
-/ 60 × volumen mensual × costo por hora. Beneficio anual neto = ahorro mensual realizable × 12 − costo
-inicial − costo recurrente anual. Un resultado negativo se conserva. Los campos sin evidencia no se
-sustituyen por cero.
-Aprendizajes sustentados en la revisión
-1. Un estado REVISAR no equivale a un defecto confirmado. Su causa y tratamiento deben quedar
-documentados.
-2. Los denominadores cambian la interpretación: notas, renglones e incidencias son unidades distintas.
-3. Una corrección en Excel puede convivir con una publicación que conserva otro valor. La versión debe
-conciliarse.
-4. El vínculo a una fotografía no sustituye el acceso a la evidencia original para resolver un caso.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-13
-13 Conclusiones y decisiones pendientes
-El paquete permite desarrollar un proyecto de mejora del registro documental, con una línea descriptiva
-reproducible de 73 notas y 262 renglones. Los 38 renglones por revisar pueden gestionarse con un
-registro trazable y una regla explícita de liberación. La propuesta combina validaciones de captura,
-revisión documentada y control de publicación.
-La revisión confirma campos numéricos incompletos, diferencias consignadas y desalineación entre
-archivos. Las causas operativas, la conformidad bajo un CTQ aprobado y los beneficios aún requieren
-evidencia. El trabajo no afirma que se haya ejecutado el piloto ni que la operación haya mejorado.
-Decisión
-Información requerida
-Origen de la muestra
-Confirmar pertenencia de las notas a HIDROCOM y explicar los registros anteriores al
-inicio de actividades reportado.
-Reglas y línea base
-Definir campos obligatorios, base de precio, tratamiento de PEDIDO y criterio CTQ.
-Meta y plazo
-Aprobar el indicador objetivo, su valor y fecha de cumplimiento.
-Equipo
-Asignar Champion, líder, analistas, revisor y dueño del proceso.
-Prueba y economía
-Aportar originales, medir piloto y costos antes de declarar resultados o ahorro.
-Fuentes del proyecto
-F1. SEM2_Esquema_Manual_HIDROCOM_COMPLETADO.docx, contexto y procesos propuestos.
-F2. Antecedentes_y_alcance.md, identificación histórica y límites de recuperación.
-F3. Comprobantes_Revisados.xlsx, hojas Comprobantes, Detalle_Productos, Fechas_y_Series, Revision_Campos e Incidencias.
-F4. DataMart/Publicado, archivos auditoria.json, Detalle.csv y Productos.csv.
-F5. Recuento y comparación documental realizados el 24/11/2026 sobre copias preservadas del paquete suministrado.
-Entregables asociados: Excel DMAIC con fuentes y cálculos, y presentación con el mismo diagnóstico y
-propuesta. Las celdas amarillas requieren información humana. No hay sustituciones de datos originales.
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-14
-14 Anexo de renglones por revisar
-Parte 1 de 2. Se conservan los 38 identificadores REVISAR de la fuente. La categoría es derivada por la regla exclusiva descrita en el
-análisis. El Excel contiene el detalle numérico y los campos de seguimiento.
-Identificador
-Producto registrado
-Condición principal
-NP-025059-03
-Rectangulares
-Datos numéricos incompletos
-NP-025063-01
-Tubos 1/2
-Estado PEDIDO
-NP-025063-02
-Imprimante
-Estado PEDIDO
-NP-025063-03
-Tubo 2"
-Estado PEDIDO
-NP-025064-06
-Cola sintetica
-Observación o lectura dudosa
-NP-025069-02
-Spray
-Datos numéricos incompletos
-NP-025069-03
-Malla
-Datos numéricos incompletos
-NP-025069-04
-Malla
-Datos numéricos incompletos
-NP-025069-06
-Lavadero
-Consultar otras hojas y original
-NP-025071-02
-Codos 1/2
-Consultar otras hojas y original
-NP-025072-04
-Temple
-Diferencia de importe en fuente
-NP-025078-02
-Curva
-Consultar otras hojas y original
-NP-025084-02
-Pintura Latex
-Observación o lectura dudosa
-NP-025084-07
-Balde grande de Pintura Latex
-Datos numéricos incompletos
-NP-025084-16
-Lavatorio
-Observación o lectura dudosa
-NP-025086-04
-Codo 1/2 × 45
-Consultar otras hojas y original
-NP-025110-02
-Niples de 1/2
-Diferencia de importe en fuente
-NP-025116-01
-Curva de 1/2″
-Datos numéricos incompletos
-NP-025118-01
-Tee de 1/2
-Diferencia de importe en fuente
-
-
-HIDROCOM KALLPA   Registro y validación de notas de pedido
-15
-15 Anexo de renglones por revisar
-Parte 2 de 2. Se conservan los 38 identificadores REVISAR de la fuente. La categoría es derivada por la regla exclusiva descrita en el
-análisis. El Excel contiene el detalle numérico y los campos de seguimiento.
-Identificador
-Producto registrado
-Condición principal
-NP-025119-01
-Tubo PVC eléctrico de 3/4″
-Diferencia de importe en fuente
-NP-025124-03
-Caños
-Observación o lectura dudosa
-NP-025125-01
-Ocre de 50 kg
-Observación o lectura dudosa
-NP-025125-02
-Imprimantes
-Consultar otras hojas y original
-NP-025126-12
-Rollos de alambre
-Estado PEDIDO
-NP-025129-12
-Pintura
-Estado PEDIDO
-NP-025129-13
-Codos 2"
-Estado PEDIDO
-NP-025131-01
-Tubos Plastisur
-Datos numéricos incompletos
-NP-025131-11
-Caja Plastisur
-Estado PEDIDO
-NP-025131-13
-Tees de 4 de 2
-Estado PEDIDO
-NP-025131-16
-Tubos en Plastisur
-Estado PEDIDO
-NP-025131-18
-Tubos de 4
-Estado PEDIDO
-NP-025134-08
-curba de luz
-Consultar otras hojas y original
-NP-025138-01
-Curvas de luz
-Diferencia de importe en fuente
-NP-025138-03
-Tubos de luz
-Observación o lectura dudosa
-NP-025142-04
-Crucetas de 2
-Observación o lectura dudosa
-NP-025144-17
-Codo de 4 Plastisur 90°
-Estado PEDIDO
-NP-025144-18
-Tubo de 2 económico
-Estado PEDIDO
-NP-025144-20
-Tubo de 4 económico
-Estado PEDIDO
+13 
+Capítulo 6  Lecciones y cierre 
+Lecciones del proyecto 
+Lección Qué cambia en la forma de trabajar 
+Definir la unidad antes de contar El estado del renglón, los campos vacíos y la incoherencia son medidas distintas. Se fija una definición y su denominador antes de reproducir la cifra. 
+Cerrar el análisis con supuestos 
+trazables 
+Cuando todavía no hay tiempos observados, se calcula un rango y se 
+comprueba qué supuestos cambian la decisión. Los datos de taller sirven para 
+elegir el método. 
+Validar el dato antes de explicar la 
+causa 
+Una asociación que surge de la regla de clasificación ayuda a priorizar, pero 
+requiere contraste independiente para establecer el mecanismo operativo. 
+Coordinar las versiones del equipo Un identificador de versión, una tabla de definiciones y una revisión cruzada mantienen alineados el informe, la presentación y las hojas de cálculo. 
+ 
+Qué haríamos desde el inicio 
+Acordar primero el alcance con el custodio de las notas, conservar versiones de fuente y derivaciones con sus 
+huellas, fijar la definición de cada estado y diseñar un registro prospectivo de tiempos. Esto permite estimar el 
+efecto con menor incertidumbre y detectar diferencias entre copias antes de redactar el informe. 
+El resultado académico es un diseño completo de mejora para el registro documental, con línea base propia, 
+controles verificables, simulación y sensibilidad económica. Para adoptar el control en operación, la decisión 
+se apoya en el piloto y en la evidencia de procedencia del lote. 
+Referencias 
+American Society for Quality. (s. f.). DMAIC. https://asq.org/quality-resources/dmaic 
+NIST/SEMATECH. (s. f.). Univariate and multivariate control charts. e-Handbook of Statistical Methods. 
+https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc3.htm 
+Universidad Peruana Unión. (2026). Unidad 3. Plantilla del informe técnico, formato DMAIC y guía de análisis costo-beneficio [Material 
+de curso]. 
+Equipo HIDROCOM KALLPA. (2026). Libro DMAIC, producto final U3 y auditoría integral [Repositorio de trabajo]. 
+https://github.com/Nunclear/hidrocom-mejora-procesos-u3 

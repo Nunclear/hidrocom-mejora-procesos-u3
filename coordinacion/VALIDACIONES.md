@@ -1,12 +1,13 @@
 # Registro de validaciones
 
-## Ejecutadas por A antes de la integración
+A comparó bytes del ZIP v3, congeló solo 73 notas/262 renglones y contrastó las fuentes de los libros con ese congelado. Las huellas de C se identifican como reportadas cuando no hubo bytes disponibles a A.
 
-- Lectura binaria del ZIP exterior e interior: cuatro archivos extraídos coinciden byte por byte con la copia local. Evidencia: EVIDENCIA_COPIA_MAIN.json. Los nueve CSV coinciden con su auditoria.json; la huella del Excel declarada en ese JSON difiere del Excel real. NP-025089-02 conserva la categoría antigua en el CSV del ZIP v3.
-- Extracción congelada de valores de las tres hojas fuente ya publicadas en el corte e3b5a60. Sin ampliar población.
+Ejecutar `python herramientas/ejecutar_pruebas.py` y `python herramientas/validar_integracion.py --final --revision REVISION`. Las salidas de validacion/ registran métricas, escenarios, fórmulas en caché, integridad y enlaces. Leer cachés no equivale a recálculo Excel. Los archivos temporales Office ~$ se excluyen.
 
-## A ejecutar y registrar
+El dashboard pasó 18 comprobaciones Artifact Tool, incluida mutación restaurada 30→31→30. Las cadenas vacías esperadas se contrastan con estado fuente y fórmula antes de considerarlas vacíos conocidos.
 
-`python herramientas/validar_integracion.py` recalcula métricas desde el corte congelado y contrasta los libros, enlaces y entregables. `python -m unittest discover -s herramientas -p "test_*.py"` verifica casos límite del modelo y de los controles. Las salidas identifican versión/commit y hashes.
+Los Word se exportaron en Microsoft Word; A revisó las 31 páginas PDF y las 35 láminas únicas. Los PPTX pasaron integridad, geometría, fuentes de referencia e importación. Los reportes públicos contienen huellas; las imágenes privadas de QA se conservan en .qa/ y pueden regenerarse.
 
-Una lectura de caché Excel no equivale a recálculo de fórmulas. El revisor debe indicar qué motor ejecutó, qué entradas cambió y qué pruebas restauró. Los PDF/Word/PPTX requieren revisión visual, además de integridad estructural. Mantener una lista explícita de comprobaciones no ejecutadas.
+No ejecutado por A: recálculo nativo Excel de todos los libros, prueba PowerPoint/Google Slides, reproducción con bytes de primera captura PM08 o Data Mart posterior C, entrevistas, MSA de campo y piloto. Los recálculos nativos reportados por B/C se atribuyen expresamente.
+
+La revisión y calificación final B/C siguen solicitadas. La ejecución de GitHub Actions debe comprobarse en el PR: crear el flujo no demuestra que pasó.

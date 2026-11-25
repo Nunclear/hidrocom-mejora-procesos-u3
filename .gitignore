@@ -1,5 +1,7 @@
 __pycache__/
+~$*
 *.pyc
 *.inspect.ndjson
 .qa/
+.chart-data-*/
 .publicacion_manifest.json

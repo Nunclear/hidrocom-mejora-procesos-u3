@@ -1,272 +1,191 @@
-HIDROCOM KALLPA · Unidad 3 · Lean
-1
-01 Lean: flujo y calidad del registro
-GRUPO HIDROCOM KALLPA E.I.R.L.
-Mejora de Procesos y Calidad Total · UPeU · Ingeniería de Sistemas · 2026-2
-Docente: Mg. Esteban Tocto Cano
-Corte documental: 24 de noviembre de 2026.
-Equipo registrado en el manual: Gutierrez Morales Jhon Alex, Mullisaca Condori Carlos Augusto y Mamani Mamani Ciro Wagner.
-No hay asignación nominal aprobada de roles.
-Propósito del trabajo independiente
-Aplicar el pensamiento Lean al registro y validación de notas de pedido antes de publicar información
-comercial. El valor propuesto es que el destinatario pueda interpretar y rastrear los datos del reporte. Esa
-necesidad debe contrastarse con el usuario real.
-La evidencia contiene 73 notas y 262 renglones: 206 DISPONIBLE, 38 REVISAR y 18 EXCLUIR. La
-cola de revisión representa 14,50 % del lote; no es una tasa de errores. También se confirmó una
-diferencia de categoría entre Excel y CSV y una desalineación del hash de la fuente.
-Qué se desarrolla
-Cinco principios aplicados, mapa de seis etapas propuesto, análisis de ocho categorías de desperdicio,
-ejercicio 5S digital en el espacio académico, ocho ideas Kaizen y dos controles de captura en un prototipo
-Excel.
-La organización de esta entrega sí se realizó en el espacio local de publicación. El flujo de la empresa,
-sus tiempos y la eficacia operativa de los controles todavía requieren observación y prueba. No se
-presenta una intervención física en el almacén ni un resultado económico logrado.
-Fuente del caso: manual completado, Antecedentes_y_alcance.md, Comprobantes_Revisados.xlsx y publicación del Data Mart
-del paquete suministrado. Las propuestas se identifican como tales.
+Lean Management · 1 
+UNIVERSIDAD PERUANA UNIÓN  
+Ingeniería de Sistemas 
+Mejora de Procesos y Calidad Total 
+Periodo 2026-2 
+Lean Management  
+Registro y validación de notas de pedido  
+GRUPO HIDROCOM KALLPA E.I.R.L.  
+Diagnóstico de un lote documental y diseño de mejora. 
+24 de noviembre de 2026. 
+Docente: Mg. Esteban Tocto Cano 
+Integrantes registrados en el manual: 
+Gutierrez Morales Jhon Alex · Mullisaca Condori Carlos Augusto · Mamani Mamani Ciro Wagner 
+Contenido 
+1. Contexto, problema y alcance 
+2. Cinco principios y valor para el destinatario 
+3. Desperdicios: evidencias y preguntas 
+4. VSM actual documental 
+5. VSM futuro y plan de medición 
+6. 5S digital y propuestas Kaizen 
+7. Poka-Yoke y estandarización 
+8. Validación, conclusiones y referencias 
+  
+
+Lean Management · 2 
+1 Contexto problema y alcance 
+HIDROCOM KALLPA se describe en el material suministrado como una organización de 
+comercialización y distribución de productos ferreteros para agua, desagüe, almacenamiento y riego en 
+la región de Puno. Esa descripción contextual no sustituye la verificación de la procedencia del lote. 
+El lote documental comprende 73 notas (69 con detalle) y 262 renglones. El usuario confirmó que no 
+puede acreditar el origen original, el proveedor ni la autenticidad empresarial de las notas. El 09/03/2026 
+es una fecha reportada en la recopilación histórica y carece aquí de constancia oficial. Por ello, el 
+estudio describe este lote documental y no representa automáticamente el desempeño actual de toda la 
+empresa. 
+El problema documental consiste en registros que requieren revisión y en publicaciones que deben 
+conciliarse con su fuente. El objetivo de Lean es diseñar un flujo trazable de captura, revisión y 
+liberación, y preparar su validación. El alcance termina en la información publicada; no se evalúan 
+inventario físico, entregas ni desempeño individual. 
+Estado Renglones Proporción del lote 
+DISPONIBLE 206 78,63 % 
+REVISAR 38 14,50 % 
+EXCLUIR 18 6,87 % 
+ 
+REVISAR expresa una cola documental, no un error confirmado. DISPONIBLE no es rendimiento de 
+primera pasada: se desconoce la secuencia previa a las correcciones. El beneficio esperado es mejorar 
+interpretabilidad y trazabilidad; no existe un ahorro operativo medido. 
+  
+
+Lean Management · 3 
+2 Cinco principios y valor para el destinatario 
+Principio Aplicación propuesta Verificación 
+Valor Datos interpretables para la decisión del reporte. VOC con el destinatario real. 
+Cadena de valor Rastrear nota, registro, revisión y publicación. Observación del recorrido real. 
+Flujo Avanzar con estado y evidencia explícitos. Medir esperas y excepciones. 
+Pull Liberar según solicitud y aprobación. Acordar demanda y responsables. 
+Perfección Revisar condiciones repetidas y ajustar reglas. Comparar lotes compatibles. 
+ 
+La voz del cliente todavía no se ha recogido. Se propone entrevistar al destinatario sobre decisiones, 
+campos requeridos, tolerancias y excepciones. Los requisitos derivados deben ser validados antes de 
+llamar CTQ aprobado a una regla de análisis. 
+Muda organiza preguntas sobre actividad sin valor. Mura y Muri solo se investigarán si una observación 
+real muestra variabilidad del flujo o sobrecarga. El tamaño desigual de las notas no basta para afirmar 
+una de esas condiciones. 
+Aplicación conceptual: un control de identificación puede evitar búsquedas y una regla de versión puede 
+evitar liberar archivos incompatibles. Esto describe mecanismos propuestos, no reducciones de 
+movimiento o retrabajo ya demostradas. 
+  
+
+Lean Management · 4 
+3 Desperdicios evidencias y preguntas 
+Categoría Qué se sabe o se propone investigar 
+Defectos Hay campos vacíos y diferencias documentales; la no conformidad operativa exige reglas y cotejo. 
+Sobreproducción Investigar reportes o copias sin solicitud; no observados. 
+Espera Hay pendientes, pero no se conoce su tiempo en cola. 
+Talento no utilizado Entrevistar al equipo antes de afirmar falta de participación. 
+Transporte Observar transferencias de notas y archivos; no se han contado. 
+Inventario 38 renglones REVISAR al corte; no es inventario físico ni una serie de WIP. 
+Movimiento Cronometrar búsquedas de originales; no medidas. 
+Sobreprocesamiento Trazar recaptura y revisiones repetidas; la diferencia de versiones no prueba repetición. 
+ 
+Cada categoría se mantendrá como observación, hipótesis o propuesta según su evidencia. El Pareto 
+del lote describe condiciones de revisión y no ocho causas de desperdicio. No se atribuye ningún 
+hallazgo a un trabajador. 
+La toma de datos propuesta registra unidad, etapa, instante de entrada, inicio, fin, interrupción y 
+evidencia. Separar tiempo necesario sin valor de pasos que puedan eliminarse solo después de revisar 
+su finalidad. 
+  
+
+Lean Management · 5 
+4 VSM actual documental 
+ 
+Figura 1. Flujo derivado del material disponible; sin observación completa en campo. 
+Etapa Entrada/control documental Estado de evidencia 
+Recibir Original o imagen e identificador. Originales físicos por cotejar. 
+Registrar Campos literales y base de precio. 262 renglones digitalizados. 
+Validar Reglas de presencia y coherencia. 38 REVISAR; reglas empresariales pendientes. 
+Resolver Decisión sustentada en evidencia. Sin cierres de piloto acreditados. 
+Aprobar Revisor y versión de la fuente. Se propone formalizar. 
+Publicar Huella, claves, categorías y agregados. Dos versiones del Data Mart documentadas. 
+ 
+TC, LT, espera, retrabajo y VA permanecen pendientes. No se inventa un cuello de botella a partir del 
+número de pendientes. La cola documentada puede priorizar observación, pero no identifica por sí sola 
+el punto de mayor demora. 
+  
 
 
-HIDROCOM KALLPA · Unidad 3 · Lean
-2
-02 Principios Lean aplicados
- Principio
-Aplicación al caso
-Siguiente comprobación
-Valor
-El usuario de un reporte necesita registros
-interpretables y trazables. Es una propuesta de valor
-por validar con ese usuario.
-Confirmar campos y criterios de
-aceptación mediante entrevista.
-Cadena de
-valor
-Seguir nota, registro, revisión y publicación. El paquete
-prueba capas documentales; no prueba el flujo
-completo en campo.
-Levantar VSM con observación y tiempos
-por registro.
-Flujo
-Evitar que un registro avance sin motivo, evidencia y
-estado claros.
-Probar el formulario y registrar
-interrupciones reales.
-Sistema pull
-Publicar versiones cuando exista solicitud y aprobación
-del destinatario. Es un diseño propuesto.
-Definir quién solicita, quién aprueba y
-cuándo se publica.
-Perfección
-Revisar los pendientes y las diferencias entre
-versiones para ajustar el estándar.
-Comparar lotes bajo el mismo protocolo;
-no fijar meta sin línea base aprobada.
-Fuente teórica: PMI, cinco principios Lean. Consulta: 24/11/2026.
-Las aplicaciones de esta tabla son elaboración del proyecto. No atribuyen entrevistas u observaciones adicionales. Las lecturas
-citadas sirven de apoyo bibliográfico; no se afirma haber revisado un capítulo específico del aula que no esté disponible.
+Lean Management · 6 
+5 VSM futuro y plan de medición 
+ 
+Figura 2. Diseño futuro sujeto a reglas, responsables y piloto. 
+El diseño incorpora alertas al capturar, una ruta explícita para excepciones, cotejo con originales y 
+conciliación antes de liberar. Los casos ambiguos permanecen pendientes: reducir una etiqueta sin 
+evidencia no significa resolver el registro. 
+Variable Definición propuesta y condición 
+Espera Inicio de actividad menos entrada a cola, con reloj común. 
+Proceso/TC por etapa Duración de una actividad por unidad, con criterio acordado. 
+LT del recorrido Salida final menos entrada inicial de la misma unidad. 
+Retrabajo Tiempo adicional identificado, sin duplicar intervalos. 
+VA Tiempo clasificado con el destinatario; debe ser compatible con el proceso. 
+PCE VA / LT, solo con LT positivo y observaciones comparables. 
+ 
+La cadencia entre salidas se registra separadamente del tiempo de procesamiento. El instrumento 
+TIEMPOS.csv está en blanco y el protocolo exige conservar excepciones, unidades, zona horaria y 
+períodos no observados. No existe todavía una PCE base o futura medida. 
+  
 
 
-HIDROCOM KALLPA · Unidad 3 · Lean
-3
-03 VSM documental propuesto
-Ruta propuesta: recibir → registrar → validar → resolver → aprobar versión → publicar y conciliar.
-Los archivos muestran capas del flujo; no permiten asegurar todos los pasos ni su orden real en la
-empresa.
-Etapa
-Control propuesto
-Evidencia / límite
-Recibir e identificar
-ID, origen y legibilidad
-Originales no incluidos en el ZIP.
-Registrar
-Conservar literal y base del precio
-262 renglones disponibles como corte
-documental.
-Validar
-Reglas y comparación con evidencia
-38 REVISAR; no equivalen a errores.
-Resolver observación
-Decisión trazable o exclusión justificada
-Sin originales no puede cerrarse el cotejo.
-Aprobar versión
-Revisor, fecha y huella de archivo
-Hash de Excel distinto al declarado en
-auditoria.json.
-Publicar y conciliar
-Misma categoría y versión en reportes
-NP-025089-02 difiere entre Excel y CSV.
-Protocolo para completar el mapa
-Observar un mismo recorrido por renglón, anotar inicio y fin de cada actividad, separar proceso de espera
-e identificar retrabajo. Clasificar el tiempo de valor añadido con el destinatario del reporte. Mantener los
-casos excepcionales identificados y no mezclar unidades de tiempo o recorridos.
-Lead time = suma de proceso + suma de espera.
-PCE = tiempo de valor añadido / lead time. El Excel deja estas entradas vacías y calcula únicamente al
-completarlas. No existe una PCE base medida.
+Lean Management · 7 
+6 5S digital y propuestas Kaizen 
+La 5S realizada corresponde únicamente al taller académico de publicación. Se organizaron tres 
+carpetas de entregables y guías independientes. La lista propia de cinco criterios pasó de 1/5 a 4/5 en 
+ese espacio; la disciplina sostenida sigue pendiente de dueño y calendario. No es una medición del 
+almacén ni de productividad empresarial. 
+Idea Finalidad y estado 
+Campos aplicables Alertar omisiones según tipo de nota; prototipo. 
+Base de precio Registrar unidad o millar con evidencia; propuesta. 
+Catálogo Conciliar identidades sin borrar la escritura original. 
+Motivo de revisión Conservar explicación de REVISAR/EXCLUIR. 
+Cierre trazable Exigir decisión, revisor, fecha y evidencia. 
+Versiones Identificar fuente y publicación por huellas. 
+5S digital Orden académico realizado; sostenimiento pendiente. 
+Revisión Kaizen Aprender de condiciones repetidas; práctica propuesta. 
+ 
+Los puntajes de impacto/esfuerzo y los responsables nominales no están aprobados. La selección inicial 
+de captura y versión se justifica cualitativamente por vacíos y diferencias observables; no es una 
+priorización numérica acordada con la empresa. 
+  
 
+Lean Management · 8 
+7 Poka-Yoke y estandarización 
+El prototipo distingue prevención de captura incompleta y detección de diferencias. Requiere 
+identificador, producto, números válidos, base de precio, evidencia y revisor. La comparación propuesta 
+es importe − cantidad × precio / base, con tolerancia aprobada. 
+Prueba funcional sintética Respuesta esperada 
+Registro vacío SIN REGISTRO 
+Campo obligatorio ausente INCOMPLETO 
+Base de precio igual a cero NUMEROS INVALIDOS 
+ID repetido ID DUPLICADO 
+Importe fuera de tolerancia REVISAR IMPORTE 
+Falta de evidencia o aprobación FALTA EVIDENCIA O APROBACION 
+Datos completos bajo reglas acordadas VALIDADO solo por las reglas del prototipo 
+ 
+Los casos sintéticos verifican comportamiento del control, no representan transacciones de la empresa. 
+El Excel puede editarse y una coherencia aritmética no acredita verdad documental. Debe verificarse la 
+base contra evidencia, especialmente NP-025138-01. 
+El estándar propuesto registra versión, campos aplicables, regla, excepción, decisión y liberación. El 
+plan de control identifica frecuencia por aprobar y reacción; no se presenta como sistema ya operativo. 
+  
 
-HIDROCOM KALLPA · Unidad 3 · Lean
-4
-04 Desperdicios: evidencia e hipótesis
- Categoría
-Condición para investigar
-Estado y prueba
-Defectos
-Campos vacíos y diferencias de versión
-confirmados en documentos.
-No se conoce el número de errores
-operativos. Cotejar con original y regla CTQ.
-Sobreproducción
-Hipótesis: copias o reportes sin solicitud.
-No observada. Inventariar versiones y
-destinatarios.
-Espera
-Hipótesis: registros detenidos por evidencia
-faltante.
-Hay pendientes; su tiempo de espera no está
-medido. Medir recepción, inicio y cierre.
-Talento no
-utilizado
-Hipótesis: conocimiento del capturista no
-incorporado al estándar.
-No observado. Entrevistar sin atribuir
-responsabilidades.
-Transporte
-Hipótesis: transferencias innecesarias de
-documentos.
-No observado. Contar transferencias en el
-flujo real.
-Inventario
-38 renglones en cola documental REVISAR.
-Cantidad confirmada; antigüedad y
-acumulación temporal desconocidas. Medir
-WIP de lotes comparables.
-Movimiento
-Hipótesis: búsqueda de originales o archivos.
-No observado ni cronometrado. Observar
-búsquedas y registrar duración.
-Sobreprocesamien
-to
-Hipótesis: recaptura o validación repetida por
-versiones distintas.
-La diferencia de versiones no prueba
-recaptura. Trazar cambios y revisiones antes
-de eliminar pasos.
-Las ocho categorías se usan como guía de observación. Los archivos no permiten afirmar que ocho desperdicios estén presentes
-ni cuantificar su costo. La cola REVISAR no equivale a inventario físico.
-
-
-HIDROCOM KALLPA · Unidad 3 · Lean
-5
-05 5S digital: intervención acotada
-Área intervenida: carpeta local de publicación académica. Antes contenía README y dos archivos
-integrados en la raíz. Después separa Lean, Seis Sigma y DMAIC en carpetas numeradas, cada una con
-guía, informe y Excel. Se conservaron los originales de trabajo y el historial Git.
-S
-Criterio propio
-Antes
-Después
-Seiri
-No mantener PDF/XLSX activos en la raíz.
-0
-1
-Seiton
-Disponer de tres carpetas numeradas por trabajo.
-0
-1
-Seiso
-Archivos sin vacíos ni temporales de edición.
-1
-1
-Seiketsu
-Cada trabajo tiene README propio y enlaces desde índice.
-0
-1
-Shitsuke
-Dueño nominal y calendario aprobados con evidencia.
-0
-0
-Lista propia de cinco criterios binarios: 1/5 antes y 4/5 después. Se verifican rutas y archivos locales; el
-criterio de sostener permanece incumplido por falta de aprobación nominal y calendario. Esta lista no
-reemplaza una rúbrica oficial ni demuestra mejora comercial.
-Evidencia reproducible: Evidencia_5S.csv junto a este informe; manifiesto inicial guardado en la revisión
-local. No se midió el tiempo de reorganización. No se aporta fotografía de un área física ni se inventa una.
-Fuente teórica: Lean Enterprise Institute, 5S. Consulta: 24/11/2026.
-
-
-HIDROCOM KALLPA · Unidad 3 · Lean
-6
-06 Kaizen y Poka-Yoke
- ID
-Idea de mejora
-Selección / estado
-K01
-Campos requeridos según tipo de documento
-Seleccionada para prototipo, por evidencia de vacíos.
-K02
-Base de precio explícita
-Propuesta por validar.
-K03
-Catálogo único de productos y categorías
-Propuesta por validar.
-K04
-Motivo obligatorio al pasar a REVISAR
-Propuesta por validar.
-K05
-Cierre con evidencia, revisor y fecha
-Propuesta por validar.
-K06
-Conciliación de versión antes de publicar
-Seleccionada para prueba, por diferencia de hash y
-categoría.
-K07
-5S digital para entregables
-Aplicada al espacio académico de publicación; no al
-almacén.
-K08
-Revisión Kaizen de pendientes
-Propuesta por validar.
-Control preventivo propuesto: alertar por identificador, producto, cantidades, precio, base o importe
-incompletos, inválidos o duplicados. Control de detección: comparar importe con cantidad × precio /
-base, usando tolerancia aprobada y exigiendo evidencia y revisor para marcar VALIDADO.
-El libro contiene un prototipo probado con entradas temporales de QA que se retiraron antes de exportar.
-Advierte condiciones; no impide editar el archivo y no acredita verdad documental. No existe aún
-despliegue operativo. Impacto y esfuerzo quedan sin puntuar; la selección K01/K06 responde a los vacíos
-y diferencias de versión observados.
-Fuente teórica: Lean Enterprise Institute, prevención de errores. Consulta: 24/11/2026.
-
-
-HIDROCOM KALLPA · Unidad 3 · Lean
-7
-07 Plan de prueba y cierre pendiente
- Paso propuesto
-Criterio de salida
-Estado
-Planificar
-Origen confirmado, CTQ, unidad, tolerancia y evidencia
-aprobados.
-Pendiente
-Probar
-Captura de lote autorizado con tiempos y decisiones trazables.
-Prototipo preparado; piloto no
-ejecutado.
-Verificar
-Contrastar misma población y reglas antes/después.
-Sin medición posterior.
-Estandarizar
-Aprobar procedimiento, dueño y calendario si la prueba lo
-respalda.
-Pendiente
-Dato por consultar
-Por qué es necesario
-Pertenencia y cronología del lote
-El antecedente indica inicio el 09/03/2026; hay fechas anteriores.
-Originales o imágenes autorizadas
-No se incluyeron las fotografías referidas en el paquete.
-CTQ, excepciones y meta
-No convertir estados documentales en defectos.
-Roles, plazo y recursos
-No se atribuyen funciones ni disponibilidad sin confirmación.
-Tiempos, costos y medición
-posterior
-Sin ellos no se demuestra reducción, ahorro ni resultado del piloto.
-Conclusión: los documentos sustentan controles de registro y versión. No identifican causas humanas ni
-ahorros. El siguiente paso es validar reglas y originales con el dueño del proceso y ejecutar el piloto antes
-de declarar eficacia.
+Lean Management · 9 
+8 Validación conclusiones y referencias 
+El flujo documental y los controles pueden diseñarse con los archivos actuales. La eficacia, el tiempo 
+ahorrado y la sostenibilidad requieren observación y piloto. Las mejoras demostradas en esta entrega 
+son del producto académico: trazabilidad, claridad de diagramas y comprobaciones reproducibles. 
+La comparación retrospectiva comunicada por Claude sobre la primera captura puede describir 
+transformaciones; su alcance no incluye causalidad operativa ni autenticidad del documento físico. Se 
+conserva el límite de procedencia confirmado como pendiente por el usuario. 
+Siguiente paso Salida necesaria 
+Confirmar origen y VOC Custodio identificado y requisitos aceptados. 
+Medir y revisar concordancia Tiempos reales y lecturas independientes. 
+Ejecutar piloto Uso del control y lotes comparables. 
+Evaluar y sostener Resultados completos, incluidos negativos, y aprobación de estándar. 
+ 
+Instrumentos asociados: VOC, TIEMPOS, MSA, COTEJO_PENDIENTES y APROBACIONES. Ninguno 
+se presenta como diligenciado. 
+Referencias: PMI, cinco principios Lean (https://www.pmi.org/disciplined-agile/lean/principles); Lean 
+Enterprise Institute, 5S (https://www.lean.org/lexicon-terms/five-s/) y prevención de errores 
+(https://www.lean.org/lexicon-terms/error-proofing/). Consulta 24/11/2026. Fuentes del caso y 
+resultados: Fuente del caso: corte documental de Comprobantes_Revisados.xlsx, SHA-256 
+ac6ab323…; contrato común de datos v1.0; resultados independientes en 
+validacion/resultados_integracion.json. 

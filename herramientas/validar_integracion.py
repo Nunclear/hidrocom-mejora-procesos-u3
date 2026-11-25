@@ -54,7 +54,7 @@ def main():
     econ=m['economia_escenarios'];check('Modelo económico 255 / negativo / equilibrio',abs(econ['lote_mensual_supuesto']['neto_anual_estimado']-255)<1e-9 and round(econ['volumen_bajo_supuesto_13_3_meses']['neto_anual_estimado'],2)==-91.8 and abs(econ['lote_mensual_supuesto']['equilibrio_revisar_mes']-12.16)<1e-9,econ)
     books=[];manifest=[];pdfs=[];ooxml=[]
     for f in sorted(ROOT.rglob('*')):
-        if not f.is_file() or any(x in {'.git','.qa','__pycache__','auditoria_integral','validacion','datos_control','coordinacion'} for x in f.relative_to(ROOT).parts):continue
+        if not f.is_file() or f.name.startswith('~$') or any(x in {'.git','.qa','__pycache__','auditoria_integral','validacion','datos_control','coordinacion'} or x.startswith('.chart-data-') for x in f.relative_to(ROOT).parts):continue
         rel=f.relative_to(ROOT).as_posix()
         if f.suffix.lower() in ('.xlsx','.docx','.pptx','.pdf'):
             manifest.append({'archivo':rel,'sha256':sha(f),'bytes':f.stat().st_size})
@@ -83,7 +83,8 @@ def main():
                     for row in s:
                         for cell in row:
                             v=cached.get(cell.coordinate)
-                            if cell.data_type=='f' and (v is None or v.value is None) and cell.coordinate not in empty_strings.get(s.title,set()):missing.append(s.title+'!'+cell.coordinate)
+                            known_dashboard_empty=(rel.startswith('06_Dashboard/') and s.title=='Corte' and cell.column==25 and 6<=cell.row<=267 and p['detalle'][cell.row-6]['uso_importe']!='REVISAR' and cell.data_type=='f' and cell.value.startswith('=IF(T'+str(cell.row)+'<>"REVISAR","",'))
+                            if cell.data_type=='f' and (v is None or v.value is None) and cell.coordinate not in empty_strings.get(s.title,set()) and not known_dashboard_empty:missing.append(s.title+'!'+cell.coordinate)
                             if v is not None and v.data_type=='e':errors.append({'celda':s.title+'!'+cell.coordinate,'error':v.value})
                 check('Caché sin errores Excel: '+rel,not errors,errors)
                 if missing:warnings.append({'archivo':rel,'tipo':'Fórmulas sin caché; exige motor de cálculo','celdas':missing})
@@ -97,6 +98,9 @@ def main():
                     for name,key in [('Comprobantes','notas'),('Fechas','fechas')]:
                         if name not in wf.sheetnames:check('Fuente '+name+' existe: '+rel,False,'Hoja ausente');continue
                         _,rows=sheet_rows(wf,name,p[key][0].keys());check('Fuente '+name+' preservada: '+rel,rows==p[key],{'filas':len(rows)})
+                if rel.startswith('06_Dashboard/'):
+                    for name,key in [('Corte','detalle'),('Notas','notas')]:
+                        _,rows=sheet_rows(wf,name,p[key][0].keys());check('Fuente '+name+' preservada: '+rel,rows==p[key],{'filas':len(rows),'celdas':len(rows)*len(p[key][0])})
                 with ZipFile(f) as z:
                     external=[x for x in z.namelist() if x.startswith('xl/externalLinks/')]
                     check('Sin dependencia de otro libro: '+rel,not external,external)

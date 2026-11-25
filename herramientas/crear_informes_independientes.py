@@ -7,6 +7,7 @@ from pathlib import Path
 import json,html,hashlib
 from docx import Document
 from docx.shared import Inches,Pt,RGBColor
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from reportlab.pdfgen import canvas
@@ -68,8 +69,11 @@ def build(kind,pages,folder,stem):
     styles=doc.styles
     for n in ['Normal','Body Text']:
         styles[n].font.name='Arial';styles[n].font.size=Pt(10.5);styles[n].paragraph_format.space_after=Pt(8);styles[n].paragraph_format.line_spacing=1.12
-    for n in ['Title','Heading 1','Heading 2']:
-        styles[n].font.name='Arial';styles[n].font.color.rgb=RGBColor.from_string(COLOR)
+    for n in ['Title','Subtitle','Heading 1','Heading 2']:
+        styles[n].font.name='Arial';styles[n].font.color.rgb=RGBColor(0,0,0)
+        for x in list(styles[n]._element.iter(qn('w:color'))):
+            for attr in [qn('w:themeColor'),qn('w:themeTint'),qn('w:themeShade')]:x.attrib.pop(attr,None)
+    for x in list(styles.element.iter(qn('w:pBdr'))):x.getparent().remove(x)
     styles['Title'].font.size=Pt(25);styles['Heading 1'].font.size=Pt(18);styles['Heading 2'].font.size=Pt(12)
     doc.core_properties.title=f'{kind}: registro y validación documental de HIDROCOM KALLPA';doc.core_properties.author='Equipo académico';doc.core_properties.subject='Unidad 3; diagnóstico documental y propuestas'
     doc.add_paragraph('UNIVERSIDAD PERUANA UNIÓN',style='Subtitle');doc.add_paragraph('Ingeniería de Sistemas\nMejora de Procesos y Calidad Total\nPeriodo 2026-2')
@@ -79,23 +83,33 @@ def build(kind,pages,folder,stem):
     doc.add_paragraph('Contenido',style='Heading 2')
     for i,(title,_) in enumerate(pages,1):doc.add_paragraph(f'{i}. {title}')
     for i,(title,blocks) in enumerate(pages,1):
-        doc.add_page_break();doc.add_paragraph(f'{i}. {title}',style='Heading 1')
+        doc.add_page_break();doc.add_paragraph(f'{i} '+title.replace(':','').replace(',',''),style='Heading 1')
         for block in blocks:
             if block['tipo']=='p':doc.add_paragraph(block['texto'])
             elif block['tipo']=='subtitulo':doc.add_paragraph(block['texto'],style='Heading 2')
             elif block['tipo']=='imagen':
                 doc.add_picture(str(R/block['ruta']),width=Inches(6.65));p=doc.add_paragraph(block['pie']);p.runs[0].italic=True;p.runs[0].font.size=Pt(9)
             elif block['tipo']=='tabla':
-                t=doc.add_table(rows=1,cols=len(block['cabecera']));t.style='Light Shading Accent 1'
+                t=doc.add_table(rows=1,cols=len(block['cabecera']));t.style='Table Grid'
+                borders=OxmlElement('w:tblBorders')
+                for edge in ['top','left','bottom','right','insideH','insideV']:
+                    el=OxmlElement('w:'+edge);el.set(qn('w:val'),'single');el.set(qn('w:sz'),'4');el.set(qn('w:color'),'D9D9D9');borders.append(el)
+                t._tbl.tblPr.append(borders)
                 for cell,text in zip(t.rows[0].cells,block['cabecera']):cell.text=str(text)
                 trPr=t.rows[0]._tr.get_or_add_trPr();repeat=OxmlElement('w:tblHeader');trPr.append(repeat)
                 for row in block['filas']:
                     for cell,value in zip(t.add_row().cells,row):cell.text=str(value)
-                for row in t.rows:
+                for ri,row in enumerate(t.rows):
                     for cell in row.cells:
+                        cell.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
+                        props=cell._tc.get_or_add_tcPr();shade=OxmlElement('w:shd');shade.set(qn('w:fill'),COLOR if ri==0 else ('F1F4F6' if ri%2 else 'FFFFFF'));props.append(shade)
+                        margin=OxmlElement('w:tcMar')
+                        for edge in ['top','left','bottom','right']:
+                            el=OxmlElement('w:'+edge);el.set(qn('w:w'),'85');el.set(qn('w:type'),'dxa');margin.append(el)
+                        props.append(margin)
                         for par in cell.paragraphs:
                             par.paragraph_format.space_after=Pt(4)
-                            for run in par.runs:run.font.name='Arial';run.font.size=Pt(9.5)
+                            for run in par.runs:run.font.name='Arial';run.font.size=Pt(9.5);run.font.color.rgb=RGBColor.from_string('FFFFFF' if ri==0 else '000000');run.bold=ri==0
                 doc.add_paragraph('')
     footer=sec.footer.paragraphs[0];footer.alignment=2;run=footer.add_run(kind+' · ');run.font.size=Pt(8);fld=OxmlElement('w:fldSimple');fld.set(qn('w:instr'),'PAGE');footer._p.append(fld)
     target=R/folder/(stem+'.docx');doc.save(target);return {'archivo':target.relative_to(R).as_posix(),'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'secciones':len(pages),'revision_visual':'Pendiente de exportación Word y revisión independiente'}

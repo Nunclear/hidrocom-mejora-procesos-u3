@@ -11,7 +11,7 @@ La auditoría original de Claude se conserva como evidencia histórica en audito
 | AUD-007, incertidumbre | Wilson nominal y agrupamiento no confirman representatividad | I07 |
 | AUD-012, hashes/categoría | Reproducido en ZIP v3; específico de versión, no refutado por otra copia | I02/I09 |
 | Notas sin detalle y totales | Conservar discrepancias y claves; no imputar | I08 |
-| Word/diagramas/formatos | Preparación independiente y revisión visual pendiente | I11–I16/I20 |
+| Word/diagramas/formatos | Tres paquetes completos; A revisó 31 páginas y 35 láminas; dictamen final B/C pendiente | I11–I16/I20 |
 | Roles/metas/tolerancia | Decisión humana pendiente; no certificación de cinturón | H05 |
 
 Cada nuevo hallazgo debe citar archivo y localizador, método, efecto, corrección y aceptación. Actualizar estados con la evidencia del revisor, no con una declaración del autor.

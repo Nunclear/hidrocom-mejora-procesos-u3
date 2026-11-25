@@ -8,15 +8,19 @@ Fecha de revisión: 24 de noviembre de 2026.
 
 ## Tres trabajos independientes
 
-| Trabajo | Informe | Excel | Contenido principal |
-|---|---|---|---|
-| [01 Lean](01_Lean/README.md) | [PDF](01_Lean/U3_Lean_HIDROCOM.pdf) | [Excel](01_Lean/U3_Lean_HIDROCOM.xlsx) | VSM, desperdicios, 5S digital, Kaizen y Poka-Yoke |
-| [02 Seis Sigma](02_Seis_Sigma/README.md) | [PDF](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf) | [Excel](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx) | Selección, roles, RACI, CTQ y métricas |
-| [03 DMAIC](03_DMAIC/README.md) | [PDF](03_DMAIC/U3_DMAIC_HIDROCOM.pdf) | [Excel](03_DMAIC/U3_DMAIC_HIDROCOM.xlsx) | Cinco fases y seguimiento de 38 pendientes |
+| Trabajo | Word editable | PDF | Excel | Presentación |
+|---|---|---|---|---|
+| [01 Lean](01_Lean/README.md) | [Word](01_Lean/U3_Lean_HIDROCOM.docx) | [9 páginas](01_Lean/U3_Lean_HIDROCOM.pdf) | [Libro](01_Lean/U3_Lean_HIDROCOM.xlsx) | [10 láminas](01_Lean/U3_Lean_HIDROCOM.pptx) |
+| [02 Seis Sigma](02_Seis_Sigma/README.md) | [Word](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.docx) | [9 páginas](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pdf) | [Libro](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.xlsx) | [12 láminas](02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pptx) |
+| [03 DMAIC](03_DMAIC/README.md) | [Word](03_DMAIC/U3_DMAIC_HIDROCOM.docx) | [13 páginas](03_DMAIC/U3_DMAIC_HIDROCOM.pdf) | [Libro](03_DMAIC/U3_DMAIC_HIDROCOM.xlsx) | [13 láminas](03_DMAIC/U3_DMAIC_HIDROCOM.pptx) |
 
-Los tres enfoques se presentan por separado y usan el mismo corte documental. Seis Sigma es el enfoque de mejora; DMAIC organiza sus cinco fases. Cada carpeta tiene guía propia y un libro independiente. El informe DMAIC conserva 15 páginas y el libro 13 hojas.
+Lean estudia valor y flujo. Seis Sigma desarrolla las definiciones, funciones y medición. DMAIC organiza las cinco fases. Los tres trabajos pueden leerse por separado y comparten el mismo lote de estudio. El Word/PDF y PPTX de DMAIC se reproducen sin cambios en `04_Producto_Final` para la entrega oficial; son copias identificadas, no otros proyectos.
 
-[Presentación editable DMAIC](https://chatgpt.com/space/page_ca61c7120d948191aaa3a90517d367db): 15 diapositivas, sujeta a los permisos de ChatGPT.
+Apoyos comunes: [dashboard de calidad](06_Dashboard/README.md), [modelo costo-beneficio](05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx), [contrato de datos](coordinacion/CONTRATO_DE_DATOS.md), [instrumentos sin diligenciar](instrumentos/README.md), [matriz de tareas](coordinacion/MATRIZ_TAREAS.csv) e [informe de integración y rúbrica](coordinacion/INFORME_INTEGRACION.md).
+
+La [presentación anterior en ChatGPT](https://chatgpt.com/space/page_ca61c7120d948191aaa3a90517d367db) es una versión histórica y puede contener definiciones anteriores. Para la revisión actual se usan los archivos enlazados en la tabla.
+
+El usuario confirmó que no puede acreditar proveedor, procedencia original ni autenticidad empresarial de las 73 notas. Tampoco hay constancia oficial para el inicio reportado del 09/03/2026. Se mantienen pendientes y se trabaja con un lote documental, sin atribuir representatividad empresarial.
 
 ### Distinciones necesarias
 
@@ -28,7 +32,7 @@ La versión anterior integrada se conserva en el historial Git. Los archivos act
 
 ## Diagnóstico del corte documental
 
-La muestra contiene 73 notas y 262 renglones. La fuente clasifica 206 renglones como DISPONIBLE, 38 como REVISAR y 18 como EXCLUIR. La proporción por revisar es 14,50 % de los renglones de la muestra completa.
+El lote contiene 73 notas y 262 renglones. La fuente clasifica 206 renglones como DISPONIBLE, 38 como REVISAR y 18 como EXCLUIR. La proporción por revisar es 14,50 % de los renglones del lote completo.
 
 REVISAR expresa un estado documental y no equivale a un defecto confirmado. Los registros excluidos se conservan y no se reclasifican automáticamente como errores.
 
@@ -109,8 +113,8 @@ Las hojas Datos, Comprobantes y Fechas del Excel entregable preservan 8 916 celd
 
 ### Unidades de análisis
 
-- **Nota:** documento identificado en la hoja Comprobantes. Hay 73 en la muestra.
-- **Renglón:** detalle identificado por `id_detalle`. Hay 262 en la muestra.
+- **Nota:** documento identificado en la hoja Comprobantes. Hay 73 en el lote.
+- **Renglón:** detalle identificado por `id_detalle`. Hay 262 en el lote.
 - **Incidencia registrada:** entrada de un registro que mezcla observaciones, estados y condiciones documentales. Hay 151 entradas, pero no se interpretan como 151 defectos.
 
 Estas unidades no son intercambiables. Ninguna tasa de defectos se obtiene dividiendo automáticamente las incidencias entre notas o renglones.
@@ -128,7 +132,7 @@ DISPONIBLE es una etiqueta de uso en la fuente, no una certificación de que tod
 
 La suma de importes de renglones DISPONIBLE es S/ 26 509,70. Es un importe documental del corte y no se utiliza como ventas auditadas, utilidad, costo de mala calidad ni beneficio del proyecto.
 
-### Fechas y origen de la muestra
+### Fechas y origen del lote
 
 | Estado de fecha | Notas | Proporción de 73 notas |
 | --- | ---: | ---: |
@@ -150,7 +154,7 @@ La meta SMART, el plazo y los responsables nominales permanecen pendientes. No s
 
 ### Medir
 
-La línea descriptiva cuenta los estados existentes de las notas y renglones. El denominador de la proporción REVISAR es la muestra completa de 262 renglones.
+La línea descriptiva cuenta los estados existentes de las notas y renglones. El denominador de la proporción REVISAR es el lote completo de 262 renglones.
 
 Para medir conformidad se necesita aprobar primero el defecto CTQ, su evidencia, la unidad y las oportunidades homogéneas. El Excel incorpora los campos U, D y O y las fórmulas condicionadas para DPMO y nivel sigma. Permanecen pendientes hasta completar esos requisitos.
 
@@ -184,8 +188,8 @@ Las cuatro primeras condiciones reúnen 33 de 38 pendientes. El estado PEDIDO pu
 | --- | --- | --- |
 | Campo numérico incompleto | `NP-025059-03` tiene cantidad 100 e importe 25, pero precio unitario vacío. | Se confirma el vacío. No se infiere un precio dividiendo importe entre cantidad. |
 | Diferencia de importe consignada | `NP-025072-04` tiene cantidad 2, precio 5, subtotal 100 y diferencia 90. | El registro contiene la diferencia. El original debe sustentar qué dato corresponde corregir. |
-| Categoría distinta entre capas | `NP-025089-02`, Tarrajas: herramientas en Excel y herramietas en `CategoriaOriginal` del CSV. | Se confirma la diferencia entre archivos, no su autor o fecha de origen. |
-| Desalineación de versión | El hash del Excel actual difiere del declarado en `auditoria.json`; los nueve CSV coinciden con sus huellas registradas. | Se confirma la desalineación documental, no su causa operativa. |
+| Categoría distinta entre capas | `NP-025089-02`, Tarrajas: herramientas en Excel y herramietas en `CategoriaOriginal` del CSV. | Diferencia reproducida en ZIP v3; otra publicación de C reporta su corrección. No se atribuye autor o fecha. |
+| Desalineación de versión | En el ZIP v3, el hash del Excel difiere del declarado en `auditoria.json`; los nueve CSV coinciden con sus huellas registradas. Otra copia de C usa el mismo Excel y una publicación diferente. | Se confirma la desalineación documental, no su causa operativa. |
 
 El Ishikawa del informe propone preguntas sobre personas, método, sistema, material, medición y entorno. Son hipótesis por verificar, no causas humanas u operativas demostradas.
 
@@ -219,36 +223,33 @@ El plan PDCA propone aprobar criterios, probar controles, comparar mediciones eq
 
 Las metas, umbrales, frecuencias y responsables deben acordarse. Una integración posterior con el flujo de publicación o Power BI es una propuesta, no una automatización ya implementada.
 
-## Evaluación económica
+## Evaluación económica y sensibilidad
 
-No se dispone de tiempos medidos antes y después, costo horario validado, inversión ni costos recurrentes de la intervención. Por ello, no se declara un ahorro.
+El [modelo parametrizable](05_Costo_Beneficio/Costo_Beneficio_HIDROCOM.xlsx) usa supuestos explícitos: 10 minutos por REVISAR, S/ 7,50 por hora y S/ 120 iniciales. Con 25 casos alcanzables y un lote mensual, la capacidad valorizada neta del escenario de eficacia máxima es S/ 255 al año. Con un lote distribuido en 13,3 meses resulta −S/ 91,80. El equilibrio condicionado es 12,16 REVISAR iniciales por mes. El costo recurrente figura «No estimado»; omitirlo del escenario no acredita que sea cero. La tasa de 9 % procede del caso guía del curso y no de la empresa.
 
-Cuando existan datos, el cálculo propuesto será:
+La simulación aplica eficacias de 100 %, 75 %, 50 % y 25 % sobre la unión de 25 renglones y produce 13; 19,25; 25,50 y 31,75 REVISAR esperados. Son expectativas del modelo, no resultados observados. Tiempos, costos reales y recurrencia siguen pendientes. Los importes comerciales no se convierten en ahorros.
 
-```text
-Ahorro mensual realizable =
-  (minutos antes - minutos después) / 60
-  × volumen mensual comparable
-  × costo por hora
-  × factor de realización sustentado
+## Métrica principal y límites estadísticos
 
-Beneficio anual neto =
-  ahorro mensual realizable × 12
-  - costo inicial
-  - costo recurrente anual
+La completitud sintáctica principal registra 30 campos vacíos (5 cantidades, 16 precios y 9 importes) de 786 inspeccionados: 38 167,94 equivalentes por millón y sigma equivalente 3,2724 con convención +1,5. S34 y S35 son sensibilidades combinadas diferentes, con 43 257,00 / 3,2141 y 44 529,26 / 3,2004. No representan CTQ aprobado, capacidad operativa ni nivel sigma empresarial.
+
+El intervalo Wilson nominal 95 % para 38/262 es 10,75–19,28 % bajo independencia. ICC ≈ 0,246 y DEFF ≈ 1,69 son aproximaciones exploratorias por agrupamiento en notas. No existe diseño muestral que permita generalizar estos resultados a toda la empresa. DISPONIBLE no es FPY y no se calcula RTY sin mediciones secuenciales.
+
+## Verificación y reproducción
+
+Los PDF fueron exportados desde Microsoft Word y A revisó sus 31 páginas. Se revisaron las 35 láminas únicas. Los PPTX contienen tablas y gráficos editables y pasaron controles de integridad, geometría, fuentes de la plantilla e importación Artifact Tool. No se afirma haberlos probado en PowerPoint o Google Slides.
+
+Con Python y las dependencias de `requirements-validacion.txt`:
+
+```powershell
+python -m pip install -r requirements-validacion.txt
+python herramientas/ejecutar_pruebas.py
+python herramientas/validar_integracion.py --final --revision revision-examinada
 ```
 
-Un resultado negativo debe conservarse. Un dato no disponible no equivale a cero.
+La validación compara las fuentes con el [corte congelado](datos_control/corte_documental_73_262.json), reproduce métricas y escenarios, inspecciona cachés de fórmulas, paquetes y enlaces locales. Leer cachés no equivale a recalcular Excel. C reportó recálculo nativo de sus cuatro libros y B/C del económico; A realizó cálculos independientes. El dashboard se calculó y probó con Artifact Tool. [Resultados](validacion/resultados_integracion.json), [pruebas funcionales](validacion/pruebas_modelos.json), [dashboard](validacion/dashboard_pruebas.json), [PDF/Word](validacion/pdf_word.json) y [PPTX](validacion/presentaciones_exportacion.json).
 
-## Verificación de entregables
-
-- Informe PDF de 15 páginas, renderizado y revisado visualmente.
-- Presentación editable de 15 diapositivas, revisada visualmente.
-- Excel de 13 hojas, con 18 comprobaciones de cálculos y controles.
-- Contraste de 8 916 celdas de las hojas fuente con el material extraído.
-- Comprobación de que no quedaron datos temporales de prueba en las entradas del formulario y de evaluación económica.
-
-Estas comprobaciones validan el desarrollo documental y las fórmulas probadas. No equivalen a una prueba de la operación real ni a resultados de un piloto empresarial.
+La conciliación distingue el ZIP v3 verificado por A y la copia posterior reportada por C. Véanse [huellas y límites](coordinacion/TRAZABILIDAD_FUENTES.csv). PM08 describe cambios entre capturas según el análisis de C; A no dispuso de los bytes de la primera captura y no lo presenta como reproducción propia.
 
 ## Próximos pasos
 

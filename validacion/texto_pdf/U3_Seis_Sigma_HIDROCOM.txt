@@ -1,280 +1,195 @@
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-1
-01 Seis Sigma: proyecto y medición
-GRUPO HIDROCOM KALLPA E.I.R.L.
-Mejora de Procesos y Calidad Total · UPeU · Ingeniería de Sistemas · 2026-2
-Docente: Mg. Esteban Tocto Cano
-Corte documental: 24 de noviembre de 2026.
-Equipo registrado en el manual: Gutierrez Morales Jhon Alex, Mullisaca Condori Carlos Augusto y Mamani Mamani Ciro Wagner.
-No hay asignación nominal aprobada de roles.
-Seis Sigma orienta el trabajo a reducir variación e incumplimientos mediante criterios y datos. En este
-caso, la primera necesidad es distinguir un pendiente documental de un defecto operativo y acordar qué
-se debe medir.
-Proyecto seleccionado
-Registro y validación de notas de pedido para información comercial. Se selecciona cualitativamente
-porque hay evidencia documental reproducible. No se inventan puntuaciones de impacto, ahorro o
-factibilidad para justificarlo.
-La entrega desarrolla selección, roles, RACI, árbol CTQ propuesto, diagnóstico de completitud,
-calculadora formal y lectura de un caso externo. DMAIC se desarrolla en una carpeta independiente; la
-separación académica no cambia su relación con Seis Sigma.
-Resultado actual: diagnóstico documental; no se conoce el nivel sigma operativo de HIDROCOM. Los
-equivalentes exploratorios de completitud se muestran con una regla explícita y un alcance limitado.
-Fuente teórica: ASQ, Seis Sigma. Consulta: 24/11/2026.
+Seis Sigma · 1 
+UNIVERSIDAD PERUANA UNIÓN  
+Ingeniería de Sistemas 
+Mejora de Procesos y Calidad Total 
+Periodo 2026-2 
+Seis Sigma 
+Registro y validación de notas de pedido  
+GRUPO HIDROCOM KALLPA E.I.R.L.  
+Diagnóstico de un lote documental y diseño de mejora. 
+24 de noviembre de 2026. 
+Docente: Mg. Esteban Tocto Cano 
+Integrantes registrados en el manual: 
+Gutierrez Morales Jhon Alex · Mullisaca Condori Carlos Augusto · Mamani Mamani Ciro Wagner 
+Contenido 
+1. Problema, selección y alcance 
+2. Equipo funcional y responsabilidades 
+3. VOC y árbol CTQ propuesto 
+4. Medición de estados y completitud 
+5. Indicador principal y sensibilidad 
+6. Incertidumbre y dependencia 
+7. Conciliación y sistema de medición 
+8. Aplicación, conclusiones y fuentes 
+  
 
+Seis Sigma · 2 
+1 Problema selección y alcance 
+Seis Sigma requiere definir qué incumplimiento se mide y con qué evidencia. El proyecto selecciona el 
+registro y validación documental porque existen notas, renglones y publicaciones que permiten 
+reproducir contrastes. No se dispone de mediciones suficientes para seleccionar exactitud física del 
+inventario o conformidad de entregas. 
+El lote documental comprende 73 notas (69 con detalle) y 262 renglones. El usuario confirmó que no 
+puede acreditar el origen original, el proveedor ni la autenticidad empresarial de las notas. El 09/03/2026 
+es una fecha reportada en la recopilación histórica y carece aquí de constancia oficial. Por ello, el 
+estudio describe este lote documental y no representa automáticamente el desempeño actual de toda la 
+empresa. 
+Elemento Definición del estudio 
+Unidad documental 73 notas; 69 tienen detalle en la tabla. 
+Unidad de análisis 262 renglones y tres campos seleccionados por renglón. 
+Estado de revisión 38 REVISAR, una carga documental al corte. 
+Objetivo Diseñar y comprobar controles trazables sin imputar datos. 
+Meta y plazo empresarial Pendientes; cualquier ejemplo permanece como propuesta. 
+ 
+El caso económico se estudia mediante parámetros supuestos, sin utilizar los importes comerciales 
+como ahorro. La prioridad del proceso es una selección cualitativa por disponibilidad de evidencia, no un 
+ranking con puntajes inventados. 
+  
 
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-2
-02 Selección y charter preliminar
- Alternativa
-Evidencia
-Decisión y límite
-Registro y validación de
-notas
-73 notas, 262 renglones; diferencias
-verificables entre versiones.
-Seleccionado por disponibilidad de evidencia
-documental. Falta: Origen, CTQ, metas,
-tiempos y costos.
-Exactitud del inventario
-físico
-El manual describe almacén.
-Pendiente de evidencia para evaluación. Falta:
-Conteos físicos, diferencias y periodo
-comparable.
-Conformidad de
-preparación y entrega
-El manual describe distribución.
-Pendiente de evidencia para evaluación. Falta:
-Pedidos preparados, entregas y reclamos
-cotejados.
-Elemento
-Propuesta / estado
-Problema
-38 de 262 renglones figuran REVISAR y hay diferencias entre fuente y publicación. No se
-conoce su frecuencia operativa.
-Objetivo
-Diseñar y probar controles de captura, revisión y publicación sin imputar datos.
-Alcance
-Desde recepción de evidencia hasta versión aprobada y conciliada.
-Meta SMART
-Pendiente de CTQ, población comparable, valor numérico y plazo.
-Caso económico
-Pendiente de tiempos, volumen y costos verificados.
-Aprobación
-Pendiente de dueño del proceso, sponsor y equipo nominal.
+Seis Sigma · 3 
+2 Equipo funcional y responsabilidades 
+Función propuesta Responsabilidad Asignación 
+Champion/sponsor Facilitar alcance y recursos. Pendiente. 
+Líder Coordinar medición, análisis y prueba. Pendiente; sin certificación atribuida. 
+Analista Conservar fuente y reproducir resultados. Pendiente. 
+Dueño del proceso Aprobar CTQ, excepciones y estándar. Pendiente. 
+Revisor Cotejar y sustentar decisiones. Pendiente. 
+ 
+Los integrantes del manual se identifican como equipo académico, no como Black Belt o Green Belt 
+certificados. Los roles de agentes de IA son un reparto técnico de elaboración y revisión, no cargos 
+empresariales. 
+Actividad Ejecuta Aprueba Consulta 
+Definir alcance Líder Sponsor Dueño/analista 
+Aprobar CTQ Líder Dueño Revisor/destinatario 
+Medir lote Analista Líder Revisor 
+Resolver registros Revisor Dueño Analista 
+Probar controles Equipo Líder Dueño 
+Liberar estándar Líder Dueño Sponsor 
+ 
+La RACI propuesta debe validarse nominalmente. No se completan firmas, metas o plazos por la mera 
+presencia de nombres en un documento previo. 
+  
 
+Seis Sigma · 4 
+3 VOC y árbol CTQ propuesto 
+Nivel del árbol Contenido Evidencia necesaria 
+Necesidad Información interpretable para la decisión comercial. VOC real, todavía no entrevistada. 
+Completitud Campos requeridos según tipo y excepción. Aprobación de obligatoriedad. 
+Coherencia Importe consistente con cantidad, precio y base. Original y tolerancia acordada. 
+Trazabilidad Vincular fuente, revisión, aprobación y publicación. Reglas de evidencia y versión. 
+Defecto operativo Incumplimiento de una regla aplicable y aprobada. Definición y cotejo pendientes. 
+ 
+Los 30 vacíos pueden describirse bajo una regla de inspección sintáctica. Todavía no se sabe si cada 
+campo era obligatorio en cada transacción. Un campo lleno tampoco prueba un valor correcto. Por 
+tanto, se distingue el ejercicio académico de un CTQ corporativo aprobado. 
+El protocolo VOC propone registrar necesidad literal, traducción a una regla, excepción y validación del 
+destinatario. Una inferencia del equipo no se transforma en entrevista. Los estados PEDIDO y EXCLUIR 
+requieren aclarar su tratamiento comercial. 
+  
 
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-3
-03 Roles y responsabilidades
-Se propone una estructura funcional ajustable al proyecto. Los títulos de cinturón describen competencias
-y formación; no se atribuyen certificaciones a los integrantes. La lista de nombres del manual no aprueba
-por sí misma quién autoriza o revisa.
-Rol
-Función propuesta
-Estado
-Sponsor / Champion
-Autoriza alcance, facilita acceso y resuelve bloqueos.
-Pendiente de designación.
-Líder del proyecto
-Coordina medición, análisis y pruebas.
-Pendiente; no se atribuye
-certificación Black Belt.
-Analista / equipo
-Conserva fuente, reproduce conteos y documenta contrastes.
-Pendiente de asignación
-nominal.
-Dueño del proceso
-Aprueba CTQ, tratamiento de excepciones y estándar.
-Pendiente de designación.
-Revisor documental
-Contrasta con original y registra decisión.
-Pendiente de designación.
-Relación con los cinturones
-Como referencia de formación, Master Black Belt apoya y orienta; Black Belt lidera proyectos; Green Belt
-participa en medición y análisis y puede liderar proyectos de su alcance; Yellow Belt apoya como
-integrante. El equipo debe confirmar capacidades y apoyo requerido, sin convertir estos nombres en
-cargos otorgados.
-Fuente teórica: ASQ, roles y cinturones. Consulta: 24/11/2026.
-Actividad
-Ch.
-Líd.
-Ana.
-Due.
-Rev.
-Aprobar alcance y recursos
-A
-R
-C
-C
-I
-Aprobar CTQ y excepciones
-C
-R
-C
-A
-C
-Medir el corte documental
-I
-A
-R
-C
-C
-Cotejar y resolver registros
-I
-C
-C
-A
-R
-Diseñar y evaluar piloto
-C
-A
-R
-C
-C
-Aprobar estándar de operación
-C
-R
-C
-A
-C
-RACI propuesta: A aprueba / responde por la decisión; R ejecuta; C es consultado; I es informado. Una A por actividad.
-Asignación nominal y aprobación pendientes.
+Seis Sigma · 5 
+4 Medición de estados y completitud 
+Estado Renglones Proporción 
+DISPONIBLE 206 78,63 % 
+REVISAR 38 14,50 % 
+EXCLUIR 18 6,87 % 
+ 
+Campo Nulos Campos inspeccionados 
+Cantidad 5 262 
+Precio unitario 16 262 
+Importe escrito 9 262 
+Total de campos 30 786 
+ 
+Hay 17 renglones con al menos uno de esos tres campos nulo. Los 30 son campos, no renglones; el 
+denominador de la fracción de vacíos es 786. La completitud por campo es 756/786 (96,18 %) y los 
+renglones sin esos vacíos son 245/262 (93,51 %). Ambas medidas son distintas de FPY. 
+La proporción DISPONIBLE describe un estado al corte, no conformidad en primera pasada. No se 
+calcula RTY sin resultados secuenciales por etapa. Las 151 entradas mixtas de incidencias no se 
+utilizan automáticamente como defectos. 
+  
 
+Seis Sigma · 6 
+5 Indicador principal y sensibilidad 
+Escenario D Denominador Por millón Sigma +1,5 
+S30 · campos nulos 30 786 38 167,94 3,2724 
+S34 · combinado 
+alternativo 34 786 43 257,00 3,2141 
+S35 · combinado 
+publicado 35 786 44 529,26 3,2004 
+ 
+S30 es el indicador académico provisional principal: completitud sintáctica exploratoria. DPU sintáctico = 
+30/262 = 0,1145; DPO equivalente = 30/786 = 0,038168; DPMO equivalente = DPO × 1 000 000. El 
+sigma equivalente aplica Φ⁻¹(1−DPO)+1,5. 
+S34 y S35 agregan comprobaciones de coherencia a los vacíos, bajo la regla publicada. El uso de 786 
+en esos escenarios es una convención por validar, no una prueba de oportunidades empresariales 
+homogéneas. No representan exactamente el mismo indicador que S30. 
+NP-025138-01 registra cantidad 2 000, precio 0,24 e importe 480, además de una base de precio y 
+diferencia consignadas. Que 2 000 × 0,24 coincida con 480 no verifica por sí solo la interpretación de la 
+base. Se conserva la incidencia original; su exclusión es sensibilidad, no corrección confirmada. 
+En extremos D=0 o D=U×O, la inversa normal no produce un sigma finito; el calculador debe mostrar no 
+aplicable. La conversión no demuestra normalidad, estabilidad, capacidad ni satisfacción del 
+destinatario. 
+  
 
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-4
-04 Árbol CTQ y protocolo de conteo
- Nivel
-Definición propuesta
-Validación pendiente
-Necesidad por
-validar
-Información comercial interpretable y trazable.
-Entrevista al destinatario del reporte.
-Unidad propuesta
-Un renglón identificado por id_detalle.
-Confirmar homogeneidad y casos
-especiales.
-CTQ propuesto:
-completitud
-Campos requeridos según tipo de documento, sin
-imputación.
-Aprobar obligatoriedad y tratamiento
-de PEDIDO / EXCLUIR.
-CTQ propuesto:
-coherencia
-Importe compatible con cantidad, precio y base
-documentada.
-Aprobar tolerancia, base y
-excepciones.
-CTQ propuesto:
-trazabilidad
-Evidencia original, decisión y versión vinculadas al
-registro.
-Acordar evidencia admisible y criterio
-de aprobación.
-Defecto operativo
-Incumplimiento de regla CTQ aplicable y aprobada,
-con evidencia.
-Todavía no definido ni contado.
-Cómo construir una medición válida
-1. Entrevistar al destinatario y aprobar una necesidad verificable. 2. Definir la unidad y los campos
-aplicables por tipo de nota. 3. Establecer oportunidades homogéneas y excepciones. 4. Cotejar con
-original autorizado. 5. Registrar cada incumplimiento y resolver discrepancias entre revisores antes de
-fijar la línea base.
-Los 38 REVISAR son un estado de cola. Las 151 incidencias mezclan observaciones y unidades; ninguna
-cifra se utiliza como D sin una regla aprobada. DISPONIBLE tampoco acredita conformidad total.
+Seis Sigma · 7 
+6 Incertidumbre y dependencia 
+El lote completo permite describir exactamente sus estados. Se desconoce una población objetivo 
+muestreada y la probabilidad de selección; por ello no se generaliza el 14,50 % a toda la empresa. 
+Cálculo exploratorio Valor aproximado Límite 
+Wilson nominal 95 % para 38/262 10,75 % a 19,28 % Supone ensayos independientes; no acredita representatividad. 
+ICC ANOVA del indicador REVISAR 0,246 Modelo exploratorio sobre variable binaria agrupada por nota. 
+DEFF aproximado con tamaño 
+medio 1,69 No es un diseño muestral empresarial confirmado. 
+ 
+Los renglones de una misma nota pueden compartir condiciones. El análisis independiente reproduce la 
+aproximación declarada; no convierte un tamaño efectivo aproximado en nuevas observaciones. La 
+varianza de un diseño complejo requiere información de selección y agrupamiento que aquí falta. 
+No se usan gráficos de control con un orden temporal inventado. Cp/Cpk/Pp/Ppk se excluyen sin una 
+variable y especificaciones válidas y sin condiciones de estabilidad justificadas. Una comparación de 
+fechas estimadas y reales se mantiene descriptiva y no descarta causas. 
+Referencias de método: NIST, intervalos para proporciones (prc241.htm); CDC/NCHS, estimación de 
+varianza de encuestas. El cálculo binomial nominal y el efecto de agrupamiento no resuelven el origen 
+del lote. 
+  
 
+Seis Sigma · 8 
+7 Conciliación y sistema de medición 
+La comprobación independiente identifica cuatro notas sin renglones y diez notas con diferencia entre el 
+total registrado y la suma de importes presentes. Estas dos listas describen condiciones distintas. No se 
+completan importes ausentes ni se corrigen totales por suposición. 
+AUD-012 se concilió como específico de versión: el Excel original coincide entre los agentes, mientras 
+que auditoria.json y algunos CSV del Data Mart difieren. En el ZIP v3 se reproduce una huella declarada 
+antigua y CategoriaOriginal «herramietas»; la otra publicación reporta esas diferencias corregidas. No 
+se atribuye autor ni fecha de cambio sin evidencia. 
+PM-08 contrasta la primera captura con la revisión y el historial, sobre copias autorizadas. Según el 
+agregado publicado por Claude, los 30 vacíos ya estaban en la captura inicial y 37 de los 38 REVISAR 
+ya tenían ese estado. Es evidencia de transformación documental, no prueba de que el documento 
+físico contenga el mismo vacío ni de la causa operativa. 
+MSA propuesto Regla 
+Lectura independiente Dos revisores reales sobre casos y reglas aprobadas. 
+Acuerdo Matriz de contingencia y proporción coincidente. 
+Kappa (Po−Pe)/(1−Pe); no definido si Pe=1. 
+Cierre Conservar desacuerdos y evidencia; no usar REVISAR como patrón oro. 
+ 
+  
 
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-5
-05 Diagnóstico exploratorio de
-completitud
-Regla analítica explícita: para cada renglón se inspeccionan tres campos —cantidad, precio unitario e
-importe escrito— y se cuenta cada celda nula. Hay tres oportunidades sintácticas por renglón. Un renglón
-puede tener varios vacíos. Esta regla sirve para describir la tabla; no ha sido aprobada como CTQ
-operativo.
-Población
-U
-Vacíos cantidad / precio / importe
-D
-U × O
-Todo el lote
-262
-5 / 16 / 9
-30
-786
-Sin EXCLUIR
-244
-4 / 15 / 8
-27
-732
-Población
-DPMO equivalente
-Sigma equivalente (+1,5)
-Todo el lote
-38,167.94
-3.2724
-Sin EXCLUIR
-36,885.25
-3.2880
-Cálculo: DPMO equivalente = vacíos / (renglones × 3) × 1 000 000. Sigma equivalente = inversa normal
-estándar de (1 − DPMO / 1 000 000) + 1,5. La segunda población es una sensibilidad que omite
-EXCLUIR; no es medición posterior ni demuestra mejora.
-Interpretación: 17 de 262 renglones tienen al menos uno de estos campos vacío; sin EXCLUIR, 16 de
-244. Campo lleno no significa dato correcto. Campo vacío puede corresponder a una excepción legítima.
-El equivalente sigma no demuestra capacidad, estabilidad, satisfacción del cliente ni un nivel sigma real
-de la empresa.
-Fuente: Comprobantes_Revisados.xlsx, hoja Detalle_Productos. El Excel independiente conserva los 262 registros y calcula los
-vacíos mediante fórmulas. No se alteraron las fuentes.
-
-
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-6
-06 Calculadora formal y caso externo
-Cálculo formal pendiente
-El libro reserva CTQ aprobado, U, D y O. Exige enteros, U y O positivos y 0 ≤ D ≤ U × O. Calcula DPMO
-solo con entradas válidas. El sigma usa la convención de desplazamiento 1,5; para extremos 0 o 1 000
-000 muestra no aplicable en lugar de un valor finito inventado.
-Las entradas están vacías. No deben copiarse los 30 vacíos del ejercicio exploratorio a D operativo sin
-aprobar primero la aplicabilidad de la regla. La tolerancia y las excepciones documentales también deben
-acordarse.
-Lectura de caso: Motorola
-Anbari y Kwak (2004), en un trabajo publicado por PMI, presentan experiencias de proyectos Seis Sigma.
-Su cuadro de resultados reporta para Motorola, en 1992, una reducción por factor de 150 de los niveles
-de defectos en proceso. Es un resultado histórico externo citado por los autores, no una medición
-reproducida aquí.
-Aplicación crítica al proyecto: seleccionar un problema sustentado, definir responsabilidades y validar la
-medición antes de atribuir resultados. No es válido trasladar aquel factor a HIDROCOM, prometer el
-mismo efecto ni convertir los importes comerciales del lote en ahorros.
-Fuente teórica: Anbari y Kwak (2004), Success factors in managing six sigma projects. Consulta: 24/11/2026.
-Esta lectura bibliográfica no sustituye un material específico de la plataforma académica que no esté disponible.
-
-
-HIDROCOM KALLPA · Unidad 3 · Seis Sigma
-7
-07 Conclusiones y datos por consultar
-La selección del proceso se sostiene en la disponibilidad de notas y versiones comparables. El
-diagnóstico señala pendientes y vacíos sintácticos que justifican investigar reglas de captura y liberación.
-No demuestra defectos de despacho, responsabilidad individual ni reducción lograda.
-Dato por consultar
-Por qué es necesario
-Pertenencia y cronología del lote
-El antecedente indica inicio el 09/03/2026; hay fechas anteriores.
-Originales o imágenes autorizadas
-No se incluyeron las fotografías referidas en el paquete.
-CTQ, excepciones y meta
-No convertir estados documentales en defectos.
-Roles, plazo y recursos
-No se atribuyen funciones ni disponibilidad sin confirmación.
-Tiempos, costos y medición
-posterior
-Sin ellos no se demuestra reducción, ahorro ni resultado del piloto.
-Criterios para pasar a ejecución
-Aprobar origen y población; nombrar responsables; entrevistar al destinatario; fijar CTQ y oportunidades;
-cotejar originales; aprobar meta y plazo; ejecutar una prueba con medición posterior comparable. Solo
-entonces corresponde interpretar desempeño y beneficios operativos.
-Entregable asociado: U3_Seis_Sigma_HIDROCOM.xlsx. Contiene selección, roles y RACI, CTQ propuesto, conteos exploratorios
-reproducibles y calculadora formal pendiente. El contexto completo y las fuentes del caso están en el README raíz del
-repositorio.
+Seis Sigma · 9 
+8 Aplicación conclusiones y fuentes 
+El trabajo establece una medición académica reproducible y un protocolo para convertirla en medición 
+operativa válida. El siguiente paso requiere origen, VOC, excepciones y MSA; no es declarar un nivel 
+sigma empresarial por aplicar una fórmula. 
+Se mantiene un proyecto de mejora con charter preliminar, objetivos de diseño y funciones por 
+confirmar. DMAIC organiza su ejecución en una entrega independiente. Los controles y escenarios 
+pueden probarse técnicamente mientras se conserva la evidencia pendiente. 
+Resultado disponible Lo que aún falta 
+Conteos y conversiones reproducibles Defecto operativo aplicable y aprobado. 
+Simulaciones transparentes Piloto real y efecto comparable. 
+Validación funcional del prototipo Originales y uso efectivo del control. 
+Trazabilidad de versiones Confirmación empresarial de origen y cronología. 
+ 
+Fuentes: ASQ, Seis Sigma (https://asq.org/quality-resources/six-sigma), roles (https://asq.org/quality-
+resources/sixsigma/belts-executives-champions), DMAIC (https://asq.org/quality-resources/dmaic); 
+NIST, intervalos (https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm); CDC/NCHS, 
+varianza (https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx/SampleDesign.aspx). 
+Consulta 24/11/2026. 
+Fuente del caso: corte documental de Comprobantes_Revisados.xlsx, SHA-256 ac6ab323…; contrato 
+común de datos v1.0; resultados independientes en validacion/resultados_integracion.json. 
