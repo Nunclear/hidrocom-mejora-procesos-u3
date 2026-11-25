@@ -96,6 +96,6 @@ La nota consolidada de tres agentes permanece pendiente. La evaluación históri
 
 H01–H06 requieren empresa/equipo: procedencia y cronología, VOC, tiempos, MSA con originales, roles/metas/tolerancias y piloto. Hay protocolos y formatos sin respuestas ficticias. No impiden entregar el diseño; sí impiden atribuir resultados empresariales.
 
-La revisión técnica de A está terminada. El PR se prepara para revisión y aprobación. Los dictámenes finales B/C y sus calificaciones siguen pendientes por cuota. No se fusiona `main` sin aprobación ni se declara cierre completo mientras falten las revisiones exigidas.
+La revisión técnica de A está terminada. El [PR #2](https://github.com/Nunclear/hidrocom-mejora-procesos-u3/pull/2) está abierto en borrador, sin conflictos de fusión, y se solicitó revisión a Alexjhona. La [validación remota del PR](https://github.com/Nunclear/hidrocom-mejora-procesos-u3/actions/runs/45515467492) pasó en entorno limpio Python 3.13.18 sobre `aa4a604`: 7 pruebas funcionales y 64 comprobaciones finales, sin fallas ni avisos. Los dictámenes finales B/C y sus calificaciones siguen pendientes por cuota. No se fusiona `main` sin aprobación ni se declara cierre completo mientras falten las revisiones exigidas.
 
 Archivos/huellas: `validacion/MANIFIESTO_ARTEFACTOS.csv`; pruebas: `validacion/`; tareas: `coordinacion/MATRIZ_TAREAS.csv`; reproducción: `herramientas/README.md`.

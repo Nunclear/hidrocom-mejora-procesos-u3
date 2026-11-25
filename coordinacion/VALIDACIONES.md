@@ -10,4 +10,4 @@ Los Word se exportaron en Microsoft Word; A revisó las 31 páginas PDF y las 35
 
 No ejecutado por A: recálculo nativo Excel de todos los libros, prueba PowerPoint/Google Slides, reproducción con bytes de primera captura PM08 o Data Mart posterior C, entrevistas, MSA de campo y piloto. Los recálculos nativos reportados por B/C se atribuyen expresamente.
 
-La revisión y calificación final B/C siguen solicitadas. La ejecución de GitHub Actions debe comprobarse en el PR: crear el flujo no demuestra que pasó.
+La revisión y calificación final B/C siguen solicitadas en el [PR #2](https://github.com/Nunclear/hidrocom-mejora-procesos-u3/pull/2). GitHub Actions ejecutó y aprobó las 7 pruebas y 64 comprobaciones sobre `aa4a604` en [45515467492](https://github.com/Nunclear/hidrocom-mejora-procesos-u3/actions/runs/45515467492), Python 3.13.18 y dependencias instaladas desde requirements-validacion.txt. También pasó la ejecución del envío de rama 45515420590. Esta evidencia remota no sustituye el dictamen de B/C.
