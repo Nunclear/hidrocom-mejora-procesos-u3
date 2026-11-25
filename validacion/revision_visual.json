@@ -1,0 +1,335 @@
+{
+  "alcance": "31 páginas PDF y 35 láminas únicas; imágenes privadas no publicadas; la estructura automática no sustituye esta revisión",
+  "renders": [
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-01.png",
+      "sha256": "6f89f05a721839bce1b6d4a9e31d3dd3ba618691c0f35e4402763d66ae4916f7",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-02.png",
+      "sha256": "100cbe18066ea5583ef03d02b26f2fa248bd4abd2aaffd2046d56db836aa3ec6",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-03.png",
+      "sha256": "d125eae27b8ff3076f43c998dcade859db4d2cf56b4bcde11ea9cb25c9744825",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-04.png",
+      "sha256": "62340b94fc2740d24fb2b3efcd7aaa041bc043d5c88bff492140a030b6e0c9bb",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-05.png",
+      "sha256": "e17a5c57250b83c9b95b6fce5f161fa740b19e3fe4caf4f5267bea8a8c8e1891",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-06.png",
+      "sha256": "f09408f2bbc4cd3d661ec3ae10d9ec7e106bd1296fa577b078c3d77c84ae9073",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-07.png",
+      "sha256": "72d1d749a83415ea52322258d9137344c039667b3add90808a654e5e6010759e",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-08.png",
+      "sha256": "d2d984ece96f3dd81ef9bcc2e296a327abd7db7af0da5b03012dc14d93bcda9d",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Lean_HIDROCOM_paginas/pagina-09.png",
+      "sha256": "95f3221d2c7900988b8340fa74d62177bd641187197a3ca8cec69ccab1b52678",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-01.png",
+      "sha256": "72ea89248fd86f832e4beb054c07bd22ae8768fcc47bd4186d28992f41e66d37",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-02.png",
+      "sha256": "871de5db5caa0f1e36488e1e11223564303d9ac6c1f44251923ae97cf852bb97",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-03.png",
+      "sha256": "80570b4180fc1abe73c5f56559966f81853ab8fa4a5f0de587e96d5df00d0831",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-04.png",
+      "sha256": "6f5c328a1ff422944162417caabf04938e28aff20b372a2fcafe44ddc5901ae3",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-05.png",
+      "sha256": "808278085030fe972d72449caf04a4da1ddce40cebf12430e3afeb58f03b72e0",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-06.png",
+      "sha256": "3fe7f2212061266174b9578da133d6ebfebfe49ae334bc8ae2ea537f97335db8",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-07.png",
+      "sha256": "ddd12856fb13789e10bee334b8c7c38f920048062897c54a25560e0c45e5f50a",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-08.png",
+      "sha256": "936e34622e39e0e3ed9cd6c28d09356b255ec93d7a60649bd465843f5ffe5ca7",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_Seis_Sigma_HIDROCOM_paginas/pagina-09.png",
+      "sha256": "2e0e08352ca07745d0ecb684445fcf52c8d1f83f5ffec041192ebf512f9c6275",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-01.png",
+      "sha256": "e95320233c80daa38337a66f9fa6be8244412440d62c87afa28eadd85d14cc4e",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-02.png",
+      "sha256": "c4a2aed80d940ec5657997157cc051944bf344ad064a01722aca08c595cd7e87",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-03.png",
+      "sha256": "7f9d9e638488121426fc2240260695a026062a70d8555881b11cd7fa6d5fd77d",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-04.png",
+      "sha256": "1c4ff16df1d06eaf8b38512f1a7d8e9a4cea7b1250d2dee844502ab20cbdd0e9",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-05.png",
+      "sha256": "8b144d88551fde80cc5cadfce5a157992863962370acf6e8d6f528e8a544a003",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-06.png",
+      "sha256": "562188f4a484b1f4e1990f5b9b3386f2ea44329602c91c565a0e04b96ec7ff67",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-07.png",
+      "sha256": "71823451ca4502269632dcbcdf59a981be35295cae026b0a38eb61fc719f91cd",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-08.png",
+      "sha256": "7afa59808a7fce2bf223d29c574a32ba20998d1df741e50e9eca8ab583d7f8a7",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-09.png",
+      "sha256": "ce6c039a3f4b893b3b4b751888268d34048486d2008c5ec5976eafbd0879fc51",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-10.png",
+      "sha256": "cac8e22ef0f70f70cbe4f4cd4e33bda80ca25c25d0fac2be5b49a6bbb3c875da",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-11.png",
+      "sha256": "3255114f5a00d5097ac120ad008654f7fa9721b8f04d4a35c84bfca9e05f93bb",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-12.png",
+      "sha256": "7d8d4e53cb43cf2ef680a7f93acfe7dc305eae70ddc2b7a9941ae5e61ea3190c",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/word/U3_DMAIC_HIDROCOM_paginas/pagina-13.png",
+      "sha256": "beab1c22c47ba3ab0c6bed2ec3335efa8bce9aadec6d7bf7eb1c5484243bc0e2",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-1.png",
+      "sha256": "02c2f4678b11d9ea04c9065a6a5a9c28782533622a0e7f65317358ac42923024",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-10.png",
+      "sha256": "bf225f77ec220f96cca8a8a9e7133d8530c945688d62b042a0afd5cee5d60909",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-2.png",
+      "sha256": "0bbf9ac0e3088c166df238d15283b94115b718e2a71ee9b5a5a9827eafd39358",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-3.png",
+      "sha256": "fc8f476ad38cc03b38283b9ba6c4df856c6f8c9f43c240bd2258bebd6cb05e2a",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-4.png",
+      "sha256": "5a6a301f4f80f66ba2adbb34266d0fad5e9ba32064749ed517b289ac354e8912",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-5.png",
+      "sha256": "5f5a669bd8c8f083c960c58db55ee0fb4c6fa3f9c6d9cfc15b437794c9413607",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-6.png",
+      "sha256": "10e3939abcf83923f85d429729f91e860ac634f46901e79d047e38f1c269eb9d",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-7.png",
+      "sha256": "d2067caf7747ee1189913722e4c1005b95bdd102fbe9a1ebe8b35778be6fee1d",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-8.png",
+      "sha256": "fcecec16a822f12bddb149cbb5c59e640c47e330c3c92c9ffd015a46cf5c019d",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/lean/slide-9.png",
+      "sha256": "b15b5282d08298fda9052d32ec86e4eae606e18032ee5f38018fceea319e5720",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-1.png",
+      "sha256": "fc72d247bbce5225de73da62a2427473dcf74ef5bfae44a92e2951c38e6c4af2",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-10.png",
+      "sha256": "85f21c7b06a2ae39d96c832c6a112177afa868b56af0283ea42542495b784ce5",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-11.png",
+      "sha256": "4eaa6238ec21b1a0c4594cc1960c45edc0489ac39f4049b0f489d635e3a76567",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-12.png",
+      "sha256": "6f42ddd63fb5e0a25a430d99c8e9fbb1edbebbb4b4afb002ec35c2649936b89d",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-2.png",
+      "sha256": "0bbf9ac0e3088c166df238d15283b94115b718e2a71ee9b5a5a9827eafd39358",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-3.png",
+      "sha256": "9bb2e691b16f78e161dafff17a148eee7f14a6237dd4979f880641ef7a44b688",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-4.png",
+      "sha256": "50055af5d6918cedc5cb2eaa5363e8a8a52fed867c7fd3af54f87c95837657f7",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-5.png",
+      "sha256": "134230582d31f054bac9fd2de791abc85fc278067e2e05363c7390510f84052b",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-6.png",
+      "sha256": "364750d28568d7debe21becf8f7ceceafc7bd464d141dd8015a21d205060de47",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-7.png",
+      "sha256": "23806cd8088ba5a6d19588c4e9f396304a5c7185b6beec46e975f283a3d506c8",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-8.png",
+      "sha256": "940bf3b7c630b976c41be7f02c7e63bc16e80e73ee20837fc5ebf40da648757e",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/sigma/slide-9.png",
+      "sha256": "c495dc7d5b32ab4ea4ccb11b2440e3e966de72684c01ae3a03234d275ab79ded",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-1.png",
+      "sha256": "f9884ef0492c71983190e2baceee89fb717d0aa4df4019c977bd054ae3a4eba1",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-10.png",
+      "sha256": "5536a531ddcc8b4c8ffb7863bab12aba220eedfb9a2df96dd7df403d2fab8bb9",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-11.png",
+      "sha256": "88538f41a44b37ae8aa71e6f6791bc28a80bb9e140a2762c868544a36c8c4380",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-12.png",
+      "sha256": "882eba23faa1a981a596146d3f49e880065eeeed3c7b925e3791952bdd8d82c1",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-13.png",
+      "sha256": "54b6a4a9cd5100e90f3174a782daba97bd29b878b31e94a09b2e80e2e5e46639",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-2.png",
+      "sha256": "0bbf9ac0e3088c166df238d15283b94115b718e2a71ee9b5a5a9827eafd39358",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-3.png",
+      "sha256": "746fc0f5fb9b9c5968df29b6447bc5e4cd08e37ee7312692b83362be86b458e3",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-4.png",
+      "sha256": "d3f25591f662463e1527530087d604557e8aeab7378a9d31723391f82909fdd3",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-5.png",
+      "sha256": "719a4e1c73eb7813b3c8f4cbbb1fe13a48f2ebe5ea22bed55420769de915151e",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-6.png",
+      "sha256": "c4147bc79339c894ffcae456abc6a8bee8a092ad3d8e0be4ce687fd35e5f2d65",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-7.png",
+      "sha256": "157d8f3a1471312870e2b81e288f3c31a0ac1381e561d8cee94f37beacb8c7c9",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-8.png",
+      "sha256": "5cefcef53179a7ba18f8c6be9c670b044d7f2729896fa61f5758fd31c3d448ba",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    },
+    {
+      "render_privado": ".qa/presentaciones/dmaic/slide-9.png",
+      "sha256": "233f371ea76fff83403e2292d7b296f93733bb074c38bc285722ee9ed008faa2",
+      "revision": "Inspeccionado visualmente por A; legible, sin recortes ni solapamientos observados"
+    }
+  ]
+}

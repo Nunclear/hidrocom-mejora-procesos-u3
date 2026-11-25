@@ -1,0 +1,56 @@
+[
+  {
+    "archivo": "04_Producto_Final/U3_Informe_HIDROCOM.docx",
+    "sha256": "4a22e21d4e744143d8168212d466cd47d691a84977c6f2a109880db70e9c5b73",
+    "parrafos": 380,
+    "medios": [
+      {
+        "media": "word/media/def7ea5a9ba4e1905b3709c343ae5fd7d6b7f1ac.png",
+        "sha256": "e21ce3a54b155102dce9efb93df0ac45803a2fd11360a77e786bf672db2ea996",
+        "coincide_png_actual": []
+      },
+      {
+        "media": "word/media/image1.png",
+        "sha256": "757c4a3be2d7febb87a223483838d287dbbd2eb532f584fa32668d4dcdccc353",
+        "coincide_png_actual": [
+          "04_Producto_Final/M1_Flujo_AS-IS_HIDROCOM.png"
+        ]
+      },
+      {
+        "media": "word/media/image2.png",
+        "sha256": "bba3ec582630bf56b8789f6cd03d878233d7dbab5e22944a9508ba66f3873ef6",
+        "coincide_png_actual": []
+      },
+      {
+        "media": "word/media/image3.png",
+        "sha256": "bb60d13377eb0376987fc5fea582d4cdc0c048f491f155f30fbf368ee13b389c",
+        "coincide_png_actual": []
+      }
+    ],
+    "texto_para_cotejo": [
+      "Roles Seis Sigma (Champion, BB, GB, dueño del proceso)",
+      "Juliaca, Perú · 2026",
+      "La meta técnica del piloto es bajar a un máximo de 5 % de renglones en REVISAR en ocho semanas desde el inicio del piloto. La simulación cubre del 25 % al 100 % de resolución de los 25 casos alcanzables. Proyecta entre 12,12 % y 4,96 % de REVISAR. La meta se alcanza solo cerca de la resolución total de esos casos.",
+      "Con un lote al mes, 10 minutos de revisión por caso y S/ 120 de implementación, el ahorro de tiempo valorado genera un beneficio neto anual de S/ 255 en el escenario de máxima resolución. Con un lote distribuido en 13,3 meses, el resultado estimado baja a −S/ 91,80. El punto de equilibrio se sitúa en 12,16 renglones REVISAR al mes con la eficacia máxima planteada.",
+      "38 167,94 por millón y 3,2724 σ equivalentes bajo la convención +1,5.",
+      "−S/ 91,80 a S/ 255,00",
+      "Reducir REVISAR de 14,50 % a ≤ 5,00 % en el primer lote comparable posterior a la activación, con evaluación a las ocho semanas. Es una meta de diseño.",
+      "El 78,63 % es la proporción de renglones disponibles al corte. Un rendimiento de primera pasada requiere observar el resultado antes de cualquier corrección. El lote carece de esa secuencia.",
+      "3,2724",
+      "La primera regla mide completitud sintáctica. Las otras dos muestran cuánto cambia el resultado al incluir coherencia. La regla de 34 depende de confirmar la base «millar» de la nota observada. Los 38 REVISAR miden carga de revisión por renglón, con una unidad y un denominador distintos.",
+      "Las primeras tres categorías reúnen 27 casos. Incorporar la cuarta cubre 33 de los 38 renglones (86,84 %). Este corte orienta la lectura del Pareto. El diseño de mejoras combina la definición de PEDIDO, la validación numérica y un motivo obligatorio, que también fortalece la trazabilidad de las categorías residuales.",
+      "Causas candidatas y evidencia del lote",
+      "Comparación descriptiva, sin veredicto causal.",
+      "Nueve renglones presentan las dos primeras condiciones. Su unión es 13 + 21 − 9 = 25, el 65,79 % de REVISAR. La estandarización de captura y clasificación es la causa candidata priorizada para el piloto. Verificarla exige cotejar registros originales y revisados y observar cómo opera el control en un lote nuevo.",
+      "El contraste retrospectivo de las transcripciones encontró que los 30 campos que siguen vacíos ya estaban vacíos en la primera captura. De los 38 REVISAR de la versión revisada, 37 ya tenían ese estado. Estos resultados aclaran cuándo se registró la observación documental. La revisión de las imágenes originales permitirá distinguir una omisión de captura, una nota ilegible y un campo ausente en el documento físico.",
+      "Registrar por nota el total de renglones, revisiones, motivos, decisiones y minutos de retrabajo. Conservar el orden de captura y la primera clasificación.",
+      "Si se cumple la meta y la conciliación del lote, mantener los controles. Si falla un control, revisar la regla y volver a observar un lote comparable.",
+      "Meta de diseño ≤ 5 %. Si se supera, separar causas y revisar las reglas aplicadas.",
+      "Para un lote mensual, neto anual = (S/ 47,50 − S/ 16,25) × 12 − S/ 120 = S/ 255,00. El flujo económico es favorable solo cuando el tiempo liberado se aprovecha. Con esa frecuencia y una eficacia de 25 %, el neto se reduce a −S/ 26,25.",
+      "−S/ 91,80",
+      "S/ 255,00",
+      "Validar el dato antes de explicar la causa"
+    ],
+    "revision_visual": "Pendiente de render y lectura de todas las páginas"
+  }
+]

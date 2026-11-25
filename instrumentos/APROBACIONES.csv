@@ -1,0 +1,12 @@
+﻿ID,Tema,Valor_propuesto,Valor_aprobado,Quien_aprueba,Fecha_real,Evidencia,Estado
+AP-01,Origen del lote,,,,,,PENDIENTE
+AP-02,Fecha de inicio reportada,,,,,,PENDIENTE
+AP-03,Dueño del proceso,,,,,,PENDIENTE
+AP-04,Roles nominales,,,,,,PENDIENTE
+AP-05,CTQ y excepciones,,,,,,PENDIENTE
+AP-06,Tolerancia monetaria,,,,,,PENDIENTE
+AP-07,Meta,,,,,,PENDIENTE
+AP-08,Plazo,,,,,,PENDIENTE
+AP-09,Puntajes de priorizacion,,,,,,PENDIENTE
+AP-10,Costos y volumen,,,,,,PENDIENTE
+AP-11,Diseño del piloto,,,,,,PENDIENTE

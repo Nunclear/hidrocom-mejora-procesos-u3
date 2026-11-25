@@ -1,0 +1,19 @@
+01
+Recibir
+e identificar
+02
+Registrar
+los campos
+03
+Validar
+el registro
+04
+Resolver
+observaciones
+05
+Aprobar
+la version
+06
+Publicar
+y conciliar
+Flujo derivado de documentos. TC, LT, espera, retrabajo y VA pendientes de medicion.

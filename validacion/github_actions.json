@@ -1,0 +1,19 @@
+{
+  "repositorio": "Nunclear/hidrocom-mejora-procesos-u3",
+  "pr": 2,
+  "commit_entregables": "aa4a60417ce91f6d9ab3f8ee9c929320af5feb91",
+  "run_pr": 45515467492,
+  "job": 138873632719,
+  "run_push": 45515420590,
+  "conclusion_ambos": "success",
+  "python_remoto": "3.13.18",
+  "openpyxl": "3.1.5",
+  "pypdf": "6.21.4",
+  "pruebas_funcionales": 7,
+  "comprobaciones_aprobadas": 64,
+  "fallas": 0,
+  "avisos": 0,
+  "formulas_inspeccionadas": 2849,
+  "metodo_verificacion": "Consulta del estado, pasos y registro decodificado del job por A",
+  "limites": "Comprueba el producto documental; no ejecuta Excel, PowerPoint, piloto empresarial ni revisión independiente B/C. Las revisiones posteriores solo documentales conservan las huellas de los entregables de este corte."
+}

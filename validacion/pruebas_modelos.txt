@@ -1,0 +1,12 @@
+test_base_millar_solo_sintetica (test_modelos.ModelosTest.test_base_millar_solo_sintetica) ... ok
+test_captura_no_basta_solo_importe (test_modelos.ModelosTest.test_captura_no_basta_solo_importe) ... ok
+test_economia_sensibilidad (test_modelos.ModelosTest.test_economia_sensibilidad) ... ok
+test_prioridad_pareto_no_duplica (test_modelos.ModelosTest.test_prioridad_pareto_no_duplica) ... ok
+test_sigma_vacios_y_extremos (test_modelos.ModelosTest.test_sigma_vacios_y_extremos) ... ok
+test_simulacion_no_observacion (test_modelos.ModelosTest.test_simulacion_no_observacion) ... ok
+test_wilson_nominal (test_modelos.ModelosTest.test_wilson_nominal) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

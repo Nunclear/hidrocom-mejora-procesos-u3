@@ -1,0 +1,191 @@
+Lean Management · 1 
+UNIVERSIDAD PERUANA UNIÓN  
+Ingeniería de Sistemas 
+Mejora de Procesos y Calidad Total 
+Periodo 2026-2 
+Lean Management  
+Registro y validación de notas de pedido  
+GRUPO HIDROCOM KALLPA E.I.R.L.  
+Diagnóstico de un lote documental y diseño de mejora. 
+24 de noviembre de 2026. 
+Docente: Mg. Esteban Tocto Cano 
+Integrantes registrados en el manual: 
+Gutierrez Morales Jhon Alex · Mullisaca Condori Carlos Augusto · Mamani Mamani Ciro Wagner 
+Contenido 
+1. Contexto, problema y alcance 
+2. Cinco principios y valor para el destinatario 
+3. Desperdicios: evidencias y preguntas 
+4. VSM actual documental 
+5. VSM futuro y plan de medición 
+6. 5S digital y propuestas Kaizen 
+7. Poka-Yoke y estandarización 
+8. Validación, conclusiones y referencias 
+  
+
+Lean Management · 2 
+1 Contexto problema y alcance 
+HIDROCOM KALLPA se describe en el material suministrado como una organización de 
+comercialización y distribución de productos ferreteros para agua, desagüe, almacenamiento y riego en 
+la región de Puno. Esa descripción contextual no sustituye la verificación de la procedencia del lote. 
+El lote documental comprende 73 notas (69 con detalle) y 262 renglones. El usuario confirmó que no 
+puede acreditar el origen original, el proveedor ni la autenticidad empresarial de las notas. El 09/03/2026 
+es una fecha reportada en la recopilación histórica y carece aquí de constancia oficial. Por ello, el 
+estudio describe este lote documental y no representa automáticamente el desempeño actual de toda la 
+empresa. 
+El problema documental consiste en registros que requieren revisión y en publicaciones que deben 
+conciliarse con su fuente. El objetivo de Lean es diseñar un flujo trazable de captura, revisión y 
+liberación, y preparar su validación. El alcance termina en la información publicada; no se evalúan 
+inventario físico, entregas ni desempeño individual. 
+Estado Renglones Proporción del lote 
+DISPONIBLE 206 78,63 % 
+REVISAR 38 14,50 % 
+EXCLUIR 18 6,87 % 
+ 
+REVISAR expresa una cola documental, no un error confirmado. DISPONIBLE no es rendimiento de 
+primera pasada: se desconoce la secuencia previa a las correcciones. El beneficio esperado es mejorar 
+interpretabilidad y trazabilidad; no existe un ahorro operativo medido. 
+  
+
+Lean Management · 3 
+2 Cinco principios y valor para el destinatario 
+Principio Aplicación propuesta Verificación 
+Valor Datos interpretables para la decisión del reporte. VOC con el destinatario real. 
+Cadena de valor Rastrear nota, registro, revisión y publicación. Observación del recorrido real. 
+Flujo Avanzar con estado y evidencia explícitos. Medir esperas y excepciones. 
+Pull Liberar según solicitud y aprobación. Acordar demanda y responsables. 
+Perfección Revisar condiciones repetidas y ajustar reglas. Comparar lotes compatibles. 
+ 
+La voz del cliente todavía no se ha recogido. Se propone entrevistar al destinatario sobre decisiones, 
+campos requeridos, tolerancias y excepciones. Los requisitos derivados deben ser validados antes de 
+llamar CTQ aprobado a una regla de análisis. 
+Muda organiza preguntas sobre actividad sin valor. Mura y Muri solo se investigarán si una observación 
+real muestra variabilidad del flujo o sobrecarga. El tamaño desigual de las notas no basta para afirmar 
+una de esas condiciones. 
+Aplicación conceptual: un control de identificación puede evitar búsquedas y una regla de versión puede 
+evitar liberar archivos incompatibles. Esto describe mecanismos propuestos, no reducciones de 
+movimiento o retrabajo ya demostradas. 
+  
+
+Lean Management · 4 
+3 Desperdicios evidencias y preguntas 
+Categoría Qué se sabe o se propone investigar 
+Defectos Hay campos vacíos y diferencias documentales; la no conformidad operativa exige reglas y cotejo. 
+Sobreproducción Investigar reportes o copias sin solicitud; no observados. 
+Espera Hay pendientes, pero no se conoce su tiempo en cola. 
+Talento no utilizado Entrevistar al equipo antes de afirmar falta de participación. 
+Transporte Observar transferencias de notas y archivos; no se han contado. 
+Inventario 38 renglones REVISAR al corte; no es inventario físico ni una serie de WIP. 
+Movimiento Cronometrar búsquedas de originales; no medidas. 
+Sobreprocesamiento Trazar recaptura y revisiones repetidas; la diferencia de versiones no prueba repetición. 
+ 
+Cada categoría se mantendrá como observación, hipótesis o propuesta según su evidencia. El Pareto 
+del lote describe condiciones de revisión y no ocho causas de desperdicio. No se atribuye ningún 
+hallazgo a un trabajador. 
+La toma de datos propuesta registra unidad, etapa, instante de entrada, inicio, fin, interrupción y 
+evidencia. Separar tiempo necesario sin valor de pasos que puedan eliminarse solo después de revisar 
+su finalidad. 
+  
+
+Lean Management · 5 
+4 VSM actual documental 
+ 
+Figura 1. Flujo derivado del material disponible; sin observación completa en campo. 
+Etapa Entrada/control documental Estado de evidencia 
+Recibir Original o imagen e identificador. Originales físicos por cotejar. 
+Registrar Campos literales y base de precio. 262 renglones digitalizados. 
+Validar Reglas de presencia y coherencia. 38 REVISAR; reglas empresariales pendientes. 
+Resolver Decisión sustentada en evidencia. Sin cierres de piloto acreditados. 
+Aprobar Revisor y versión de la fuente. Se propone formalizar. 
+Publicar Huella, claves, categorías y agregados. Dos versiones del Data Mart documentadas. 
+ 
+TC, LT, espera, retrabajo y VA permanecen pendientes. No se inventa un cuello de botella a partir del 
+número de pendientes. La cola documentada puede priorizar observación, pero no identifica por sí sola 
+el punto de mayor demora. 
+  
+
+
+Lean Management · 6 
+5 VSM futuro y plan de medición 
+ 
+Figura 2. Diseño futuro sujeto a reglas, responsables y piloto. 
+El diseño incorpora alertas al capturar, una ruta explícita para excepciones, cotejo con originales y 
+conciliación antes de liberar. Los casos ambiguos permanecen pendientes: reducir una etiqueta sin 
+evidencia no significa resolver el registro. 
+Variable Definición propuesta y condición 
+Espera Inicio de actividad menos entrada a cola, con reloj común. 
+Proceso/TC por etapa Duración de una actividad por unidad, con criterio acordado. 
+LT del recorrido Salida final menos entrada inicial de la misma unidad. 
+Retrabajo Tiempo adicional identificado, sin duplicar intervalos. 
+VA Tiempo clasificado con el destinatario; debe ser compatible con el proceso. 
+PCE VA / LT, solo con LT positivo y observaciones comparables. 
+ 
+La cadencia entre salidas se registra separadamente del tiempo de procesamiento. El instrumento 
+TIEMPOS.csv está en blanco y el protocolo exige conservar excepciones, unidades, zona horaria y 
+períodos no observados. No existe todavía una PCE base o futura medida. 
+  
+
+
+Lean Management · 7 
+6 5S digital y propuestas Kaizen 
+La 5S realizada corresponde únicamente al taller académico de publicación. Se organizaron tres 
+carpetas de entregables y guías independientes. La lista propia de cinco criterios pasó de 1/5 a 4/5 en 
+ese espacio; la disciplina sostenida sigue pendiente de dueño y calendario. No es una medición del 
+almacén ni de productividad empresarial. 
+Idea Finalidad y estado 
+Campos aplicables Alertar omisiones según tipo de nota; prototipo. 
+Base de precio Registrar unidad o millar con evidencia; propuesta. 
+Catálogo Conciliar identidades sin borrar la escritura original. 
+Motivo de revisión Conservar explicación de REVISAR/EXCLUIR. 
+Cierre trazable Exigir decisión, revisor, fecha y evidencia. 
+Versiones Identificar fuente y publicación por huellas. 
+5S digital Orden académico realizado; sostenimiento pendiente. 
+Revisión Kaizen Aprender de condiciones repetidas; práctica propuesta. 
+ 
+Los puntajes de impacto/esfuerzo y los responsables nominales no están aprobados. La selección inicial 
+de captura y versión se justifica cualitativamente por vacíos y diferencias observables; no es una 
+priorización numérica acordada con la empresa. 
+  
+
+Lean Management · 8 
+7 Poka-Yoke y estandarización 
+El prototipo distingue prevención de captura incompleta y detección de diferencias. Requiere 
+identificador, producto, números válidos, base de precio, evidencia y revisor. La comparación propuesta 
+es importe − cantidad × precio / base, con tolerancia aprobada. 
+Prueba funcional sintética Respuesta esperada 
+Registro vacío SIN REGISTRO 
+Campo obligatorio ausente INCOMPLETO 
+Base de precio igual a cero NUMEROS INVALIDOS 
+ID repetido ID DUPLICADO 
+Importe fuera de tolerancia REVISAR IMPORTE 
+Falta de evidencia o aprobación FALTA EVIDENCIA O APROBACION 
+Datos completos bajo reglas acordadas VALIDADO solo por las reglas del prototipo 
+ 
+Los casos sintéticos verifican comportamiento del control, no representan transacciones de la empresa. 
+El Excel puede editarse y una coherencia aritmética no acredita verdad documental. Debe verificarse la 
+base contra evidencia, especialmente NP-025138-01. 
+El estándar propuesto registra versión, campos aplicables, regla, excepción, decisión y liberación. El 
+plan de control identifica frecuencia por aprobar y reacción; no se presenta como sistema ya operativo. 
+  
+
+Lean Management · 9 
+8 Validación conclusiones y referencias 
+El flujo documental y los controles pueden diseñarse con los archivos actuales. La eficacia, el tiempo 
+ahorrado y la sostenibilidad requieren observación y piloto. Las mejoras demostradas en esta entrega 
+son del producto académico: trazabilidad, claridad de diagramas y comprobaciones reproducibles. 
+La comparación retrospectiva comunicada por Claude sobre la primera captura puede describir 
+transformaciones; su alcance no incluye causalidad operativa ni autenticidad del documento físico. Se 
+conserva el límite de procedencia confirmado como pendiente por el usuario. 
+Siguiente paso Salida necesaria 
+Confirmar origen y VOC Custodio identificado y requisitos aceptados. 
+Medir y revisar concordancia Tiempos reales y lecturas independientes. 
+Ejecutar piloto Uso del control y lotes comparables. 
+Evaluar y sostener Resultados completos, incluidos negativos, y aprobación de estándar. 
+ 
+Instrumentos asociados: VOC, TIEMPOS, MSA, COTEJO_PENDIENTES y APROBACIONES. Ninguno 
+se presenta como diligenciado. 
+Referencias: PMI, cinco principios Lean (https://www.pmi.org/disciplined-agile/lean/principles); Lean 
+Enterprise Institute, 5S (https://www.lean.org/lexicon-terms/five-s/) y prevención de errores 
+(https://www.lean.org/lexicon-terms/error-proofing/). Consulta 24/11/2026. Fuentes del caso y 
+resultados: Fuente del caso: corte documental de Comprobantes_Revisados.xlsx, SHA-256 
+ac6ab323…; contrato común de datos v1.0; resultados independientes en 
+validacion/resultados_integracion.json. 

@@ -1,0 +1,57 @@
+{
+  "method": "Artifact Tool local fallback; export host failed three times; native tables, charts and process diagrams",
+  "referenceSha256": "7ae463491e938155d4ab91e2292f393da949161f12bd449f4ebc9f726e22b4c2",
+  "receipts": [
+    {
+      "kind": "dmaic",
+      "slides": 13,
+      "sha256": "30a8ac53d3e9dbbb99d549d5a840379a9e4587b44adf98daf1dd4b273d70b03a",
+      "file": "03_DMAIC/U3_DMAIC_HIDROCOM.pptx",
+      "validacion": {
+        "integridad": "pass",
+        "hallazgos_integridad": 0,
+        "hallazgos_geometria": 0,
+        "fuentes": [
+          "Calibri"
+        ],
+        "importacion_artifact_tool": true,
+        "revision_visual": "A inspeccionó todas las láminas renderizadas; contenido coherente con los informes.",
+        "prueba_powerpoint_nativo": "No ejecutada; importación y render Artifact Tool no la sustituyen."
+      }
+    },
+    {
+      "kind": "lean",
+      "slides": 10,
+      "sha256": "1449d4b16975b0ef547f1dbc3ed129efe11d3a03adc06d26b097b784562aea5f",
+      "file": "01_Lean/U3_Lean_HIDROCOM.pptx",
+      "validacion": {
+        "integridad": "pass",
+        "hallazgos_integridad": 0,
+        "hallazgos_geometria": 0,
+        "fuentes": [
+          "Calibri"
+        ],
+        "importacion_artifact_tool": true,
+        "revision_visual": "A inspeccionó todas las láminas renderizadas; contenido coherente con los informes.",
+        "prueba_powerpoint_nativo": "No ejecutada; importación y render Artifact Tool no la sustituyen."
+      }
+    },
+    {
+      "kind": "sigma",
+      "slides": 12,
+      "sha256": "b47d70d139578fe2a1eedf40b825d1eff47bd183b7ed25f53b36daed45aad895",
+      "file": "02_Seis_Sigma/U3_Seis_Sigma_HIDROCOM.pptx",
+      "validacion": {
+        "integridad": "pass",
+        "hallazgos_integridad": 0,
+        "hallazgos_geometria": 0,
+        "fuentes": [
+          "Calibri"
+        ],
+        "importacion_artifact_tool": true,
+        "revision_visual": "A inspeccionó todas las láminas renderizadas; contenido coherente con los informes.",
+        "prueba_powerpoint_nativo": "No ejecutada; importación y render Artifact Tool no la sustituyen."
+      }
+    }
+  ]
+}

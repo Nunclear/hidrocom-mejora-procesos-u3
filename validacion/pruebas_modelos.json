@@ -1,0 +1,18 @@
+{
+  "ejecutadas": 7,
+  "fallas": 0,
+  "errores": 0,
+  "omitidas": 0,
+  "resultado": "PASA",
+  "tipo": "Pruebas funcionales con casos sintéticos; no piloto empresarial",
+  "sha256_codigo": {
+    "cerrar_documentacion.py": "794175a41cb3fb1ef8fe65801cf20d2d6bab90b53d7bfa365066e2362f75632d",
+    "comprobar_pdf_word.py": "f1677465405675160a957c252a6f164f4242370edb68ed98c6862de56595164c",
+    "crear_informes_independientes.py": "58caf1b6ca7904eccd015ad6a3b01728ec312923033479c78e2d90f5cdf53ee0",
+    "ejecutar_pruebas.py": "266d367700b53f226e8687335eeac3347de4514f45dd284a7e3b3299cda34c6e",
+    "inspeccionar_documentos.py": "a20d35f26f7649ae0f8c58f8380a40077fe0f0577d7f506620b6bd39a8f683e2",
+    "modelos.py": "629e923b598d4bce2c9b60dc6409990de84df9cbe67f07a8ce8cdab0e1e3b113",
+    "test_modelos.py": "c9181b70e77b9efa05fca41ee880c35cc5e50f2bcb20bc91a3ffdbe39f181421",
+    "validar_integracion.py": "029cd6736d857b86486684a45ad729eaa4b393d9dd9445c9ca42532bdc27239b"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "fecha": "2026-11-24",
+  "poblacion": {
+    "notas": 73,
+    "renglones": 262,
+    "estados": {
+      "DISPONIBLE": 206,
+      "REVISAR": 38,
+      "EXCLUIR": 18
+    }
+  },
+  "corte_congelado": {
+    "ruta": "datos_control/corte_documental_73_262.json",
+    "sha256": "e575d3a81ffc1ff894b8d6b0cd5b47bf7c01d28db6978458500c206e0844f56c"
+  },
+  "campos_completitud": [
+    "cantidad",
+    "precio_unitario",
+    "subtotal_producto"
+  ],
+  "nulos_por_campo": [
+    5,
+    16,
+    9
+  ],
+  "indicador_principal": {
+    "nombre": "Completitud sintáctica exploratoria",
+    "D": 30,
+    "O": 3,
+    "oportunidades": 786,
+    "desplazamiento_sigma": 1.5,
+    "no_equivale_a": [
+      "FPY",
+      "defectos operativos confirmados",
+      "capacidad empresarial",
+      "CTQ corporativo aprobado"
+    ]
+  },
+  "sensibilidad_D": [
+    30,
+    34,
+    35
+  ],
+  "eficacia_simulada": [
+    1,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "estados_documentales_no_son_defectos": true,
+  "origen_empresarial_confirmado": false,
+  "poblacion_ampliada_autorizada": false
+}

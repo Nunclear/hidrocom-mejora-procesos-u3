@@ -1,0 +1,14 @@
+﻿Version,Ruta,SHA256,Commit_referencia,Verificacion,Clasificacion
+A-ZIP-v3,Fuente/Comprobantes_Revisados.xlsx,ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682,e3b5a60,Verificado por A contra ZIP y extracción,Reproducida
+A-ZIP-v3,DataMart/Publicado/auditoria.json,598f0ac1e8caed5c110f433d9a01e86bb55592e43e268b71827bdae19053e703,e3b5a60,Verificado por A contra ZIP y extracción,Específica de versión
+A-ZIP-v3,DataMart/Publicado/PowerBI/Productos.csv,7a362e0e60cf7b0b5014146c42388c6897ac58e455ef682709f0bfaf41914c07,e3b5a60,Verificado por A contra ZIP y extracción,Específica de versión
+A-ZIP-v3,DataMart/Publicado/PowerBI/Detalle.csv,8abc81acccb4f870a815a8081af3853aa819d273af3405302255d44261397233,e3b5a60,Verificado por A contra ZIP y extracción,Específica de versión
+A-ZIP-v3,Grupo_Hidrocom_Kallpa_Recopilacion.zip,59d136725d93485ad38d7ab380102e80eb78e717ad1f5551383e081dcb73cadd,e3b5a60,Verificado por A,Reproducida
+A-ZIP-v3,02_PowerBI_y_datos/PowerBI_y_Data_Corregida_20261121_v3.zip,64349b65de5a77542e9bcf601ff09e9fc1851d3bb476debb1c2743f09d6a4e99,e3b5a60,Verificado por A,Reproducida
+C-copia-reportada,Fuente/Comprobantes_Revisados.xlsx,ac6ab323264518a0f2eb7dfe61a43960b8992fdc5453e25cda9073fac6318682,99df911,Reportado por C; misma huella que A,Reproducida
+C-copia-reportada,DataMart/Publicado/PowerBI/Productos.csv,6eb47b29a03e84c619625658b79b1201960dfdd32f128a8cde8c272f7d1fbd37,99df911,Hash publicado por C; bytes no disponibles a A,Específica de versión
+C-copia-reportada,DataMart/Publicado/PowerBI/Detalle.csv,d9388eabd92b6a8cea8f38ffde5351bfa004a0487cc77c412f6d1370838e8796,99df911,Hash publicado por C; bytes no disponibles a A,Específica de versión
+C-copia-reportada,Fuente/Original_Comprobantes.xlsx,e29a8d6ad54f6436a92163a86fd109719b1e30bdac1e3b983d77479a452f6833,99df911,Reportado por C; ausente en ZIP v3 de A,Pendiente de evidencia
+Corte-publicado,datos_control/corte_documental_73_262.json,e575d3a81ffc1ff894b8d6b0cd5b47bf7c01d28db6978458500c206e0844f56c,e3b5a60,Extraído por A de las tres hojas públicas,Reproducida
+C-copia-reportada,ZIP posterior de C,e5507f7a8e69787a67e650bf9dbf8c22e4d96634789b50cc69cd4161d32fc1ff,36d23a8,Reportado por C; bytes no disponibles a A,Específica de versión
+C-copia-reportada,DataMart/Publicado/auditoria.json,a858d11b6ec0da3e17f8a79c42c7a45488d44c4f45f9ea46960710947ad0c598,36d23a8,Reportado por C; fecha_carga 2026-11-21T17:10:45Z; declara ac6ab323…,Específica de versión
